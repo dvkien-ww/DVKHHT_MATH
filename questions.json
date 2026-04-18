@@ -1,5 +1,823 @@
 [
   {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một mẫu số liệu có giá trị lớn nhất là $86$ và giá trị nhỏ nhất là $12$. Người ta muốn chia mẫu số liệu này thành $5$ nhóm có độ dài bằng nhau, sao cho độ dài của mỗi nhóm là một số nguyên dương. Tìm độ dài nhỏ nhất có thể của mỗi nhóm.",
+    "correct": "15",
+    "explain": "Khoảng biến thiên của mẫu số liệu là $R = 86 - 12 = 74$. Để đảm bảo mẫu số liệu được chứa trọn vẹn trong $5$ nhóm, độ dài mỗi nhóm $L$ phải thỏa mãn $L \\ge \\frac{R}{5} = \\frac{74}{5} = 14.8$. Vì $L$ là số nguyên dương nên giá trị nhỏ nhất của $L$ là $15$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một bảng tần số ghép nhóm có các nhóm số liệu có cùng độ dài. Biết nhóm thứ ba là nửa khoảng $[15; 20)$. Tính giá trị đại diện của nhóm thứ năm.",
+    "correct": "27.5",
+    "explain": "Độ dài của mỗi nhóm là $L = 20 - 15 = 5$. Nhóm thứ ba là $[15; 20)$, suy ra nhóm thứ tư là $[20; 25)$ và nhóm thứ năm là $[25; 30)$. Giá trị đại diện của nhóm thứ năm là trung bình cộng hai đầu mút: $c_5 = \\frac{25 + 30}{2} = 27.5$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một mẫu số liệu ghép nhóm có $4$ nhóm. Tần số của $3$ nhóm đầu tiên lần lượt là $10, 15$ và $20$. Biết tần suất của nhóm thứ tư là $25\\%$. Tìm cỡ mẫu $n$ của mẫu số liệu này.",
+    "correct": "60",
+    "explain": "Tổng tần số của $3$ nhóm đầu là $10 + 15 + 20 = 45$. Vì nhóm thứ tư chiếm $25\\%$ cỡ mẫu nên $3$ nhóm đầu tiên chiếm $100\\% - 25\\% = 75\\%$ cỡ mẫu. Ta có phương trình $0.75n = 45$, suy ra $n = \\frac{45}{0.75} = 60$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Trong một bảng tần số ghép nhóm, các nhóm có cùng độ dài $L$. Giá trị đại diện của nhóm thứ nhất là $12$, giá trị đại diện của nhóm thứ hai là $18$. Hỏi đầu mút phải của nhóm thứ hai là số mấy?",
+    "correct": "21",
+    "explain": "Khoảng cách giữa hai giá trị đại diện liên tiếp chính bằng độ dài nhóm $L$. Do đó $L = 18 - 12 = 6$. Gọi nhóm thứ hai là $[a; b)$, ta có $\\frac{a+b}{2} = 18$ và $b - a = 6$. Cộng vế theo vế ta được $2b = 36 + 6 = 42 \\Rightarrow b = 21$. Đầu mút phải của nhóm thứ hai là $21$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Mẫu số liệu ghép nhóm biểu diễn chiều cao của $50$ học sinh gồm có $4$ nhóm. Biết tần suất của các nhóm thứ $1, 2, 3, 4$ theo thứ tự đó lập thành một cấp số cộng có công sai là $10\\%$. Tần số của nhóm thứ $4$ là bao nhiêu học sinh?",
+    "correct": "20",
+    "explain": "Gọi tần suất của nhóm 1 là $u_1$. Tần suất của 4 nhóm lập thành cấp số cộng với $d = 10\\%$. Tổng tần suất 4 nhóm là $100\\%$. Áp dụng công thức tổng CSC: $\\frac{4}{2}(2u_1 + 3 \\cdot 10\\%) = 100\\% \\Rightarrow 2(2u_1 + 30\\%) = 100\\% \\Rightarrow 2u_1 + 30\\% = 50\\% \\Rightarrow 2u_1 = 20\\% \\Rightarrow u_1 = 10\\%$. Tần suất nhóm 4 là $u_4 = u_1 + 3d = 10\\% + 30\\% = 40\\%$. Tần số của nhóm 4 là $40\\% \\cdot 50 = 20$ (học sinh)."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Dữ liệu thời gian hoàn thành một sản phẩm (phút) ban đầu được chia thành $5$ nhóm liên tiếp, trong đó ba nhóm đầu là $[10; 15)$, $[15; 20)$, $[20; 25)$. Sau đó, người ta hiệu chỉnh bằng cách gộp cả ba nhóm này lại thành một nhóm mới duy nhất. Giá trị đại diện của nhóm mới này là bao nhiêu?",
+    "correct": "17.5",
+    "explain": "Khi gộp ba nhóm $[10; 15)$, $[15; 20)$, $[20; 25)$ lại với nhau, ta sẽ nhận được một nhóm mới liền mạch có đầu mút trái là $10$ và đầu mút phải là $25$. Nhóm mới là $[10; 25)$. Giá trị đại diện của nhóm này là $c = \\frac{10 + 25}{2} = 17.5$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một mẫu số liệu gồm $100$ phần tử được chia thành $3$ nhóm là $[0; a)$, $[a; 2a)$, $[2a; 3a)$. Người ta nhận thấy số phần tử của nhóm thứ nhất gấp đôi số phần tử nhóm thứ hai, và số phần tử nhóm thứ hai gấp ba lần số phần tử nhóm thứ ba. Tìm tần số của nhóm thứ ba.",
+    "correct": "10",
+    "explain": "Gọi tần số của nhóm thứ ba là $x$. Theo đề bài, tần số của nhóm thứ hai là $3x$, và tần số của nhóm thứ nhất là $2 \\cdot 3x = 6x$. Vì mẫu số liệu chỉ có 3 nhóm, tổng tần số là $n = 6x + 3x + x = 10x$. Mặt khác, tổng số phần tử là $100$ nên $10x = 100 \\Rightarrow x = 10$. Vậy tần số nhóm thứ ba là $10$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một bảng tần số ghép nhóm có các nhóm được kí hiệu lần lượt là nhóm $1, 2, \\dots, k$. Biết giá trị đại diện của nhóm 1 là $15$, giá trị đại diện của nhóm 2 là $25$, và giá trị đại diện của nhóm cuối cùng (nhóm thứ $k$) là $85$. Hỏi bảng số liệu này có tất cả bao nhiêu nhóm?",
+    "correct": "8",
+    "explain": "Các giá trị đại diện của các nhóm liên tiếp trong mẫu số liệu ghép nhóm tạo thành một cấp số cộng với công sai chính bằng độ dài nhóm $L$. Ở đây $L = 25 - 15 = 10$. Nhóm thứ $k$ có giá trị đại diện là $c_k = c_1 + (k-1)L$. Suy ra $15 + 10(k-1) = 85 \\Rightarrow 10(k-1) = 70 \\Rightarrow k-1 = 7 \\Rightarrow k = 8$. Bảng này có $8$ nhóm."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Một mẫu số liệu rời rạc gồm $10$ số nguyên dương phân biệt có tổng các giá trị bằng $65$. Người ta ghép các số liệu này thành các nhóm có độ dài bằng $5$, bắt đầu từ nhóm $[1; 6)$. Hỏi nhóm $[6; 11)$ có thể có tần số tối đa là bao nhiêu phần tử?",
+    "correct": "5",
+    "explain": "Gọi $10$ số nguyên dương phân biệt là $x_1 < x_2 < \\dots < x_{10}$. Nhóm $[6; 11)$ chứa các số nguyên $6, 7, 8, 9, 10$, tức là tối đa có thể chứa $5$ phần tử. Nếu nhóm này chứa đủ $5$ phần tử, tổng của chúng là $6+7+8+9+10 = 40$. Ta cần chọn $5$ phần tử khác không thuộc nhóm này sao cho chúng là các số nguyên dương phân biệt và có tổng bằng $65 - 40 = 25$. Ta có thể chọn $4$ số thuộc nhóm $[1; 6)$ là $1, 2, 3, 4$ (tổng là $10$) và $1$ số thuộc nhóm $[11; 16)$ là $15$. Tổng $5$ số này là $10 + 15 = 25$. Vậy tồn tại bộ $10$ số nguyên dương phân biệt thỏa mãn điều kiện bài toán và nhóm $[6; 11)$ đạt tần số tối đa là $5$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Bảng số liệu có các nhóm $[10; 20), [20; 30), [30; 40)$ với tần số tương ứng là $a, b, c$. Biết $a, b, c$ lập thành một cấp số nhân có công bội $q = 2$ và cỡ mẫu là $140$. Một nhân viên nhập liệu đã ghép nhầm $5$ giá trị từ nhóm $[20; 30)$ sang nhóm $[30; 40)$. Sau khi ghép nhầm, tổng tần số của nhóm 2 và nhóm 3 bằng bao nhiêu?",
+    "correct": "120",
+    "explain": "Tần số ban đầu là $a, 2a, 4a$. Cỡ mẫu $n = a + 2a + 4a = 7a = 140 \\Rightarrow a = 20$. Tần số ban đầu của nhóm 2 là $b = 40$, nhóm 3 là $c = 80$. Tổng tần số của hai nhóm này là $40 + 80 = 120$. Khi chuyển nhầm $5$ phần tử từ nhóm 2 sang nhóm 3, số lượng phần tử chỉ dịch chuyển nội bộ giữa hai nhóm này. Do đó, tổng tần số của cả hai nhóm cộng lại vẫn không thay đổi và bằng $120$. (Câu hỏi mang tính chất kiểm tra tư duy logic nhanh thay vì tính toán)."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Một mẫu số liệu ghép nhóm có $3$ nhóm với các giá trị đại diện là $c_1 = 5, c_2 = 15, c_3 = 25$ và tần số tương ứng là $m_1, m_2, m_3$ (là các số tự nhiên). Biết cỡ mẫu là $50$ và số trung bình của mẫu là $\\bar{x} = 15$. Tìm giá trị lớn nhất có thể có của tần số $m_2$.",
+    "correct": "50",
+    "explain": "Ta có hệ phương trình: $m_1 + m_2 + m_3 = 50$ và $\\frac{5m_1 + 15m_2 + 25m_3}{50} = 15$. Rút gọn phương trình thứ hai ta được $5m_1 + 15m_2 + 25m_3 = 750 \\Rightarrow m_1 + 3m_2 + 5m_3 = 150$. Lấy phương trình này trừ đi phương trình đầu tiên, ta có $(m_1 + 3m_2 + 5m_3) - (m_1 + m_2 + m_3) = 150 - 50 \\Rightarrow 2m_2 + 4m_3 = 100 \\Rightarrow m_2 + 2m_3 = 50$. Để $m_2$ đạt giá trị lớn nhất, $m_3$ phải đạt giá trị nhỏ nhất. Do $m_3 \\ge 0$, chọn $m_3 = 0$, khi đó $m_2 = 50$, suy ra $m_1 = 0$. Giá trị này hợp lệ. Vậy $m_2$ lớn nhất là $50$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "Một thiết bị đo ghi nhận kích thước hạt vi nhựa. Mẫu số liệu thu được chia làm $k$ nhóm có độ dài bằng nhau, nhóm đầu tiên là $[0; 2)$. Biết giá trị đại diện của nhóm cuối cùng (nhóm thứ $k$) là $19$. Số lượng nhóm $k$ của bảng số liệu là bao nhiêu?",
+    "correct": "10",
+    "explain": "Từ nhóm đầu tiên $[0; 2)$, ta thấy độ dài mỗi nhóm là $L = 2 - 0 = 2$ và giá trị đại diện của nhóm đầu là $c_1 = 1$. Giá trị đại diện của nhóm thứ $k$ sẽ tạo thành cấp số cộng với công sai $L = 2$. Do đó, $c_k = c_1 + (k-1)L \\Rightarrow 19 = 1 + (k-1)2 \\Rightarrow 2(k-1) = 18 \\Rightarrow k-1 = 9 \\Rightarrow k = 10$. Bảng số liệu có $10$ nhóm."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho bảng tần số ghép nhóm có ba nhóm là $[0; 10), [10; 20), [20; 30)$ với tần số tương ứng lần lượt là $2, 5, 3$. Tính số trung bình $\\bar{x}$ của mẫu số liệu trên.",
+    "correct": "16",
+    "explain": "Giá trị đại diện của ba nhóm lần lượt là $c_1 = 5, c_2 = 15, c_3 = 25$. Áp dụng công thức tính số trung bình: $\\bar{x} = \\frac{5 \\cdot 2 + 15 \\cdot 5 + 25 \\cdot 3}{2 + 5 + 3} = \\frac{10 + 75 + 75}{10} = \\frac{160}{10} = 16$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Trong một bảng số liệu, nhóm chứa mốt là $[10; 20)$ có tần số là $12$. Biết tần số của nhóm liền trước là $5$ và tần số của nhóm liền sau là $8$. Tính mốt $M_o$ của mẫu số liệu trên (làm tròn kết quả đến $1$ chữ số thập phân).",
+    "correct": "16.4",
+    "explain": "Đầu mút trái $u_m = 10$, độ dài nhóm $L = 10$. Hiệu tần số $\\Delta_1 = 12 - 5 = 7$, $\\Delta_2 = 12 - 8 = 4$. Áp dụng công thức mốt: $M_o = 10 + \\frac{7}{7+4} \\cdot 10 = 10 + \\frac{70}{11} \\approx 10 + 6.3636 = 16.3636$. Làm tròn đến $1$ chữ số thập phân ta được $16.4$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một mẫu số liệu ghép nhóm có cỡ mẫu $n = 40$. Nhóm chứa trung vị là nhóm $[40; 50)$ có tần số là $20$. Biết tần số tích lũy của nhóm liền trước nhóm chứa trung vị là $10$. Tính trung vị $M_e$ của mẫu số liệu.",
+    "correct": "45",
+    "explain": "Áp dụng công thức tính trung vị: $M_e = u_m + \\frac{\\frac{n}{2} - cf_{m-1}}{n_m} \\cdot L$. Thay số: $u_m = 40, \\frac{n}{2} = 20, cf_{m-1} = 10, n_m = 20, L = 10$. Ta có $M_e = 40 + \\frac{20 - 10}{20} \\cdot 10 = 40 + \\frac{10}{20} \\cdot 10 = 40 + 5 = 45$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho bảng số liệu cỡ $n=20$. Nhóm chứa tứ phân vị thứ nhất $Q_1$ là nhóm $[20; 30)$ và có tần số là $10$. Tần số tích lũy của nhóm liền trước nhóm chứa $Q_1$ là $2$. Tính tứ phân vị thứ nhất $Q_1$.",
+    "correct": "23",
+    "explain": "Vị trí của $Q_1$ là $\\frac{n}{4} = \\frac{20}{4} = 5$. Áp dụng công thức tính tứ phân vị thứ nhất: $Q_1 = u_p + \\frac{\\frac{n}{4} - cf_{p-1}}{n_p} \\cdot L$. Thay số: $Q_1 = 20 + \\frac{5 - 2}{10} \\cdot 10 = 20 + 3 = 23$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một mẫu số liệu có $3$ nhóm $[0; 2), [2; 4), [4; 6)$ với tần số lần lượt là $4, x, 6$. Biết số trung bình của mẫu số liệu là $\\bar{x} = 3.2$. Tìm giá trị của tần số $x$.",
+    "correct": "10",
+    "explain": "Các giá trị đại diện lần lượt là $c_1 = 1, c_2 = 3, c_3 = 5$. Phương trình số trung bình: $\\bar{x} = \\frac{1 \\cdot 4 + 3 \\cdot x + 5 \\cdot 6}{4 + x + 6} = 3.2 \\Rightarrow \\frac{3x + 34}{x + 10} = 3.2$. Giải phương trình: $3x + 34 = 3.2x + 32 \\Rightarrow 0.2x = 2 \\Rightarrow x = 10$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Mốt của bảng số liệu có $3$ nhóm $[0; 10), [10; 20), [20; 30)$ với tần số lần lượt là $a, 15, b$ nằm trong nhóm $[10; 20)$ và có giá trị bằng $14$. Biết tổng tần số của nhóm $1$ và nhóm $3$ là $a + b = 15$. Tính giá trị của $a$.",
+    "correct": "9",
+    "explain": "Nhóm chứa mốt là $[10; 20)$. Ta có $\\Delta_1 = 15 - a$, $\\Delta_2 = 15 - b$. Áp dụng công thức mốt: $M_o = 10 + \\frac{15 - a}{(15 - a) + (15 - b)} \\cdot 10 = 14 \\Rightarrow \\frac{15 - a}{30 - (a+b)} \\cdot 10 = 4$. Thay $a + b = 15$ vào mẫu số: $\\frac{15 - a}{15} \\cdot 10 = 4 \\Rightarrow \\frac{15 - a}{1.5} = 4 \\Rightarrow 15 - a = 6 \\Rightarrow a = 9$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho bảng số liệu có $4$ nhóm với độ dài đều bằng $10$. Nhóm thứ hai là nhóm $[20; 30)$ và là nhóm chứa trung vị. Biết cỡ mẫu $n=50$, tần số của nhóm $1$ là $15$, và giá trị trung vị $M_e = 24$. Tính tần số của nhóm $2$.",
+    "correct": "25",
+    "explain": "Vị trí trung vị là $\\frac{n}{2} = 25$. Tần số tích lũy của nhóm liền trước (nhóm 1) là $cf_1 = 15$. Nhóm chứa trung vị có $u_m = 20, L = 10$. Áp dụng công thức: $24 = 20 + \\frac{25 - 15}{x} \\cdot 10 \\Rightarrow 4 = \\frac{100}{x} \\Rightarrow x = 25$. Vậy tần số của nhóm $2$ là $25$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Tổng tần số của $4$ nhóm $[0; 5), [5; 10), [10; 15), [15; 20)$ là $100$. Nhóm $[10; 15)$ chứa tứ phân vị thứ ba $Q_3$. Biết tần số tích lũy tính đến hết nhóm $2$ là $60$ và giá trị tứ phân vị thứ ba là $Q_3 = 13$. Tính tần số của nhóm $3$.",
+    "correct": "25",
+    "explain": "Vị trí của tứ phân vị thứ ba là $\\frac{3n}{4} = \\frac{300}{4} = 75$. Nhóm chứa $Q_3$ là $[10; 15)$ nên $u_p = 10, L = 5, cf_{p-1} = 60$. Ta có: $Q_3 = 10 + \\frac{75 - 60}{x} \\cdot 5 = 13 \\Rightarrow \\frac{15}{x} \\cdot 5 = 3 \\Rightarrow \\frac{75}{x} = 3 \\Rightarrow x = 25$. Tần số của nhóm $3$ là $25$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Một bảng tần số có $3$ nhóm $[0; a), [a; 2a), [2a; 3a)$ có tần số tương ứng lập thành một cấp số cộng giảm là $m - d, m, m + d$ (với $m > d > 0$). Quá trình khảo sát cho thấy số trung bình của mẫu là $\\bar{x} = \\frac{5a}{3}$. Tính tỉ số $\\frac{d}{m}$ (Nhập kết quả dưới dạng số thập phân).",
+    "correct": "0.25",
+    "explain": "Tổng cỡ mẫu là $n = (m - d) + m + (m + d) = 3m$. Các giá trị đại diện là $\\frac{a}{2}, \\frac{3a}{2}, \\frac{5a}{2}$. Ta có phương trình số trung bình: $\\bar{x} = \\frac{\\frac{a}{2}(m-d) + \\frac{3a}{2}m + \\frac{5a}{2}(m+d)}{3m} = \\frac{a(0.5m - 0.5d + 1.5m + 2.5m + 2.5d)}{3m} = \\frac{a(4.5m + 2d)}{3m} = a(1.5 + \\frac{2d}{3m})$. Theo giả thiết $\\bar{x} = \\frac{5a}{3} = a \\cdot \\frac{5}{3}$. Suy ra $1.5 + \\frac{2d}{3m} = \\frac{5}{3} \\Rightarrow \\frac{3}{2} + \\frac{2d}{3m} = \\frac{5}{3} \\Rightarrow \\frac{2d}{3m} = \\frac{1}{6} \\Rightarrow \\frac{d}{m} = \\frac{3}{12} = 0.25$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Trong một bảng thống kê có $3$ nhóm $[0; 10), [10; 20), [20; 30)$ với tần số lần lượt là $x, y, z$. Qua tính toán, người ta thu được tứ phân vị thứ nhất $Q_1 = 8$, trung vị $M_e = 15$, và tứ phân vị thứ ba $Q_3 = 22$. Tính giá trị của biểu thức $3 \\cdot \\frac{x+z}{y}$.",
+    "correct": "5",
+    "explain": "Vì $Q_1 = 8 \\in [0; 10)$ nên $Q_1 = 0 + \\frac{0.25n}{x} \\cdot 10 = 8 \\Rightarrow 2.5n = 8x \\Rightarrow n = 3.2x$. Vì $M_e = 15 \\in [10; 20)$ nên $M_e = 10 + \\frac{0.5n - x}{y} \\cdot 10 = 15 \\Rightarrow \\frac{0.5n - x}{y} = 0.5 \\Rightarrow n - 2x = y$. Thay $n = 3.2x$ vào, ta được $y = 3.2x - 2x = 1.2x$. Vì $Q_3 = 22 \\in [20; 30)$ nên $Q_3 = 20 + \\frac{0.75n - (x+y)}{z} \\cdot 10 = 22 \\Rightarrow \\frac{0.75n - x - y}{z} = 0.2$. Thay $n=3.2x$ và $y=1.2x$ vào, ta được $\\frac{2.4x - x - 1.2x}{z} = 0.2 \\Rightarrow \\frac{0.2x}{z} = 0.2 \\Rightarrow x = z$. Biểu thức cần tính là $3 \\cdot \\frac{x+x}{1.2x} = 3 \\cdot \\frac{2}{1.2} = 3 \\cdot \\frac{5}{3} = 5$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Bảng dữ liệu có $4$ nhóm với độ dài đều bằng $10$ là $[0; 10), [10; 20), [20; 30), [30; 40)$ với tần số lần lượt là $m_1, m_2, m_3, m_4$. Biết giá trị mốt $M_o = 14$ và nhóm chứa mốt là nhóm thứ hai. Đồng thời, độ lệch tần số giữa nhóm $2$ và nhóm $1$ là $m_2 - m_1 = 4$, và tổng tần số của nhóm $2$ và nhóm $3$ là $m_2 + m_3 = 24$. Tính tần số $m_2$.",
+    "correct": "15",
+    "explain": "Áp dụng công thức mốt cho nhóm thứ hai $[10; 20)$: $M_o = 10 + \\frac{m_2 - m_1}{(m_2 - m_1) + (m_2 - m_3)} \\cdot 10 = 14$. Thay $m_2 - m_1 = 4$ vào ta được: $10 + \\frac{4}{4 + m_2 - m_3} \\cdot 10 = 14 \\Rightarrow \\frac{40}{4 + m_2 - m_3} = 4 \\Rightarrow 4 + m_2 - m_3 = 10 \\Rightarrow m_2 - m_3 = 6$. Ta có hệ hai phương trình: $m_2 - m_3 = 6$ và $m_2 + m_3 = 24$. Cộng hai phương trình ta được $2m_2 = 30 \\Rightarrow m_2 = 15$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Tiền lương của nhân viên một xí nghiệp được chia thành $5$ nhóm có độ dài bằng nhau. Nhóm 1 có giá trị đại diện là $5$ triệu đồng, nhóm 5 có giá trị đại diện là $25$ triệu đồng. Ban đầu, tổng quỹ lương (tính theo giá trị đại diện) là $500$ triệu đồng. Sau đó, giám đốc quyết định tăng lương đồng loạt: nhóm 1 được cộng $2$ triệu/người, nhóm 2 cộng $3$ triệu, nhóm 3 cộng $4$ triệu, nhóm 4 cộng $5$ triệu, và nhóm 5 cộng $6$ triệu/người. Sau đợt điều chỉnh, tổng quỹ lương mới là $620$ triệu đồng. Hỏi xí nghiệp đó có bao nhiêu nhân viên?",
+    "correct": "20",
+    "explain": "Các giá trị đại diện lập thành cấp số cộng: $5, 10, 15, 20, 25$. Mức tăng lương tương ứng là $d_i = 2, 3, 4, 5, 6$. Ta nhận thấy mối liên hệ tuyến tính giữa mức tăng và giá trị đại diện: $d_i = \\frac{c_i}{5} + 1$. Gọi $m_i$ là số nhân viên nhóm $i$, quỹ lương ban đầu là $S = \\sum m_i c_i = 500$. Tổng số tiền tăng thêm là $\\Delta S = \\sum m_i d_i = \\sum m_i (\\frac{c_i}{5} + 1) = \\frac{1}{5} \\sum m_i c_i + \\sum m_i = \\frac{1}{5}(500) + n = 100 + n$ (với $n$ là tổng số nhân viên). Quỹ lương mới là $S_{new} = S + \\Delta S = 500 + 100 + n = 600 + n$. Theo đề bài $600 + n = 620$, suy ra $n = 20$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "DS",
+    "q": "Cho mẫu số liệu ghép nhóm về thời gian (phút) đi từ nhà đến nơi làm việc của các nhân viên một công ty như sau: $[15; 20)$ có 6 người; $[20; 25)$ có 14 người; $[25; 30)$ có 25 người; $[30; 35)$ có 37 người; $[35; 40)$ có 21 người; $[40; 45)$ có 13 người; $[45; 50)$ có 9 người. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Có tất cả 7 nhóm số liệu trong bảng phân bố tần số ghép nhóm trên.",
+      "b": "Độ dài của mỗi nhóm số liệu trong mẫu là $5$.",
+      "c": "Giá trị đại diện của nhóm $[25; 30)$ là $27.5$.",
+      "d": "Số lượng nhân viên có thời gian đi làm từ $30$ phút trở lên là 70 người."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Đếm trực tiếp các nửa khoảng ta thấy có đúng 7 nhóm. Đúng. b) Độ dài nhóm tính bằng công thức $b - a = 20 - 15 = 5$. Đúng. c) Giá trị đại diện là trung bình cộng hai đầu mút $c = \\frac{25+30}{2} = 27.5$. Đúng. d) Số người đi làm từ 30 phút trở lên nằm ở các nhóm $[30; 35), [35; 40), [40; 45), [45; 50)$. Tổng số lượng là $37 + 21 + 13 + 9 = 80$ (người). Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "DS",
+    "q": "Xét các quy ước và định nghĩa cơ bản về mẫu số liệu ghép nhóm. Các khẳng định sau đây đúng hay sai?",
+    "items": {
+      "a": "Mẫu số liệu ghép nhóm thường được cho dưới dạng các nửa khoảng $[a; b)$, trong đó $a$ là đầu mút trái, $b$ là đầu mút phải.",
+      "b": "Độ dài của nhóm $[a; b)$ được tính bằng công thức $L = a + b$.",
+      "c": "Giá trị đại diện của nhóm $[a; b)$ là trung bình cộng của đầu mút trái và đầu mút phải.",
+      "d": "Khi ghép nhóm từ một mẫu số liệu rời rạc, tổng độ dài của tất cả các nhóm phải luôn nhỏ hơn khoảng biến thiên $R$ của mẫu số liệu đó."
+    },
+    "correct": {
+      "a": true,
+      "b": false,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Đúng theo định nghĩa SGK. b) Độ dài nhóm phải được tính bằng hiệu $b - a$. Sai. c) Giá trị đại diện tính bằng $\\frac{a+b}{2}$. Đúng. d) Tổng độ dài của các nhóm phải lớn hơn hoặc bằng khoảng biến thiên $R$ để đảm bảo chứa hết được mọi giá trị của mẫu. Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "DS",
+    "q": "Cho mẫu số liệu về cân nặng của 42 học sinh lớp 11D được cho trong bảng tần số ghép nhóm sau: $[40.5; 45.5)$ có 10 học sinh; $[45.5; 50.5)$ có 7 học sinh; $[50.5; 55.5)$ có 16 học sinh; $[55.5; 60.5)$ có 4 học sinh; $[60.5; 65.5)$ có 2 học sinh; $[65.5; 70.5)$ có 3 học sinh. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Cỡ mẫu của mẫu số liệu này là $n = 42$.",
+      "b": "Nhóm số liệu có tần số lớn nhất là $[50.5; 55.5)$.",
+      "c": "Tỉ lệ phần trăm học sinh có cân nặng từ $40.5$ kg đến dưới $45.5$ kg xấp xỉ bằng $23.81\\%$.",
+      "d": "Giá trị đại diện của nhóm cân nặng nặng nhất là $68.5$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Tổng tần số $n = 10+7+16+4+2+3 = 42$. Đúng. b) Nhóm $[50.5; 55.5)$ có tần số là 16, đây là tần số lớn nhất. Đúng. c) Tần suất của nhóm đầu tiên là $\\frac{10}{42} \\cdot 100\\% \\approx 23.81\\%$. Đúng. d) Nhóm nặng nhất là $[65.5; 70.5)$, giá trị đại diện là $\\frac{65.5+70.5}{2} = 68$ (không phải 68.5). Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "DS",
+    "q": "Khảo sát doanh thu bán hàng trong 20 ngày của một cửa hàng, ta có bảng số liệu ghép nhóm: $[5; 7)$ có 2 ngày; $[7; 9)$ có 7 ngày; $[9; 11)$ có 7 ngày; $[11; 13)$ có 3 ngày; $[13; 15)$ có 1 ngày (đơn vị: triệu đồng). Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Mẫu số liệu được chia thành 5 nhóm có độ dài bằng nhau.",
+      "b": "Số ngày mà cửa hàng đạt doanh thu từ $11$ triệu đồng trở lên là 4 ngày.",
+      "c": "Có $10$ ngày doanh thu bán hàng của cửa hàng dưới $9$ triệu đồng.",
+      "d": "Doanh thu trung bình của cửa hàng trong 20 ngày xấp xỉ bằng $9.4$ triệu đồng."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) Có 5 nhóm, mỗi nhóm có độ dài bằng $2$. Đúng. b) Doanh thu từ $11$ triệu trở lên thuộc nhóm $[11; 13)$ và $[13; 15)$, có số ngày tương ứng là $3 + 1 = 4$. Đúng. c) Doanh thu dưới 9 triệu thuộc nhóm $[5; 7)$ và $[7; 9)$, tổng số ngày là $2 + 7 = 9$ (không phải 10). Sai. d) Giá trị đại diện các nhóm lần lượt là $6, 8, 10, 12, 14$. Tính $\\bar{x} = \\frac{6 \\cdot 2 + 8 \\cdot 7 + 10 \\cdot 7 + 12 \\cdot 3 + 14 \\cdot 1}{20} = \\frac{12+56+70+36+14}{20} = \\frac{188}{20} = 9.4$. Đúng."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "DS",
+    "q": "Một nhà nghiên cứu ghi lại thời gian (giờ) sử dụng mạng xã hội của 40 học sinh. Số liệu được ghép nhóm như sau: $[30; 40)$ có 2 học sinh; $[40; 50)$ có 10 học sinh; $[50; 60)$ có 16 học sinh; $[60; 70)$ có 8 học sinh; $[70; 80)$ có 2 học sinh; $[80; 90)$ có 2 học sinh. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Nhóm chứa mốt của mẫu số liệu là $[50; 60)$.",
+      "b": "Giá trị đại diện của nhóm $[60; 70)$ là $65$.",
+      "c": "Số trung bình của mẫu số liệu là $\\bar{x} = 55$.",
+      "d": "Giá trị mốt của mẫu số liệu xấp xỉ bằng $54.29$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) Tần số lớn nhất là 16 tương ứng với nhóm $[50; 60)$. Đúng. b) Trung bình cộng hai đầu mút $\\frac{60+70}{2} = 65$. Đúng. c) $\\bar{x} = \\frac{35 \\cdot 2 + 45 \\cdot 10 + 55 \\cdot 16 + 65 \\cdot 8 + 75 \\cdot 2 + 85 \\cdot 2}{40} = \\frac{2240}{40} = 56$ (không phải 55). Sai. d) Nhóm chứa mốt là $[50; 60)$. Áp dụng công thức: $M_o = 50 + \\frac{16-10}{(16-10) + (16-8)} \\cdot 10 = 50 + \\frac{6}{6+8} \\cdot 10 = 50 + \\frac{60}{14} \\approx 54.29$. Đúng."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "DS",
+    "q": "Hãy tìm các tứ phân vị của mẫu số liệu được cho dưới dạng bảng tần số ghép nhóm sau: $[0; 2)$ có 3 người; $[2; 4)$ có 8 người; $[4; 6)$ có 12 người; $[6; 8)$ có 12 người; $[8; 10)$ có 4 người. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Cỡ mẫu của mẫu số liệu trên là $n = 39$.",
+      "b": "Nhóm chứa trung vị là nhóm $[4; 6)$.",
+      "c": "Tứ phân vị thứ nhất $Q_1$ xấp xỉ bằng $3.69$.",
+      "d": "Tứ phân vị thứ ba $Q_3$ thuộc nhóm $[8; 10)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Tổng $n = 3+8+12+12+4 = 39$. Đúng. b) Vị trí trung vị $\\frac{n}{2} = 19.5$. Tần số tích lũy đến nhóm $[4; 6)$ là $3+8+12 = 23 \\ge 19.5$. Do đó nhóm $[4; 6)$ chứa trung vị. Đúng. c) Vị trí $Q_1$ là $\\frac{n}{4} = 9.75$. Thuộc nhóm $[2; 4)$. Áp dụng công thức $Q_1 = 2 + \\frac{9.75 - 3}{8} \\cdot 2 = 2 + 1.6875 = 3.6875 \\approx 3.69$. Đúng. d) Vị trí $Q_3$ là $\\frac{3n}{4} = 29.25$. Tần số tích lũy đến nhóm $[6; 8)$ là $23 + 12 = 35 \\ge 29.25$. Vậy $Q_3$ phải thuộc nhóm $[6; 8)$. Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "DS",
+    "q": "Kiểm tra điện lượng (Nghìn mAh) của một số viên pin do một hãng sản xuất thu được kết quả: $[0.9; 0.95)$ có 10 viên; $[0.95; 1.0)$ có 20 viên; $[1.0; 1.05)$ có 35 viên; $[1.05; 1.1)$ có 15 viên; $[1.1; 1.15)$ có 5 viên. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Số viên pin có điện lượng từ $1.0$ đến dưới $1.05$ nghìn mAh là lớn nhất (35 viên).",
+      "b": "Nhóm chứa mốt của mẫu số liệu là nhóm $[1.0; 1.05)$.",
+      "c": "Số trung bình của mẫu số liệu xấp xỉ bằng $1.016$ nghìn mAh.",
+      "d": "Trung vị của mẫu số liệu có giá trị lớn hơn $1.02$ nghìn mAh."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Đọc bảng ta thấy nhóm 35 viên là nhiều nhất. Đúng. b) Vì tần số lớn nhất là 35 nên đây chính là nhóm chứa mốt. Đúng. c) $\\bar{x} = \\frac{0.925 \\cdot 10 + 0.975 \\cdot 20 + 1.025 \\cdot 35 + 1.075 \\cdot 15 + 1.125 \\cdot 5}{85} = \\frac{86.375}{85} \\approx 1.016$. Đúng. d) Cỡ mẫu 85, vị trí trung vị $42.5$. Nhóm chứa trung vị là $[1.0; 1.05)$. $M_e = 1.0 + \\frac{42.5 - 30}{35} \\cdot 0.05 \\approx 1.0178$. Ta thấy $1.0178 < 1.02$. Việc kết luận 'lớn hơn 1.02' là sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "DS",
+    "q": "Lương tháng của một số nhân viên trong một văn phòng được cho bởi bảng: $[6; 8)$ triệu đồng có 3 người; $[8; 10)$ triệu đồng có 6 người; $[10; 12)$ triệu đồng có 8 người; $[12; 14)$ triệu đồng có 7 người. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Có tổng cộng $24$ nhân viên được thống kê trong bảng số liệu trên.",
+      "b": "Nhóm chứa trung vị của mẫu số liệu là nhóm $[8; 10)$.",
+      "c": "Tứ phân vị thứ nhất của mẫu số liệu là $Q_1 = 9$ (triệu đồng).",
+      "d": "Tứ phân vị thứ ba của mẫu số liệu là $Q_3 = 12.5$ (triệu đồng)."
+    },
+    "correct": {
+      "a": true,
+      "b": false,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Cỡ mẫu $n = 3+6+8+7 = 24$. Đúng. b) Vị trí trung vị là $12$. Tần số tích lũy của nhóm $[8; 10)$ là $3+6=9 < 12$. Nhóm tiếp theo $[10; 12)$ có tần số tích lũy 17 $\\ge 12$. Vậy nhóm chứa trung vị là $[10; 12)$. Sai. c) Vị trí $Q_1$ là $\\frac{24}{4}=6$, thuộc nhóm $[8; 10)$. $Q_1 = 8 + \\frac{6 - 3}{6} \\cdot 2 = 9$. Đúng. d) Vị trí $Q_3$ là $\\frac{3 \\cdot 24}{4}=18$. Tần số tích lũy đến nhóm $[10; 12)$ là $17 < 18$. Nên $Q_3$ nằm ở nhóm $[12; 14)$. $Q_3 = 12 + \\frac{18 - 17}{7} \\cdot 2 = 12 + \\frac{2}{7} \\approx 12.28$. Kết luận $12.5$ là Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Mẫu số liệu ghép nhóm là mẫu số liệu cho dưới dạng nào sau đây?",
+    "choices": [
+      "A. Bảng tần số của các giá trị rời rạc.",
+      "B. Bảng tần số của các nhóm số liệu.",
+      "C. Bảng liệt kê từng giá trị của mẫu.",
+      "D. Biểu đồ hình quạt tròn."
+    ],
+    "correct": 1,
+    "explain": "Theo định nghĩa, mẫu số liệu ghép nhóm là mẫu số liệu cho dưới dạng bảng tần số của các nhóm số liệu."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Mỗi nhóm số liệu thường được cho dưới dạng $[a; b)$, trong đó $a$ và $b$ được gọi lần lượt là gì?",
+    "choices": [
+      "A. Đầu mút phải và đầu mút trái.",
+      "B. Độ dài nhóm và trung điểm nhóm.",
+      "C. Đầu mút trái và đầu mút phải.",
+      "D. Giá trị đại diện và tần số."
+    ],
+    "correct": 2,
+    "explain": "Trong kí hiệu nhóm $[a; b)$, $a$ là đầu mút trái và $b$ là đầu mút phải."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Độ dài của nhóm số liệu $[a; b)$ được tính bằng công thức nào dưới đây?",
+    "choices": [
+      "A. $a + b$",
+      "B. $b - a$",
+      "C. $\\frac{a+b}{2}$",
+      "D. $\\frac{b-a}{2}$"
+    ],
+    "correct": 1,
+    "explain": "Độ dài của nhóm $[a; b)$ được tính bằng hiệu của đầu mút phải và đầu mút trái, tức là $b - a$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Giá trị đại diện của nhóm số liệu $[a; b)$ được tính bằng công thức nào?",
+    "choices": [
+      "A. $\\frac{a+b}{2}$",
+      "B. $b - a$",
+      "C. $a + b$",
+      "D. $\\sqrt{ab}$"
+    ],
+    "correct": 0,
+    "explain": "Giá trị đại diện của nhóm $[a; b)$ là trung bình cộng của hai đầu mút, tính bằng $\\frac{a+b}{2}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho nhóm số liệu $[15; 20)$. Độ dài của nhóm này bằng bao nhiêu?",
+    "choices": [
+      "A. $35$",
+      "B. $17.5$",
+      "C. $5$",
+      "D. $15$"
+    ],
+    "correct": 2,
+    "explain": "Độ dài của nhóm $[15; 20)$ là $20 - 15 = 5$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong một bảng tần số ghép nhóm, cỡ mẫu $n$ được tính như thế nào?",
+    "choices": [
+      "A. Bằng tổng các giá trị đại diện của các nhóm.",
+      "B. Bằng số lượng các nhóm trong bảng.",
+      "C. Bằng độ dài của nhóm cuối cùng.",
+      "D. Bằng tổng tần số của tất cả các nhóm."
+    ],
+    "correct": 3,
+    "explain": "Cỡ mẫu $n$ bằng tổng tần số của tất cả các nhóm số liệu có trong bảng, $n = m_1 + m_2 + \\dots + m_k$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho bảng thống kê có các nhóm $[10; 20)$, $[20; 30)$, $[30; 40)$. Nhóm số liệu nào chứa giá trị $20$?",
+    "choices": [
+      "A. $[10; 20)$",
+      "B. $[20; 30)$",
+      "C. $[30; 40)$",
+      "D. Cả hai nhóm $[10; 20)$ và $[20; 30)$"
+    ],
+    "correct": 1,
+    "explain": "Theo quy ước kí hiệu nửa khoảng $[a; b)$, giá trị đầu mút phải $b$ không thuộc nhóm đó mà thuộc nhóm liền kề phía sau. Do đó giá trị $20$ thuộc nhóm $[20; 30)$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Giá trị đại diện của nhóm số liệu $[40; 50)$ là:",
+    "choices": [
+      "A. $45$",
+      "B. $10$",
+      "C. $50$",
+      "D. $90$"
+    ],
+    "correct": 0,
+    "explain": "Giá trị đại diện của nhóm $[40; 50)$ là trung bình cộng hai đầu mút: $\\frac{40+50}{2} = 45$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Khảo sát thời gian tập thể dục (phút) của học sinh, ta có mẫu số liệu ghép nhóm gồm các nhóm: $[0; 20)$, $[20; 40)$, $[40; 60)$, $[60; 80)$, $[80; 100)$. Mẫu số liệu này được chia thành bao nhiêu nhóm?",
+    "choices": [
+      "A. $4$ nhóm",
+      "B. $5$ nhóm",
+      "C. $6$ nhóm",
+      "D. $100$ nhóm"
+    ],
+    "correct": 1,
+    "explain": "Đếm số lượng các nửa khoảng đã cho, ta thấy có tất cả $5$ nhóm."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho mẫu số liệu về cân nặng: $45.1; 46.2; 49.5; 51.2; 54.3; 56.8; 59.9$. Nếu ghép nhóm với các nhóm $[45; 50)$, $[50; 55)$, $[55; 60)$, tần số của nhóm $[50; 55)$ là bao nhiêu?",
+    "choices": [
+      "A. $1$",
+      "B. $2$",
+      "C. $3$",
+      "D. $4$"
+    ],
+    "correct": 1,
+    "explain": "Các số liệu thuộc nửa khoảng $[50; 55)$ là $51.2$ và $54.3$. Vậy tần số của nhóm này là $2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Một mẫu số liệu có giá trị nhỏ nhất là $12$ và giá trị lớn nhất là $48$. Khoảng biến thiên của mẫu số liệu này là:",
+    "choices": [
+      "A. $60$",
+      "B. $36$",
+      "C. $24$",
+      "D. $48$"
+    ],
+    "correct": 1,
+    "explain": "Khoảng biến thiên $R$ bằng hiệu giữa giá trị lớn nhất và nhỏ nhất: $R = 48 - 12 = 36$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Người ta muốn chia một mẫu số liệu có khoảng biến thiên $R = 40$ thành $5$ nhóm có độ dài bằng nhau. Độ dài hợp lí của mỗi nhóm nên chọn là bao nhiêu?",
+    "choices": [
+      "A. $5$",
+      "B. $6$",
+      "C. $8$",
+      "D. $10$"
+    ],
+    "correct": 2,
+    "explain": "Độ dài mỗi nhóm thường được chọn lớn hơn hoặc bằng $\\frac{R}{k}$ (với $k$ là số nhóm). Ở đây $\\frac{40}{5} = 8$. Vậy độ dài nhóm hợp lí là $8$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Một bảng tần số có cỡ mẫu $n = 40$. Tần số của nhóm $[10; 20)$ là $10$. Tần suất của nhóm này là bao nhiêu phần trăm?",
+    "choices": [
+      "A. $10\\%$",
+      "B. $20\\%$",
+      "C. $25\\%$",
+      "D. $40\\%$"
+    ],
+    "correct": 2,
+    "explain": "Tần suất $f = \\frac{m}{n} \\cdot 100\\% = \\frac{10}{40} \\cdot 100\\% = 25\\%$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Trong trường hợp số liệu rời rạc được chia thành các khoảng $1-5$, $6-10$, $11-15$, người ta tiến hành hiệu chỉnh thành các khoảng liên tục. Nhóm $6-10$ sẽ được hiệu chỉnh thành khoảng nào?",
+    "choices": [
+      "A. $[6; 10)$",
+      "B. $[5.5; 10.5)$",
+      "C. $[6.5; 9.5)$",
+      "D. $[5; 11)$"
+    ],
+    "correct": 1,
+    "explain": "Để hiệu chỉnh số liệu rời rạc $k_1 - k_2$ thành nửa khoảng liên tục, ta lùi đầu mút trái $0.5$ và tiến đầu mút phải $0.5$. Vậy nhóm $6-10$ trở thành $[5.5; 10.5)$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho bảng phân bố tần số ghép nhóm có ba nhóm đầu là $[0; 10)$ có tần số $5$, $[10; 20)$ có tần số $12$, $[20; 30)$ có tần số $8$. Số lượng giá trị thuộc đoạn $[10; 30)$ trong mẫu số liệu là bao nhiêu?",
+    "choices": [
+      "A. $12$",
+      "B. $20$",
+      "C. $8$",
+      "D. Không thể xác định chính xác"
+    ],
+    "correct": 3,
+    "explain": "Đoạn $[10; 30)$ bao gồm nửa khoảng $[10; 20)$, nửa khoảng $[20; 30)$ và điểm $30$. Do nhóm $[20; 30)$ không chứa điểm $30$ (nó thuộc nhóm tiếp theo), ta không thể biết chính xác có bao nhiêu phần tử bằng đúng $30$ nếu không có dữ liệu chi tiết. Do đó không thể xác định chính xác."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Số trung bình của mẫu số liệu ghép nhóm được kí hiệu là gì?",
+    "choices": [
+      "A. $M_o$",
+      "B. $M_e$",
+      "C. $\\bar{x}$",
+      "D. $Q_1$"
+    ],
+    "correct": 2,
+    "explain": "Số trung bình của mẫu số liệu thường được kí hiệu là $\\bar{x}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Trong mẫu số liệu ghép nhóm, 'nhóm chứa mốt' được hiểu là nhóm như thế nào?",
+    "choices": [
+      "A. Nhóm có độ dài lớn nhất.",
+      "B. Nhóm có tần số lớn nhất.",
+      "C. Nhóm chứa số trung bình.",
+      "D. Nhóm có giá trị đại diện lớn nhất."
+    ],
+    "correct": 1,
+    "explain": "Theo định nghĩa, nhóm chứa mốt là nhóm có tần số lớn nhất trong bảng."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Trung vị của mẫu số liệu ghép nhóm, kí hiệu là $M_e$, còn được gọi là tứ phân vị thứ mấy?",
+    "choices": [
+      "A. Tứ phân vị thứ nhất ($Q_1$).",
+      "B. Tứ phân vị thứ hai ($Q_2$).",
+      "C. Tứ phân vị thứ ba ($Q_3$).",
+      "D. Cả ba phương án đều sai."
+    ],
+    "correct": 1,
+    "explain": "Trung vị $M_e$ chia đôi dãy số liệu, do đó nó chính là tứ phân vị thứ hai $Q_2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Ý nghĩa của số trung vị trong mẫu số liệu ghép nhóm là gì?",
+    "choices": [
+      "A. Là giá trị xuất hiện nhiều nhất trong mẫu.",
+      "B. Là giá trị trung bình cộng của tất cả các số liệu.",
+      "C. Là giá trị chia mẫu số liệu đã sắp xếp thành hai phần có số lượng phần tử bằng nhau.",
+      "D. Là giá trị lớn nhất trừ đi giá trị nhỏ nhất."
+    ],
+    "correct": 2,
+    "explain": "Trung vị là đại lượng đo xu thế trung tâm, chia mẫu số liệu đã sắp xếp thành hai nửa bằng nhau."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Công thức xác định nhóm chứa trung vị là tìm nhóm thứ $p$ thỏa mãn điều kiện tần số tích lũy $cf_p$ như thế nào so với $\\frac{n}{2}$ ($n$ là cỡ mẫu)?",
+    "choices": [
+      "A. $cf_p \\ge \\frac{n}{2}$ và $cf_{p-1} < \\frac{n}{2}$",
+      "B. $cf_p = \\frac{n}{4}$",
+      "C. $cf_p < \\frac{n}{2}$",
+      "D. $cf_p > n$"
+    ],
+    "correct": 0,
+    "explain": "Nhóm chứa trung vị là nhóm đầu tiên có tần số tích lũy lớn hơn hoặc bằng một nửa cỡ mẫu, tức là $cf_p \\ge \\frac{n}{2}$ và nhóm liền trước đó có $cf_{p-1} < \\frac{n}{2}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đại lượng nào sau đây bị ảnh hưởng nhiều nhất bởi các giá trị ngoại lệ (rất lớn hoặc rất nhỏ) trong mẫu số liệu?",
+    "choices": [
+      "A. Mốt",
+      "B. Trung vị",
+      "C. Số trung bình",
+      "D. Tứ phân vị thứ nhất"
+    ],
+    "correct": 2,
+    "explain": "Số trung bình tính dựa trên tổng của tất cả các giá trị nên rất nhạy cảm với các giá trị bất thường (ngoại lệ)."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 1,
+    "q": "Một mẫu số liệu ghép nhóm có thể có bao nhiêu nhóm chứa mốt?",
+    "choices": [
+      "A. Chỉ duy nhất 1 nhóm",
+      "B. Có thể có 1 hoặc nhiều nhóm",
+      "C. Luôn luôn có 2 nhóm",
+      "D. Không có nhóm nào"
+    ],
+    "correct": 1,
+    "explain": "Nếu có nhiều nhóm cùng có tần số lớn nhất và bằng nhau, mẫu số liệu đó sẽ có nhiều nhóm chứa mốt."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Khảo sát thời gian tự học (giờ) của 20 học sinh thu được bảng phân bố: $[0; 2)$ có tần số $4$, $[2; 4)$ có tần số $10$, $[4; 6)$ có tần số $6$. Số trung bình $\\bar{x}$ của mẫu số liệu là:",
+    "choices": [
+      "A. $2.8$",
+      "B. $3.2$",
+      "C. $3.5$",
+      "D. $3.0$"
+    ],
+    "correct": 1,
+    "explain": "Giá trị đại diện các nhóm lần lượt là $1, 3, 5$. Số trung bình $\\bar{x} = \\frac{1 \\cdot 4 + 3 \\cdot 10 + 5 \\cdot 6}{20} = \\frac{4 + 30 + 30}{20} = \\frac{64}{20} = 3.2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho bảng tần số ghép nhóm có 4 nhóm: $[10; 20)$ tần số $5$, $[20; 30)$ tần số $12$, $[30; 40)$ tần số $8$, $[40; 50)$ tần số $5$. Cỡ mẫu $n$ bằng $30$. Nhóm chứa trung vị là nhóm nào?",
+    "choices": [
+      "A. $[10; 20)$",
+      "B. $[20; 30)$",
+      "C. $[30; 40)$",
+      "D. $[40; 50)$"
+    ],
+    "correct": 1,
+    "explain": "Ta tính $\\frac{n}{2} = \\frac{30}{2} = 15$. Tần số tích lũy: nhóm 1 là $5$; nhóm 2 là $5 + 12 = 17$. Vì $17 \\ge 15$ nên nhóm chứa trung vị là nhóm $[20; 30)$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho bảng tần số ghép nhóm: nhóm $[0; 10)$ có tần số $6$, nhóm $[10; 20)$ có tần số $15$, nhóm $[20; 30)$ có tần số $9$. Nhóm chứa mốt là nhóm nào?",
+    "choices": [
+      "A. $[0; 10)$",
+      "B. $[10; 20)$",
+      "C. $[20; 30)$",
+      "D. Không xác định được"
+    ],
+    "correct": 1,
+    "explain": "Nhóm có tần số lớn nhất là nhóm $[10; 20)$ với tần số $15$. Do đó đây là nhóm chứa mốt."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Để tìm tứ phân vị thứ nhất $Q_1$ của mẫu số liệu ghép nhóm cỡ $n$, ta cần tìm nhóm chứa giá trị ở vị trí thứ bao nhiêu trong dãy số liệu đã sắp xếp?",
+    "choices": [
+      "A. Vị trí $\\frac{n}{2}$",
+      "B. Vị trí $\\frac{n}{4}$",
+      "C. Vị trí $\\frac{3n}{4}$",
+      "D. Vị trí $n$"
+    ],
+    "correct": 1,
+    "explain": "Tứ phân vị thứ nhất $Q_1$ tương ứng với mốc chia $25\\%$ dữ liệu, do đó ta xét vị trí $\\frac{n}{4}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho bảng số liệu: $[0; 20)$ tần số $5$, $[20; 40)$ tần số $9$, $[40; 60)$ tần số $12$, $[60; 80)$ tần số $10$. Nhóm chứa tứ phân vị thứ ba $Q_3$ là nhóm nào? Biết cỡ mẫu $n = 36$.",
+    "choices": [
+      "A. $[20; 40)$",
+      "B. $[40; 60)$",
+      "C. $[60; 80)$",
+      "D. $[0; 20)$"
+    ],
+    "correct": 2,
+    "explain": "Ta tính $\\frac{3n}{4} = \\frac{3 \\cdot 36}{4} = 27$. Tần số tích lũy: Nhóm 1 là $5$; Nhóm 2 là $14$; Nhóm 3 là $26$; Nhóm 4 là $36$. Vì $36 \\ge 27$ và nhóm trước đó là $26 < 27$ nên nhóm chứa $Q_3$ là $[60; 80)$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Giả sử nhóm chứa mốt là $[u_m; u_{m+1})$ có tần số $n_m$. Tần số nhóm liền trước là $n_{m-1}$ và nhóm liền sau là $n_{m+1}$. Độ dài nhóm là $L$. Hiệu $n_m - n_{m-1}$ thường được đặt là $\\Delta_1$, hiệu $n_m - n_{m+1}$ đặt là $\\Delta_2$. Công thức tính mốt $M_o$ nào sau đây đúng?",
+    "choices": [
+      "A. $M_o = u_m + \\frac{\\Delta_1}{\\Delta_1 + \\Delta_2} \\cdot L$",
+      "B. $M_o = u_m + \\frac{\\Delta_2}{\\Delta_1 + \\Delta_2} \\cdot L$",
+      "C. $M_o = u_m + \\frac{\\Delta_1 - \\Delta_2}{\\Delta_1 + \\Delta_2} \\cdot L$",
+      "D. $M_o = u_m + \\frac{\\Delta_1}{\\Delta_2} \\cdot L$"
+    ],
+    "correct": 0,
+    "explain": "Theo Sách Giáo khoa, công thức tính mốt cho mẫu số liệu ghép nhóm là $M_o = u_m + \\frac{m_1}{m_1 + m_2} \\cdot (u_{m+1} - u_m)$ với $m_1$ là hiệu tần số nhóm chứa mốt và nhóm liền trước, $m_2$ là hiệu tần số nhóm chứa mốt và nhóm liền sau. Tương ứng đáp án A."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho bảng phân bố: $[5; 7)$ tần số $2$, $[7; 9)$ tần số $7$, $[9; 11)$ tần số $7$, $[11; 13)$ tần số $3$, $[13; 15)$ tần số $1$. Bảng này có bao nhiêu nhóm chứa mốt?",
+    "choices": [
+      "A. $1$ nhóm",
+      "B. $2$ nhóm",
+      "C. $3$ nhóm",
+      "D. Không có mốt"
+    ],
+    "correct": 1,
+    "explain": "Tần số lớn nhất trong bảng là $7$. Có hai nhóm cùng đạt tần số $7$ là $[7; 9)$ và $[9; 11)$. Do đó có $2$ nhóm chứa mốt."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 3. Các số đặc trưng đo xu thế trung tâm cho mẫu số liệu ghép nhóm",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết trung vị của một mẫu số liệu ghép nhóm cỡ $n=40$ nằm trong nhóm $[40; 50)$. Tần số của nhóm này là $10$, tần số tích lũy của nhóm liền trước là $15$. Giá trị của trung vị xấp xỉ bằng bao nhiêu?",
+    "choices": [
+      "A. $42$",
+      "B. $45$",
+      "C. $47.5$",
+      "D. $40.5$"
+    ],
+    "correct": 1,
+    "explain": "Áp dụng công thức $M_e = u_m + \\frac{\\frac{n}{2} - cf_{m-1}}{n_m} \\cdot L$. Ta có $u_m = 40$, $\\frac{n}{2} = 20$, $cf_{m-1} = 15$, $n_m = 10$, $L = 10$. Vậy $M_e = 40 + \\frac{20 - 15}{10} \\cdot 10 = 40 + 5 = 45$."
+  },
+  {
     "grade": "12",
     "chapter": "Xác suất có điều kiện",
     "type": "TLN",
