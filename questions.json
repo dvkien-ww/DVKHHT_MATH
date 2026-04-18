@@ -4401,19 +4401,19 @@
 "explain": "Áp dụng công thức: \\tan(a+b) = \\frac{\\tan a + \\tan b}{1 - \\tan a \\tan b} = \\frac{2 + 3}{1 - 2 \\cdot 3} = \\frac{5}{-5} = -1."
 },
 {
-"grade": "11",
-"chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
-"type": "TN",
-"level": 2,
-"q": "Giá trị của biểu thức P = \\sin \\frac{\\pi}{12} \\cos \\frac{\\pi}{12} là:",
-"choices": [
-"A. \\frac{\\sqrt{3}}{4}",
-"B. \\frac{1}{2}",
-"C. \\frac{\\sqrt{2}}{4}",
-"D. \\frac{1}{4}"
-],
-"correct": 3,
-"explain": "Ta có \\sin x \\cos x = \\frac{1}{2}\\sin 2x. Nên P = \\frac{1}{2} \\sin(\\frac{\\pi}{6}) = \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4}."
+  "grade": "11",
+  "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
+  "type": "TN",
+  "level": 2,
+  "q": "Giá trị của biểu thức $P = \\sin \\frac{\\pi}{12} \\cos \\frac{\\pi}{12}$ là:",
+  "choices": [
+    "A. $\\frac{\\sqrt{3}}{4}$",
+    "B. $\\frac{1}{2}$",
+    "C. $\\frac{\\sqrt{2}}{4}$",
+    "D. $\\frac{1}{4}$"
+  ],
+  "correct": 3,
+  "explain": "Ta có $\\sin x \\cos x = \\frac{1}{2}\\sin 2x$. Nên $P = \\frac{1}{2} \\sin \\left( \\frac{\\pi}{6} \\right) = \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4}$."
 },
 {
 "grade": "11",
