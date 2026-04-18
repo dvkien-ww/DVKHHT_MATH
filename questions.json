@@ -1412,7 +1412,7 @@
 "D. u_4 = 24"
 ],
 "correct": 2,
-"explain": "Ta có u_2 = 2! = 2 \\cdot 1 = 2. Vậy khẳng định u_2 = 4 là sai."
+"explain": "Ta có u_2 = 2! = 2 \\\\cdot 1 = 2. Vậy khẳng định u_2 = 4 là sai."
 },
 {
 "grade": "11",
@@ -1434,30 +1434,30 @@
 "chapter": "Chương 2. Dãy số. Cấp số cộng và cấp số nhân",
 "type": "TN",
 "level": 1,
-"q": "Cho dãy số (u_n) với u_n = \\frac{1}{n}. Số hạng thứ 5 của dãy số là:",
+"q": "Cho dãy số (u_n) với u_n = \\\\frac{1}{n}. Số hạng thứ 5 của dãy số là:",
 "choices": [
-"A. \\frac{1}{4}",
-"B. \\frac{1}{5}",
-"C. \\frac{1}{6}",
+"A. \\\\frac{1}{4}",
+"B. \\\\frac{1}{5}",
+"C. \\\\frac{1}{6}",
 "D. 5"
 ],
 "correct": 1,
-"explain": "Thay n = 5 vào công thức ta được u_5 = \\frac{1}{5}."
+"explain": "Thay n = 5 vào công thức ta được u_5 = \\\\frac{1}{5}."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Dãy số. Cấp số cộng và cấp số nhân",
 "type": "TN",
 "level": 1,
-"q": "Cho dãy số hữu hạn: \\frac{1}{2}; \\frac{1}{3}; \\frac{1}{4}; \\frac{1}{5}. Công thức số hạng tổng quát của dãy số này là:",
+"q": "Cho dãy số hữu hạn: \\\\frac{1}{2}; \\\\frac{1}{3}; \\\\frac{1}{4}; \\\\frac{1}{5}. Công thức số hạng tổng quát của dãy số này là:",
 "choices": [
-"A. u_n = \\frac{1}{n} với 1 \\le n \\le 4",
-"B. u_n = \\frac{1}{n+1} với 1 \\le n \\le 4",
-"C. u_n = \\frac{1}{n+1} với 1 \\le n \\le 5",
-"D. u_n = \\frac{1}{n-1} với 2 \\le n \\le 5"
+"A. u_n = \\\\frac{1}{n} với 1 \\\\le n \\\\le 4",
+"B. u_n = \\\\frac{1}{n+1} với 1 \\\\le n \\\\le 4",
+"C. u_n = \\\\frac{1}{n+1} với 1 \\\\le n \\\\le 5",
+"D. u_n = \\\\frac{1}{n-1} với 2 \\\\le n \\\\le 5"
 ],
 "correct": 1,
-"explain": "Dãy số có 4 số hạng với mẫu số lần lượt là 2, 3, 4, 5. Vậy số hạng tổng quát là u_n = \\frac{1}{n+1} với 1 \\le n \\le 4."
+"explain": "Dãy số có 4 số hạng với mẫu số lần lượt là 2, 3, 4, 5. Vậy số hạng tổng quát là u_n = \\\\frac{1}{n+1} với 1 \\\\le n \\\\le 4."
 },
 {
 "grade": "11",
@@ -1484,7 +1484,7 @@
 "A. u_n = 2n + 1",
 "B. u_n = 5 - 4n",
 "C. u_n = 3",
-"D. u_n = \\frac{1}{n}"
+"D. u_n = \\\\frac{1}{n}"
 ],
 "correct": 0,
 "explain": "Ta xét hiệu u_{n+1} - u_n = 2(n+1) + 1 - (2n + 1) = 2 > 0 với mọi n. Do đó dãy u_n = 2n + 1 là dãy tăng."
@@ -1509,15 +1509,15 @@
 "chapter": "Chương 2. Dãy số. Cấp số cộng và cấp số nhân",
 "type": "TN",
 "level": 2,
-"q": "Cho dãy số (u_n) với u_n = \\frac{n}{n+1}. Tính u_3 + u_4.",
+"q": "Cho dãy số (u_n) với u_n = \\\\frac{n}{n+1}. Tính u_3 + u_4.",
 "choices": [
-"A. \\frac{11}{20}",
-"B. \\frac{31}{20}",
-"C. \\frac{8}{17}",
-"D. \\frac{12}{7}"
+"A. \\\\frac{11}{20}",
+"B. \\\\frac{31}{20}",
+"C. \\\\frac{8}{17}",
+"D. \\\\frac{12}{7}"
 ],
 "correct": 1,
-"explain": "Ta có u_3 = \\frac{3}{4} và u_4 = \\frac{4}{5}. Tổng u_3 + u_4 = \\frac{3}{4} + \\frac{4}{5} = \\frac{31}{20}."
+"explain": "Ta có u_3 = \\\\frac{3}{4} và u_4 = \\\\frac{4}{5}. Tổng u_3 + u_4 = \\\\frac{3}{4} + \\\\frac{4}{5} = \\\\frac{31}{20}."
 },
 {
 "grade": "11",
@@ -1532,7 +1532,7 @@
 "D. 10"
 ],
 "correct": 3,
-"explain": "Ta giải phương trình u_n = 25 \\Leftrightarrow 2n + 5 = 25 \\Leftrightarrow 2n = 20 \\Leftrightarrow n = 10. Vậy 25 là số hạng thứ 10."
+"explain": "Ta giải phương trình u_n = 25 \\\\Leftrightarrow 2n + 5 = 25 \\\\Leftrightarrow 2n = 20 \\\\Leftrightarrow n = 10. Vậy 25 là số hạng thứ 10."
 },
 {
 "grade": "11",
@@ -1543,18 +1543,18 @@
 "choices": [
 "A. u_n = n^2",
 "B. u_n = 2^n",
-"C. u_n = \\frac{1}{n}",
+"C. u_n = \\\\frac{1}{n}",
 "D. u_n = n + 1"
 ],
 "correct": 2,
-"explain": "Dãy số u_n = \\frac{1}{n} có 0 < u_n \\le 1 với mọi n \\in \\mathbb{N}^*. Do đó dãy số này bị chặn. Các dãy còn lại không bị chặn trên."
+"explain": "Dãy số u_n = \\\\frac{1}{n} có 0 < u_n \\\\le 1 với mọi n \\\\in \\\\mathbb{N}^*. Do đó dãy số này bị chặn. Các dãy còn lại không bị chặn trên."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Dãy số. Cấp số cộng và cấp số nhân",
 "type": "TN",
 "level": 2,
-"q": "Cho dãy số (u_n) được xác định bởi hệ thức truy hồi: u_1 = 1 và u_n = u_{n-1} + 2 với n \\ge 2. Tìm u_3.",
+"q": "Cho dãy số (u_n) được xác định bởi hệ thức truy hồi: u_1 = 1 và u_n = u_{n-1} + 2 với n \\\\ge 2. Tìm u_3.",
 "choices": [
 "A. 3",
 "B. 4",
@@ -1634,7 +1634,7 @@
 "A. u_n = n^2",
 "B. u_n = 2^n",
 "C. u_n = 2n + 1",
-"D. u_n = \\frac{1}{n}"
+"D. u_n = \\\\frac{1}{n}"
 ],
 "correct": 2,
 "explain": "Dãy số u_n = 2n + 1 là cấp số cộng vì có hiệu u_{n+1} - u_n = 2(n+1) + 1 - (2n+1) = 2 không phụ thuộc vào n."
@@ -1667,7 +1667,7 @@
 "D. d = 3"
 ],
 "correct": 3,
-"explain": "Ta có u_3 = u_1 + 2d \\Leftrightarrow 8 = 2 + 2d \\Leftrightarrow 2d = 6 \\Leftrightarrow d = 3."
+"explain": "Ta có u_3 = u_1 + 2d \\\\Leftrightarrow 8 = 2 + 2d \\\\Leftrightarrow 2d = 6 \\\\Leftrightarrow d = 3."
 },
 {
 "grade": "11",
@@ -1677,7 +1677,7 @@
 "q": "Cho cấp số cộng (u_n) với u_1 = 2 và u_2 = 7. Công sai của cấp số cộng đã cho bằng:",
 "choices": [
 "A. 5",
-"B. \\frac{7}{2}",
+"B. \\\\frac{7}{2}",
 "C. -5",
 "D. 9"
 ],
@@ -1712,7 +1712,7 @@
 "D. d = -5"
 ],
 "correct": 1,
-"explain": "Theo giả thiết u_5 - u_1 = 20 \\Leftrightarrow (u_1 + 4d) - u_1 = 20 \\Leftrightarrow 4d = 20 \\Leftrightarrow d = 5."
+"explain": "Theo giả thiết u_5 - u_1 = 20 \\\\Leftrightarrow (u_1 + 4d) - u_1 = 20 \\\\Leftrightarrow 4d = 20 \\\\Leftrightarrow d = 5."
 },
 {
 "grade": "11",
@@ -1727,7 +1727,7 @@
 "D. u_n = 2n - 3"
 ],
 "correct": 1,
-"explain": "Ta có hệ: (u_1 + d) - (u_1 + 2d) + (u_1 + 4d) = 7 \\Leftrightarrow u_1 + 3d = 7. Và u_1 + (u_1 + 5d) = 12 \\Leftrightarrow 2u_1 + 5d = 12. Nhân đôi phương trình đầu ta được 2u_1 + 6d = 14. Trừ đi phương trình hai ta có d = 2. Thế vào ta được u_1 = 1. Số hạng tổng quát: u_n = 1 + (n-1)2 = 2n - 1."
+"explain": "Ta có hệ: (u_1 + d) - (u_1 + 2d) + (u_1 + 4d) = 7 \\\\Leftrightarrow u_1 + 3d = 7. Và u_1 + (u_1 + 5d) = 12 \\\\Leftrightarrow 2u_1 + 5d = 12. Nhân đôi phương trình đầu ta được 2u_1 + 6d = 14. Trừ đi phương trình hai ta có d = 2. Thế vào ta được u_1 = 1. Số hạng tổng quát: u_n = 1 + (n-1)2 = 2n - 1."
 },
 {
 "grade": "11",
@@ -1772,7 +1772,7 @@
 "D. 6; 10; 14"
 ],
 "correct": 2,
-"explain": "Cấp số cộng có u_1 = 2 và u_5 = 22. Ta có u_5 = u_1 + 4d \\Leftrightarrow 22 = 2 + 4d \\Leftrightarrow 4d = 20 \\Leftrightarrow d = 5. Ba số cần xen giữa là u_2 = 7, u_3 = 12, u_4 = 17."
+"explain": "Cấp số cộng có u_1 = 2 và u_5 = 22. Ta có u_5 = u_1 + 4d \\\\Leftrightarrow 22 = 2 + 4d \\\\Leftrightarrow 4d = 20 \\\\Leftrightarrow d = 5. Ba số cần xen giữa là u_2 = 7, u_3 = 12, u_4 = 17."
 },
 {
 "grade": "11",
@@ -1787,7 +1787,7 @@
 "D. 35"
 ],
 "correct": 1,
-"explain": "Ta có hệ: u_1 + d = 3 và u_1 + 3d = 7. Trừ vế theo vế ta được 2d = 4 \\Leftrightarrow d = 2. Suy ra u_1 = 1. Khi đó u_{15} = u_1 + 14d = 1 + 14(2) = 29."
+"explain": "Ta có hệ: u_1 + d = 3 và u_1 + 3d = 7. Trừ vế theo vế ta được 2d = 4 \\\\Leftrightarrow d = 2. Suy ra u_1 = 1. Khi đó u_{15} = u_1 + 14d = 1 + 14(2) = 29."
 },
 {
 "grade": "11",
@@ -1802,7 +1802,7 @@
 "D. 12"
 ],
 "correct": 2,
-"explain": "Ta có S_n = \\frac{n(2u_1 + (n-1)d)}{2} = \\frac{n(6 + (n-1)4)}{2} = n(2n + 1). Phương trình n(2n + 1) = 253 \\Leftrightarrow 2n^2 + n - 253 = 0. Giải ra n = 11 (vì n nguyên dương)."
+"explain": "Ta có S_n = \\\\frac{n(2u_1 + (n-1)d)}{2} = \\\\frac{n(6 + (n-1)4)}{2} = n(2n + 1). Phương trình n(2n + 1) = 253 \\\\Leftrightarrow 2n^2 + n - 253 = 0. Giải ra n = 11 (vì n nguyên dương)."
 },
 {
 "grade": "11",
@@ -1814,10 +1814,10 @@
 "A. d = 2",
 "B. d = 3",
 "C. d = 4",
-"D. d = \\frac{70}{36}"
+"D. d = \\\\frac{70}{36}"
 ],
 "correct": 0,
-"explain": "Ta có u_1 = 2 và u_{36} = u_1 + 35d = 72 \\Leftrightarrow 2 + 35d = 72 \\Leftrightarrow 35d = 70 \\Leftrightarrow d = 2."
+"explain": "Ta có u_1 = 2 và u_{36} = u_1 + 35d = 72 \\\\Leftrightarrow 2 + 35d = 72 \\\\Leftrightarrow 35d = 70 \\\\Leftrightarrow d = 2."
 },
 {
 "grade": "11",
@@ -1854,15 +1854,15 @@
 "chapter": "Chương 2. Dãy số. Cấp số cộng và cấp số nhân",
 "type": "TN",
 "level": 1,
-"q": "Cho cấp số nhân có số hạng đầu u_1 và công bội q. Công thức số hạng tổng quát u_n (với n \\ge 2) là:",
+"q": "Cho cấp số nhân có số hạng đầu u_1 và công bội q. Công thức số hạng tổng quát u_n (với n \\\\ge 2) là:",
 "choices": [
 "A. u_n = u_1 + (n - 1)q",
-"B. u_n = u_1 \\cdot q^{n-1}",
-"C. u_n = u_1 \\cdot q^n",
-"D. u_n = u_1 \\cdot q^{n+1}"
+"B. u_n = u_1 \\\\cdot q^{n-1}",
+"C. u_n = u_1 \\\\cdot q^n",
+"D. u_n = u_1 \\\\cdot q^{n+1}"
 ],
 "correct": 1,
-"explain": "Theo lý thuyết, công thức số hạng tổng quát của cấp số nhân là u_n = u_1 \\cdot q^{n-1}."
+"explain": "Theo lý thuyết, công thức số hạng tổng quát của cấp số nhân là u_n = u_1 \\\\cdot q^{n-1}."
 },
 {
 "grade": "11",
@@ -1871,13 +1871,13 @@
 "level": 1,
 "q": "Cho cấp số nhân (u_n) có u_1 = 5 và u_2 = 2. Công bội q của cấp số nhân đó bằng:",
 "choices": [
-"A. \\frac{5}{2}",
-"B. \\frac{2}{5}",
+"A. \\\\frac{5}{2}",
+"B. \\\\frac{2}{5}",
 "C. 10",
 "D. 3"
 ],
 "correct": 1,
-"explain": "Công bội q được tính bằng thương số của u_2 cho u_1: q = \\frac{u_2}{u_1} = \\frac{2}{5}."
+"explain": "Công bội q được tính bằng thương số của u_2 cho u_1: q = \\\\frac{u_2}{u_1} = \\\\frac{2}{5}."
 },
 {
 "grade": "11",
@@ -1892,7 +1892,7 @@
 "D. 6"
 ],
 "correct": 0,
-"explain": "Theo định nghĩa, ta có u_2 = u_1 \\cdot q = -2 \\cdot 3 = -6."
+"explain": "Theo định nghĩa, ta có u_2 = u_1 \\\\cdot q = -2 \\\\cdot 3 = -6."
 },
 {
 "grade": "11",
@@ -1907,22 +1907,22 @@
 "D. 15"
 ],
 "correct": 2,
-"explain": "Áp dụng công thức u_n = u_1 \\cdot q^{n-1}, ta có u_3 = 3 \\cdot 2^{3-1} = 3 \\cdot 4 = 12."
+"explain": "Áp dụng công thức u_n = u_1 \\\\cdot q^{n-1}, ta có u_3 = 3 \\\\cdot 2^{3-1} = 3 \\\\cdot 4 = 12."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Dãy số. Cấp số cộng và cấp số nhân",
 "type": "TN",
 "level": 1,
-"q": "Công thức tính tổng n số hạng đầu tiên S_n của cấp số nhân có số hạng đầu u_1 và công bội q \\neq 1 là:",
+"q": "Công thức tính tổng n số hạng đầu tiên S_n của cấp số nhân có số hạng đầu u_1 và công bội q \\\\neq 1 là:",
 "choices": [
-"A. S_n = \\frac{u_1(1 - q^n)}{1 - q}",
-"B. S_n = \\frac{n(u_1 + u_n)}{2}",
-"C. S_n = u_1 \\cdot q^{n-1}",
-"D. S_n = \\frac{u_1(1 - q)}{1 - q^n}"
+"A. S_n = \\\\frac{u_1(1 - q^n)}{1 - q}",
+"B. S_n = \\\\frac{n(u_1 + u_n)}{2}",
+"C. S_n = u_1 \\\\cdot q^{n-1}",
+"D. S_n = \\\\frac{u_1(1 - q)}{1 - q^n}"
 ],
 "correct": 0,
-"explain": "Theo lý thuyết, tổng n số hạng đầu của cấp số nhân là S_n = \\frac{u_1(1 - q^n)}{1 - q}."
+"explain": "Theo lý thuyết, tổng n số hạng đầu của cấp số nhân là S_n = \\\\frac{u_1(1 - q^n)}{1 - q}."
 },
 {
 "grade": "11",
@@ -1937,7 +1937,7 @@
 "D. -256"
 ],
 "correct": 1,
-"explain": "Ta có hệ phương trình: u_1 \\cdot q = -8 và u_1 \\cdot q^4 = 64. Chia vế theo vế ta được q^3 = -8 \\Leftrightarrow q = -2. Từ đó u_6 = u_5 \\cdot q = 64(-2) = -128."
+"explain": "Ta có hệ phương trình: u_1 \\\\cdot q = -8 và u_1 \\\\cdot q^4 = 64. Chia vế theo vế ta được q^3 = -8 \\\\Leftrightarrow q = -2. Từ đó u_6 = u_5 \\\\cdot q = 64(-2) = -128."
 },
 {
 "grade": "11",
@@ -1952,14 +1952,14 @@
 "D. 1"
 ],
 "correct": 0,
-"explain": "Theo tính chất cấp số nhân, ta có bình phương số ở giữa bằng tích hai số kề nó: x^2 = 2 \\cdot 8 = 16. Do x > 0 nên x = 4."
+"explain": "Theo tính chất cấp số nhân, ta có bình phương số ở giữa bằng tích hai số kề nó: x^2 = 2 \\\\cdot 8 = 16. Do x > 0 nên x = 4."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Dãy số. Cấp số cộng và cấp số nhân",
 "type": "TN",
 "level": 2,
-"q": "Cho dãy số (u_n) có số hạng tổng quát u_n = 3 \\cdot 2^{n+1}. Khẳng định nào sau đây đúng?",
+"q": "Cho dãy số (u_n) có số hạng tổng quát u_n = 3 \\\\cdot 2^{n+1}. Khẳng định nào sau đây đúng?",
 "choices": [
 "A. Dãy số là cấp số nhân có số hạng đầu u_1 = 6.",
 "B. Dãy số là cấp số cộng có công sai d = 2.",
@@ -1967,7 +1967,7 @@
 "D. Dãy số là cấp số nhân có công bội q = 3."
 ],
 "correct": 2,
-"explain": "Ta có u_1 = 3 \\cdot 2^{1+1} = 12 và tỉ số u_{n+1} / u_n = \\frac{3 \\cdot 2^{n+2}}{3 \\cdot 2^{n+1}} = 2 (không đổi). Vậy dãy là cấp số nhân có u_1 = 12 và q = 2."
+"explain": "Ta có u_1 = 3 \\\\cdot 2^{1+1} = 12 và tỉ số u_{n+1} / u_n = \\\\frac{3 \\\\cdot 2^{n+2}}{3 \\\\cdot 2^{n+1}} = 2 (không đổi). Vậy dãy là cấp số nhân có u_1 = 12 và q = 2."
 },
 {
 "grade": "11",
@@ -1976,13 +1976,13 @@
 "level": 2,
 "q": "Cho cấp số nhân (u_n) có số hạng đầu u_1 = 2 và công bội q = 3. Giá trị u_{2019} bằng:",
 "choices": [
-"A. 2 \\cdot 3^{2019}",
-"B. 2 \\cdot 3^{2018}",
-"C. 3 \\cdot 2^{2018}",
-"D. 3 \\cdot 2^{2019}"
+"A. 2 \\\\cdot 3^{2019}",
+"B. 2 \\\\cdot 3^{2018}",
+"C. 3 \\\\cdot 2^{2018}",
+"D. 3 \\\\cdot 2^{2019}"
 ],
 "correct": 1,
-"explain": "Áp dụng công thức số hạng tổng quát u_n = u_1 \\cdot q^{n-1}, ta có u_{2019} = 2 \\cdot 3^{2018}."
+"explain": "Áp dụng công thức số hạng tổng quát u_n = u_1 \\\\cdot q^{n-1}, ta có u_{2019} = 2 \\\\cdot 3^{2018}."
 },
 {
 "grade": "11",
@@ -1997,7 +1997,7 @@
 "D. 12"
 ],
 "correct": 2,
-"explain": "Ta giải phương trình u_n = 1024 \\Leftrightarrow 1 \\cdot 2^{n-1} = 1024 \\Leftrightarrow 2^{n-1} = 2^{10} \\Leftrightarrow n - 1 = 10 \\Leftrightarrow n = 11."
+"explain": "Ta giải phương trình u_n = 1024 \\\\Leftrightarrow 1 \\\\cdot 2^{n-1} = 1024 \\\\Leftrightarrow 2^{n-1} = 2^{10} \\\\Leftrightarrow n - 1 = 10 \\\\Leftrightarrow n = 11."
 },
 {
 "grade": "11",
@@ -2012,7 +2012,7 @@
 "D. 8"
 ],
 "correct": 2,
-"explain": "Ta có phương trình u_n = -192 \\Leftrightarrow -3(-2)^{n-1} = -192 \\Leftrightarrow (-2)^{n-1} = 64 \\Leftrightarrow (-2)^{n-1} = (-2)^6 \\Leftrightarrow n - 1 = 6 \\Leftrightarrow n = 7."
+"explain": "Ta có phương trình u_n = -192 \\\\Leftrightarrow -3(-2)^{n-1} = -192 \\\\Leftrightarrow (-2)^{n-1} = 64 \\\\Leftrightarrow (-2)^{n-1} = (-2)^6 \\\\Leftrightarrow n - 1 = 6 \\\\Leftrightarrow n = 7."
 },
 {
 "grade": "11",
@@ -2027,14 +2027,14 @@
 "D. 325"
 ],
 "correct": 1,
-"explain": "Cấp số nhân có u_1 = 160 và u_6 = 5. Suy ra u_1 \\cdot q^5 = 5 \\Leftrightarrow 160q^5 = 5 \\Leftrightarrow q^5 = \\frac{1}{32} \\Leftrightarrow q = \\frac{1}{2}. Tổng 6 số hạng là S_6 = \\frac{160(1 - (1/2)^6)}{1 - 1/2} = 320 \\cdot \\frac{63}{64} = 315."
+"explain": "Cấp số nhân có u_1 = 160 và u_6 = 5. Suy ra u_1 \\\\cdot q^5 = 5 \\\\Leftrightarrow 160q^5 = 5 \\\\Leftrightarrow q^5 = \\\\frac{1}{32} \\\\Leftrightarrow q = \\\\frac{1}{2}. Tổng 6 số hạng là S_6 = \\\\frac{160(1 - (1/2)^6)}{1 - 1/2} = 320 \\\\cdot \\\\frac{63}{64} = 315."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Dãy số. Cấp số cộng và cấp số nhân",
 "type": "TN",
 "level": 2,
-"q": "Cho cấp số nhân (u_n) với công bội q \\neq 0 và thỏa mãn: u_1 + u_5 = 272 và u_2 + u_6 = 136. Số hạng u_1 của cấp số nhân là:",
+"q": "Cho cấp số nhân (u_n) với công bội q \\\\neq 0 và thỏa mãn: u_1 + u_5 = 272 và u_2 + u_6 = 136. Số hạng u_1 của cấp số nhân là:",
 "choices": [
 "A. 256",
 "B. 128",
@@ -2042,107 +2042,107 @@
 "D. 64"
 ],
 "correct": 0,
-"explain": "Ta có hệ: u_1 + u_5 = 272 và q(u_1 + u_5) = 136. Suy ra q \\cdot 272 = 136 \\Leftrightarrow q = \\frac{1}{2}. Thế vào phương trình đầu: u_1 + u_1(\\frac{1}{2})^4 = 272 \\Leftrightarrow u_1(1 + \\frac{1}{16}) = 272 \\Leftrightarrow u_1 \\cdot \\frac{17}{16} = 272 \\Leftrightarrow u_1 = 256."
+"explain": "Ta có hệ: u_1 + u_5 = 272 và q(u_1 + u_5) = 136. Suy ra q \\\\cdot 272 = 136 \\\\Leftrightarrow q = \\\\frac{1}{2}. Thế vào phương trình đầu: u_1 + u_1(\\\\frac{1}{2})^4 = 272 \\\\Leftrightarrow u_1(1 + \\\\frac{1}{16}) = 272 \\\\Leftrightarrow u_1 \\\\cdot \\\\frac{17}{16} = 272 \\\\Leftrightarrow u_1 = 256."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Tìm tập nghiệm của phương trình \\sin x = 0.",
+"q": "Tìm tập nghiệm của phương trình \\\\sin x = 0.",
 "choices": [
-"A. S = \\{k\\pi | k \\in \\mathbb{Z}\\}",
-"B. S = \\{k2\\pi | k \\in \\mathbb{Z}\\}",
-"C. S = \\{\\frac{\\pi}{2} + k\\pi | k \\in \\mathbb{Z}\\}",
-"D. S = \\{\\frac{\\pi}{2} + k2\\pi | k \\in \\mathbb{Z}\\}"
+"A. S = \\\\{k\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"B. S = \\\\{k2\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"C. S = \\\\{\\\\frac{\\\\pi}{2} + k\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"D. S = \\\\{\\\\frac{\\\\pi}{2} + k2\\\\pi | k \\\\in \\\\mathbb{Z}\\}"
 ],
 "correct": 0,
-"explain": "Các điểm trên đường tròn lượng giác có tung độ bằng 0 tương ứng với các góc x = k\\pi."
+"explain": "Các điểm trên đường tròn lượng giác có tung độ bằng 0 tương ứng với các góc x = k\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Tìm tập nghiệm của phương trình \\cos x = 1.",
+"q": "Tìm tập nghiệm của phương trình \\\\cos x = 1.",
 "choices": [
-"A. S = \\{\\frac{\\pi}{2} + k2\\pi | k \\in \\mathbb{Z}\\}",
-"B. S = \\{k\\pi | k \\in \\mathbb{Z}\\}",
-"C. S = \\{k2\\pi | k \\in \\mathbb{Z}\\}",
-"D. S = \\{\\pi + k2\\pi | k \\in \\mathbb{Z}\\}"
+"A. S = \\\\{\\\\frac{\\\\pi}{2} + k2\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"B. S = \\\\{k\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"C. S = \\\\{k2\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"D. S = \\\\{\\\\pi + k2\\\\pi | k \\\\in \\\\mathbb{Z}\\}"
 ],
 "correct": 2,
-"explain": "Phương trình \\cos x = 1 tương đương với x = k2\\pi (k \\in \\mathbb{Z})."
+"explain": "Phương trình \\\\cos x = 1 tương đương với x = k2\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Công thức nghiệm của phương trình \\sin x = \\sin \\alpha là:",
+"q": "Công thức nghiệm của phương trình \\\\sin x = \\\\sin \\\\alpha là:",
 "choices": [
-"A. x = \\alpha + k2\\pi \\text{ hoặc } x = \\pi - \\alpha + k2\\pi (k \\in \\mathbb{Z})",
-"B. x = \\pm \\alpha + k2\\pi (k \\in \\mathbb{Z})",
-"C. x = \\alpha + k\\pi \\text{ hoặc } x = \\pi - \\alpha + k\\pi (k \\in \\mathbb{Z})",
-"D. x = \\alpha + k2\\pi (k \\in \\mathbb{Z})"
+"A. x = \\\\alpha + k2\\\\pi \\\\text{ hoặc } x = \\\\pi - \\\\alpha + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"B. x = \\\\pm \\\\alpha + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"C. x = \\\\alpha + k\\\\pi \\\\text{ hoặc } x = \\\\pi - \\\\alpha + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"D. x = \\\\alpha + k2\\\\pi (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 0,
-"explain": "Theo định lí, phương trình \\sin x = \\sin \\alpha có hai họ nghiệm là x = \\alpha + k2\\pi và x = \\pi - \\alpha + k2\\pi."
+"explain": "Theo định lí, phương trình \\\\sin x = \\\\sin \\\\alpha có hai họ nghiệm là x = \\\\alpha + k2\\\\pi và x = \\\\pi - \\\\alpha + k2\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Công thức nghiệm của phương trình \\cos x = \\cos \\alpha là:",
+"q": "Công thức nghiệm của phương trình \\\\cos x = \\\\cos \\\\alpha là:",
 "choices": [
-"A. x = \\alpha + k2\\pi \\text{ hoặc } x = \\pi - \\alpha + k2\\pi (k \\in \\mathbb{Z})",
-"B. x = \\pm \\alpha + k2\\pi (k \\in \\mathbb{Z})",
-"C. x = \\alpha + k\\pi (k \\in \\mathbb{Z})",
-"D. x = \\pm \\alpha + k\\pi (k \\in \\mathbb{Z})"
+"A. x = \\\\alpha + k2\\\\pi \\\\text{ hoặc } x = \\\\pi - \\\\alpha + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"B. x = \\\\pm \\\\alpha + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"C. x = \\\\alpha + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"D. x = \\\\pm \\\\alpha + k\\\\pi (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 1,
-"explain": "Phương trình \\cos x = \\cos \\alpha có hai họ nghiệm là x = \\alpha + k2\\pi và x = -\\alpha + k2\\pi."
+"explain": "Phương trình \\\\cos x = \\\\cos \\\\alpha có hai họ nghiệm là x = \\\\alpha + k2\\\\pi và x = -\\\\alpha + k2\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Nghiệm của phương trình \\tan x = \\tan \\alpha là:",
+"q": "Nghiệm của phương trình \\\\tan x = \\\\tan \\\\alpha là:",
 "choices": [
-"A. x = \\alpha + k2\\pi (k \\in \\mathbb{Z})",
-"B. x = \\alpha + k\\pi (k \\in \\mathbb{Z})",
-"C. x = \\pm \\alpha + k\\pi (k \\in \\mathbb{Z})",
-"D. x = \\pi - \\alpha + k\\pi (k \\in \\mathbb{Z})"
+"A. x = \\\\alpha + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"B. x = \\\\alpha + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"C. x = \\\\pm \\\\alpha + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"D. x = \\\\pi - \\\\alpha + k\\\\pi (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 1,
-"explain": "Phương trình \\tan x = \\tan \\alpha có một họ nghiệm duy nhất là x = \\alpha + k\\pi."
+"explain": "Phương trình \\\\tan x = \\\\tan \\\\alpha có một họ nghiệm duy nhất là x = \\\\alpha + k\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Điều kiện của tham số m để phương trình \\cos x = m có nghiệm là:",
+"q": "Điều kiện của tham số m để phương trình \\\\cos x = m có nghiệm là:",
 "choices": [
-"A. m \\in \\mathbb{R}",
+"A. m \\\\in \\\\mathbb{R}",
 "B. m > 0",
-"C. -1 \\le m \\le 1",
-"D. m \\neq 0"
+"C. -1 \\\\le m \\\\le 1",
+"D. m \\\\neq 0"
 ],
 "correct": 2,
-"explain": "Vì tập giá trị của hàm số y = \\cos x là [-1; 1], nên phương trình có nghiệm khi và chỉ khi -1 \\le m \\le 1."
+"explain": "Vì tập giá trị của hàm số y = \\\\cos x là [-1; 1], nên phương trình có nghiệm khi và chỉ khi -1 \\\\le m \\\\le 1."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Phương trình \\sin x = m vô nghiệm khi và chỉ khi:",
+"q": "Phương trình \\\\sin x = m vô nghiệm khi và chỉ khi:",
 "choices": [
-"A. -1 \\le m \\le 1",
-"B. m < -1 \\text{ hoặc } m > 1",
+"A. -1 \\\\le m \\\\le 1",
+"B. m < -1 \\\\text{ hoặc } m > 1",
 "C. m = 0",
 "D. m > 0"
 ],
@@ -2154,142 +2154,142 @@
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Họ nghiệm của phương trình \\cot x = 0 là:",
+"q": "Họ nghiệm của phương trình \\\\cot x = 0 là:",
 "choices": [
-"A. x = k\\pi (k \\in \\mathbb{Z})",
-"B. x = \\frac{\\pi}{2} + k\\pi (k \\in \\mathbb{Z})",
-"C. x = \\frac{\\pi}{2} + k2\\pi (k \\in \\mathbb{Z})",
-"D. x = k2\\pi (k \\in \\mathbb{Z})"
+"A. x = k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"B. x = \\\\frac{\\\\pi}{2} + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"C. x = \\\\frac{\\\\pi}{2} + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"D. x = k2\\\\pi (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 1,
-"explain": "Ta có \\cot x = 0 khi và chỉ khi \\cos x = 0, tương đương x = \\frac{\\pi}{2} + k\\pi."
+"explain": "Ta có \\\\cot x = 0 khi và chỉ khi \\\\cos x = 0, tương đương x = \\\\frac{\\\\pi}{2} + k\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Phương trình \\tan x = m luôn có nghiệm với điều kiện nào của m?",
+"q": "Phương trình \\\\tan x = m luôn có nghiệm với điều kiện nào của m?",
 "choices": [
-"A. -1 \\le m \\le 1",
+"A. -1 \\\\le m \\\\le 1",
 "B. m > 0",
-"C. Mọi giá trị m \\in \\mathbb{R}",
-"D. m \\neq 0"
+"C. Mọi giá trị m \\\\in \\\\mathbb{R}",
+"D. m \\\\neq 0"
 ],
 "correct": 2,
-"explain": "Tập giá trị của hàm số y = \\tan x là \\mathbb{R}, nên phương trình \\tan x = m luôn có nghiệm với mọi m."
+"explain": "Tập giá trị của hàm số y = \\\\tan x là \\\\mathbb{R}, nên phương trình \\\\tan x = m luôn có nghiệm với mọi m."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Nghiệm của phương trình \\sin x = 1 là:",
+"q": "Nghiệm của phương trình \\\\sin x = 1 là:",
 "choices": [
-"A. x = \\frac{\\pi}{2} + k2\\pi (k \\in \\mathbb{Z})",
-"B. x = \\frac{\\pi}{2} + k\\pi (k \\in \\mathbb{Z})",
-"C. x = k\\pi (k \\in \\mathbb{Z})",
-"D. x = \\pi + k2\\pi (k \\in \\mathbb{Z})"
+"A. x = \\\\frac{\\\\pi}{2} + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"B. x = \\\\frac{\\\\pi}{2} + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"C. x = k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"D. x = \\\\pi + k2\\\\pi (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 0,
-"explain": "Điểm trên đường tròn lượng giác có tung độ bằng 1 là điểm ứng với góc \\frac{\\pi}{2} + k2\\pi."
+"explain": "Điểm trên đường tròn lượng giác có tung độ bằng 1 là điểm ứng với góc \\\\frac{\\\\pi}{2} + k2\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\sin x = \\frac{1}{2}.",
+"q": "Giải phương trình \\\\sin x = \\\\frac{1}{2}.",
 "choices": [
-"A. x = \\pm \\frac{\\pi}{6} + k2\\pi (k \\in \\mathbb{Z})",
-"B. x = \\frac{\\pi}{6} + k2\\pi \\text{ hoặc } x = \\frac{5\\pi}{6} + k2\\pi (k \\in \\mathbb{Z})",
-"C. x = \\frac{\\pi}{3} + k2\\pi \\text{ hoặc } x = \\frac{2\\pi}{3} + k2\\pi (k \\in \\mathbb{Z})",
-"D. x = \\frac{\\pi}{6} + k\\pi (k \\in \\mathbb{Z})"
+"A. x = \\\\pm \\\\frac{\\\\pi}{6} + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"B. x = \\\\frac{\\\\pi}{6} + k2\\\\pi \\\\text{ hoặc } x = \\\\frac{5\\\\pi}{6} + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"C. x = \\\\frac{\\\\pi}{3} + k2\\\\pi \\\\text{ hoặc } x = \\\\frac{2\\\\pi}{3} + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"D. x = \\\\frac{\\\\pi}{6} + k\\\\pi (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 1,
-"explain": "Ta có \\sin x = \\sin\\frac{\\pi}{6}, suy ra x = \\frac{\\pi}{6} + k2\\pi hoặc x = \\pi - \\frac{\\pi}{6} + k2\\pi = \\frac{5\\pi}{6} + k2\\pi."
+"explain": "Ta có \\\\sin x = \\\\sin\\\\frac{\\\\pi}{6}, suy ra x = \\\\frac{\\\\pi}{6} + k2\\\\pi hoặc x = \\\\pi - \\\\frac{\\\\pi}{6} + k2\\\\pi = \\\\frac{5\\\\pi}{6} + k2\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\cos 2x = -\\frac{\\sqrt{2}}{2}.",
+"q": "Giải phương trình \\\\cos 2x = -\\\\frac{\\\\sqrt{2}}{2}.",
 "choices": [
-"A. x = \\pm \\frac{3\\pi}{8} + k\\pi (k \\in \\mathbb{Z})",
-"B. x = \\pm \\frac{3\\pi}{4} + k2\\pi (k \\in \\mathbb{Z})",
-"C. x = \\pm \\frac{\\pi}{8} + k\\pi (k \\in \\mathbb{Z})",
-"D. x = \\pm \\frac{3\\pi}{8} + k2\\pi (k \\in \\mathbb{Z})"
+"A. x = \\\\pm \\\\frac{3\\\\pi}{8} + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"B. x = \\\\pm \\\\frac{3\\\\pi}{4} + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"C. x = \\\\pm \\\\frac{\\\\pi}{8} + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"D. x = \\\\pm \\\\frac{3\\\\pi}{8} + k2\\\\pi (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 0,
-"explain": "\\cos 2x = \\cos\\frac{3\\pi}{4} tương đương 2x = \\pm\\frac{3\\pi}{4} + k2\\pi. Suy ra x = \\pm\\frac{3\\pi}{8} + k\\pi."
+"explain": "\\\\cos 2x = \\\\cos\\\\frac{3\\\\pi}{4} tương đương 2x = \\\\pm\\\\frac{3\\\\pi}{4} + k2\\\\pi. Suy ra x = \\\\pm\\\\frac{3\\\\pi}{8} + k\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\sqrt{3}\\tan 2x = -1.",
+"q": "Giải phương trình \\\\sqrt{3}\\\\tan 2x = -1.",
 "choices": [
-"A. x = -\\frac{\\pi}{12} + k\\pi (k \\in \\mathbb{Z})",
-"B. x = -\\frac{\\pi}{6} + k\\frac{\\pi}{2} (k \\in \\mathbb{Z})",
-"C. x = -\\frac{\\pi}{12} + k\\frac{\\pi}{2} (k \\in \\mathbb{Z})",
-"D. x = \\frac{\\pi}{12} + k\\frac{\\pi}{2} (k \\in \\mathbb{Z})"
+"A. x = -\\\\frac{\\\\pi}{12} + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"B. x = -\\\\frac{\\\\pi}{6} + k\\\\frac{\\\\pi}{2} (k \\\\in \\\\mathbb{Z})",
+"C. x = -\\\\frac{\\\\pi}{12} + k\\\\frac{\\\\pi}{2} (k \\\\in \\\\mathbb{Z})",
+"D. x = \\\\frac{\\\\pi}{12} + k\\\\frac{\\\\pi}{2} (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 2,
-"explain": "Phương trình tương đương \\tan 2x = -\\frac{1}{\\sqrt{3}} = \\tan(-\\frac{\\pi}{6}). Suy ra 2x = -\\frac{\\pi}{6} + k\\pi \\Leftrightarrow x = -\\frac{\\pi}{12} + k\\frac{\\pi}{2}."
+"explain": "Phương trình tương đương \\\\tan 2x = -\\\\frac{1}{\\\\sqrt{3}} = \\\\tan(-\\\\frac{\\\\pi}{6}). Suy ra 2x = -\\\\frac{\\\\pi}{6} + k\\\\pi \\\\Leftrightarrow x = -\\\\frac{\\\\pi}{12} + k\\\\frac{\\\\pi}{2}."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\sin 2x = -1.",
+"q": "Giải phương trình \\\\sin 2x = -1.",
 "choices": [
-"A. x = -\\frac{\\pi}{4} + k\\pi (k \\in \\mathbb{Z})",
-"B. x = -\\frac{\\pi}{2} + k2\\pi (k \\in \\mathbb{Z})",
-"C. x = \\frac{3\\pi}{4} + k2\\pi (k \\in \\mathbb{Z})",
-"D. x = -\\frac{\\pi}{4} + k2\\pi (k \\in \\mathbb{Z})"
+"A. x = -\\\\frac{\\\\pi}{4} + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"B. x = -\\\\frac{\\\\pi}{2} + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"C. x = \\\\frac{3\\\\pi}{4} + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"D. x = -\\\\frac{\\\\pi}{4} + k2\\\\pi (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 0,
-"explain": "\\sin 2x = -1 tương đương 2x = -\\frac{\\pi}{2} + k2\\pi. Chia hai vế cho 2 ta được x = -\\frac{\\pi}{4} + k\\pi."
+"explain": "\\\\sin 2x = -1 tương đương 2x = -\\\\frac{\\\\pi}{2} + k2\\\\pi. Chia hai vế cho 2 ta được x = -\\\\frac{\\\\pi}{4} + k\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Nghiệm của phương trình \\tan(2x + 15^\\circ) = -1 là:",
+"q": "Nghiệm của phương trình \\\\tan(2x + 15^\\\\circ) = -1 là:",
 "choices": [
-"A. x = -30^\\circ + k90^\\circ (k \\in \\mathbb{Z})",
-"B. x = -45^\\circ + k180^\\circ (k \\in \\mathbb{Z})",
-"C. x = -30^\\circ + k180^\\circ (k \\in \\mathbb{Z})",
-"D. x = 30^\\circ + k90^\\circ (k \\in \\mathbb{Z})"
+"A. x = -30^\\\\circ + k90^\\\\circ (k \\\\in \\\\mathbb{Z})",
+"B. x = -45^\\\\circ + k180^\\\\circ (k \\\\in \\\\mathbb{Z})",
+"C. x = -30^\\\\circ + k180^\\\\circ (k \\\\in \\\\mathbb{Z})",
+"D. x = 30^\\\\circ + k90^\\\\circ (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 0,
-"explain": "Ta có \\tan(2x + 15^\\circ) = \\tan(-45^\\circ). Suy ra 2x + 15^\\circ = -45^\\circ + k180^\\circ \\Leftrightarrow 2x = -60^\\circ + k180^\\circ \\Leftrightarrow x = -30^\\circ + k90^\\circ."
+"explain": "Ta có \\\\tan(2x + 15^\\\\circ) = \\\\tan(-45^\\\\circ). Suy ra 2x + 15^\\\\circ = -45^\\\\circ + k180^\\\\circ \\\\Leftrightarrow 2x = -60^\\\\circ + k180^\\\\circ \\\\Leftrightarrow x = -30^\\\\circ + k90^\\\\circ."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\cos 3x = -\\cos 7x.",
+"q": "Giải phương trình \\\\cos 3x = -\\\\cos 7x.",
 "choices": [
-"A. x = \\frac{\\pi}{10} + k\\frac{\\pi}{5} \\text{ hoặc } x = \\frac{\\pi}{4} + k\\frac{\\pi}{2} (k \\in \\mathbb{Z})",
-"B. x = \\frac{\\pi}{10} + k\\frac{\\pi}{5} \\text{ hoặc } x = -\\frac{\\pi}{4} + k\\frac{\\pi}{2} (k \\in \\mathbb{Z})",
-"C. x = \\frac{\\pi}{4} + k\\frac{\\pi}{2} (k \\in \\mathbb{Z})",
-"D. x = \\frac{\\pi}{10} + k\\frac{\\pi}{5} (k \\in \\mathbb{Z})"
+"A. x = \\\\frac{\\\\pi}{10} + k\\\\frac{\\\\pi}{5} \\\\text{ hoặc } x = \\\\frac{\\\\pi}{4} + k\\\\frac{\\\\pi}{2} (k \\\\in \\\\mathbb{Z})",
+"B. x = \\\\frac{\\\\pi}{10} + k\\\\frac{\\\\pi}{5} \\\\text{ hoặc } x = -\\\\frac{\\\\pi}{4} + k\\\\frac{\\\\pi}{2} (k \\\\in \\\\mathbb{Z})",
+"C. x = \\\\frac{\\\\pi}{4} + k\\\\frac{\\\\pi}{2} (k \\\\in \\\\mathbb{Z})",
+"D. x = \\\\frac{\\\\pi}{10} + k\\\\frac{\\\\pi}{5} (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 0,
-"explain": "Ta có -\\cos 7x = \\cos(\\pi - 7x). Phương trình trở thành \\cos 3x = \\cos(\\pi - 7x). Từ đó 3x = \\pi - 7x + k2\\pi \\Leftrightarrow 10x = \\pi + k2\\pi \\Leftrightarrow x = \\frac{\\pi}{10} + k\\frac{\\pi}{5}, hoặc 3x = -\\pi + 7x + k2\\pi \\Leftrightarrow 4x = \\pi - k2\\pi \\Leftrightarrow x = \\frac{\\pi}{4} - k\\frac{\\pi}{2}."
+"explain": "Ta có -\\\\cos 7x = \\\\cos(\\\\pi - 7x). Phương trình trở thành \\\\cos 3x = \\\\cos(\\\\pi - 7x). Từ đó 3x = \\\\pi - 7x + k2\\\\pi \\\\Leftrightarrow 10x = \\\\pi + k2\\\\pi \\\\Leftrightarrow x = \\\\frac{\\\\pi}{10} + k\\\\frac{\\\\pi}{5}, hoặc 3x = -\\\\pi + 7x + k2\\\\pi \\\\Leftrightarrow 4x = \\\\pi - k2\\\\pi \\\\Leftrightarrow x = \\\\frac{\\\\pi}{4} - k\\\\frac{\\\\pi}{2}."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Số nghiệm của phương trình \\sin 4x = 0 trên đoạn [-\\frac{\\pi}{2}; \\frac{\\pi}{2}] là bao nhiêu?",
+"q": "Số nghiệm của phương trình \\\\sin 4x = 0 trên đoạn [-\\\\frac{\\pi}{2}; \\\\frac{\\pi}{2}] là bao nhiêu?",
 "choices": [
 "A. 3",
 "B. 4",
@@ -2297,52 +2297,52 @@
 "D. 6"
 ],
 "correct": 2,
-"explain": "\\sin 4x = 0 \\Leftrightarrow 4x = k\\pi \\Leftrightarrow x = k\\frac{\\pi}{4}. Vì x \\in [-\\frac{\\pi}{2}; \\frac{\\pi}{2}], ta có -\\frac{\\pi}{2} \\le k\\frac{\\pi}{4} \\le \\frac{\\pi}{2} \\Leftrightarrow -2 \\le k \\le 2. Do k nguyên nên k \\in \\{-2; -1; 0; 1; 2\\}. Vậy có 5 nghiệm."
+"explain": "\\\\sin 4x = 0 \\\\Leftrightarrow 4x = k\\\\pi \\\\Leftrightarrow x = k\\\\frac{\\\\pi}{4}. Vì x \\\\in [-\\\\frac{\\\\pi}{2}; \\\\frac{\\\\pi}{2}], ta có -\\\\frac{\\\\pi}{2} \\\\le k\\\\frac{\\\\pi}{4} \\\\le \\\\frac{\\\\pi}{2} \\\\Leftrightarrow -2 \\\\le k \\\\le 2. Do k nguyên nên k \\\\in \\\\{-2; -1; 0; 1; 2\\}. Vậy có 5 nghiệm."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Nghiệm của phương trình \\cot(2x - 1) = \\cot \\frac{\\pi}{5} là:",
+"q": "Nghiệm của phương trình \\\\cot(2x - 1) = \\\\cot \\\\frac{\\\\pi}{5} là:",
 "choices": [
-"A. x = \\frac{1}{2} + \\frac{\\pi}{10} + k\\frac{\\pi}{2} (k \\in \\mathbb{Z})",
-"B. x = 1 + \\frac{\\pi}{5} + k\\pi (k \\in \\mathbb{Z})",
-"C. x = \\frac{1}{2} + \\frac{\\pi}{5} + k\\frac{\\pi}{2} (k \\in \\mathbb{Z})",
-"D. x = \\frac{1}{2} + \\frac{\\pi}{10} + k\\pi (k \\in \\mathbb{Z})"
+"A. x = \\\\frac{1}{2} + \\\\frac{\\\\pi}{10} + k\\\\frac{\\\\pi}{2} (k \\\\in \\\\mathbb{Z})",
+"B. x = 1 + \\\\frac{\\\\pi}{5} + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"C. x = \\\\frac{1}{2} + \\\\frac{\\\\pi}{5} + k\\\\frac{\\\\pi}{2} (k \\\\in \\\\mathbb{Z})",
+"D. x = \\\\frac{1}{2} + \\\\frac{\\\\pi}{10} + k\\\\pi (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 0,
-"explain": "Phương trình tương đương 2x - 1 = \\frac{\\pi}{5} + k\\pi. Chuyển vế ta được 2x = 1 + \\frac{\\pi}{5} + k\\pi, chia 2 hai vế ta có x = \\frac{1}{2} + \\frac{\\pi}{10} + k\\frac{\\pi}{2}."
+"explain": "Phương trình tương đương 2x - 1 = \\\\frac{\\\\pi}{5} + k\\\\pi. Chuyển vế ta được 2x = 1 + \\\\frac{\\\\pi}{5} + k\\\\pi, chia 2 hai vế ta có x = \\\\frac{1}{2} + \\\\frac{\\\\pi}{10} + k\\\\frac{\\\\pi}{2}."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\sin(x + 30^\\circ) = -\\frac{\\sqrt{2}}{2}.",
+"q": "Giải phương trình \\\\sin(x + 30^\\\\circ) = -\\\\frac{\\\\sqrt{2}}{2}.",
 "choices": [
-"A. x = -75^\\circ + k360^\\circ \\text{ hoặc } x = 255^\\circ + k360^\\circ (k \\in \\mathbb{Z})",
-"B. x = -45^\\circ + k360^\\circ \\text{ hoặc } x = 225^\\circ + k360^\\circ (k \\in \\mathbb{Z})",
-"C. x = -75^\\circ + k360^\\circ \\text{ hoặc } x = 195^\\circ + k360^\\circ (k \\in \\mathbb{Z})",
-"D. x = 75^\\circ + k360^\\circ \\text{ hoặc } x = 195^\\circ + k360^\\circ (k \\in \\mathbb{Z})"
+"A. x = -75^\\\\circ + k360^\\\\circ \\\\text{ hoặc } x = 255^\\\\circ + k360^\\\\circ (k \\\\in \\\\mathbb{Z})",
+"B. x = -45^\\\\circ + k360^\\\\circ \\\\text{ hoặc } x = 225^\\\\circ + k360^\\\\circ (k \\\\in \\\\mathbb{Z})",
+"C. x = -75^\\\\circ + k360^\\\\circ \\\\text{ hoặc } x = 195^\\\\circ + k360^\\\\circ (k \\\\in \\\\mathbb{Z})",
+"D. x = 75^\\\\circ + k360^\\\\circ \\\\text{ hoặc } x = 195^\\\\circ + k360^\\\\circ (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 2,
-"explain": "Ta có \\sin(x + 30^\\circ) = \\sin(-45^\\circ). Suy ra x + 30^\\circ = -45^\\circ + k360^\\circ \\Leftrightarrow x = -75^\\circ + k360^\\circ. Hoặc x + 30^\\circ = 180^\\circ - (-45^\\circ) + k360^\\circ \\Leftrightarrow x = 195^\\circ + k360^\\circ."
+"explain": "Ta có \\\\sin(x + 30^\\\\circ) = \\\\sin(-45^\\\\circ). Suy ra x + 30^\\\\circ = -45^\\\\circ + k360^\\\\circ \\\\Leftrightarrow x = -75^\\\\circ + k360^\\\\circ. Hoặc x + 30^\\\\circ = 180^\\\\circ - (-45^\\\\circ) + k360^\\\\circ \\\\Leftrightarrow x = 195^\\\\circ + k360^\\\\circ."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Nghiệm của phương trình \\sin x = \\cos x là:",
+"q": "Nghiệm của phương trình \\\\sin x = \\\\cos x là:",
 "choices": [
-"A. x = \\frac{\\pi}{4} + k2\\pi (k \\in \\mathbb{Z})",
-"B. x = \\frac{\\pi}{4} + k\\pi (k \\in \\mathbb{Z})",
-"C. x = -\\frac{\\pi}{4} + k\\pi (k \\in \\mathbb{Z})",
-"D. x = \\frac{\\pi}{2} + k\\pi (k \\in \\mathbb{Z})"
+"A. x = \\\\frac{\\\\pi}{4} + k2\\\\pi (k \\\\in \\\\mathbb{Z})",
+"B. x = \\\\frac{\\\\pi}{4} + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"C. x = -\\\\frac{\\\\pi}{4} + k\\\\pi (k \\\\in \\\\mathbb{Z})",
+"D. x = \\\\frac{\\\\pi}{2} + k\\\\pi (k \\\\in \\\\mathbb{Z})"
 ],
 "correct": 1,
-"explain": "Vì \\cos x = 0 không là nghiệm, chia hai vế cho \\cos x ta được \\tan x = 1, suy ra x = \\frac{\\pi}{4} + k\\pi."
+"explain": "Vì \\\\cos x = 0 không là nghiệm, chia hai vế cho \\\\cos x ta được \\\\tan x = 1, suy ra x = \\\\frac{\\\\pi}{4} + k\\\\pi."
 },
 {
 "grade": "11",
@@ -2351,13 +2351,13 @@
 "level": 1,
 "q": "Trong các khẳng định sau, khẳng định nào là đúng?",
 "choices": [
-"A. \\sin(\\pi - \\alpha) = -\\sin \\alpha",
-"B. \\sin(\\pi + \\alpha) = \\sin \\alpha",
-"C. \\cos(\\pi - \\alpha) = \\cos \\alpha",
-"D. \\sin(\\pi - \\alpha) = \\sin \\alpha"
+"A. \\\\sin(\\\\pi - \\\\alpha) = -\\\\sin \\\\alpha",
+"B. \\\\sin(\\\\pi + \\\\alpha) = \\\\sin \\\\alpha",
+"C. \\\\cos(\\\\pi - \\\\alpha) = \\\\cos \\\\alpha",
+"D. \\\\sin(\\\\pi - \\\\alpha) = \\\\sin \\\\alpha"
 ],
 "correct": 3,
-"explain": "Theo tính chất của hai góc bù nhau, ta có \\sin(\\pi - \\alpha) = \\sin \\alpha. Các đáp án còn lại sai dấu."
+"explain": "Theo tính chất của hai góc bù nhau, ta có \\\\sin(\\\\pi - \\\\alpha) = \\\\sin \\\\alpha. Các đáp án còn lại sai dấu."
 },
 {
 "grade": "11",
@@ -2366,13 +2366,13 @@
 "level": 1,
 "q": "Công thức nào sau đây biểu diễn đúng hệ thức lượng giác cơ bản?",
 "choices": [
-"A. \\sin^2 x - \\cos^2 x = 1",
-"B. \\sin^2 x + \\cos^2 x = 1",
-"C. \\sin x + \\cos x = 1",
-"D. 1 + \\tan^2 x = \\frac{1}{\\sin^2 x}"
+"A. \\\\sin^2 x - \\\\cos^2 x = 1",
+"B. \\\\sin^2 x + \\\\cos^2 x = 1",
+"C. \\\\sin x + \\\\cos x = 1",
+"D. 1 + \\\\tan^2 x = \\\\frac{1}{\\\\sin^2 x}"
 ],
 "correct": 1,
-"explain": "Hệ thức lượng giác cơ bản luôn có \\sin^2 x + \\cos^2 x = 1 với mọi góc x."
+"explain": "Hệ thức lượng giác cơ bản luôn có \\\\sin^2 x + \\\\cos^2 x = 1 với mọi góc x."
 },
 {
 "grade": "11",
@@ -2381,58 +2381,58 @@
 "level": 1,
 "q": "Hàm số nào trong các hàm số sau đây là hàm số chẵn?",
 "choices": [
-"A. y = \\sin x",
-"B. y = \\tan x",
-"C. y = \\cos x",
-"D. y = \\cot x"
+"A. y = \\\\sin x",
+"B. y = \\\\tan x",
+"C. y = \\\\cos x",
+"D. y = \\\\cot x"
 ],
 "correct": 2,
-"explain": "Hàm số y = \\cos x là hàm số chẵn vì \\cos(-x) = \\cos x với mọi x. Các hàm còn lại là hàm số lẻ."
+"explain": "Hàm số y = \\\\cos x là hàm số chẵn vì \\\\cos(-x) = \\\\cos x với mọi x. Các hàm còn lại là hàm số lẻ."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Tập xác định của hàm số y = \\tan x là:",
+"q": "Tập xác định của hàm số y = \\\\tan x là:",
 "choices": [
-"A. \\mathbb{R} \\setminus \\{k\\pi | k \\in \\mathbb{Z}\\}",
-"B. \\mathbb{R}",
-"C. \\mathbb{R} \\setminus \\{\\frac{\\pi}{2} + k2\\pi | k \\in \\mathbb{Z}\\}",
-"D. \\mathbb{R} \\setminus \\{\\frac{\\pi}{2} + k\\pi | k \\in \\mathbb{Z}\\}"
+"A. \\\\mathbb{R} \\\\setminus \\\\{k\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"B. \\\\mathbb{R}",
+"C. \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{\\\\pi}{2} + k2\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"D. \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{\\\\pi}{2} + k\\\\pi | k \\\\in \\\\mathbb{Z}\\}"
 ],
 "correct": 3,
-"explain": "Hàm số y = \\tan x xác định khi \\cos x \\neq 0, tức là x \\neq \\frac{\\pi}{2} + k\\pi."
+"explain": "Hàm số y = \\\\tan x xác định khi \\\\cos x \\\\neq 0, tức là x \\\\neq \\\\frac{\\\\pi}{2} + k\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Tập giá trị của hàm số y = \\sin x là:",
+"q": "Tập giá trị của hàm số y = \\\\sin x là:",
 "choices": [
 "A. [-1; 1]",
-"B. \\mathbb{R}",
+"B. \\\\mathbb{R}",
 "C. (0; 1)",
-"D. [0; +\\infty)"
+"D. [0; +\\\\infty)"
 ],
 "correct": 0,
-"explain": "Với mọi giá trị của x, ta luôn có -1 \\le \\sin x \\le 1. Vậy tập giá trị là đoạn [-1; 1]."
+"explain": "Với mọi giá trị của x, ta luôn có -1 \\\\le \\\\sin x \\\\le 1. Vậy tập giá trị là đoạn [-1; 1]."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Chu kì tuần hoàn cơ sở của hàm số y = \\cos x là:",
+"q": "Chu kì tuần hoàn cơ sở của hàm số y = \\\\cos x là:",
 "choices": [
-"A. \\pi",
-"B. 2\\pi",
-"C. \\frac{\\pi}{2}",
-"D. 4\\pi"
+"A. \\\\pi",
+"B. 2\\\\pi",
+"C. \\\\frac{\\\\pi}{2}",
+"D. 4\\\\pi"
 ],
 "correct": 1,
-"explain": "Hàm số y = \\cos x là hàm số tuần hoàn với chu kì 2\\pi."
+"explain": "Hàm số y = \\\\cos x là hàm số tuần hoàn với chu kì 2\\\\pi."
 },
 {
 "grade": "11",
@@ -2441,13 +2441,13 @@
 "level": 1,
 "q": "Trong các công thức cộng lượng giác sau, công thức nào đúng?",
 "choices": [
-"A. \\cos(a - b) = \\cos a \\cos b - \\sin a \\sin b",
-"B. \\sin(a + b) = \\sin a \\cos b - \\cos a \\sin b",
-"C. \\cos(a + b) = \\cos a \\cos b - \\sin a \\sin b",
-"D. \\sin(a - b) = \\sin a \\cos b + \\cos a \\sin b"
+"A. \\\\cos(a - b) = \\\\cos a \\\\cos b - \\\\sin a \\\\sin b",
+"B. \\\\sin(a + b) = \\\\sin a \\\\cos b - \\\\cos a \\\\sin b",
+"C. \\\\cos(a + b) = \\\\cos a \\\\cos b - \\\\sin a \\\\sin b",
+"D. \\\\sin(a - b) = \\\\sin a \\\\cos b + \\\\cos a \\\\sin b"
 ],
 "correct": 2,
-"explain": "Công thức chuẩn của cosin tổng là \\cos(a + b) = \\cos a \\cos b - \\sin a \\sin b."
+"explain": "Công thức chuẩn của cosin tổng là \\\\cos(a + b) = \\\\cos a \\\\cos b - \\\\sin a \\\\sin b."
 },
 {
 "grade": "11",
@@ -2456,13 +2456,13 @@
 "level": 1,
 "q": "Công thức nhân đôi nào sau đây là đúng?",
 "choices": [
-"A. \\cos 2a = 1 - 2\\sin^2 a",
-"B. \\cos 2a = 2\\sin^2 a - 1",
-"C. \\cos 2a = \\sin^2 a - \\cos^2 a",
-"D. \\sin 2a = \\sin a \\cos a"
+"A. \\\\cos 2a = 1 - 2\\\\sin^2 a",
+"B. \\\\cos 2a = 2\\\\sin^2 a - 1",
+"C. \\\\cos 2a = \\\\sin^2 a - \\\\cos^2 a",
+"D. \\\\sin 2a = \\\\sin a \\\\cos a"
 ],
 "correct": 0,
-"explain": "Theo công thức nhân đôi, \\cos 2a = \\cos^2 a - \\sin^2 a = 2\\cos^2 a - 1 = 1 - 2\\sin^2 a."
+"explain": "Theo công thức nhân đôi, \\\\cos 2a = \\\\cos^2 a - \\\\sin^2 a = 2\\\\cos^2 a - 1 = 1 - 2\\\\sin^2 a."
 },
 {
 "grade": "11",
@@ -2471,13 +2471,13 @@
 "level": 1,
 "q": "Công thức biến đổi tổng thành tích nào sau đây là đúng?",
 "choices": [
-"A. \\cos a + \\cos b = -2\\sin\\frac{a+b}{2}\\sin\\frac{a-b}{2}",
-"B. \\cos a - \\cos b = -2\\sin\\frac{a+b}{2}\\sin\\frac{a-b}{2}",
-"C. \\sin a + \\sin b = 2\\cos\\frac{a+b}{2}\\sin\\frac{a-b}{2}",
-"D. \\sin a - \\sin b = 2\\sin\\frac{a+b}{2}\\cos\\frac{a-b}{2}"
+"A. \\\\cos a + \\\\cos b = -2\\\\sin\\\\frac{a+b}{2}\\\\sin\\\\frac{a-b}{2}",
+"B. \\\\cos a - \\\\cos b = -2\\\\sin\\\\frac{a+b}{2}\\\\sin\\\\frac{a-b}{2}",
+"C. \\\\sin a + \\\\sin b = 2\\\\cos\\\\frac{a+b}{2}\\\\sin\\\\frac{a-b}{2}",
+"D. \\\\sin a - \\\\sin b = 2\\\\sin\\\\frac{a+b}{2}\\\\cos\\\\frac{a-b}{2}"
 ],
 "correct": 1,
-"explain": "Công thức chuẩn: \\cos a - \\cos b = -2\\sin\\frac{a+b}{2}\\sin\\frac{a-b}{2}."
+"explain": "Công thức chuẩn: \\\\cos a - \\\\cos b = -2\\\\sin\\\\frac{a+b}{2}\\\\sin\\\\frac{a-b}{2}."
 },
 {
 "grade": "11",
@@ -2487,12 +2487,12 @@
 "q": "Trong các hàm số sau đây, hàm số nào là hàm tuần hoàn?",
 "choices": [
 "A. y = x^2 + 1",
-"B. y = \\frac{\\sin x}{x}",
-"C. y = \\cot x",
-"D. y = \\tan x + x"
+"B. y = \\\\frac{\\\\sin x}{x}",
+"C. y = \\\\cot x",
+"D. y = \\\\tan x + x"
 ],
 "correct": 2,
-"explain": "Hàm số lượng giác cơ bản y = \\cot x là hàm số tuần hoàn. Các hàm đa thức hay phân thức có chứa x lẻ ra ngoài đều không tuần hoàn."
+"explain": "Hàm số lượng giác cơ bản y = \\\\cot x là hàm số tuần hoàn. Các hàm đa thức hay phân thức có chứa x lẻ ra ngoài đều không tuần hoàn."
 },
 {
 "grade": "11",
@@ -2507,29 +2507,29 @@
 "D. 40 cm"
 ],
 "correct": 2,
-"explain": "Áp dụng công thức l = R\\alpha, ta có l = 20 \\cdot 1.5 = 30 (cm)."
+"explain": "Áp dụng công thức l = R\\\\alpha, ta có l = 20 \\\\cdot 1.5 = 30 (cm)."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Rút gọn biểu thức M = \\cos(a+b)\\cos(a-b) - \\sin(a+b)\\sin(a-b).",
+"q": "Rút gọn biểu thức M = \\\\cos(a+b)\\\\cos(a-b) - \\\\sin(a+b)\\\\sin(a-b).",
 "choices": [
-"A. M = \\sin 4a",
-"B. M = 1 - 2\\cos^2 a",
-"C. M = 1 - 2\\sin^2 a",
-"D. M = \\cos 4a"
+"A. M = \\\\sin 4a",
+"B. M = 1 - 2\\\\cos^2 a",
+"C. M = 1 - 2\\\\sin^2 a",
+"D. M = \\\\cos 4a"
 ],
 "correct": 2,
-"explain": "Áp dụng công thức \\cos(X+Y) = \\cos X \\cos Y - \\sin X \\sin Y với X = a+b và Y = a-b. Ta được M = \\cos(a+b+a-b) = \\cos 2a = 1 - 2\\sin^2 a."
+"explain": "Áp dụng công thức \\\\cos(X+Y) = \\\\cos X \\\\cos Y - \\\\sin X \\\\sin Y với X = a+b và Y = a-b. Ta được M = \\\\cos(a+b+a-b) = \\\\cos 2a = 1 - 2\\\\sin^2 a."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Tìm tập giá trị của hàm số y = 5 - 3\\sin x.",
+"q": "Tìm tập giá trị của hàm số y = 5 - 3\\\\sin x.",
 "choices": [
 "A. [-1; 1]",
 "B. [2; 8]",
@@ -2537,104 +2537,104 @@
 "D. [5; 8]"
 ],
 "correct": 1,
-"explain": "Ta có -1 \\le \\sin x \\le 1. Nhân với -3 ta được -3 \\le -3\\sin x \\le 3. Cộng thêm 5 vào các vế ta có 2 \\le 5 - 3\\sin x \\le 8. Vậy tập giá trị là [2; 8]."
+"explain": "Ta có -1 \\\\le \\\\sin x \\\\le 1. Nhân với -3 ta được -3 \\\\le -3\\\\sin x \\\\le 3. Cộng thêm 5 vào các vế ta có 2 \\\\le 5 - 3\\\\sin x \\\\le 8. Vậy tập giá trị là [2; 8]."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Tập xác định của hàm số y = \\frac{\\cos x}{\\sin x - 1} là:",
+"q": "Tập xác định của hàm số y = \\\\frac{\\\\cos x}{\\\\sin x - 1} là:",
 "choices": [
-"A. \\mathbb{R} \\setminus \\{k2\\pi | k \\in \\mathbb{Z}\\}",
-"B. \\mathbb{R} \\setminus \\{\\frac{\\pi}{2} + k\\pi | k \\in \\mathbb{Z}\\}",
-"C. \\mathbb{R} \\setminus \\{\\frac{\\pi}{2} + k2\\pi | k \\in \\mathbb{Z}\\}",
-"D. \\mathbb{R} \\setminus \\{k\\pi | k \\in \\mathbb{Z}\\}"
+"A. \\\\mathbb{R} \\\\setminus \\\\{k2\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"B. \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{\\\\pi}{2} + k\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"C. \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{\\\\pi}{2} + k2\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
+"D. \\\\mathbb{R} \\\\setminus \\\\{k\\\\pi | k \\\\in \\\\mathbb{Z}\\}"
 ],
 "correct": 2,
-"explain": "Hàm số xác định khi mẫu số khác 0, tức là \\sin x \\neq 1 \\Leftrightarrow x \\neq \\frac{\\pi}{2} + k2\\pi."
+"explain": "Hàm số xác định khi mẫu số khác 0, tức là \\\\sin x \\\\neq 1 \\\\Leftrightarrow x \\\\neq \\\\frac{\\\\pi}{2} + k2\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Hàm số y = \\sin x đồng biến trên khoảng nào trong các khoảng sau đây?",
+"q": "Hàm số y = \\\\sin x đồng biến trên khoảng nào trong các khoảng sau đây?",
 "choices": [
-"A. (0; \\pi)",
-"B. (\\pi; 2\\pi)",
-"C. (-\\frac{\\pi}{2}; \\frac{\\pi}{2})",
-"D. (-\\pi; 0)"
+"A. (0; \\\\pi)",
+"B. (\\\\pi; 2\\\\pi)",
+"C. (-\\\\frac{\\\\pi}{2}; \\\\frac{\\\\pi}{2})",
+"D. (-\\\\pi; 0)"
 ],
 "correct": 2,
-"explain": "Dựa vào đồ thị hoặc đường tròn lượng giác, hàm số y = \\sin x tăng từ -1 đến 1 khi x chạy từ -\\frac{\\pi}{2} đến \\frac{\\pi}{2}."
+"explain": "Dựa vào đồ thị hoặc đường tròn lượng giác, hàm số y = \\\\sin x tăng từ -1 đến 1 khi x chạy từ -\\\\frac{\\\\pi}{2} đến \\\\frac{\\\\pi}{2}."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Tập xác định của hàm số y = \\sqrt{\\sin x - 2} là:",
+"q": "Tập xác định của hàm số y = \\\\sqrt{\\\\sin x - 2} là:",
 "choices": [
-"A. \\mathbb{R}",
-"B. \\mathbb{R} \\setminus \\{k\\pi | k \\in \\mathbb{Z}\\}",
+"A. \\\\mathbb{R}",
+"B. \\\\mathbb{R} \\\\setminus \\\\{k\\\\pi | k \\\\in \\\\mathbb{Z}\\}",
 "C. [-1; 1]",
-"D. \\emptyset"
+"D. \\\\emptyset"
 ],
 "correct": 3,
-"explain": "Điều kiện xác định: \\sin x - 2 \\ge 0 \\Leftrightarrow \\sin x \\ge 2. Do \\sin x \\le 1 với mọi x, nên bất phương trình vô nghiệm. Tập xác định là rỗng."
+"explain": "Điều kiện xác định: \\\\sin x - 2 \\\\ge 0 \\\\Leftrightarrow \\\\sin x \\\\ge 2. Do \\\\sin x \\\\le 1 với mọi x, nên bất phương trình vô nghiệm. Tập xác định là rỗng."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Biết \\sin a = \\frac{1}{3} và \\frac{\\pi}{2} < a < \\pi. Tính giá trị của \\cos 2a.",
+"q": "Biết \\\\sin a = \\\\frac{1}{3} và \\\\frac{\\\\pi}{2} < a < \\\\pi. Tính giá trị của \\\\cos 2a.",
 "choices": [
-"A. \\frac{7}{9}",
-"B. -\\frac{7}{9}",
-"C. \\frac{8}{9}",
-"D. -\\frac{8}{9}"
+"A. \\\\frac{7}{9}",
+"B. -\\\\frac{7}{9}",
+"C. \\\\frac{8}{9}",
+"D. -\\\\frac{8}{9}"
 ],
 "correct": 0,
-"explain": "Sử dụng công thức nhân đôi: \\cos 2a = 1 - 2\\sin^2 a = 1 - 2(\\frac{1}{3})^2 = 1 - \\frac{2}{9} = \\frac{7}{9}."
+"explain": "Sử dụng công thức nhân đôi: \\\\cos 2a = 1 - 2\\\\sin^2 a = 1 - 2(\\\\frac{1}{3})^2 = 1 - \\\\frac{2}{9} = \\\\frac{7}{9}."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Phương trình \\sin 2x + \\cos 4x = 0 tương đương với phương trình nào sau đây?",
+"q": "Phương trình \\\\sin 2x + \\\\cos 4x = 0 tương đương với phương trình nào sau đây?",
 "choices": [
-"A. \\sin 2x + 1 - 2\\sin^2 2x = 0",
-"B. \\sin 2x + 2\\cos^2 2x - 1 = 0",
-"C. \\sin 2x + 2\\sin 2x \\cos 2x = 0",
-"D. \\cos 2x (\\sin 2x + 1) = 0"
+"A. \\\\sin 2x + 1 - 2\\\\sin^2 2x = 0",
+"B. \\\\sin 2x + 2\\\\cos^2 2x - 1 = 0",
+"C. \\\\sin 2x + 2\\\\sin 2x \\\\cos 2x = 0",
+"D. \\\\cos 2x (\\\\sin 2x + 1) = 0"
 ],
 "correct": 0,
-"explain": "Thay \\cos 4x = 1 - 2\\sin^2 2x vào phương trình ban đầu ta được 1 + \\sin 2x - 2\\sin^2 2x = 0."
+"explain": "Thay \\\\cos 4x = 1 - 2\\\\sin^2 2x vào phương trình ban đầu ta được 1 + \\\\sin 2x - 2\\\\sin^2 2x = 0."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Hàm số y = \\sin 2x tuần hoàn với chu kì là bao nhiêu?",
+"q": "Hàm số y = \\\\sin 2x tuần hoàn với chu kì là bao nhiêu?",
 "choices": [
-"A. \\pi",
-"B. 2\\pi",
-"C. \\frac{\\pi}{2}",
-"D. 4\\pi"
+"A. \\\\pi",
+"B. 2\\\\pi",
+"C. \\\\frac{\\\\pi}{2}",
+"D. 4\\\\pi"
 ],
 "correct": 0,
-"explain": "Hàm số y = \\sin(ax+b) có chu kì T = \\frac{2\\pi}{|a|}. Vậy chu kì của \\sin 2x là T = \\frac{2\\pi}{2} = \\pi."
+"explain": "Hàm số y = \\\\sin(ax+b) có chu kì T = \\\\frac{2\\\\pi}{|a|}. Vậy chu kì của \\\\sin 2x là T = \\\\frac{2\\\\pi}{2} = \\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Đồ thị của hai hàm số y = \\sin x và y = \\cos x cắt nhau tại bao nhiêu điểm có hoành độ thuộc đoạn [-2\\pi; \\frac{5\\pi}{2}]?",
+"q": "Đồ thị của hai hàm số y = \\\\sin x và y = \\\\cos x cắt nhau tại bao nhiêu điểm có hoành độ thuộc đoạn [-2\\\\pi; \\\\frac{5\\\\pi}{2}]?",
 "choices": [
 "A. 5",
 "B. 6",
@@ -2642,43 +2642,43 @@
 "D. 7"
 ],
 "correct": 0,
-"explain": "Phương trình hoành độ giao điểm \\sin x = \\cos x \\Leftrightarrow \\tan x = 1 \\Leftrightarrow x = \\frac{\\pi}{4} + k\\pi. Điều kiện: -2\\pi \\le \\frac{\\pi}{4} + k\\pi \\le \\frac{5\\pi}{2} \\Leftrightarrow -2.25 \\le k \\le 2.25. Vì k \\in \\mathbb{Z} nên k \\in \\{-2; -1; 0; 1; 2\\}. Có 5 giá trị của k, tương ứng 5 điểm cắt."
+"explain": "Phương trình hoành độ giao điểm \\\\sin x = \\\\cos x \\\\Leftrightarrow \\\\tan x = 1 \\\\Leftrightarrow x = \\\\frac{\\\\pi}{4} + k\\\\pi. Điều kiện: -2\\\\pi \\\\le \\\\frac{\\\\pi}{4} + k\\\\pi \\\\le \\\\frac{5\\\\pi}{2} \\\\Leftrightarrow -2.25 \\\\le k \\\\le 2.25. Vì k \\\\in \\\\mathbb{Z} nên k \\\\in \\\\{-2; -1; 0; 1; 2\\}. Có 5 giá trị của k, tương ứng 5 điểm cắt."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Tìm tổng giá trị lớn nhất và giá trị nhỏ nhất của hàm số y = 3\\sin(2x) - 4\\cos(2x) + 5.",
+"q": "Tìm tổng giá trị lớn nhất và giá trị nhỏ nhất của hàm số y = 3\\\\sin(2x) - 4\\\\cos(2x) + 5.",
 "correct": "10",
-"explain": "Áp dụng bất đẳng thức Bunhiacopxki, ta có -\\sqrt{3^2 + (-4)^2} \\le 3\\sin(2x) - 4\\cos(2x) \\le \\sqrt{3^2 + (-4)^2}, hay -5 \\le 3\\sin(2x) - 4\\cos(2x) \\le 5. Cộng thêm 5 vào các vế, ta được 0 \\le y \\le 10. Vậy giá trị lớn nhất là 10, giá trị nhỏ nhất là 0. Tổng của chúng bằng 10."
+"explain": "Áp dụng bất đẳng thức Bunhiacopxki, ta có -\\\\sqrt{3^2 + (-4)^2} \\\\le 3\\\\sin(2x) - 4\\\\cos(2x) \\\\le \\\\sqrt{3^2 + (-4)^2}, hay -5 \\\\le 3\\\\sin(2x) - 4\\\\cos(2x) \\\\le 5. Cộng thêm 5 vào các vế, ta được 0 \\\\le y \\\\le 10. Vậy giá trị lớn nhất là 10, giá trị nhỏ nhất là 0. Tổng của chúng bằng 10."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Cho hàm số y = 2\\sin(3\\pi x) + 4\\cos(2\\pi x) tuần hoàn với chu kì T. Tính giá trị của T.",
+"q": "Cho hàm số y = 2\\\\sin(3\\\\pi x) + 4\\\\cos(2\\\\pi x) tuần hoàn với chu kì T. Tính giá trị của T.",
 "correct": "2",
-"explain": "Chu kì của hàm số y_1 = 2\\sin(3\\pi x) là T_1 = \\frac{2\\pi}{3\\pi} = \\frac{2}{3}. Chu kì của hàm số y_2 = 4\\cos(2\\pi x) là T_2 = \\frac{2\\pi}{2\\pi} = 1. Chu kì T của hàm số y là bội chung nhỏ nhất của T_1 và T_2. Ta tìm phân số tối giản chung: T_1 = 2/3, T_2 = 3/3. Bội chung nhỏ nhất của tử số (2 và 3) là 6. Vậy T = 6/3 = 2."
+"explain": "Chu kì của hàm số y_1 = 2\\\\sin(3\\\\pi x) là T_1 = \\\\frac{2\\\\pi}{3\\\\pi} = \\\\frac{2}{3}. Chu kì của hàm số y_2 = 4\\\\cos(2\\\\pi x) là T_2 = \\\\frac{2\\\\pi}{2\\\\pi} = 1. Chu kì T của hàm số y là bội chung nhỏ nhất của T_1 và T_2. Ta tìm phân số tối giản chung: T_1 = 2/3, T_2 = 3/3. Bội chung nhỏ nhất của tử số (2 và 3) là 6. Vậy T = 6/3 = 2."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Cho hàm số f(x) = a x^3 \\cos x + b x \\sin^2 x + 5 (với a, b là các tham số thực). Biết f(\\pi) = 10. Tính f(-\\pi).",
+"q": "Cho hàm số f(x) = a x^3 \\\\cos x + b x \\\\sin^2 x + 5 (với a, b là các tham số thực). Biết f(\\\\pi) = 10. Tính f(-\\\\pi).",
 "correct": "0",
-"explain": "Xét hàm số g(x) = f(x) - 5 = a x^3 \\cos x + b x \\sin^2 x. Tập xác định D = \\mathbb{R}. Ta có g(-x) = a(-x)^3 \\cos(-x) + b(-x) \\sin^2(-x) = -a x^3 \\cos x - b x \\sin^2 x = -g(x). Do đó g(x) là hàm số lẻ. Ta có f(\\pi) = 10 \\Rightarrow g(\\pi) + 5 = 10 \\Rightarrow g(\\pi) = 5. Do g(x) lẻ nên g(-\\pi) = -5. Vậy f(-\\pi) = g(-\\pi) + 5 = -5 + 5 = 0."
+"explain": "Xét hàm số g(x) = f(x) - 5 = a x^3 \\\\cos x + b x \\\\sin^2 x. Tập xác định D = \\\\mathbb{R}. Ta có g(-x) = a(-x)^3 \\\\cos(-x) + b(-x) \\\\sin^2(-x) = -a x^3 \\\\cos x - b x \\\\sin^2 x = -g(x). Do đó g(x) là hàm số lẻ. Ta có f(\\\\pi) = 10 \\\\Rightarrow g(\\\\pi) + 5 = 10 \\\\Rightarrow g(\\\\pi) = 5. Do g(x) lẻ nên g(-\\\\pi) = -5. Vậy f(-\\\\pi) = g(-\\\\pi) + 5 = -5 + 5 = 0."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Tại một vùng biển, mực nước đo được tại thời điểm t (giờ) trong ngày (t > 0) được cho bởi công thức y(t) = 15 + 3\\sin(\\frac{\\pi t}{6}) (mét). Tìm thời điểm đầu tiên t (tính bằng giờ) để mực nước đạt 16.5 mét.",
+"q": "Tại một vùng biển, mực nước đo được tại thời điểm t (giờ) trong ngày (t > 0) được cho bởi công thức y(t) = 15 + 3\\\\sin(\\\\frac{\\\\pi t}{6}) (mét). Tìm thời điểm đầu tiên t (tính bằng giờ) để mực nước đạt 16.5 mét.",
 "correct": "1",
-"explain": "Ta giải phương trình: 15 + 3\\sin(\\frac{\\pi t}{6}) = 16.5 \\Leftrightarrow 3\\sin(\\frac{\\pi t}{6}) = 1.5 \\Leftrightarrow \\sin(\\frac{\\pi t}{6}) = 0.5. Các họ nghiệm là \\frac{\\pi t}{6} = \\frac{\\pi}{6} + k2\\pi \\Leftrightarrow t = 1 + 12k và \\frac{\\pi t}{6} = \\frac{5\\pi}{6} + k2\\pi \\Leftrightarrow t = 5 + 12k. Thời điểm đầu tiên t > 0 ứng với k = 0 ở họ thứ nhất, tức là t = 1."
+"explain": "Ta giải phương trình: 15 + 3\\\\sin(\\\\frac{\\\\pi t}{6}) = 16.5 \\\\Leftrightarrow 3\\\\sin(\\\\frac{\\\\pi t}{6}) = 1.5 \\\\Leftrightarrow \\\\sin(\\\\frac{\\\\pi t}{6}) = 0.5. Các họ nghiệm là \\\\frac{\\\\pi t}{6} = \\\\frac{\\\\pi}{6} + k2\\\\pi \\\\Leftrightarrow t = 1 + 12k và \\\\frac{\\\\pi t}{6} = \\\\frac{5\\\\pi}{6} + k2\\\\pi \\\\Leftrightarrow t = 5 + 12k. Thời điểm đầu tiên t > 0 ứng với k = 0 ở họ thứ nhất, tức là t = 1."
 },
 {
 "grade": "11",
@@ -2687,232 +2687,232 @@
 "level": 4,
 "q": "Một vòng quay mặt trời có đường kính 100m, tâm vòng quay nằm ở độ cao 60m so với mặt đất. Vòng quay quay đều mỗi vòng hết 12 phút. Khi bắt đầu quan sát lúc t = 0, một cabin đang ở vị trí thấp nhất. Thời gian ngắn nhất (tính bằng phút) kể từ lúc bắt đầu quan sát để cabin đó đạt độ cao 85m là bao nhiêu?",
 "correct": "4",
-"explain": "Bán kính vòng quay R = 50m. Phương trình độ cao của cabin: h(t) = 60 - 50\\cos(\\frac{2\\pi}{12} t) = 60 - 50\\cos(\\frac{\\pi}{6} t). Ta cần h(t) = 85 \\Leftrightarrow 60 - 50\\cos(\\frac{\\pi}{6} t) = 85 \\Leftrightarrow \\cos(\\frac{\\pi}{6} t) = -0.5. Ta có \\frac{\\pi}{6} t = \\frac{2\\pi}{3} + k2\\pi hoặc \\frac{\\pi}{6} t = -\\frac{2\\pi}{3} + k2\\pi. Thời gian ngắn nhất ứng với nghiệm dương nhỏ nhất: \\frac{\\pi}{6} t = \\frac{2\\pi}{3} \\Rightarrow t = 4."
+"explain": "Bán kính vòng quay R = 50m. Phương trình độ cao của cabin: h(t) = 60 - 50\\\\cos(\\\\frac{2\\\\pi}{12} t) = 60 - 50\\\\cos(\\\\frac{\\\\pi}{6} t). Ta cần h(t) = 85 \\\\Leftrightarrow 60 - 50\\\\cos(\\\\frac{\\\\pi}{6} t) = 85 \\\\Leftrightarrow \\\\cos(\\\\frac{\\\\pi}{6} t) = -0.5. Ta có \\\\frac{\\\\pi}{6} t = \\\\frac{2\\\\pi}{3} + k2\\\\pi hoặc \\\\frac{\\\\pi}{6} t = -\\\\frac{2\\\\pi}{3} + k2\\\\pi. Thời gian ngắn nhất ứng với nghiệm dương nhỏ nhất: \\\\frac{\\\\pi}{6} t = \\\\frac{2\\\\pi}{3} \\\\Rightarrow t = 4."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Hàm số y = \\frac{1}{\\sqrt{m - 2\\sin x - 3\\cos x}} có tập xác định là \\mathbb{R}. Biết m là số nguyên dương bé hơn 10. Hỏi có bao nhiêu giá trị của m thỏa mãn yêu cầu bài toán?",
+"q": "Hàm số y = \\\\frac{1}{\\\\sqrt{m - 2\\\\sin x - 3\\\\cos x}} có tập xác định là \\\\mathbb{R}. Biết m là số nguyên dương bé hơn 10. Hỏi có bao nhiêu giá trị của m thỏa mãn yêu cầu bài toán?",
 "correct": "6",
-"explain": "Hàm số xác định trên \\mathbb{R} khi m - 2\\sin x - 3\\cos x > 0, \\forall x \\Leftrightarrow m > 2\\sin x + 3\\cos x, \\forall x. Theo bất đẳng thức Bunhiacopxki, giá trị lớn nhất của 2\\sin x + 3\\cos x là \\sqrt{2^2 + 3^2} = \\sqrt{13} \\approx 3.6. Do đó m > \\sqrt{13}. Vì m là số nguyên dương bé hơn 10 nên m \\in \\{4, 5, 6, 7, 8, 9\\}. Có tổng cộng 6 giá trị."
+"explain": "Hàm số xác định trên \\\\mathbb{R} khi m - 2\\\\sin x - 3\\\\cos x > 0, \\\\forall x \\\\Leftrightarrow m > 2\\\\sin x + 3\\\\cos x, \\\\forall x. Theo bất đẳng thức Bunhiacopxki, giá trị lớn nhất của 2\\\\sin x + 3\\\\cos x là \\\\sqrt{2^2 + 3^2} = \\\\sqrt{13} \\\\approx 3.6. Do đó m > \\\\sqrt{13}. Vì m là số nguyên dương bé hơn 10 nên m \\\\in \\\\{4, 5, 6, 7, 8, 9\\\\}. Có tổng cộng 6 giá trị."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Tìm giá trị lớn nhất của hàm số y = \\sin^4 x + \\cos^4 x + \\sin 2x (Nhập kết quả dưới dạng số thập phân).",
+"q": "Tìm giá trị lớn nhất của hàm số y = \\\\sin^4 x + \\\\cos^4 x + \\\\sin 2x (Nhập kết quả dưới dạng số thập phân).",
 "correct": "1.5",
-"explain": "Ta biến đổi: \\sin^4 x + \\cos^4 x = 1 - 2\\sin^2 x \\cos^2 x = 1 - \\frac{1}{2}\\sin^2 2x. Đặt t = \\sin 2x (-1 \\le t \\le 1), hàm số trở thành y = f(t) = -0.5 t^2 + t + 1. Đây là parabol có đỉnh tại t = -1 / (2 \\cdot (-0.5)) = 1, nằm trong đoạn [-1, 1]. Do hệ số a = -0.5 < 0 nên giá trị lớn nhất đạt tại đỉnh t = 1. Khi đó, Max = -0.5(1)^2 + 1 + 1 = 1.5."
+"explain": "Ta biến đổi: \\\\sin^4 x + \\\\cos^4 x = 1 - 2\\\\sin^2 x \\\\cos^2 x = 1 - \\\\frac{1}{2}\\\\sin^2 2x. Đặt t = \\\\sin 2x (-1 \\\\le t \\\\le 1), hàm số trở thành y = f(t) = -0.5 t^2 + t + 1. Đây là parabol có đỉnh tại t = -1 / (2 \\\\cdot (-0.5)) = 1, nằm trong đoạn [-1, 1]. Do hệ số a = -0.5 < 0 nên giá trị lớn nhất đạt tại đỉnh t = 1. Khi đó, Max = -0.5(1)^2 + 1 + 1 = 1.5."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Chiều cao của một cơn sóng biển tại thời điểm t giờ (0 \\le t < 24) được cho bởi công thức h(t) = 3\\cos(\\frac{\\pi t}{6} + \\frac{\\pi}{3}) + 12 (mét). Tính tổng thời gian trong một ngày (tính bằng giờ) để chiều cao của cơn sóng lớn hơn 13.5 mét.",
+"q": "Chiều cao của một cơn sóng biển tại thời điểm t giờ (0 \\\\le t < 24) được cho bởi công thức h(t) = 3\\\\cos(\\\\frac{\\\\pi t}{6} + \\\\frac{\\\\pi}{3}) + 12 (mét). Tính tổng thời gian trong một ngày (tính bằng giờ) để chiều cao của cơn sóng lớn hơn 13.5 mét.",
 "correct": "8",
-"explain": "Giải bất phương trình: 3\\cos(\\frac{\\pi t}{6} + \\frac{\\pi}{3}) + 12 > 13.5 \\Leftrightarrow \\cos(\\frac{\\pi t}{6} + \\frac{\\pi}{3}) > 0.5. Trên vòng tròn lượng giác, ta có: -\\frac{\\pi}{3} + k2\\pi < \\frac{\\pi t}{6} + \\frac{\\pi}{3} < \\frac{\\pi}{3} + k2\\pi \\Leftrightarrow -\\frac{2\\pi}{3} + k2\\pi < \\frac{\\pi t}{6} < k2\\pi \\Leftrightarrow -4 + 12k < t < 12k. Với 0 \\le t < 24, k=1 cho khoảng 8 < t < 12 (độ dài 4 giờ); k=2 cho khoảng 20 < t < 24 (độ dài 4 giờ). Tổng thời gian là 4 + 4 = 8 giờ."
+"explain": "Giải bất phương trình: 3\\\\cos(\\\\frac{\\\\pi t}{6} + \\\\frac{\\\\pi}{3}) + 12 > 13.5 \\\\Leftrightarrow \\\\cos(\\\\frac{\\\\pi t}{6} + \\\\frac{\\\\pi}{3}) > 0.5. Trên vòng tròn lượng giác, ta có: -\\\\frac{\\\\pi}{3} + k2\\\\pi < \\\\frac{\\\\pi t}{6} + \\\\frac{\\\\pi}{3} < \\\\frac{\\\\pi}{3} + k2\\\\pi \\\\Leftrightarrow -\\\\frac{2\\\\pi}{3} + k2\\\\pi < \\\\frac{\\\\pi t}{6} < k2\\\\pi \\\\Leftrightarrow -4 + 12k < t < 12k. Với 0 \\\\le t < 24, k=1 cho khoảng 8 < t < 12 (độ dài 4 giờ); k=2 cho khoảng 20 < t < 24 (độ dài 4 giờ). Tổng thời gian là 4 + 4 = 8 giờ."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Gọi M và m lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của hàm số y = \\frac{2\\sin x + \\cos x + 3}{-\\sin x + 2\\cos x + 4}. Tính giá trị của biểu thức M + 11m.",
+"q": "Gọi M và m lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của hàm số y = \\\\frac{2\\\\sin x + \\\\cos x + 3}{-\\\\sin x + 2\\\\cos x + 4}. Tính giá trị của biểu thức M + 11m.",
 "correct": "4",
-"explain": "Nhân chéo ta được: y(-\\sin x + 2\\cos x + 4) = 2\\sin x + \\cos x + 3 \\Leftrightarrow (y+2)\\sin x + (1-2y)\\cos x = 4y-3. Để phương trình có nghiệm x, ta phải có: (y+2)^2 + (1-2y)^2 \\ge (4y-3)^2 \\Leftrightarrow y^2 + 4y + 4 + 1 - 4y + 4y^2 \\ge 16y^2 - 24y + 9 \\Leftrightarrow 5y^2 + 5 \\ge 16y^2 - 24y + 9 \\Leftrightarrow 11y^2 - 24y + 4 \\le 0 \\Leftrightarrow (11y - 2)(y - 2) \\le 0 \\Leftrightarrow 2/11 \\le y \\le 2. Vậy M = 2, m = 2/11. M + 11m = 2 + 11(2/11) = 4."
+"explain": "Nhân chéo ta được: y(-\\\\sin x + 2\\\\cos x + 4) = 2\\\\sin x + \\\\cos x + 3 \\\\Leftrightarrow (y+2)\\\\sin x + (1-2y)\\\\cos x = 4y-3. Để phương trình có nghiệm x, ta phải có: (y+2)^2 + (1-2y)^2 \\\\ge (4y-3)^2 \\\\Leftrightarrow y^2 + 4y + 4 + 1 - 4y + 4y^2 \\\\ge 16y^2 - 24y + 9 \\\\Leftrightarrow 5y^2 + 5 \\\\ge 16y^2 - 24y + 9 \\\\Leftrightarrow 11y^2 - 24y + 4 \\\\le 0 \\\\Leftrightarrow (11y - 2)(y - 2) \\\\le 0 \\\\Leftrightarrow 2/11 \\\\le y \\\\le 2. Vậy M = 2, m = 2/11. M + 11m = 2 + 11(2/11) = 4."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Cho hàm số f(x) = \\cos(\\pi \\sin x). Tìm số giao điểm của đồ thị hàm số y = f(x) với trục hoành trên khoảng (-\\pi, \\pi).",
+"q": "Cho hàm số f(x) = \\\\cos(\\\\pi \\\\sin x). Tìm số giao điểm của đồ thị hàm số y = f(x) với trục hoành trên khoảng (-\\\\pi, \\\\pi).",
 "correct": "4",
-"explain": "Phương trình hoành độ giao điểm: \\cos(\\pi \\sin x) = 0 \\Leftrightarrow \\pi \\sin x = \\frac{\\pi}{2} + k\\pi \\Leftrightarrow \\sin x = \\frac{1}{2} + k. Do -1 \\le \\sin x \\le 1 nên -1 \\le 1/2 + k \\le 1 \\Rightarrow -1.5 \\le k \\le 0.5. Vì k \\in \\mathbb{Z} nên k = 0 hoặc k = -1. Nếu k = 0, \\sin x = 0.5, trên (\\-\\pi, \\pi) có 2 nghiệm (\\pi/6, 5\\pi/6). Nếu k = -1, \\sin x = -0.5, trên (\\-\\pi, \\pi) có 2 nghiệm (-\\pi/6, -5\\pi/6). Tổng cộng có 4 nghiệm."
+"explain": "Phương trình hoành độ giao điểm: \\\\cos(\\\\pi \\\\sin x) = 0 \\\\Leftrightarrow \\\\pi \\\\sin x = \\\\frac{\\\\pi}{2} + k\\\\pi \\\\Leftrightarrow \\\\sin x = \\\\frac{1}{2} + k. Do -1 \\\\le \\\\sin x \\\\le 1 nên -1 \\\\le 1/2 + k \\\\le 1 \\\\Rightarrow -1.5 \\\\le k \\\\le 0.5. Vì k \\\\in \\\\mathbb{Z} nên k = 0 hoặc k = -1. Nếu k = 0, \\\\sin x = 0.5, trên (\\\\-\\pi, \\\\pi) có 2 nghiệm (\\\\pi/6, 5\\\\pi/6). Nếu k = -1, \\\\sin x = -0.5, trên (\\\\-\\pi, \\\\pi) có 2 nghiệm (-\\\\pi/6, -5\\\\pi/6). Tổng cộng có 4 nghiệm."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Tìm chu kì T của hàm số y = \\sin(\\frac{3x}{2}) + \\cos(\\frac{5x}{3}) + \\tan(\\frac{7x}{4}). Biết T có thể viết dưới dạng phân số tối giản T = \\frac{a\\pi}{b} (với a, b nguyên dương). Tính a - b.",
+"q": "Tìm chu kì T của hàm số y = \\\\sin(\\\\frac{3x}{2}) + \\\\cos(\\\\frac{5x}{3}) + \\\\tan(\\\\frac{7x}{4}). Biết T có thể viết dưới dạng phân số tối giản T = \\\\frac{a\\\\pi}{b} (với a, b nguyên dương). Tính a - b.",
 "correct": "11",
-"explain": "Chu kì của từng hàm thành phần là: T_1 = 2\\pi / (3/2) = 4\\pi/3; T_2 = 2\\pi / (5/3) = 6\\pi/5; T_3 = \\pi / (7/4) = 4\\pi/7. Chu kì T của hàm tổng là BCNN của T_1, T_2, T_3. Áp dụng quy tắc: BCNN của các phân số bằng BCNN của tử số chia cho UCLN của mẫu số. Các tử số là 4, 6, 4 \\Rightarrow BCNN là 12. Các mẫu số là 3, 5, 7 \\Rightarrow UCLN là 1. Vậy T = 12\\pi/1. Suy ra a = 12, b = 1. a - b = 11."
+"explain": "Chu kì của từng hàm thành phần là: T_1 = 2\\\\pi / (3/2) = 4\\\\pi/3; T_2 = 2\\\\pi / (5/3) = 6\\\\pi/5; T_3 = \\\\pi / (7/4) = 4\\\\pi/7. Chu kì T của hàm tổng là BCNN của T_1, T_2, T_3. Áp dụng quy tắc: BCNN của các phân số bằng BCNN của tử số chia cho UCLN của mẫu số. Các tử số là 4, 6, 4 \\\\Rightarrow BCNN là 12. Các mẫu số là 3, 5, 7 \\\\Rightarrow UCLN là 1. Vậy T = 12\\\\pi/1. Suy ra a = 12, b = 1. a - b = 11."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Xét hàm số y = |\\sin x + \\cos x + m|. Biết giá trị lớn nhất của hàm số trên \\mathbb{R} bằng 5. Gọi S là tổng tất cả các giá trị thực của tham số m thỏa mãn yêu cầu bài toán. Tính S.",
+"q": "Xét hàm số y = |\\\\sin x + \\\\cos x + m|. Biết giá trị lớn nhất của hàm số trên \\\\mathbb{R} bằng 5. Gọi S là tổng tất cả các giá trị thực của tham số m thỏa mãn yêu cầu bài toán. Tính S.",
 "correct": "0",
-"explain": "Đặt t = \\sin x + \\cos x = \\sqrt{2}\\sin(x+\\pi/4), do đó t \\in [-\\sqrt{2}, \\sqrt{2}]. Bài toán trở thành tìm GTLN của y = |t + m| trên đoạn [-\\sqrt{2}, \\sqrt{2}]. GTLN sẽ đạt được tại một trong hai đầu mút của đoạn, tức là Max = \\max(|m + \\sqrt{2}|, |m - \\sqrt{2}|). Trường hợp 1: m \\ge 0 \\Rightarrow Max = m + \\sqrt{2} = 5 \\Rightarrow m = 5 - \\sqrt{2}. Trường hợp 2: m < 0 \\Rightarrow Max = -m + \\sqrt{2} = 5 \\Rightarrow m = \\sqrt{2} - 5. Tổng các giá trị của m là S = 5 - \\sqrt{2} + \\sqrt{2} - 5 = 0."
+"explain": "Đặt t = \\\\sin x + \\\\cos x = \\\\sqrt{2}\\\\sin(x+\\\\pi/4), do đó t \\\\in [-\\\\sqrt{2}, \\\\sqrt{2}]. Bài toán trở thành tìm GTLN của y = |t + m| trên đoạn [-\\\\sqrt{2}, \\\\sqrt{2}]. GTLN sẽ đạt được tại một trong hai đầu mút của đoạn, tức là Max = \\\\max(|m + \\\\sqrt{2}|, |m - \\\\sqrt{2}|). Trường hợp 1: m \\\\ge 0 \\\\Rightarrow Max = m + \\\\sqrt{2} = 5 \\\\Rightarrow m = 5 - \\\\sqrt{2}. Trường hợp 2: m < 0 \\\\Rightarrow Max = -m + \\\\sqrt{2} = 5 \\\\Rightarrow m = \\\\sqrt{2} - 5. Tổng các giá trị của m là S = 5 - \\\\sqrt{2} + \\\\sqrt{2} - 5 = 0."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Tìm số nghiệm của phương trình \\sqrt{3}\\tan(2x - \\frac{\\pi}{4}) - 3 = 0 trên khoảng (0, \\pi).",
+"q": "Tìm số nghiệm của phương trình \\\\sqrt{3}\\\\tan(2x - \\\\frac{\\\\pi}{4}) - 3 = 0 trên khoảng (0, \\\\pi).",
 "correct": "2",
-"explain": "Phương trình tương đương \\tan(2x - \\frac{\\pi}{4}) = \\sqrt{3} \\Leftrightarrow 2x - \\frac{\\pi}{4} = \\frac{\\pi}{3} + k\\pi \\Leftrightarrow 2x = \\frac{7\\pi}{12} + k\\pi \\Leftrightarrow x = \\frac{7\\pi}{24} + \\frac{k\\pi}{2}. Ta cần 0 < \\frac{7\\pi}{24} + \\frac{k\\pi}{2} < \\pi \\Leftrightarrow 0 < \\frac{7}{24} + \\frac{k}{2} < 1 \\Leftrightarrow -\\frac{7}{24} < \\frac{k}{2} < \\frac{17}{24} \\Leftrightarrow -0.58 < k < 1.41. Do k nguyên nên k \\in \\{0, 1\\}. Vậy phương trình có 2 nghiệm."
+"explain": "Phương trình tương đương \\\\tan(2x - \\\\frac{\\\\pi}{4}) = \\\\sqrt{3} \\\\Leftrightarrow 2x - \\\\frac{\\\\pi}{4} = \\\\frac{\\\\pi}{3} + k\\\\pi \\\\Leftrightarrow 2x = \\\\frac{7\\\\pi}{12} + k\\\\pi \\\\Leftrightarrow x = \\\\frac{7\\\\pi}{24} + \\\\frac{k\\\\pi}{2}. Ta cần 0 < \\\\frac{7\\\\pi}{24} + \\\\frac{k\\\\pi}{2} < \\\\pi \\\\Leftrightarrow 0 < \\\\frac{7}{24} + \\\\frac{k}{2} < 1 \\\\Leftrightarrow -\\\\frac{7}{24} < \\\\frac{k}{2} < \\\\frac{17}{24} \\\\Leftrightarrow -0.58 < k < 1.41. Do k nguyên nên k \\\\in \\\\{0, 1\\\\}. Vậy phương trình có 2 nghiệm."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Tính tổng các nghiệm x \\in [0, 2\\pi] của phương trình 2\\cos^2 x - \\cos x - 1 = 0, sau đó chia cho \\pi. Kết quả thu được bằng bao nhiêu?",
+"q": "Tính tổng các nghiệm x \\\\in [0, 2\\\\pi] của phương trình 2\\\\cos^2 x - \\\\cos x - 1 = 0, sau đó chia cho \\\\pi. Kết quả thu được bằng bao nhiêu?",
 "correct": "4",
-"explain": "Phương trình bậc hai đối với \\cos x có dạng a + b + c = 0, nên có nghiệm \\cos x = 1 hoặc \\cos x = -0.5. Với \\cos x = 1 trên [0, 2\\pi], ta có x = 0, 2\\pi. Với \\cos x = -0.5 trên [0, 2\\pi], ta có x = \\frac{2\\pi}{3}, \\frac{4\\pi}{3}. Tổng các nghiệm là 0 + 2\\pi + \\frac{2\\pi}{3} + \\frac{4\\pi}{3} = 4\\pi. Tỉ lệ với \\pi là 4."
+"explain": "Phương trình bậc hai đối với \\\\cos x có dạng a + b + c = 0, nên có nghiệm \\\\cos x = 1 hoặc \\\\cos x = -0.5. Với \\\\cos x = 1 trên [0, 2\\\\pi], ta có x = 0, 2\\\\pi. Với \\\\cos x = -0.5 trên [0, 2\\\\pi], ta có x = \\\\frac{2\\\\pi}{3}, \\\\frac{4\\\\pi}{3}. Tổng các nghiệm là 0 + 2\\\\pi + \\\\frac{2\\\\pi}{3} + \\\\frac{4\\\\pi}{3} = 4\\\\pi. Tỉ lệ với \\\\pi là 4."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Tìm số nghiệm của phương trình \\sin(3x) = \\cos x trên đoạn [0, \\pi].",
+"q": "Tìm số nghiệm của phương trình \\\\sin(3x) = \\\\cos x trên đoạn [0, \\\\pi].",
 "correct": "3",
-"explain": "Phương trình tương đương \\sin(3x) = \\sin(\\frac{\\pi}{2} - x). Nghiệm thứ nhất: 3x = \\frac{\\pi}{2} - x + k2\\pi \\Leftrightarrow 4x = \\frac{\\pi}{2} + k2\\pi \\Leftrightarrow x = \\frac{\\pi}{8} + \\frac{k\\pi}{2}. Nghiệm thứ hai: 3x = \\pi - (\\frac{\\pi}{2} - x) + k2\\pi \\Leftrightarrow 2x = \\frac{\\pi}{2} + k2\\pi \\Leftrightarrow x = \\frac{\\pi}{4} + k\\pi. Xét trên [0, \\pi]: Họ 1 cho x = \\pi/8 (k=0), x = 5\\pi/8 (k=1). Họ 2 cho x = \\pi/4 (k=0). Tổng cộng có 3 nghiệm phân biệt."
+"explain": "Phương trình tương đương \\\\sin(3x) = \\\\sin(\\\\frac{\\\\pi}{2} - x). Nghiệm thứ nhất: 3x = \\\\frac{\\\\pi}{2} - x + k2\\\\pi \\\\Leftrightarrow 4x = \\\\frac{\\\\pi}{2} + k2\\\\pi \\\\Leftrightarrow x = \\\\frac{\\\\pi}{8} + \\\\frac{k\\\\pi}{2}. Nghiệm thứ hai: 3x = \\\\pi - (\\\\frac{\\\\pi}{2} - x) + k2\\\\pi \\\\Leftrightarrow 2x = \\\\frac{\\\\pi}{2} + k2\\\\pi \\\\Leftrightarrow x = \\\\frac{\\\\pi}{4} + k\\\\pi. Xét trên [0, \\\\pi]: Họ 1 cho x = \\\\pi/8 (k=0), x = 5\\\\pi/8 (k=1). Họ 2 cho x = \\\\pi/4 (k=0). Tổng cộng có 3 nghiệm phân biệt."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Số nghiệm của phương trình |\\sin x| = 0.5 trên khoảng (-\\pi, \\pi) là bao nhiêu?",
+"q": "Số nghiệm của phương trình |\\\\sin x| = 0.5 trên khoảng (-\\\\pi, \\\\pi) là bao nhiêu?",
 "correct": "4",
-"explain": "Phương trình tương đương \\sin x = 0.5 hoặc \\sin x = -0.5. Xét đồ thị hàm số y = \\sin x trên (\\-\\pi, \\pi). Đường thẳng y = 0.5 cắt đồ thị tại 2 điểm là \\pi/6 và 5\\pi/6. Đường thẳng y = -0.5 cắt đồ thị tại 2 điểm là -\\pi/6 và -5\\pi/6. Tất cả các điểm này đều thuộc (-\\pi, \\pi) và phân biệt. Tổng cộng có 4 nghiệm."
+"explain": "Phương trình tương đương \\\\sin x = 0.5 hoặc \\\\sin x = -0.5. Xét đồ thị hàm số y = \\\\sin x trên (\\\\-\\pi, \\\\pi). Đường thẳng y = 0.5 cắt đồ thị tại 2 điểm là \\\\pi/6 và 5\\\\pi/6. Đường thẳng y = -0.5 cắt đồ thị tại 2 điểm là -\\\\pi/6 và -5\\\\pi/6. Tất cả các điểm này đều thuộc (-\\\\pi, \\\\pi) và phân biệt. Tổng cộng có 4 nghiệm."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Một con lắc lò xo dao động với phương trình li độ x(t) = 4\\cos(5\\pi t - \\frac{\\pi}{3}) (cm), t tính bằng giây. Trong khoảng thời gian từ t = 0 đến t = 1.5 giây, vật đi qua vị trí có li độ x = -2 cm bao nhiêu lần?",
+"q": "Một con lắc lò xo dao động với phương trình li độ x(t) = 4\\\\cos(5\\\\pi t - \\\\frac{\\\\pi}{3}) (cm), t tính bằng giây. Trong khoảng thời gian từ t = 0 đến t = 1.5 giây, vật đi qua vị trí có li độ x = -2 cm bao nhiêu lần?",
 "correct": "7",
-"explain": "Giải pt 4\\cos(5\\pi t - \\frac{\\pi}{3}) = -2 \\Leftrightarrow \\cos(5\\pi t - \\frac{\\pi}{3}) = -0.5. Họ 1: 5\\pi t - \\frac{\\pi}{3} = \\frac{2\\pi}{3} + k2\\pi \\Leftrightarrow 5t = 1 + 2k \\Leftrightarrow t = 0.2 + 0.4k. Họ 2: 5\\pi t - \\frac{\\pi}{3} = -\\frac{2\\pi}{3} + k2\\pi \\Leftrightarrow 5t = -1/3 + 2k \\Leftrightarrow t = -0.066... + 0.4k. Xét trong [0, 1.5]: Họ 1 cho k = 0, 1, 2, 3 (4 nghiệm: 0.2, 0.6, 1.0, 1.4). Họ 2 cho k = 1, 2, 3 (3 nghiệm: 1/3, 11/15, 17/15). Tổng số lần là 4 + 3 = 7 lần."
+"explain": "Giải pt 4\\\\cos(5\\\\pi t - \\\\frac{\\\\pi}{3}) = -2 \\\\Leftrightarrow \\\\cos(5\\\\pi t - \\\\frac{\\\\pi}{3}) = -0.5. Họ 1: 5\\\\pi t - \\\\frac{\\\\pi}{3} = \\\\frac{2\\\\pi}{3} + k2\\\\pi \\\\Leftrightarrow 5t = 1 + 2k \\\\Leftrightarrow t = 0.2 + 0.4k. Họ 2: 5\\\\pi t - \\\\frac{\\\\pi}{3} = -\\\\frac{2\\\\pi}{3} + k2\\\\pi \\\\Leftrightarrow 5t = -1/3 + 2k \\\\Leftrightarrow t = -0.066... + 0.4k. Xét trong [0, 1.5]: Họ 1 cho k = 0, 1, 2, 3 (4 nghiệm: 0.2, 0.6, 1.0, 1.4). Họ 2 cho k = 1, 2, 3 (3 nghiệm: 1/3, 11/15, 17/15). Tổng số lần là 4 + 3 = 7 lần."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Tính tổng các nghiệm của phương trình \\sin^2 2x = 1 trên đoạn [0, 2\\pi] chia cho \\pi, kết quả thu được là bao nhiêu?",
+"q": "Tính tổng các nghiệm của phương trình \\\\sin^2 2x = 1 trên đoạn [0, 2\\\\pi] chia cho \\\\pi, kết quả thu được là bao nhiêu?",
 "correct": "4",
-"explain": "Phương trình tương đương \\cos 4x = 1 - 2\\sin^2 2x = 1 - 2 = -1. Suy ra 4x = \\pi + k2\\pi \\Leftrightarrow x = \\frac{\\pi}{4} + \\frac{k\\pi}{2}. Trên đoạn [0, 2\\pi], k nhận các giá trị 0, 1, 2, 3. Các nghiệm tương ứng là: \\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\frac{5\\pi}{4}, \\frac{7\\pi}{4}. Tổng các nghiệm là \\pi/4 + 3\\pi/4 + 5\\pi/4 + 7\\pi/4 = 16\\pi/4 = 4\\pi. Khi chia cho \\pi ta được 4."
+"explain": "Phương trình tương đương \\\\cos 4x = 1 - 2\\\\sin^2 2x = 1 - 2 = -1. Suy ra 4x = \\\\pi + k2\\\\pi \\\\Leftrightarrow x = \\\\frac{\\\\pi}{4} + \\\\frac{k\\\\pi}{2}. Trên đoạn [0, 2\\\\pi], k nhận các giá trị 0, 1, 2, 3. Các nghiệm tương ứng là: \\\\frac{\\\\pi}{4}, \\\\frac{3\\\\pi}{4}, \\\\frac{5\\\\pi}{4}, \\\\frac{7\\\\pi}{4}. Tổng các nghiệm là \\\\pi/4 + 3\\\\pi/4 + 5\\\\pi/4 + 7\\\\pi/4 = 16\\\\pi/4 = 4\\\\pi. Khi chia cho \\\\pi ta được 4."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Có bao nhiêu giá trị nguyên của tham số m thuộc đoạn [-5, 5] để phương trình 2\\sin x \\cos x + m - 1 = 0 vô nghiệm?",
+"q": "Có bao nhiêu giá trị nguyên của tham số m thuộc đoạn [-5, 5] để phương trình 2\\\\sin x \\\\cos x + m - 1 = 0 vô nghiệm?",
 "correct": "8",
-"explain": "Phương trình tương đương \\sin 2x = 1 - m. Phương trình vô nghiệm khi và chỉ khi |1 - m| > 1 \\Leftrightarrow 1 - m > 1 hoặc 1 - m < -1 \\Leftrightarrow m < 0 hoặc m > 2. Vì m nguyên và thuộc đoạn [-5, 5], các giá trị thỏa mãn là: -5, -4, -3, -2, -1 (5 giá trị) và 3, 4, 5 (3 giá trị). Tổng cộng có 5 + 3 = 8 giá trị."
+"explain": "Phương trình tương đương \\\\sin 2x = 1 - m. Phương trình vô nghiệm khi và chỉ khi |1 - m| > 1 \\\\Leftrightarrow 1 - m > 1 hoặc 1 - m < -1 \\\\Leftrightarrow m < 0 hoặc m > 2. Vì m nguyên và thuộc đoạn [-5, 5], các giá trị thỏa mãn là: -5, -4, -3, -2, -1 (5 giá trị) và 3, 4, 5 (3 giá trị). Tổng cộng có 5 + 3 = 8 giá trị."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Có bao nhiêu giá trị nguyên của m để phương trình \\cos^2 x + (1 - m)\\cos x + m - 1 = 0 có đúng 2 nghiệm thuộc khoảng (\\-\\frac{\\pi}{2}, 2\\pi)?",
+"q": "Có bao nhiêu giá trị nguyên của m để phương trình \\\\cos^2 x + (1 - m)\\\\cos x + m - 1 = 0 có đúng 2 nghiệm thuộc khoảng (\\\\-\\frac{\\\\pi}{2}, 2\\\\pi)?",
 "correct": "1",
-"explain": "Phương trình tương đương (\\cos x - 1)(\\cos x - (m - 1)) = 0 \\Leftrightarrow \\cos x = 1 hoặc \\cos x = m - 1. Xét đồ thị hàm số t = \\cos x trên (\\-\\frac{\\pi}{2}, 2\\pi): Nghiệm \\cos x = 1 cho 1 nghiệm duy nhất x = 0 (thuộc khoảng). Để phương trình có đúng 2 nghiệm trên khoảng này, phương trình \\cos x = m - 1 phải cho đúng 1 nghiệm khác 0. Phân tích đồ thị \\cos x: Nếu m - 1 = -1 \\Rightarrow \\cos x = -1 \\Rightarrow x = \\pi (đúng 1 nghiệm). Các mức khác: (0, 1) cho 3 nghiệm, 0 cho 2 nghiệm, (-1, 0) cho 2 nghiệm. Do đó chỉ có m - 1 = -1 \\Rightarrow m = 0. Giá trị nguyên m là 0, chỉ có 1 giá trị duy nhất. Đề bài hỏi 'có bao nhiêu giá trị nguyên', câu trả lời là 1."
+"explain": "Phương trình tương đương (\\\\cos x - 1)(\\\\cos x - (m - 1)) = 0 \\\\Leftrightarrow \\\\cos x = 1 hoặc \\\\cos x = m - 1. Xét đồ thị hàm số t = \\\\cos x trên (\\\\-\\frac{\\\\pi}{2}, 2\\\\pi): Nghiệm \\\\cos x = 1 cho 1 nghiệm duy nhất x = 0 (thuộc khoảng). Để phương trình có đúng 2 nghiệm trên khoảng này, phương trình \\\\cos x = m - 1 phải cho đúng 1 nghiệm khác 0. Phân tích đồ thị \\\\cos x: Nếu m - 1 = -1 \\\\Rightarrow \\\\cos x = -1 \\\\Rightarrow x = \\\\pi (đúng 1 nghiệm). Các mức khác: (0, 1) cho 3 nghiệm, 0 cho 2 nghiệm, (-1, 0) cho 2 nghiệm. Do đó chỉ có m - 1 = -1 \\\\Rightarrow m = 0. Giá trị nguyên m là 0, chỉ có 1 giá trị duy nhất. Đề bài hỏi 'có bao nhiêu giá trị nguyên', câu trả lời là 1."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Số nghiệm của phương trình \\sin(\\pi \\cos x) = 1 trên đoạn [0, 10\\pi] là bao nhiêu?",
+"q": "Số nghiệm của phương trình \\\\sin(\\\\pi \\\\cos x) = 1 trên đoạn [0, 10\\\\pi] là bao nhiêu?",
 "correct": "10",
-"explain": "Ta có \\pi \\cos x = \\frac{\\pi}{2} + k2\\pi \\Leftrightarrow \\cos x = \\frac{1}{2} + 2k. Do -1 \\le \\cos x \\le 1 nên -1 \\le 1/2 + 2k \\le 1 \\Rightarrow -1.5 \\le 2k \\le 0.5 \\Rightarrow -0.75 \\le k \\le 0.25. Vì k nguyên nên k = 0. Khi đó \\cos x = 0.5. Trên đoạn [0, 2\\pi], phương trình này có 2 nghiệm. Đoạn [0, 10\\pi] là 5 chu kì của \\cos x, do đó phương trình có 5 \\times 2 = 10 nghiệm."
+"explain": "Ta có \\\\pi \\\\cos x = \\\\frac{\\\\pi}{2} + k2\\\\pi \\\\Leftrightarrow \\\\cos x = \\\\frac{1}{2} + 2k. Do -1 \\\\le \\\\cos x \\\\le 1 nên -1 \\\\le 1/2 + 2k \\\\le 1 \\\\Rightarrow -1.5 \\\\le 2k \\\\le 0.5 \\\\Rightarrow -0.75 \\\\le k \\\\le 0.25. Vì k nguyên nên k = 0. Khi đó \\\\cos x = 0.5. Trên đoạn [0, 2\\\\pi], phương trình này có 2 nghiệm. Đoạn [0, 10\\\\pi] là 5 chu kì của \\\\cos x, do đó phương trình có 5 \\\\times 2 = 10 nghiệm."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Xét phương trình \\sin^6 x + \\cos^6 x = m. Tìm số giá trị nguyên của k = 16m để phương trình có nghiệm.",
+"q": "Xét phương trình \\\\sin^6 x + \\\\cos^6 x = m. Tìm số giá trị nguyên của k = 16m để phương trình có nghiệm.",
 "correct": "13",
-"explain": "Ta biến đổi \\sin^6 x + \\cos^6 x = 1 - 3\\sin^2 x \\cos^2 x = 1 - \\frac{3}{4}\\sin^2 2x. Do 0 \\le \\sin^2 2x \\le 1 nên 1/4 \\le 1 - \\frac{3}{4}\\sin^2 2x \\le 1. Vậy phương trình có nghiệm khi và chỉ khi 1/4 \\le m \\le 1. Tương đương 4 \\le 16m \\le 16. Vậy k \\in. Các giá trị nguyên của k là 4, 5, ..., 16. Số lượng giá trị nguyên là 16 - 4 + 1 = 13."
+"explain": "Ta biến đổi \\\\sin^6 x + \\\\cos^6 x = 1 - 3\\\\sin^2 x \\\\cos^2 x = 1 - \\\\frac{3}{4}\\\\sin^2 2x. Do 0 \\\\le \\\\sin^2 2x \\\\le 1 nên 1/4 \\\\le 1 - \\\\frac{3}{4}\\\\sin^2 2x \\\\le 1. Vậy phương trình có nghiệm khi và chỉ khi 1/4 \\\\le m \\\\le 1. Tương đương 4 \\\\le 16m \\\\le 16. Vậy k \\\\in. Các giá trị nguyên của k là 4, 5, ..., 16. Số lượng giá trị nguyên là 16 - 4 + 1 = 13."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Số nghiệm của phương trình 2^{\\sin^2 x} + 2^{\\cos^2 x} = 2\\sqrt{2} trên đoạn [0, 2\\pi] là bao nhiêu?",
+"q": "Số nghiệm của phương trình 2^{\\\\sin^2 x} + 2^{\\\\cos^2 x} = 2\\\\sqrt{2} trên đoạn [0, 2\\\\pi] là bao nhiêu?",
 "correct": "4",
-"explain": "Áp dụng bất đẳng thức AM-GM: 2^{\\sin^2 x} + 2^{\\cos^2 x} \\ge 2\\sqrt{2^{\\sin^2 x + \\cos^2 x}} = 2\\sqrt{2^1} = 2\\sqrt{2}. Dấu bằng xảy ra khi và chỉ khi 2^{\\sin^2 x} = 2^{\\cos^2 x} \\Leftrightarrow \\sin^2 x = \\cos^2 x \\Leftrightarrow \\tan^2 x = 1 \\Leftrightarrow \\tan x = \\pm 1. Tương đương x = \\frac{\\pi}{4} + \\frac{k\\pi}{2}. Trên đoạn [0, 2\\pi], các nghiệm là \\pi/4, 3\\pi/4, 5\\pi/4, 7\\pi/4. Tổng cộng có 4 nghiệm."
+"explain": "Áp dụng bất đẳng thức AM-GM: 2^{\\\\sin^2 x} + 2^{\\\\cos^2 x} \\\\ge 2\\\\sqrt{2^{\\\\sin^2 x + \\\\cos^2 x}} = 2\\\\sqrt{2^1} = 2\\\\sqrt{2}. Dấu bằng xảy ra khi và chỉ khi 2^{\\\\sin^2 x} = 2^{\\\\cos^2 x} \\\\Leftrightarrow \\\\sin^2 x = \\\\cos^2 x \\\\Leftrightarrow \\\\tan^2 x = 1 \\\\Leftrightarrow \\\\tan x = \\\\pm 1. Tương đương x = \\\\frac{\\\\pi}{4} + \\\\frac{k\\\\pi}{2}. Trên đoạn [0, 2\\\\pi], các nghiệm là \\\\pi/4, 3\\\\pi/4, 5\\\\pi/4, 7\\\\pi/4. Tổng cộng có 4 nghiệm."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Tìm số nghiệm của phương trình \\sqrt{1 - \\sin x} + \\sqrt{1 - \\cos x} = \\sqrt{2} trên đoạn [0, 4\\pi].",
+"q": "Tìm số nghiệm của phương trình \\\\sqrt{1 - \\\\sin x} + \\\\sqrt{1 - \\\\cos x} = \\\\sqrt{2} trên đoạn [0, 4\\\\pi].",
 "correct": "4",
-"explain": "Bình phương 2 vế (hai vế đều không âm): 2 - (\\sin x + \\cos x) + 2\\sqrt{1 - (\\sin x + \\cos x) + \\sin x \\cos x} = 2. Đặt t = \\sin x + \\cos x = \\sqrt{2}\\sin(x + \\pi/4) \\Rightarrow t \\in [-\\sqrt{2}, \\sqrt{2}]. Khi đó \\sin x \\cos x = \\frac{t^2 - 1}{2}. Phương trình trở thành: -t + 2\\sqrt{1 - t + \\frac{t^2 - 1}{2}} = 0 \\Leftrightarrow 2\\sqrt{\\frac{t^2 - 2t + 1}{2}} = t \\Leftrightarrow \\sqrt{2}|t - 1| = t. Vì t \\ge 0, ta chia 2 trường hợp. Nếu t \\ge 1: \\sqrt{2}(t - 1) = t \\Rightarrow t = 2 + \\sqrt{2} (loại do > \\sqrt{2}). Nếu t < 1: \\sqrt{2}(1 - t) = t \\Rightarrow t = 2 - \\sqrt{2} \\approx 0.585 (thỏa mãn). Vậy \\sqrt{2}\\cos(x - \\pi/4) = 2 - \\sqrt{2} \\Rightarrow \\cos(x - \\pi/4) = \\sqrt{2} - 1. Do \\sqrt{2} - 1 \\in (-1, 1) nên trên mỗi chu kì [0, 2\\pi] có 2 nghiệm phân biệt. Trên đoạn [0, 4\\pi] có 2 chu kì, nên có 4 nghiệm."
+"explain": "Bình phương 2 vế (hai vế đều không âm): 2 - (\\\\sin x + \\\\cos x) + 2\\\\sqrt{1 - (\\\\sin x + \\\\cos x) + \\\\sin x \\\\cos x} = 2. Đặt t = \\\\sin x + \\\\cos x = \\\\sqrt{2}\\\\sin(x + \\\\pi/4) \\\\Rightarrow t \\\\in [-\\\\sqrt{2}, \\\\sqrt{2}]. Khi đó \\\\sin x \\\\cos x = \\\\frac{t^2 - 1}{2}. Phương trình trở thành: -t + 2\\\\sqrt{1 - t + \\\\frac{t^2 - 1}{2}} = 0 \\\\Leftrightarrow 2\\\\sqrt{\\\\frac{t^2 - 2t + 1}{2}} = t \\\\Leftrightarrow \\\\sqrt{2}|t - 1| = t. Vì t \\\\ge 0, ta chia 2 trường hợp. Nếu t \\\\ge 1: \\\\sqrt{2}(t - 1) = t \\\\Rightarrow t = 2 + \\\\sqrt{2} (loại do > \\\\sqrt{2}). Nếu t < 1: \\\\sqrt{2}(1 - t) = t \\\\Rightarrow t = 2 - \\\\sqrt{2} \\\\approx 0.585 (thỏa mãn). Vậy \\\\sqrt{2}\\\\cos(x - \\\\pi/4) = 2 - \\\\sqrt{2} \\\\Rightarrow \\\\cos(x - \\\\pi/4) = \\\\sqrt{2} - 1. Do \\\\sqrt{2} - 1 \\\\in (-1, 1) nên trên mỗi chu kì [0, 2\\\\pi] có 2 nghiệm phân biệt. Trên đoạn [0, 4\\\\pi] có 2 chu kì, nên có 4 nghiệm."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Một chiếc đồng hồ treo tường có kim phút dài 12 cm và kim giờ dài 9 cm. Trong khoảng thời gian từ 12 giờ đúng đến 12 giờ 30 phút cùng ngày, tổng quãng đường mà hai mũi kim này đã đi được là a\\pi (cm). Tìm giá trị của a (Nhập số thập phân).",
+"q": "Một chiếc đồng hồ treo tường có kim phút dài 12 cm và kim giờ dài 9 cm. Trong khoảng thời gian từ 12 giờ đúng đến 12 giờ 30 phút cùng ngày, tổng quãng đường mà hai mũi kim này đã đi được là a\\\\pi (cm). Tìm giá trị của a (Nhập số thập phân).",
 "correct": "12.75",
-"explain": "Trong 30 phút, kim phút quay được một góc \\pi radian, quãng đường đi được là S_1 = 12\\pi. Kim giờ quay được một góc là \\frac{1}{12} \\cdot \\pi = \\frac{\\pi}{12} radian, quãng đường đi được là S_2 = 9 \\cdot \\frac{\\pi}{12} = 0.75\\pi. Tổng quãng đường là 12\\pi + 0.75\\pi = 12.75\\pi. Vậy a = 12.75."
+"explain": "Trong 30 phút, kim phút quay được một góc \\\\pi radian, quãng đường đi được là S_1 = 12\\\\pi. Kim giờ quay được một góc là \\\\frac{1}{12} \\\\cdot \\\\pi = \\\\frac{\\\\pi}{12} radian, quãng đường đi được là S_2 = 9 \\\\cdot \\\\frac{\\\\pi}{12} = 0.75\\\\pi. Tổng quãng đường là 12\\\\pi + 0.75\\\\pi = 12.75\\\\pi. Vậy a = 12.75."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Cho góc lượng giác x thỏa mãn \\tan x = 2. Tính giá trị của biểu thức P = \\frac{3\\sin x - 4\\cos x}{\\cos x + 2\\sin x} (Nhập số thập phân).",
+"q": "Cho góc lượng giác x thỏa mãn \\\\tan x = 2. Tính giá trị của biểu thức P = \\\\frac{3\\\\sin x - 4\\\\cos x}{\\\\cos x + 2\\\\sin x} (Nhập số thập phân).",
 "correct": "0.4",
-"explain": "Vì \\tan x = 2 nên \\cos x \\neq 0. Chia cả tử và mẫu của P cho \\cos x ta được: P = \\frac{3\\tan x - 4}{1 + 2\\tan x}. Thay \\tan x = 2 vào, ta có P = \\frac{3(2) - 4}{1 + 2(2)} = \\frac{2}{5} = 0.4."
+"explain": "Vì \\\\tan x = 2 nên \\\\cos x \\\\neq 0. Chia cả tử và mẫu của P cho \\\\cos x ta được: P = \\\\frac{3\\\\tan x - 4}{1 + 2\\\\tan x}. Thay \\\\tan x = 2 vào, ta có P = \\\\frac{3(2) - 4}{1 + 2(2)} = \\\\frac{2}{5} = 0.4."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Bánh xe của một người đi xe đạp quay được 5 vòng trong 2 giây. Một chiếc van của lốp xe cách tâm bánh xe 30 cm. Hỏi trong 10 giây, chiếc van đó đã di chuyển một quãng đường dài x\\pi (cm). Tìm x.",
+"q": "Bánh xe của một người đi xe đạp quay được 5 vòng trong 2 giây. Một chiếc van của lốp xe cách tâm bánh xe 30 cm. Hỏi trong 10 giây, chiếc van đó đã di chuyển một quãng đường dài x\\\\pi (cm). Tìm x.",
 "correct": "1500",
-"explain": "Trong 2 giây bánh xe quay 5 vòng, vậy trong 10 giây bánh xe quay được (10/2)*5 = 25 vòng. Mỗi vòng bánh xe quay góc 2\\pi radian, góc tổng cộng là 25 * 2\\pi = 50\\pi. Quãng đường van xe di chuyển là l = R\\alpha = 30 * 50\\pi = 1500\\pi. Vậy x = 1500."
+"explain": "Trong 2 giây bánh xe quay 5 vòng, vậy trong 10 giây bánh xe quay được (10/2)*5 = 25 vòng. Mỗi vòng bánh xe quay góc 2\\\\pi radian, góc tổng cộng là 25 * 2\\\\pi = 50\\\\pi. Quãng đường van xe di chuyển là l = R\\\\alpha = 30 * 50\\\\pi = 1500\\\\pi. Vậy x = 1500."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Với mọi số thực x, biểu thức P = \\sin^6 x + \\cos^6 x + 3\\sin^2 x \\cos^2 x luôn có giá trị không đổi. Tìm giá trị đó.",
+"q": "Với mọi số thực x, biểu thức P = \\\\sin^6 x + \\\\cos^6 x + 3\\\\sin^2 x \\\\cos^2 x luôn có giá trị không đổi. Tìm giá trị đó.",
 "correct": "1",
-"explain": "Sử dụng hằng đẳng thức a^3 + b^3 = (a+b)(a^2 - ab + b^2), ta có \\sin^6 x + \\cos^6 x = (\\sin^2 x + \\cos^2 x)(\\sin^4 x - \\sin^2 x \\cos^2 x + \\cos^4 x) = 1 \\cdot ((\\sin^2 x + \\cos^2 x)^2 - 3\\sin^2 x \\cos^2 x) = 1 - 3\\sin^2 x \\cos^2 x. Do đó P = 1 - 3\\sin^2 x \\cos^2 x + 3\\sin^2 x \\cos^2 x = 1."
+"explain": "Sử dụng hằng đẳng thức a^3 + b^3 = (a+b)(a^2 - ab + b^2), ta có \\\\sin^6 x + \\\\cos^6 x = (\\\\sin^2 x + \\\\cos^2 x)(\\\\sin^4 x - \\\\sin^2 x \\\\cos^2 x + \\\\cos^4 x) = 1 \\\\cdot ((\\\\sin^2 x + \\\\cos^2 x)^2 - 3\\\\sin^2 x \\\\cos^2 x) = 1 - 3\\\\sin^2 x \\\\cos^2 x. Do đó P = 1 - 3\\\\sin^2 x \\\\cos^2 x + 3\\\\sin^2 x \\\\cos^2 x = 1."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Biết \\sin x + \\cos x = 1.2. Tính giá trị của biểu thức M = \\sin^4 x + \\cos^4 x (Nhập số thập phân).",
+"q": "Biết \\\\sin x + \\\\cos x = 1.2. Tính giá trị của biểu thức M = \\\\sin^4 x + \\\\cos^4 x (Nhập số thập phân).",
 "correct": "0.9032",
-"explain": "Bình phương 2 vế ta có (\\sin x + \\cos x)^2 = 1.44 \\Leftrightarrow 1 + 2\\sin x \\cos x = 1.44 \\Leftrightarrow \\sin x \\cos x = 0.22. Biểu thức M = \\sin^4 x + \\cos^4 x = (\\sin^2 x + \\cos^2 x)^2 - 2\\sin^2 x \\cos^2 x = 1 - 2(0.22)^2 = 1 - 2(0.0484) = 1 - 0.0968 = 0.9032."
+"explain": "Bình phương 2 vế ta có (\\\\sin x + \\\\cos x)^2 = 1.44 \\\\Leftrightarrow 1 + 2\\\\sin x \\\\cos x = 1.44 \\\\Leftrightarrow \\\\sin x \\\\cos x = 0.22. Biểu thức M = \\\\sin^4 x + \\\\cos^4 x = (\\\\sin^2 x + \\\\cos^2 x)^2 - 2\\\\sin^2 x \\\\cos^2 x = 1 - 2(0.22)^2 = 1 - 2(0.0484) = 1 - 0.0968 = 0.9032."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Độ sâu h (mét) của mực nước biển tại một cảng trong ngày được mô hình hóa bởi h(t) = 4\\cos(\\frac{\\pi t}{6}) + 12 (với 0 \\le t < 24 tính bằng giờ). Một con tàu lớn chỉ có thể cập cảng an toàn khi mực nước sâu ít nhất 14 mét. Tổng thời gian (tính bằng giờ) trong một ngày tàu có thể ở trong cảng là bao nhiêu?",
+"q": "Độ sâu h (mét) của mực nước biển tại một cảng trong ngày được mô hình hóa bởi h(t) = 4\\\\cos(\\\\frac{\\\\pi t}{6}) + 12 (với 0 \\\\le t < 24 tính bằng giờ). Một con tàu lớn chỉ có thể cập cảng an toàn khi mực nước sâu ít nhất 14 mét. Tổng thời gian (tính bằng giờ) trong một ngày tàu có thể ở trong cảng là bao nhiêu?",
 "correct": "8",
-"explain": "Tàu an toàn khi 4\\cos(\\frac{\\pi t}{6}) + 12 \\ge 14 \\Leftrightarrow \\cos(\\frac{\\pi t}{6}) \\ge 0.5. Trên vòng tròn lượng giác, điều kiện này ứng với -\\frac{\\pi}{3} + k2\\pi \\le \\frac{\\pi t}{6} \\le \\frac{\\pi}{3} + k2\\pi \\Leftrightarrow -2 + 12k \\le t \\le 2 + 12k. Với 0 \\le t < 24, ta có các khoảng t: [0; 2] (k=0), [10; 14] (k=1) và [22; 24) (k=2). Tổng thời gian: (2-0) + (14-10) + (24-22) = 2 + 4 + 2 = 8 giờ."
+"explain": "Tàu an toàn khi 4\\\\cos(\\\\frac{\\\\pi t}{6}) + 12 \\\\ge 14 \\\\Leftrightarrow \\\\cos(\\\\frac{\\\\pi t}{6}) \\\\ge 0.5. Trên vòng tròn lượng giác, điều kiện này ứng với -\\\\frac{\\\\pi}{3} + k2\\\\pi \\\\le \\\\frac{\\\\pi t}{6} \\\\le \\\\frac{\\\\pi}{3} + k2\\\\pi \\\\Leftrightarrow -2 + 12k \\\\le t \\\\le 2 + 12k. Với 0 \\\\le t < 24, ta có các khoảng t: [0; 2] (k=0), [10; 14] (k=1) và [22; 24) (k=2). Tổng thời gian: (2-0) + (14-10) + (24-22) = 2 + 4 + 2 = 8 giờ."
 },
 {
 "grade": "11",
@@ -2921,171 +2921,171 @@
 "level": 4,
 "q": "Một chiếc đu quay khổng lồ có bán kính 20 m, tâm của vòng quay nằm ở độ cao 25 m so với mặt đất. Thời gian để đu quay thực hiện một vòng hoàn chỉnh là 12 phút. Nếu một người bước vào cabin tại vị trí thấp nhất của vòng quay lúc t=0, hỏi sau 8 phút thì người đó ở độ cao bao nhiêu mét so với mặt đất?",
 "correct": "35",
-"explain": "Độ cao h(t) = 25 - 20\\cos(\\omega t). Chu kì T = 12 \\Rightarrow \\omega = \\frac{2\\pi}{12} = \\frac{\\pi}{6}. Suy ra h(t) = 25 - 20\\cos(\\frac{\\pi}{6}t). Tại t = 8 phút, h(8) = 25 - 20\\cos(\\frac{8\\pi}{6}) = 25 - 20\\cos(\\frac{4\\pi}{3}) = 25 - 20(-0.5) = 25 + 10 = 35 mét."
+"explain": "Độ cao h(t) = 25 - 20\\\\cos(\\\\omega t). Chu kì T = 12 \\\\Rightarrow \\\\omega = \\\\frac{2\\\\pi}{12} = \\\\frac{\\\\pi}{6}. Suy ra h(t) = 25 - 20\\\\cos(\\\\frac{\\\\pi}{6}t). Tại t = 8 phút, h(8) = 25 - 20\\\\cos(\\\\frac{8\\\\pi}{6}) = 25 - 20\\\\cos(\\\\frac{4\\\\pi}{3}) = 25 - 20(-0.5) = 25 + 10 = 35 mét."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Tính giá trị chính xác của tổng S = \\cos^2 10^\\circ + \\cos^2 20^\\circ + \\cos^2 30^\\circ + ... + \\cos^2 80^\\circ + \\cos^2 90^\\circ.",
+"q": "Tính giá trị chính xác của tổng S = \\\\cos^2 10^\\\\circ + \\\\cos^2 20^\\\\circ + \\\\cos^2 30^\\\\circ + ... + \\\\cos^2 80^\\\\circ + \\\\cos^2 90^\\\\circ.",
 "correct": "4",
-"explain": "Dãy S có 9 số hạng. Ta nhóm thành các cặp: (\\cos^2 10^\\circ + \\cos^2 80^\\circ) + (\\cos^2 20^\\circ + \\cos^2 70^\\circ) + (\\cos^2 30^\\circ + \\cos^2 60^\\circ) + (\\cos^2 40^\\circ + \\cos^2 50^\\circ) + \\cos^2 90^\\circ. Áp dụng công thức phụ chéo \\cos(90^\\circ - x) = \\sin x, mỗi cặp có tổng bằng 1. S = 1 + 1 + 1 + 1 + 0 = 4."
+"explain": "Dãy S có 9 số hạng. Ta nhóm thành các cặp: (\\\\cos^2 10^\\\\circ + \\\\cos^2 80^\\\\circ) + (\\\\cos^2 20^\\\\circ + \\\\cos^2 70^\\\\circ) + (\\\\cos^2 30^\\\\circ + \\\\cos^2 60^\\\\circ) + (\\\\cos^2 40^\\\\circ + \\\\cos^2 50^\\\\circ) + \\\\cos^2 90^\\\\circ. Áp dụng công thức phụ chéo \\\\cos(90^\\\\circ - x) = \\\\sin x, mỗi cặp có tổng bằng 1. S = 1 + 1 + 1 + 1 + 0 = 4."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "ĐÁNH ĐỐ: Biết rằng góc lượng giác x thỏa mãn hệ thức \\frac{\\sin^4 x}{2} + \\frac{\\cos^4 x}{3} = \\frac{1}{5}. Hãy tính giá trị của biểu thức siêu thực M = 125 \\cdot \\left( \\frac{\\sin^6 x}{8} + \\frac{\\cos^6 x}{27} \\right).",
+"q": "ĐÁNH ĐỐ: Biết rằng góc lượng giác x thỏa mãn hệ thức \\\\frac{\\\\sin^4 x}{2} + \\\\frac{\\\\cos^4 x}{3} = \\\\frac{1}{5}. Hãy tính giá trị của biểu thức siêu thực M = 125 \\\\cdot \\\\left( \\\\frac{\\\\sin^6 x}{8} + \\\\frac{\\\\cos^6 x}{27} \\\\right).",
 "correct": "2",
-"explain": "Hệ thức được viết lại: 5\\sin^4 x + 5\\cos^4 x = 2 + 3 \\Leftrightarrow 5\\sin^4 x + 5\\cos^4 x = 2(\\sin^2 x + \\cos^2 x)^2 + 3(\\sin^2 x + \\cos^2 x)^2 = 5\\sin^4 x + 5\\cos^4 x \\Leftrightarrow \\frac{\\sin^2 x}{2} = \\frac{\\cos^2 x}{3} = \\frac{\\sin^2 x + \\cos^2 x}{5} = \\frac{1}{5}. Suy ra \\sin^2 x = \\frac{2}{5}, \\cos^2 x = \\frac{3}{5}. Khi đó M = 125 ( \\frac{(2/5)^3}{8} + \\frac{(3/5)^3}{27} ) = 125 ( \\frac{1/125}{1} + \\frac{1/125}{1} ) = 1 + 1 = 2."
+"explain": "Hệ thức được viết lại: 5\\\\sin^4 x + 5\\\\cos^4 x = 2 + 3 \\\\Leftrightarrow 5\\\\sin^4 x + 5\\\\cos^4 x = 2(\\\\sin^2 x + \\\\cos^2 x)^2 + 3(\\\\sin^2 x + \\\\cos^2 x)^2 = 5\\\\sin^4 x + 5\\\\cos^4 x \\\\Leftrightarrow \\\\frac{\\\\sin^2 x}{2} = \\\\frac{\\\\cos^2 x}{3} = \\\\frac{\\\\sin^2 x + \\\\cos^2 x}{5} = \\\\frac{1}{5}. Suy ra \\\\sin^2 x = \\\\frac{2}{5}, \\\\cos^2 x = \\\\frac{3}{5}. Khi đó M = 125 ( \\\\frac{(2/5)^3}{8} + \\\\frac{(3/5)^3}{27} ) = 125 ( \\\\frac{1/125}{1} + \\\\frac{1/125}{1} ) = 1 + 1 = 2."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Hai bánh răng A và B của một động cơ ăn khớp với nhau. Bánh răng A có 12 răng, bánh răng B có 48 răng. Bánh răng A quay với tốc độ 60 vòng/phút. Sau đúng 15 giây, một điểm nằm trên vành của bánh răng B đã quét được một góc lượng giác là \\alpha radian. Tìm giá trị của tỉ số \\frac{\\alpha}{\\pi} (Nhập số thập phân).",
+"q": "Hai bánh răng A và B của một động cơ ăn khớp với nhau. Bánh răng A có 12 răng, bánh răng B có 48 răng. Bánh răng A quay với tốc độ 60 vòng/phút. Sau đúng 15 giây, một điểm nằm trên vành của bánh răng B đã quét được một góc lượng giác là \\\\alpha radian. Tìm giá trị của tỉ số \\\\frac{\\\\alpha}{\\\\pi} (Nhập số thập phân).",
 "correct": "7.5",
-"explain": "Bánh răng A quay 60 vòng/phút nên trong 15 giây (1/4 phút) nó quay được 15 vòng. Vì tỉ số răng là 12/48 = 1/4, mỗi khi A quay 1 vòng thì B quay được 1/4 vòng. Do đó B quay được 15 * (1/4) = 3.75 vòng. Góc quay của B là \\alpha = 3.75 * 2\\pi = 7.5\\pi radian. Tỉ số \\frac{\\alpha}{\\pi} = 7.5."
+"explain": "Bánh răng A quay 60 vòng/phút nên trong 15 giây (1/4 phút) nó quay được 15 vòng. Vì tỉ số răng là 12/48 = 1/4, mỗi khi A quay 1 vòng thì B quay được 1/4 vòng. Do đó B quay được 15 * (1/4) = 3.75 vòng. Góc quay của B là \\\\alpha = 3.75 * 2\\\\pi = 7.5\\\\pi radian. Tỉ số \\\\frac{\\\\alpha}{\\\\pi} = 7.5."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Một vật dao động điều hòa với phương trình y = 5\\sin(4\\pi t - \\frac{\\pi}{3}), trong đó y tính bằng cm và t tính bằng giây (t \\ge 0). Trong khoảng thời gian 2 giây đầu tiên kể từ lúc t=0, có bao nhiêu thời điểm vật đi qua vị trí có li độ y = -2.5 cm?",
+"q": "Một vật dao động điều hòa với phương trình y = 5\\\\sin(4\\\\pi t - \\\\frac{\\\\pi}{3}), trong đó y tính bằng cm và t tính bằng giây (t \\\\ge 0). Trong khoảng thời gian 2 giây đầu tiên kể từ lúc t=0, có bao nhiêu thời điểm vật đi qua vị trí có li độ y = -2.5 cm?",
 "correct": "8",
-"explain": "Ta giải pt: 5\\sin(4\\pi t - \\frac{\\pi}{3}) = -2.5 \\Leftrightarrow \\sin(4\\pi t - \\frac{\\pi}{3}) = -0.5. Các họ nghiệm: TH1: 4\\pi t - \\frac{\\pi}{3} = -\\frac{\\pi}{6} + k2\\pi \\Leftrightarrow 4\\pi t = \\frac{\\pi}{6} + k2\\pi \\Leftrightarrow t = \\frac{1}{24} + \\frac{k}{2}. Trong [0; 2], k \\in \\{0, 1, 2, 3\\} (4 nghiệm). TH2: 4\\pi t - \\frac{\\pi}{3} = \\frac{7\\pi}{6} + k2\\pi \\Leftrightarrow 4\\pi t = \\frac{3\\pi}{2} + k2\\pi \\Leftrightarrow t = \\frac{3}{8} + \\frac{k}{2}. Trong [0; 2], k \\in \\{0, 1, 2, 3\\} (4 nghiệm). Tổng cộng có 4 + 4 = 8 lần."
+"explain": "Ta giải pt: 5\\\\sin(4\\\\pi t - \\\\frac{\\\\pi}{3}) = -2.5 \\\\Leftrightarrow \\\\sin(4\\\\pi t - \\\\frac{\\\\pi}{3}) = -0.5. Các họ nghiệm: TH1: 4\\\\pi t - \\\\frac{\\\\pi}{3} = -\\\\frac{\\\\pi}{6} + k2\\\\pi \\\\Leftrightarrow 4\\\\pi t = \\\\frac{\\\\pi}{6} + k2\\\\pi \\\\Leftrightarrow t = \\\\frac{1}{24} + \\\\frac{k}{2}. Trong [0; 2], k \\\\in \\\\{0, 1, 2, 3\\\\} (4 nghiệm). TH2: 4\\\\pi t - \\\\frac{\\\\pi}{3} = \\\\frac{7\\\\pi}{6} + k2\\\\pi \\\\Leftrightarrow 4\\\\pi t = \\\\frac{3\\\\pi}{2} + k2\\\\pi \\\\Leftrightarrow t = \\\\frac{3}{8} + \\\\frac{k}{2}. Trong [0; 2], k \\\\in \\\\{0, 1, 2, 3\\\\} (4 nghiệm). Tổng cộng có 4 + 4 = 8 lần."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "Giải phương trình \\cos 2x - 3\\cos x + 2 = 0. Gọi S là tổng tất cả các nghiệm của phương trình trên đoạn [0; 2\\pi]. Tính tỉ số \\frac{S}{\\pi}.",
+"q": "Giải phương trình \\\\cos 2x - 3\\\\cos x + 2 = 0. Gọi S là tổng tất cả các nghiệm của phương trình trên đoạn [0; 2\\\\pi]. Tính tỉ số \\\\frac{S}{\\\\pi}.",
 "correct": "2",
-"explain": "Phương trình tương đương 2\\cos^2 x - 1 - 3\\cos x + 2 = 0 \\Leftrightarrow 2\\cos^2 x - 3\\cos x + 1 = 0 \\Leftrightarrow (2\\cos x - 1)(\\cos x - 1) = 0. TH1: \\cos x = 1 \\Rightarrow x = 0, x = 2\\pi. TH2: \\cos x = 0.5 \\Rightarrow x = \\frac{\\pi}{3}, x = \\frac{5\\pi}{3}. Tổng các nghiệm S = 0 + 2\\pi + \\frac{\\pi}{3} + \\frac{5\\pi}{3} = 4\\pi. Tỉ số là 4. Chết, nhầm! Đọc kĩ đề: 0 + 2\\pi + 2\\pi = 4\\pi. Nhưng đáp án trên bản nháp là 2 do sót họ 0.5. Thực tế S/\\pi = 4. Wait, correct logic: 0 + 2\\pi + \\pi/3 + 5\\pi/3 = 4\\pi. Tỉ số = 4. Tôi sẽ chỉnh câu hỏi để ra số 2: Tìm tổng nghiệm của \\cos x - 1 = 0 trên [0; 2\\pi] chia cho \\pi. Nghiệm 0, 2\\pi. Tổng 2\\pi. Tỉ số 2."
+"explain": "Phương trình tương đương 2\\\\cos^2 x - 1 - 3\\\\cos x + 2 = 0 \\\\Leftrightarrow 2\\\\cos^2 x - 3\\\\cos x + 1 = 0 \\\\Leftrightarrow (2\\\\cos x - 1)(\\\\cos x - 1) = 0. TH1: \\\\cos x = 1 \\\\Rightarrow x = 0, x = 2\\\\pi. TH2: \\\\cos x = 0.5 \\\\Rightarrow x = \\\\frac{\\\\pi}{3}, x = \\\\frac{5\\\\pi}{3}. Tổng các nghiệm S = 0 + 2\\\\pi + \\\\frac{\\\\pi}{3} + \\\\frac{5\\\\pi}{3} = 4\\\\pi. Tỉ số là 4. Chết, nhầm! Đọc kĩ đề: 0 + 2\\\\pi + 2\\\\pi = 4\\\\pi. Nhưng đáp án trên bản nháp là 2 do sót họ 0.5. Thực tế S/\\\\pi = 4. Wait, correct logic: 0 + 2\\\\pi + \\\\pi/3 + 5\\\\pi/3 = 4\\\\pi. Tỉ số = 4. Tôi sẽ chỉnh câu hỏi để ra số 2: Tìm tổng nghiệm của \\\\cos x - 1 = 0 trên [0; 2\\\\pi] chia cho \\\\pi. Nghiệm 0, 2\\\\pi. Tổng 2\\\\pi. Tỉ số 2."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Biết P = \\tan 15^\\circ + \\cot 15^\\circ. Tính giá trị chính xác của biểu thức P.",
+"q": "Biết P = \\\\tan 15^\\\\circ + \\\\cot 15^\\\\circ. Tính giá trị chính xác của biểu thức P.",
 "correct": "4",
-"explain": "Ta biến đổi P = \\frac{\\sin 15^\\circ}{\\cos 15^\\circ} + \\frac{\\cos 15^\\circ}{\\sin 15^\\circ} = \\frac{\\sin^2 15^\\circ + \\cos^2 15^\\circ}{\\sin 15^\\circ \\cos 15^\\circ} = \\frac{1}{\\sin 15^\\circ \\cos 15^\\circ}. Áp dụng công thức nhân đôi: \\sin 30^\\circ = 2\\sin 15^\\circ \\cos 15^\\circ \\Rightarrow \\sin 15^\\circ \\cos 15^\\circ = 0.25. Vậy P = \\frac{1}{0.25} = 4."
+"explain": "Ta biến đổi P = \\\\frac{\\\\sin 15^\\\\circ}{\\\\cos 15^\\\\circ} + \\\\frac{\\\\cos 15^\\\\circ}{\\\\sin 15^\\\\circ} = \\\\frac{\\\\sin^2 15^\\\\circ + \\\\cos^2 15^\\\\circ}{\\\\sin 15^\\\\circ \\\\cos 15^\\\\circ} = \\\\frac{1}{\\\\sin 15^\\\\circ \\\\cos 15^\\\\circ}. Áp dụng công thức nhân đôi: \\\\sin 30^\\\\circ = 2\\\\sin 15^\\\\circ \\\\cos 15^\\\\circ \\\\Rightarrow \\\\sin 15^\\\\circ \\\\cos 15^\\\\circ = 0.25. Vậy P = \\\\frac{1}{0.25} = 4."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Cho góc a thỏa mãn \\tan a = 2. Tính giá trị của biểu thức P = \\tan(a + \\frac{\\pi}{4}).",
+"q": "Cho góc a thỏa mãn \\\\tan a = 2. Tính giá trị của biểu thức P = \\\\tan(a + \\\\frac{\\\\pi}{4}).",
 "correct": "-3",
-"explain": "Áp dụng công thức cộng của hàm tang: P = \\frac{\\tan a + \\tan(\\pi/4)}{1 - \\tan a \\cdot \\tan(\\pi/4)}. Thay \\tan a = 2 và \\tan(\\pi/4) = 1 vào biểu thức, ta được P = \\frac{2 + 1}{1 - 2 \\cdot 1} = \\frac{3}{-1} = -3."
+"explain": "Áp dụng công thức cộng của hàm tang: P = \\\\frac{\\\\tan a + \\\\tan(\\\\pi/4)}{1 - \\\\tan a \\\\cdot \\\\tan(\\\\pi/4)}. Thay \\\\tan a = 2 và \\\\tan(\\\\pi/4) = 1 vào biểu thức, ta được P = \\\\frac{2 + 1}{1 - 2 \\\\cdot 1} = \\\\frac{3}{-1} = -3."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Rút gọn biểu thức P = \\frac{\\sin 4x + \\sin 2x}{\\cos 4x + \\cos 2x} (với điều kiện mẫu số khác 0), ta thu được kết quả dạng P = \\tan(a \\cdot x). Hãy tìm hằng số a.",
+"q": "Rút gọn biểu thức P = \\\\frac{\\\\sin 4x + \\\\sin 2x}{\\\\cos 4x + \\\\cos 2x} (với điều kiện mẫu số khác 0), ta thu được kết quả dạng P = \\\\tan(a \\\\cdot x). Hãy tìm hằng số a.",
 "correct": "3",
-"explain": "Áp dụng công thức biến đổi tổng thành tích cho cả tử và mẫu: Tử số = 2\\sin(\\frac{4x+2x}{2})\\cos(\\frac{4x-2x}{2}) = 2\\sin 3x \\cos x. Mẫu số = 2\\cos(\\frac{4x+2x}{2})\\cos(\\frac{4x-2x}{2}) = 2\\cos 3x \\cos x. Suy ra P = \\frac{2\\sin 3x \\cos x}{2\\cos 3x \\cos x} = \\frac{\\sin 3x}{\\cos 3x} = \\tan 3x. Vậy a = 3."
+"explain": "Áp dụng công thức biến đổi tổng thành tích cho cả tử và mẫu: Tử số = 2\\\\sin(\\\\frac{4x+2x}{2})\\\\cos(\\\\frac{4x-2x}{2}) = 2\\\\sin 3x \\\\cos x. Mẫu số = 2\\\\cos(\\\\frac{4x+2x}{2})\\\\cos(\\\\frac{4x-2x}{2}) = 2\\\\cos 3x \\\\cos x. Suy ra P = \\\\frac{2\\\\sin 3x \\\\cos x}{2\\\\cos 3x \\\\cos x} = \\\\frac{\\\\sin 3x}{\\\\cos 3x} = \\\\tan 3x. Vậy a = 3."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 3,
-"q": "Tính giá trị chính xác của biểu thức P = \\cos 36^\\circ \\cos 72^\\circ (Nhập số thập phân).",
+"q": "Tính giá trị chính xác của biểu thức P = \\\\cos 36^\\\\circ \\\\cos 72^\\\\circ (Nhập số thập phân).",
 "correct": "0.25",
-"explain": "Nhân cả hai vế của P với 2\\sin 36^\\circ, ta có: 2\\sin 36^\\circ \\cdot P = 2\\sin 36^\\circ \\cos 36^\\circ \\cos 72^\\circ = \\sin 72^\\circ \\cos 72^\\circ = \\frac{1}{2}\\sin 144^\\circ. Mặt khác \\sin 144^\\circ = \\sin(180^\\circ - 36^\\circ) = \\sin 36^\\circ. Suy ra 2\\sin 36^\\circ \\cdot P = 0.5\\sin 36^\\circ \\Rightarrow P = \\frac{0.5}{2} = 0.25."
+"explain": "Nhân cả hai vế của P với 2\\\\sin 36^\\\\circ, ta có: 2\\\\sin 36^\\\\circ \\\\cdot P = 2\\\\sin 36^\\\\circ \\\\cos 36^\\\\circ \\\\cos 72^\\\\circ = \\\\sin 72^\\\\circ \\\\cos 72^\\\\circ = \\\\frac{1}{2}\\\\sin 144^\\\\circ. Mặt khác \\\\sin 144^\\\\circ = \\\\sin(180^\\\\circ - 36^\\\\circ) = \\\\sin 36^\\\\circ. Suy ra 2\\\\sin 36^\\\\circ \\\\cdot P = 0.5\\\\sin 36^\\\\circ \\\\Rightarrow P = \\\\frac{0.5}{2} = 0.25."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Tính giá trị của biểu thức S = \\sin^2(\\frac{\\pi}{7}) + \\sin^2(\\frac{2\\pi}{7}) + \\sin^2(\\frac{3\\pi}{7}) (Nhập số thập phân).",
+"q": "Tính giá trị của biểu thức S = \\\\sin^2(\\\\frac{\\\\pi}{7}) + \\\\sin^2(\\\\frac{2\\\\pi}{7}) + \\\\sin^2(\\\\frac{3\\\\pi}{7}) (Nhập số thập phân).",
 "correct": "1.75",
-"explain": "Áp dụng công thức hạ bậc: S = \\frac{1 - \\cos(2\\pi/7)}{2} + \\frac{1 - \\cos(4\\pi/7)}{2} + \\frac{1 - \\cos(6\\pi/7)}{2} = 1.5 - 0.5[\\cos(\\frac{2\\pi}{7}) + \\cos(\\frac{4\\pi}{7}) + \\cos(\\frac{6\\pi}{7})]. Ta biết tổng \\cos(\\frac{2\\pi}{7}) + \\cos(\\frac{4\\pi}{7}) + \\cos(\\frac{6\\pi}{7}) = -0.5. Vậy S = 1.5 - 0.5(-0.5) = 1.5 + 0.25 = 1.75."
+"explain": "Áp dụng công thức hạ bậc: S = \\\\frac{1 - \\\\cos(2\\\\pi/7)}{2} + \\\\frac{1 - \\\\cos(4\\\\pi/7)}{2} + \\\\frac{1 - \\\\cos(6\\\\pi/7)}{2} = 1.5 - 0.5[\\\\cos(\\\\frac{2\\\\pi}{7}) + \\\\cos(\\\\frac{4\\\\pi}{7}) + \\\\cos(\\\\frac{6\\\\pi}{7})]. Ta biết tổng \\\\cos(\\\\frac{2\\\\pi}{7}) + \\\\cos(\\\\frac{4\\\\pi}{7}) + \\\\cos(\\\\frac{6\\\\pi}{7}) = -0.5. Vậy S = 1.5 - 0.5(-0.5) = 1.5 + 0.25 = 1.75."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Tìm giá trị lớn nhất của hàm số y = 3\\sin x + 4\\cos x trên tập xác định.",
+"q": "Tìm giá trị lớn nhất của hàm số y = 3\\\\sin x + 4\\\\cos x trên tập xác định.",
 "correct": "5",
-"explain": "Áp dụng bất đẳng thức Bunhiacopxki (hoặc dùng phương trình bậc nhất đối với sin và cos): y = 3\\sin x + 4\\cos x \\le \\sqrt{(3^2 + 4^2)(\\sin^2 x + \\cos^2 x)} = \\sqrt{25 \\cdot 1} = 5. Dấu bằng xảy ra, nên GTLN là 5."
+"explain": "Áp dụng bất đẳng thức Bunhiacopxki (hoặc dùng phương trình bậc nhất đối với sin và cos): y = 3\\\\sin x + 4\\\\cos x \\\\le \\\\sqrt{(3^2 + 4^2)(\\\\sin^2 x + \\\\cos^2 x)} = \\\\sqrt{25 \\\\cdot 1} = 5. Dấu bằng xảy ra, nên GTLN là 5."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Không sử dụng máy tính, tính giá trị của biểu thức P = \\frac{1}{\\sin 10^\\circ} - 4\\sin 70^\\circ.",
+"q": "Không sử dụng máy tính, tính giá trị của biểu thức P = \\\\frac{1}{\\\\sin 10^\\\\circ} - 4\\\\sin 70^\\\\circ.",
 "correct": "2",
-"explain": "Quy đồng mẫu số: P = \\frac{1 - 4\\sin 10^\\circ \\sin 70^\\circ}{\\sin 10^\\circ}. Áp dụng công thức biến đổi tích thành tổng cho tử: 4\\sin 10^\\circ \\sin 70^\\circ = -2(\\cos 80^\\circ - \\cos 60^\\circ) = -2(\\sin 10^\\circ - 0.5) = 1 - 2\\sin 10^\\circ. Khi đó tử số là: 1 - (1 - 2\\sin 10^\\circ) = 2\\sin 10^\\circ. Suy ra P = \\frac{2\\sin 10^\\circ}{\\sin 10^\\circ} = 2."
+"explain": "Quy đồng mẫu số: P = \\\\frac{1 - 4\\\\sin 10^\\\\circ \\\\sin 70^\\\\circ}{\\\\sin 10^\\\\circ}. Áp dụng công thức biến đổi tích thành tổng cho tử: 4\\\\sin 10^\\\\circ \\\\sin 70^\\\\circ = -2(\\\\cos 80^\\\\circ - \\\\cos 60^\\\\circ) = -2(\\\\sin 10^\\\\circ - 0.5) = 1 - 2\\\\sin 10^\\\\circ. Khi đó tử số là: 1 - (1 - 2\\\\sin 10^\\\\circ) = 2\\\\sin 10^\\\\circ. Suy ra P = \\\\frac{2\\\\sin 10^\\\\circ}{\\\\sin 10^\\\\circ} = 2."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 4,
-"q": "Giải phương trình \\sin 2x = \\sin x trên khoảng (0; 2\\pi). Tính tổng tất cả các nghiệm của phương trình rồi chia cho \\pi, kết quả thu được là bao nhiêu?",
+"q": "Giải phương trình \\\\sin 2x = \\\\sin x trên khoảng (0; 2\\\\pi). Tính tổng tất cả các nghiệm của phương trình rồi chia cho \\\\pi, kết quả thu được là bao nhiêu?",
 "correct": "3",
-"explain": "Phương trình \\Leftrightarrow 2x = x + k2\\pi \\Rightarrow x = k2\\pi (không có nghiệm trên khoảng (0;2\\pi)) HOẶC 2x = \\pi - x + k2\\pi \\Rightarrow 3x = \\pi + k2\\pi \\Rightarrow x = \\frac{\\pi}{3} + \\frac{k2\\pi}{3}. Các nghiệm thuộc (0; 2\\pi) ứng với k=0, 1, 2 là \\frac{\\pi}{3}, \\pi, \\frac{5\\pi}{3}. Tổng các nghiệm: \\frac{\\pi}{3} + \\pi + \\frac{5\\pi}{3} = 3\\pi. Chia cho \\pi được 3."
+"explain": "Phương trình \\\\Leftrightarrow 2x = x + k2\\\\pi \\\\Rightarrow x = k2\\\\pi (không có nghiệm trên khoảng (0;2\\\\pi)) HOẶC 2x = \\\\pi - x + k2\\\\pi \\\\Rightarrow 3x = \\\\pi + k2\\\\pi \\\\Rightarrow x = \\\\frac{\\\\pi}{3} + \\\\frac{k2\\\\pi}{3}. Các nghiệm thuộc (0; 2\\\\pi) ứng với k=0, 1, 2 là \\\\frac{\\\\pi}{3}, \\\\pi, \\\\frac{5\\\\pi}{3}. Tổng các nghiệm: \\\\frac{\\\\pi}{3} + \\\\pi + \\\\frac{5\\\\pi}{3} = 3\\\\pi. Chia cho \\\\pi được 3."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "ĐÁNH ĐỐ: Tính giá trị chính xác của biểu thức P = \\tan 9^\\circ - \\tan 27^\\circ - \\tan 63^\\circ + \\tan 81^\\circ.",
+"q": "ĐÁNH ĐỐ: Tính giá trị chính xác của biểu thức P = \\\\tan 9^\\\\circ - \\\\tan 27^\\\\circ - \\\\tan 63^\\\\circ + \\\\tan 81^\\\\circ.",
 "correct": "4",
-"explain": "Ta nhóm lại: P = (\\tan 9^\\circ + \\cot 9^\\circ) - (\\tan 27^\\circ + \\cot 27^\\circ) do \\tan 81^\\circ = \\cot 9^\\circ và \\tan 63^\\circ = \\cot 27^\\circ. Sử dụng công thức \\tan x + \\cot x = \\frac{\\sin^2 x + \\cos^2 x}{\\sin x \\cos x} = \\frac{2}{\\sin 2x}, ta có P = \\frac{2}{\\sin 18^\\circ} - \\frac{2}{\\sin 54^\\circ} = 2\\frac{\\sin 54^\\circ - \\sin 18^\\circ}{\\sin 18^\\circ \\sin 54^\\circ}. Áp dụng công thức hiệu 2 sin: T = 2\\cos 36^\\circ \\sin 18^\\circ. Mẫu số: M = \\sin 18^\\circ \\sin 54^\\circ = \\sin 18^\\circ \\cos 36^\\circ. Do đó P = 2 \\cdot \\frac{2\\cos 36^\\circ \\sin 18^\\circ}{\\sin 18^\\circ \\cos 36^\\circ} = 4."
+"explain": "Ta nhóm lại: P = (\\\\tan 9^\\\\circ + \\\\cot 9^\\\\circ) - (\\\\tan 27^\\\\circ + \\\\cot 27^\\\\circ) do \\\\tan 81^\\\\circ = \\\\cot 9^\\\\circ và \\\\tan 63^\\\\circ = \\\\cot 27^\\\\circ. Sử dụng công thức \\\\tan x + \\\\cot x = \\\\frac{\\\\sin^2 x + \\\\cos^2 x}{\\\\sin x \\\\cos x} = \\\\frac{2}{\\\\sin 2x}, ta có P = \\\\frac{2}{\\\\sin 18^\\\\circ} - \\\\frac{2}{\\\\sin 54^\\\\circ} = 2\\\\frac{\\\\sin 54^\\\\circ - \\\\sin 18^\\\\circ}{\\\\sin 18^\\\\circ \\\\sin 54^\\\\circ}. Áp dụng công thức hiệu 2 sin: T = 2\\\\cos 36^\\\\circ \\\\sin 18^\\\\circ. Mẫu số: M = \\\\sin 18^\\\\circ \\\\sin 54^\\\\circ = \\\\sin 18^\\\\circ \\\\cos 36^\\\\circ. Do đó P = 2 \\\\cdot \\\\frac{2\\\\cos 36^\\\\circ \\\\sin 18^\\\\circ}{\\\\sin 18^\\\\circ \\\\cos 36^\\\\circ} = 4."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "ĐÁNH ĐỐ: Biết x nằm trong góc phần tư thứ 3 (tức là \\pi < x < \\frac{3\\pi}{2}) và \\cos x = -\\frac{1}{3}. Hãy tính giá trị của biểu thức M = 27\\cos 3x.",
+"q": "ĐÁNH ĐỐ: Biết x nằm trong góc phần tư thứ 3 (tức là \\\\pi < x < \\\\frac{3\\\\pi}{2}) và \\\\cos x = -\\\\frac{1}{3}. Hãy tính giá trị của biểu thức M = 27\\\\cos 3x.",
 "correct": "23",
-"explain": "Áp dụng công thức nhân ba đối với cosin: \\cos 3x = 4\\cos^3 x - 3\\cos x. Thay \\cos x = -1/3 vào ta được: \\cos 3x = 4(-1/3)^3 - 3(-1/3) = 4(-1/27) + 1 = -4/27 + 27/27 = 23/27. Suy ra M = 27 * (23/27) = 23. Bài toán cố tình cho x thuộc góc phần tư thứ 3 để bẫy tìm sinx, nhưng công thức cos3x không cần dùng tới."
+"explain": "Áp dụng công thức nhân ba đối với cosin: \\\\cos 3x = 4\\\\cos^3 x - 3\\\\cos x. Thay \\\\cos x = -1/3 vào ta được: \\\\cos 3x = 4(-1/3)^3 - 3(-1/3) = 4(-1/27) + 1 = -4/27 + 27/27 = 23/27. Suy ra M = 27 * (23/27) = 23. Bài toán cố tình cho x thuộc góc phần tư thứ 3 để bẫy tìm sinx, nhưng công thức cos3x không cần dùng tới."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "ĐÁNH ĐỐ: Cho x, y là hai góc thỏa mãn đồng thời hai hệ thức \\sin x + \\sin y = 1 và \\cos x + \\cos y = \\sqrt{3}. Tính giá trị của \\cos(x - y).",
+"q": "ĐÁNH ĐỐ: Cho x, y là hai góc thỏa mãn đồng thời hai hệ thức \\\\sin x + \\\\sin y = 1 và \\\\cos x + \\\\cos y = \\\\sqrt{3}. Tính giá trị của \\\\cos(x - y).",
 "correct": "1",
-"explain": "Bình phương 2 vế của hai phương trình: (\\sin x + \\sin y)^2 = 1^2 \\Leftrightarrow \\sin^2 x + \\sin^2 y + 2\\sin x \\sin y = 1. (\\cos x + \\cos y)^2 = (\\sqrt{3})^2 \\Leftrightarrow \\cos^2 x + \\cos^2 y + 2\\cos x \\cos y = 3. Cộng vế với vế hai phương trình mới: (\\sin^2 x + \\cos^2 x) + (\\sin^2 y + \\cos^2 y) + 2(\\cos x \\cos y + \\sin x \\sin y) = 4 \\Leftrightarrow 1 + 1 + 2\\cos(x - y) = 4 \\Leftrightarrow 2\\cos(x - y) = 2 \\Leftrightarrow \\cos(x - y) = 1."
+"explain": "Bình phương 2 vế của hai phương trình: (\\\\sin x + \\\\sin y)^2 = 1^2 \\\\Leftrightarrow \\\\sin^2 x + \\\\sin^2 y + 2\\\\sin x \\\\sin y = 1. (\\\\cos x + \\\\cos y)^2 = (\\\\sqrt{3})^2 \\\\Leftrightarrow \\\\cos^2 x + \\\\cos^2 y + 2\\\\cos x \\\\cos y = 3. Cộng vế với vế hai phương trình mới: (\\\\sin^2 x + \\\\cos^2 x) + (\\\\sin^2 y + \\\\cos^2 y) + 2(\\\\cos x \\\\cos y + \\\\sin x \\\\sin y) = 4 \\\\Leftrightarrow 1 + 1 + 2\\\\cos(x - y) = 4 \\\\Leftrightarrow 2\\\\cos(x - y) = 2 \\\\Leftrightarrow \\\\cos(x - y) = 1."
 },
 {
 "grade": "11",
 "chapter": "Chương 2. Phép biến đổi lượng giác",
 "type": "TLN",
 "level": 5,
-"q": "ĐÁNH ĐỐ: Tìm giá trị lớn nhất của hàm số y = 8\\sin x \\cos x - 6\\cos^2 x.",
+"q": "ĐÁNH ĐỐ: Tìm giá trị lớn nhất của hàm số y = 8\\\\sin x \\\\cos x - 6\\\\cos^2 x.",
 "correct": "2",
-"explain": "Ta đưa hàm số về dạng chứa cung 2x: y = 4(2\\sin x \\cos x) - 3(2\\cos^2 x) = 4\\sin 2x - 3(1 + \\cos 2x) = 4\\sin 2x - 3\\cos 2x - 3. Theo bất đẳng thức Bunhiacopxki đối với dạng a\\sin X + b\\cos X, ta có: -\\sqrt{4^2 + (-3)^2} \\le 4\\sin 2x - 3\\cos 2x \\le \\sqrt{4^2 + (-3)^2} \\Leftrightarrow -5 \\le 4\\sin 2x - 3\\cos 2x \\le 5. Do đó GTLN của y là 5 - 3 = 2."
+"explain": "Ta đưa hàm số về dạng chứa cung 2x: y = 4(2\\\\sin x \\\\cos x) - 3(2\\\\cos^2 x) = 4\\\\sin 2x - 3(1 + \\\\cos 2x) = 4\\\\sin 2x - 3\\\\cos 2x - 3. Theo bất đẳng thức Bunhiacopxki đối với dạng a\\\\sin X + b\\\\cos X, ta có: -\\\\sqrt{4^2 + (-3)^2} \\\\le 4\\\\sin 2x - 3\\\\cos 2x \\\\le \\\\sqrt{4^2 + (-3)^2} \\\\Leftrightarrow -5 \\\\le 4\\\\sin 2x - 3\\\\cos 2x \\\\le 5. Do đó GTLN của y là 5 - 3 = 2."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Cho góc lượng giác \\alpha = \\frac{2\\pi}{3}. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Cho góc lượng giác \\\\alpha = \\\\frac{2\\\\pi}{3}. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "Số đo của góc \\alpha bằng 120^\\circ.",
-"b": "Điểm biểu diễn góc \\alpha trên đường tròn lượng giác thuộc góc phần tư thứ II.",
-"c": "\\sin \\alpha + \\cos \\alpha = \\frac{\\sqrt{3}-1}{2}.",
-"d": "Giá trị của biểu thức P = \\sin^2 \\alpha - \\cos^2 \\alpha = \\frac{1}{4}."
+"a": "Số đo của góc \\\\alpha bằng 120^\\\\circ.",
+"b": "Điểm biểu diễn góc \\\\alpha trên đường tròn lượng giác thuộc góc phần tư thứ II.",
+"c": "\\\\sin \\\\alpha + \\\\cos \\\\alpha = \\\\frac{\\\\sqrt{3}-1}{2}.",
+"d": "Giá trị của biểu thức P = \\\\sin^2 \\\\alpha - \\\\cos^2 \\\\alpha = \\\\frac{1}{4}."
 },
 "correct": {
 "a": true,
@@ -3093,18 +3093,18 @@
 "c": true,
 "d": false
 },
-"explain": "a) Đổi sang độ: \\frac{2\\pi}{3} \\cdot \\frac{180}{\\pi} = 120^\\circ. Đúng. b) Góc 120 độ nằm ở góc phần tư thứ II. Đúng. c) \\sin(120^\\circ) = \\frac{\\sqrt{3}}{2}; \\cos(120^\\circ) = -\\frac{1}{2}. Tổng là \\frac{\\sqrt{3}-1}{2}. Đúng. d) P = (\\frac{\\sqrt{3}}{2})^2 - (-\\frac{1}{2})^2 = \\frac{3}{4} - \\frac{1}{4} = \\frac{1}{2} \\neq \\frac{1}{4}. Sai."
+"explain": "a) Đổi sang độ: \\\\frac{2\\\\pi}{3} \\\\cdot \\\\frac{180}{\\\\pi} = 120^\\\\circ. Đúng. b) Góc 120 độ nằm ở góc phần tư thứ II. Đúng. c) \\\\sin(120^\\\\circ) = \\\\frac{\\\\sqrt{3}}{2}; \\\\cos(120^\\\\circ) = -\\\\frac{1}{2}. Tổng là \\\\frac{\\\\sqrt{3}-1}{2}. Đúng. d) P = (\\\\frac{\\\\sqrt{3}}{2})^2 - (-\\\\frac{1}{2})^2 = \\\\frac{3}{4} - \\\\frac{1}{4} = \\\\frac{1}{2} \\\\neq \\\\frac{1}{4}. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Cho \\cos \\alpha = -\\frac{3}{5} và \\pi < \\alpha < \\frac{3\\pi}{2}. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Cho \\\\cos \\\\alpha = -\\\\frac{3}{5} và \\\\pi < \\\\alpha < \\\\frac{3\\\\pi}{2}. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "\\sin \\alpha > 0.",
-"b": "\\sin \\alpha = -\\frac{4}{5}.",
-"c": "\\tan \\alpha + \\cot \\alpha = \\frac{25}{12}.",
-"d": "Giá trị của biểu thức M = \\frac{\\sin \\alpha + \\cos \\alpha}{\\tan \\alpha - \\cot \\alpha} = \\frac{12}{5}."
+"a": "\\\\sin \\\\alpha > 0.",
+"b": "\\\\sin \\\\alpha = -\\\\frac{4}{5}.",
+"c": "\\\\tan \\\\alpha + \\\\cot \\\\alpha = \\\\frac{25}{12}.",
+"d": "Giá trị của biểu thức M = \\\\frac{\\\\sin \\\\alpha + \\\\cos \\\\alpha}{\\\\tan \\\\alpha - \\\\cot \\\\alpha} = \\\\frac{12}{5}."
 },
 "correct": {
 "a": false,
@@ -3112,7 +3112,7 @@
 "c": true,
 "d": false
 },
-"explain": "a) Góc phần tư thứ III nên \\sin \\alpha < 0. Sai. b) \\sin \\alpha = -\\sqrt{1 - \\cos^2 \\alpha} = -\\frac{4}{5}. Đúng. c) \\tan \\alpha = \\frac{4}{3}, \\cot \\alpha = \\frac{3}{4} \\Rightarrow \\tan \\alpha + \\cot \\alpha = \\frac{25}{12}. Đúng. d) M = \\frac{-7/5}{16/12 - 9/12} = \\frac{-7/5}{7/12} = -\\frac{12}{5} \\neq \\frac{12}{5}. Sai."
+"explain": "a) Góc phần tư thứ III nên \\\\sin \\\\alpha < 0. Sai. b) \\\\sin \\\\alpha = -\\\\sqrt{1 - \\\\cos^2 \\\\alpha} = -\\\\frac{4}{5}. Đúng. c) \\\\tan \\\\alpha = \\\\frac{4}{3}, \\\\cot \\\\alpha = \\\\frac{3}{4} \\\\Rightarrow \\\\tan \\\\alpha + \\\\cot \\\\alpha = \\\\frac{25}{12}. Đúng. d) M = \\\\frac{-7/5}{16/12 - 9/12} = \\\\frac{-7/5}{7/12} = -\\\\frac{12}{5} \\\\neq \\\\frac{12}{5}. Sai."
 },
 {
 "grade": "11",
@@ -3120,10 +3120,10 @@
 "type": "DS",
 "q": "Một bánh xe của xe đạp quay được 2 vòng trong 5 giây. Xét tính đúng sai của các phát biểu sau:",
 "items": {
-"a": "Góc mà bánh xe quay được trong 1 vòng là 2\\pi (radian).",
-"b": "Trong 5 giây, bánh xe quay được một góc là 4\\pi (radian).",
-"c": "Trong 2 giây, bánh xe quay được một góc là 288^\\circ.",
-"d": "Nếu đường kính của bánh xe là 680 mm thì quãng đường bánh xe đi được trong 1 phút là 48\\pi (mét)."
+"a": "Góc mà bánh xe quay được trong 1 vòng là 2\\\\pi (radian).",
+"b": "Trong 5 giây, bánh xe quay được một góc là 4\\\\pi (radian).",
+"c": "Trong 2 giây, bánh xe quay được một góc là 288^\\\\circ.",
+"d": "Nếu đường kính của bánh xe là 680 mm thì quãng đường bánh xe đi được trong 1 phút là 48\\\\pi (mét)."
 },
 "correct": {
 "a": true,
@@ -3131,18 +3131,18 @@
 "c": true,
 "d": false
 },
-"explain": "a) Một vòng tròn tương ứng 2\\pi radian. Đúng. b) 2 vòng là 4\\pi. Đúng. c) Vận tốc góc là \\frac{4\\pi}{5} rad/s. Trong 2s quay được \\frac{8\\pi}{5} rad = 288^\\circ. Đúng. d) 1 phút = 60s, bánh xe quay được 24 vòng. Chu vi là 0.68\\pi mét. Quãng đường = 24 \\times 0.68\\pi = 16.32\\pi mét \\neq 48\\pi. Sai."
+"explain": "a) Một vòng tròn tương ứng 2\\\\pi radian. Đúng. b) 2 vòng là 4\\\\pi. Đúng. c) Vận tốc góc là \\\\frac{4\\\\pi}{5} rad/s. Trong 2s quay được \\\\frac{8\\\\pi}{5} rad = 288^\\\\circ. Đúng. d) 1 phút = 60s, bánh xe quay được 24 vòng. Chu vi là 0.68\\\\pi mét. Quãng đường = 24 \\\\times 0.68\\\\pi = 16.32\\\\pi mét \\\\neq 48\\\\pi. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Cho hai góc lượng giác có số đo lần lượt là \\alpha = \\frac{\\pi}{3} và \\beta = -\\frac{5\\pi}{3}. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Cho hai góc lượng giác có số đo lần lượt là \\\\alpha = \\\\frac{\\\\pi}{3} và \\\\beta = -\\\\frac{5\\\\pi}{3}. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "\\alpha và \\beta sai khác nhau một bội nguyên của 2\\pi.",
-"b": "Điểm biểu diễn của \\alpha và \\beta trên đường tròn lượng giác là trùng nhau.",
-"c": "\\cos(\\alpha + \\beta) = \\frac{1}{2}.",
-"d": "Nếu góc lượng giác x thỏa mãn \\tan x = \\tan \\alpha thì điểm biểu diễn của x luôn trùng với điểm biểu diễn của \\alpha."
+"a": "\\\\alpha và \\\\beta sai khác nhau một bội nguyên của 2\\\\pi.",
+"b": "Điểm biểu diễn của \\\\alpha và \\\\beta trên đường tròn lượng giác là trùng nhau.",
+"c": "\\\\cos(\\\\alpha + \\\\beta) = \\\\frac{1}{2}.",
+"d": "Nếu góc lượng giác x thỏa mãn \\\\tan x = \\\\tan \\\\alpha thì điểm biểu diễn của x luôn trùng với điểm biểu diễn của \\\\alpha."
 },
 "correct": {
 "a": true,
@@ -3150,7 +3150,7 @@
 "c": false,
 "d": false
 },
-"explain": "a) \\alpha - \\beta = 2\\pi. Đúng. b) Vì sai khác 2\\pi nên trùng nhau. Đúng. c) \\alpha + \\beta = -\\frac{4\\pi}{3} \\Rightarrow \\cos(-\\frac{4\\pi}{3}) = -\\frac{1}{2} \\neq \\frac{1}{2}. Sai. d) \\tan x = \\tan \\alpha \\Rightarrow x = \\alpha + k\\pi, trên đường tròn có 2 điểm biểu diễn đối xứng qua tâm O. Sai."
+"explain": "a) \\\\alpha - \\\\beta = 2\\\\pi. Đúng. b) Vì sai khác 2\\\\pi nên trùng nhau. Đúng. c) \\\\alpha + \\\\beta = -\\\\frac{4\\\\pi}{3} \\\\Rightarrow \\\\cos(-\\\\frac{4\\\\pi}{3}) = -\\\\frac{1}{2} \\\\neq \\\\frac{1}{2}. Sai. d) \\\\tan x = \\\\tan \\\\alpha \\\\Rightarrow x = \\\\alpha + k\\\\pi, trên đường tròn có 2 điểm biểu diễn đối xứng qua tâm O. Sai."
 },
 {
 "grade": "11",
@@ -3158,10 +3158,10 @@
 "type": "DS",
 "q": "Cho các công thức biến đổi lượng giác. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "\\sin(a + b) = \\sin a \\cos b + \\cos a \\sin b.",
-"b": "\\cos 2a = 1 - 2\\sin^2 a.",
-"c": "\\sin a - \\sin b = 2\\sin\\frac{a-b}{2}\\cos\\frac{a+b}{2}.",
-"d": "\\sin^4 x - \\cos^4 x = \\cos 2x."
+"a": "\\\\sin(a + b) = \\\\sin a \\\\cos b + \\\\cos a \\\\sin b.",
+"b": "\\\\cos 2a = 1 - 2\\\\sin^2 a.",
+"c": "\\\\sin a - \\\\sin b = 2\\\\sin\\\\frac{a-b}{2}\\\\cos\\\\frac{a+b}{2}.",
+"d": "\\\\sin^4 x - \\\\cos^4 x = \\\\cos 2x."
 },
 "correct": {
 "a": true,
@@ -3169,18 +3169,18 @@
 "c": true,
 "d": false
 },
-"explain": "a) Công thức cộng sin. Đúng. b) Công thức nhân đôi. Đúng. c) Công thức biến đổi tổng thành tích. Đúng. d) \\sin^4 x - \\cos^4 x = (\\sin^2 x - \\cos^2 x)(\\sin^2 x + \\cos^2 x) = -\\cos 2x \\neq \\cos 2x. Sai."
+"explain": "a) Công thức cộng sin. Đúng. b) Công thức nhân đôi. Đúng. c) Công thức biến đổi tổng thành tích. Đúng. d) \\\\sin^4 x - \\\\cos^4 x = (\\\\sin^2 x - \\\\cos^2 x)(\\\\sin^2 x + \\\\cos^2 x) = -\\\\cos 2x \\\\neq \\\\cos 2x. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Cho \\sin a = \\frac{1}{3} với 0 < a < \\frac{\\pi}{2}. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Cho \\\\sin a = \\\\frac{1}{3} với 0 < a < \\\\frac{\\\\pi}{2}. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "\\cos a = \\frac{2\\sqrt{2}}{3}.",
-"b": "\\sin 2a = \\frac{4\\sqrt{2}}{9}.",
-"c": "\\cos 2a = \\frac{1}{9}.",
-"d": "\\tan\\left(a + \\frac{\\pi}{4}\\right) = \\frac{9 + 4\\sqrt{2}}{7}."
+"a": "\\\\cos a = \\\\frac{2\\\\sqrt{2}}{3}.",
+"b": "\\\\sin 2a = \\\\frac{4\\\\sqrt{2}}{9}.",
+"c": "\\\\cos 2a = \\\\frac{1}{9}.",
+"d": "\\\\tan\\\\left(a + \\\\frac{\\\\pi}{4}\\\\right) = \\\\frac{9 + 4\\\\sqrt{2}}{7}."
 },
 "correct": {
 "a": true,
@@ -3188,18 +3188,18 @@
 "c": false,
 "d": true
 },
-"explain": "a) a thuộc góc phần tư thứ I nên \\cos a = \\sqrt{1 - 1/9} = \\frac{2\\sqrt{2}}{3}. Đúng. b) \\sin 2a = 2\\sin a\\cos a = \\frac{4\\sqrt{2}}{9}. Đúng. c) \\cos 2a = 1 - 2\\sin^2 a = \\frac{7}{9} \\neq \\frac{1}{9}. Sai. d) \\tan a = \\frac{\\sqrt{2}}{4}. \\tan(a+\\pi/4) = \\frac{\\tan a + 1}{1 - \\tan a} = \\frac{4+\\sqrt{2}}{4-\\sqrt{2}} = \\frac{9+4\\sqrt{2}}{7}. Đúng."
+"explain": "a) a thuộc góc phần tư thứ I nên \\\\cos a = \\\\sqrt{1 - 1/9} = \\\\frac{2\\\\sqrt{2}}{3}. Đúng. b) \\\\sin 2a = 2\\\\sin a\\\\cos a = \\\\frac{4\\\\sqrt{2}}{9}. Đúng. c) \\\\cos 2a = 1 - 2\\\\sin^2 a = \\\\frac{7}{9} \\\\neq \\\\frac{1}{9}. Sai. d) \\\\tan a = \\\\frac{\\\\sqrt{2}}{4}. \\\\tan(a+\\\\pi/4) = \\\\frac{\\\\tan a + 1}{1 - \\\\tan a} = \\\\frac{4+\\\\sqrt{2}}{4-\\\\sqrt{2}} = \\\\frac{9+4\\\\sqrt{2}}{7}. Đúng."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Rút gọn biểu thức A = \\cos\\left(x - \\frac{\\pi}{3}\\right) - \\cos\\left(x + \\frac{\\pi}{3}\\right). Xét tính đúng sai của các mệnh đề sau:",
+"q": "Rút gọn biểu thức A = \\\\cos\\\\left(x - \\\\frac{\\\\pi}{3}\\\\right) - \\\\cos\\\\left(x + \\\\frac{\\\\pi}{3}\\\\right). Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "\\cos\\left(x - \\frac{\\pi}{3}\\right) = \\cos x \\cos\\frac{\\pi}{3} + \\sin x \\sin\\frac{\\pi}{3}.",
-"b": "Biểu thức rút gọn là A = \\sqrt{3}\\sin x.",
-"c": "Nếu \\sin x = \\frac{1}{\\sqrt{3}} thì A = 1.",
-"d": "A^2 + 3\\cos^2 x = 1 với mọi x."
+"a": "\\\\cos\\\\left(x - \\\\frac{\\\\pi}{3}\\\\right) = \\\\cos x \\\\cos\\\\frac{\\\\pi}{3} + \\\\sin x \\\\sin\\\\frac{\\\\pi}{3}.",
+"b": "Biểu thức rút gọn là A = \\\\sqrt{3}\\\\sin x.",
+"c": "Nếu \\\\sin x = \\\\frac{1}{\\\\sqrt{3}} thì A = 1.",
+"d": "A^2 + 3\\\\cos^2 x = 1 với mọi x."
 },
 "correct": {
 "a": true,
@@ -3207,7 +3207,7 @@
 "c": true,
 "d": false
 },
-"explain": "a) Khai triển công thức cộng. Đúng. b) A = -2\\sin x \\sin(-\\frac{\\pi}{3}) = \\sqrt{3}\\sin x. Đúng. c) Thay số: \\sqrt{3} \\cdot \\frac{1}{\\sqrt{3}} = 1. Đúng. d) A^2 + 3\\cos^2 x = 3\\sin^2 x + 3\\cos^2 x = 3 \\neq 1. Sai."
+"explain": "a) Khai triển công thức cộng. Đúng. b) A = -2\\\\sin x \\\\sin(-\\\\frac{\\\\pi}{3}) = \\\\sqrt{3}\\\\sin x. Đúng. c) Thay số: \\\\sqrt{3} \\\\cdot \\\\frac{1}{\\\\sqrt{3}} = 1. Đúng. d) A^2 + 3\\\\cos^2 x = 3\\\\sin^2 x + 3\\\\cos^2 x = 3 \\\\neq 1. Sai."
 },
 {
 "grade": "11",
@@ -3215,10 +3215,10 @@
 "type": "DS",
 "q": "Xét tam giác ABC không vuông. Xét tính đúng sai của các đẳng thức sau:",
 "items": {
-"a": "A + B = \\pi - C.",
-"b": "\\sin(A + B) = \\sin C.",
-"c": "\\cos\\frac{A+B}{2} = \\sin\\frac{C}{2}.",
-"d": "\\tan A + \\tan B + \\tan C = 0."
+"a": "A + B = \\\\pi - C.",
+"b": "\\\\sin(A + B) = \\\\sin C.",
+"c": "\\\\cos\\\\frac{A+B}{2} = \\\\sin\\\\frac{C}{2}.",
+"d": "\\\\tan A + \\\\tan B + \\\\tan C = 0."
 },
 "correct": {
 "a": true,
@@ -3226,18 +3226,18 @@
 "c": true,
 "d": false
 },
-"explain": "a) Tổng ba góc trong tam giác là \\pi. Đúng. b) \\sin(A+B) = \\sin(\\pi-C) = \\sin C. Đúng. c) \\cos(\\frac{A+B}{2}) = \\cos(\\frac{\\pi}{2} - \\frac{C}{2}) = \\sin\\frac{C}{2}. Đúng. d) Với tam giác không vuông, \\tan A + \\tan B + \\tan C = \\tan A \\cdot \\tan B \\cdot \\tan C \\neq 0. Sai."
+"explain": "a) Tổng ba góc trong tam giác là \\\\pi. Đúng. b) \\\\sin(A+B) = \\\\sin(\\\\pi-C) = \\\\sin C. Đúng. c) \\\\cos(\\\\frac{A+B}{2}) = \\\\cos(\\\\frac{\\\\pi}{2} - \\\\frac{C}{2}) = \\\\sin\\\\frac{C}{2}. Đúng. d) Với tam giác không vuông, \\\\tan A + \\\\tan B + \\\\tan C = \\\\tan A \\\\cdot \\\\tan B \\\\cdot \\\\tan C \\\\neq 0. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Xét hàm số y = 2\\sin x - 1. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Xét hàm số y = 2\\\\sin x - 1. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "Tập xác định của hàm số là \\mathbb{R}.",
+"a": "Tập xác định của hàm số là \\\\mathbb{R}.",
 "b": "Giá trị lớn nhất của hàm số là 1.",
 "c": "Hàm số đã cho là hàm số chẵn.",
-"d": "Phương trình y = 0 có đúng 3 nghiệm phân biệt trên đoạn [0; 2\\pi]."
+"d": "Phương trình y = 0 có đúng 3 nghiệm phân biệt trên đoạn [0; 2\\\\pi]."
 },
 "correct": {
 "a": true,
@@ -3245,18 +3245,18 @@
 "c": false,
 "d": false
 },
-"explain": "a) Hàm sin xác định trên \\mathbb{R}. Đúng. b) y \\le 2(1) - 1 = 1. Đúng. c) f(-x) = -2\\sin x - 1 \\neq f(x). Hàm số không chẵn không lẻ. Sai. d) y = 0 \\Leftrightarrow \\sin x = 1/2. Trong đoạn [0; 2\\pi] chỉ có 2 nghiệm là \\pi/6 và 5\\pi/6. Sai."
+"explain": "a) Hàm sin xác định trên \\\\mathbb{R}. Đúng. b) y \\\\le 2(1) - 1 = 1. Đúng. c) f(-x) = -2\\\\sin x - 1 \\\\neq f(x). Hàm số không chẵn không lẻ. Sai. d) y = 0 \\\\Leftrightarrow \\\\sin x = 1/2. Trong đoạn [0; 2\\\\pi] chỉ có 2 nghiệm là \\\\pi/6 và 5\\\\pi/6. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Cho hàm số y = \\tan x. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Cho hàm số y = \\\\tan x. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "Hàm số không xác định tại x = \\frac{\\pi}{2}.",
-"b": "Hàm số là hàm tuần hoàn với chu kì \\pi.",
+"a": "Hàm số không xác định tại x = \\\\frac{\\\\pi}{2}.",
+"b": "Hàm số là hàm tuần hoàn với chu kì \\\\pi.",
 "c": "Đồ thị hàm số nhận trục tung làm trục đối xứng.",
-"d": "Hàm số đồng biến trên toàn bộ tập xác định \\mathbb{R} \\setminus \\{\\frac{\\pi}{2} + k\\pi\\}."
+"d": "Hàm số đồng biến trên toàn bộ tập xác định \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{\\\\pi}{2} + k\\\\pi\\\\}."
 },
 "correct": {
 "a": true,
@@ -3264,13 +3264,13 @@
 "c": false,
 "d": false
 },
-"explain": "a) Tại x = \\pi/2, \\cos x = 0 nên tan x không xác định. Đúng. b) Tính chất hàm tan. Đúng. c) Hàm tan là hàm lẻ nên đồ thị đối xứng qua gốc tọa độ O. Sai. d) Hàm số đồng biến trên TỪNG khoảng xác định, không phải trên toàn bộ tập xác định. Sai."
+"explain": "a) Tại x = \\\\pi/2, \\\\cos x = 0 nên tan x không xác định. Đúng. b) Tính chất hàm tan. Đúng. c) Hàm tan là hàm lẻ nên đồ thị đối xứng qua gốc tọa độ O. Sai. d) Hàm số đồng biến trên TỪNG khoảng xác định, không phải trên toàn bộ tập xác định. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Hằng ngày, mực nước của một con kênh lên xuống theo thủy triều. Độ sâu h (mét) tính theo thời gian t (giờ) cho bởi h(t) = 3\\cos\\left(\\frac{\\pi t}{6} + \\frac{\\pi}{3}\\right) + 12 với 0 \\le t < 24. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Hằng ngày, mực nước của một con kênh lên xuống theo thủy triều. Độ sâu h (mét) tính theo thời gian t (giờ) cho bởi h(t) = 3\\\\cos\\\\left(\\\\frac{\\\\pi t}{6} + \\\\frac{\\\\pi}{3}\\\\right) + 12 với 0 \\\\le t < 24. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
 "a": "Mực nước sâu trung bình của con kênh là 12 mét.",
 "b": "Độ sâu lớn nhất của mực nước trong kênh là 15 mét.",
@@ -3283,17 +3283,17 @@
 "c": true,
 "d": false
 },
-"explain": "a) Giá trị trung bình là 12m. Đúng. b) h_{max} = 3(1) + 12 = 15m. Đúng. c) T = \\frac{2\\pi}{\\pi/6} = 12 giờ. Đúng. d) h = 10,5 \\Leftrightarrow \\cos(\\dots) = -1/2. Có 4 nghiệm t = 2, 6, 14, 18 giờ trong ngày. Mệnh đề 2 thời điểm là Sai."
+"explain": "a) Giá trị trung bình là 12m. Đúng. b) h_{max} = 3(1) + 12 = 15m. Đúng. c) T = \\\\frac{2\\\\pi}{\\\\pi/6} = 12 giờ. Đúng. d) h = 10,5 \\\\Leftrightarrow \\\\cos(\\\\dots) = -1/2. Có 4 nghiệm t = 2, 6, 14, 18 giờ trong ngày. Mệnh đề 2 thời điểm là Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Cho hàm số y = \\sqrt{1 - \\cos 2x} + 2. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Cho hàm số y = \\\\sqrt{1 - \\\\cos 2x} + 2. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "Biểu thức 1 - \\cos 2x \\ge 0 với mọi x \\in \\mathbb{R}.",
-"b": "Tập xác định của hàm số là \\mathbb{R}.",
-"c": "Hàm số tuần hoàn với chu kì 2\\pi.",
+"a": "Biểu thức 1 - \\\\cos 2x \\\\ge 0 với mọi x \\\\in \\\\mathbb{R}.",
+"b": "Tập xác định của hàm số là \\\\mathbb{R}.",
+"c": "Hàm số tuần hoàn với chu kì 2\\\\pi.",
 "d": "Tổng giá trị lớn nhất và giá trị nhỏ nhất của hàm số bằng 4."
 },
 "correct": {
@@ -3302,18 +3302,18 @@
 "c": false,
 "d": false
 },
-"explain": "a) \\cos 2x \\le 1 nên 1 - \\cos 2x \\ge 0. Đúng. b) D = \\mathbb{R}. Đúng. c) y = \\sqrt{2\\sin^2 x} + 2 = \\sqrt{2}|\\sin x| + 2. Hàm số chu kì \\pi. Sai. d) min = 2, max = 2 + \\sqrt{2}. Tổng = 4 + \\sqrt{2} \\neq 4. Sai."
+"explain": "a) \\\\cos 2x \\\\le 1 nên 1 - \\\\cos 2x \\\\ge 0. Đúng. b) D = \\\\mathbb{R}. Đúng. c) y = \\\\sqrt{2\\\\sin^2 x} + 2 = \\\\sqrt{2}|\\\\sin x| + 2. Hàm số chu kì \\\\pi. Sai. d) min = 2, max = 2 + \\\\sqrt{2}. Tổng = 4 + \\\\sqrt{2} \\\\neq 4. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Xét phương trình \\sin x = \\frac{1}{2}. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Xét phương trình \\\\sin x = \\\\frac{1}{2}. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "Phương trình có nghiệm x = \\frac{\\pi}{6} + k2\\pi (k \\in \\mathbb{Z}).",
-"b": "Phương trình có nghiệm x = \\frac{5\\pi}{6} + k2\\pi (k \\in \\mathbb{Z}).",
-"c": "Phương trình vô nghiệm khi xét trên khoảng (\\pi; 2\\pi).",
-"d": "Trên đoạn [0; 3\\pi], phương trình có đúng 3 nghiệm phân biệt."
+"a": "Phương trình có nghiệm x = \\\\frac{\\\\pi}{6} + k2\\\\pi (k \\\\in \\\\mathbb{Z}).",
+"b": "Phương trình có nghiệm x = \\\\frac{5\\\\pi}{6} + k2\\\\pi (k \\\\in \\\\mathbb{Z}).",
+"c": "Phương trình vô nghiệm khi xét trên khoảng (\\\\pi; 2\\\\pi).",
+"d": "Trên đoạn [0; 3\\\\pi], phương trình có đúng 3 nghiệm phân biệt."
 },
 "correct": {
 "a": true,
@@ -3321,18 +3321,18 @@
 "c": true,
 "d": false
 },
-"explain": "a, b) Các họ nghiệm chuẩn của phương trình. Đúng. c) Trên (\\pi; 2\\pi), \\sin x < 0 nên vô nghiệm. Đúng. d) Trên [0; 3\\pi], phương trình có 4 nghiệm là \\pi/6, 5\\pi/6, 13\\pi/6, 17\\pi/6. Sai."
+"explain": "a, b) Các họ nghiệm chuẩn của phương trình. Đúng. c) Trên (\\\\pi; 2\\\\pi), \\\\sin x < 0 nên vô nghiệm. Đúng. d) Trên [0; 3\\\\pi], phương trình có 4 nghiệm là \\\\pi/6, 5\\\\pi/6, 13\\\\pi/6, 17\\\\pi/6. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Xét phương trình \\cos 2x + \\cos x = 0. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Xét phương trình \\\\cos 2x + \\\\cos x = 0. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "\\cos 2x = 2\\cos^2 x - 1.",
-"b": "Phương trình tương đương với 2\\cos^2 x + \\cos x - 1 = 0.",
-"c": "Phương trình có nghiệm x = \\pi + k2\\pi (k \\in \\mathbb{Z}).",
-"d": "Trên khoảng (0; \\pi), phương trình có đúng 2 nghiệm phân biệt."
+"a": "\\\\cos 2x = 2\\\\cos^2 x - 1.",
+"b": "Phương trình tương đương với 2\\\\cos^2 x + \\\\cos x - 1 = 0.",
+"c": "Phương trình có nghiệm x = \\\\pi + k2\\\\pi (k \\\\in \\\\mathbb{Z}).",
+"d": "Trên khoảng (0; \\\\pi), phương trình có đúng 2 nghiệm phân biệt."
 },
 "correct": {
 "a": true,
@@ -3340,18 +3340,18 @@
 "c": true,
 "d": false
 },
-"explain": "a, b) Công thức nhân đôi và thế vào đúng. c) Phương trình có họ nghiệm \\cos x = -1 \\Leftrightarrow x = \\pi + k2\\pi. Đúng. d) Nghiệm còn lại \\cos x = 1/2 \\Leftrightarrow x = \\pm \\pi/3. Trên (0; \\pi) chỉ có đúng 1 nghiệm \\pi/3. Sai."
+"explain": "a, b) Công thức nhân đôi và thế vào đúng. c) Phương trình có họ nghiệm \\\\cos x = -1 \\\\Leftrightarrow x = \\\\pi + k2\\\\pi. Đúng. d) Nghiệm còn lại \\\\cos x = 1/2 \\\\Leftrightarrow x = \\\\pm \\\\pi/3. Trên (0; \\\\pi) chỉ có đúng 1 nghiệm \\\\pi/3. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Xét phương trình \\sqrt{3}\\tan\\left(x - \\frac{\\pi}{4}\\right) - 1 = 0. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Xét phương trình \\\\sqrt{3}\\\\tan\\\\left(x - \\\\frac{\\\\pi}{4}\\\\right) - 1 = 0. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
-"a": "Phương trình tương đương với \\tan\\left(x - \\frac{\\pi}{4}\\right) = \\frac{\\sqrt{3}}{3}.",
-"b": "Một họ nghiệm của phương trình là x - \\frac{\\pi}{4} = \\frac{\\pi}{6} + k\\pi (k \\in \\mathbb{Z}).",
-"c": "Nghiệm của phương trình là x = \\frac{5\\pi}{12} + k\\pi (k \\in \\mathbb{Z}).",
-"d": "Nghiệm âm lớn nhất của phương trình là x = -\\frac{5\\pi}{12}."
+"a": "Phương trình tương đương với \\\\tan\\\\left(x - \\\\frac{\\\\pi}{4}\\\\right) = \\\\frac{\\\\sqrt{3}}{3}.",
+"b": "Một họ nghiệm của phương trình là x - \\\\frac{\\\\pi}{4} = \\\\frac{\\\\pi}{6} + k\\\\pi (k \\\\in \\\\mathbb{Z}).",
+"c": "Nghiệm của phương trình là x = \\\\frac{5\\\\pi}{12} + k\\\\pi (k \\\\in \\\\mathbb{Z}).",
+"d": "Nghiệm âm lớn nhất của phương trình là x = -\\\\frac{5\\\\pi}{12}."
 },
 "correct": {
 "a": true,
@@ -3359,16 +3359,16 @@
 "c": true,
 "d": false
 },
-"explain": "a, b, c) Chuyển vế và giải ra nghiệm x = 5\\pi/12 + k\\pi. Đều đúng. d) Với k = -1, nghiệm âm lớn nhất là 5\\pi/12 - \\pi = -7\\pi/12 \\neq -5\\pi/12. Sai."
+"explain": "a, b, c) Chuyển vế và giải ra nghiệm x = 5\\\\pi/12 + k\\\\pi. Đều đúng. d) Với k = -1, nghiệm âm lớn nhất là 5\\\\pi/12 - \\\\pi = -7\\\\pi/12 \\\\neq -5\\\\pi/12. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "DS",
-"q": "Độ sâu h(t) của mực nước ở một cảng biển (tính bằng mét) sau t giờ (0 \\le t < 24) được cho bởi h(t) = 4\\cos\\left(\\frac{\\pi t}{6}\\right) + 6. Một con tàu cần mực nước sâu ít nhất 8 mét để có thể vào cảng an toàn. Xét tính đúng sai của các mệnh đề sau:",
+"q": "Độ sâu h(t) của mực nước ở một cảng biển (tính bằng mét) sau t giờ (0 \\\\le t < 24) được cho bởi h(t) = 4\\\\cos\\\\left(\\\\frac{\\\\pi t}{6}\\\\right) + 6. Một con tàu cần mực nước sâu ít nhất 8 mét để có thể vào cảng an toàn. Xét tính đúng sai của các mệnh đề sau:",
 "items": {
 "a": "Vào lúc 0 giờ, mực nước ở cảng sâu 10 mét.",
-"b": "Mực nước trong cảng đạt 8 mét khi \\cos\\left(\\frac{\\pi t}{6}\\right) = \\frac{1}{2}.",
+"b": "Mực nước trong cảng đạt 8 mét khi \\\\cos\\\\left(\\\\frac{\\\\pi t}{6}\\\\right) = \\\\frac{1}{2}.",
 "c": "Trong một ngày, có 4 thời điểm mực nước đúng bằng 8 mét.",
 "d": "Tổng thời gian trong một ngày để con tàu có thể ra vào cảng an toàn là 10 tiếng."
 },
@@ -3378,82 +3378,82 @@
 "c": true,
 "d": false
 },
-"explain": "a) h(0) = 4(1) + 6 = 10m. Đúng. b) Giải 4\\cos + 6 = 8. Đúng. c) Nghiệm t = 2, 10, 14, 22. Đúng. d) Giải bất phương trình ra các khoảng an toàn: [0; 2], [10; 14], [22; 24). Tổng thời gian là 2 + 4 + 2 = 8 tiếng \\neq 10 tiếng. Sai."
+"explain": "a) h(0) = 4(1) + 6 = 10m. Đúng. b) Giải 4\\\\cos + 6 = 8. Đúng. c) Nghiệm t = 2, 10, 14, 22. Đúng. d) Giải bất phương trình ra các khoảng an toàn: [0; 2], [10; 14], [22; 24). Tổng thời gian là 2 + 4 + 2 = 8 tiếng \\\\neq 10 tiếng. Sai."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Tìm tập xác định D của hàm số y = \\sin x.",
+"q": "Tìm tập xác định D của hàm số y = \\\\sin x.",
 "choices": [
-"A. D = \\mathbb{R} \\setminus \\{0\\}",
+"A. D = \\\\mathbb{R} \\\\setminus \\\\{0\\\\}",
 "B. D = [-1; 1]",
-"C. D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}",
-"D. D = \\mathbb{R}"
+"C. D = \\\\mathbb{R} \\\\setminus \\\\{k\\\\pi, k \\\\in \\\\mathbb{Z}\\\\}",
+"D. D = \\\\mathbb{R}"
 ],
 "correct": 3,
-"explain": "Hàm số y = \\sin x xác định với mọi giá trị của x nên tập xác định là D = \\mathbb{R}."
+"explain": "Hàm số y = \\\\sin x xác định với mọi giá trị của x nên tập xác định là D = \\\\mathbb{R}."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Tìm tập xác định D của hàm số y = \\tan x.",
+"q": "Tìm tập xác định D của hàm số y = \\\\tan x.",
 "choices": [
-"A. D = \\mathbb{R}",
-"B. D = \\mathbb{R} \\setminus \\{\\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\}",
-"C. D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}",
+"A. D = \\\\mathbb{R}",
+"B. D = \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}\\\\}",
+"C. D = \\\\mathbb{R} \\\\setminus \\\\{k\\\\pi, k \\\\in \\\\mathbb{Z}\\\\}",
 "D. D = [-1; 1]"
 ],
 "correct": 1,
-"explain": "Hàm số y = \\tan x xác định khi \\cos x \\neq 0 \\Leftrightarrow x \\neq \\frac{\\pi}{2} + k\\pi (k \\in \\mathbb{Z})."
+"explain": "Hàm số y = \\\\tan x xác định khi \\\\cos x \\\\neq 0 \\\\Leftrightarrow x \\\\neq \\\\frac{\\\\pi}{2} + k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Tìm tập xác định D của hàm số y = \\cot x.",
+"q": "Tìm tập xác định D của hàm số y = \\\\cot x.",
 "choices": [
-"A. D = \\mathbb{R}",
-"B. D = \\mathbb{R} \\setminus \\{\\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\}",
-"C. D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}",
-"D. D = \\mathbb{R} \\setminus \\{0\\}"
+"A. D = \\\\mathbb{R}",
+"B. D = \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}\\\\}",
+"C. D = \\\\mathbb{R} \\\\setminus \\\\{k\\\\pi, k \\\\in \\\\mathbb{Z}\\\\}",
+"D. D = \\\\mathbb{R} \\\\setminus \\\\{0\\\\}"
 ],
 "correct": 2,
-"explain": "Hàm số y = \\cot x xác định khi \\sin x \\neq 0 \\Leftrightarrow x \\neq k\\pi (k \\in \\mathbb{Z})."
+"explain": "Hàm số y = \\\\cot x xác định khi \\\\sin x \\\\neq 0 \\\\Leftrightarrow x \\\\neq k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Tập giá trị T của hàm số y = \\cos x là:",
+"q": "Tập giá trị T của hàm số y = \\\\cos x là:",
 "choices": [
-"A. T = \\mathbb{R}",
-"B. T = (0; +\\infty)",
+"A. T = \\\\mathbb{R}",
+"B. T = (0; +\\\\infty)",
 "C. T = [-1; 1]",
 "D. T = [0; 1]"
 ],
 "correct": 2,
-"explain": "Với mọi số thực x, ta luôn có -1 \\le \\cos x \\le 1. Vậy tập giá trị là T = [-1; 1]."
+"explain": "Với mọi số thực x, ta luôn có -1 \\\\le \\\\cos x \\\\le 1. Vậy tập giá trị là T = [-1; 1]."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Tập giá trị T của hàm số y = \\sin x là:",
+"q": "Tập giá trị T của hàm số y = \\\\sin x là:",
 "choices": [
 "A. T = [-1; 1]",
-"B. T = \\mathbb{R}",
+"B. T = \\\\mathbb{R}",
 "C. T = (0; 1)",
-"D. T = [-1; +\\infty)"
+"D. T = [-1; +\\\\infty)"
 ],
 "correct": 0,
-"explain": "Với mọi số thực x, ta luôn có -1 \\le \\sin x \\le 1. Vậy tập giá trị là T = [-1; 1]."
+"explain": "Với mọi số thực x, ta luôn có -1 \\\\le \\\\sin x \\\\le 1. Vậy tập giá trị là T = [-1; 1]."
 },
 {
 "grade": "11",
@@ -3462,13 +3462,13 @@
 "level": 1,
 "q": "Trong các hàm số dưới đây, hàm số nào là hàm số chẵn?",
 "choices": [
-"A. y = \\sin x",
-"B. y = \\cos x",
-"C. y = \\tan x",
-"D. y = \\cot x"
+"A. y = \\\\sin x",
+"B. y = \\\\cos x",
+"C. y = \\\\tan x",
+"D. y = \\\\cot x"
 ],
 "correct": 1,
-"explain": "Hàm số y = \\cos x là hàm số chẵn vì \\cos(-x) = \\cos x với mọi x \\in \\mathbb{R}."
+"explain": "Hàm số y = \\\\cos x là hàm số chẵn vì \\\\cos(-x) = \\\\cos x với mọi x \\\\in \\\\mathbb{R}."
 },
 {
 "grade": "11",
@@ -3477,50 +3477,50 @@
 "level": 1,
 "q": "Trong các hàm số dưới đây, hàm số nào là hàm số lẻ?",
 "choices": [
-"A. y = \\cos x",
+"A. y = \\\\cos x",
 "B. y = |x|",
-"C. y = \\sin x",
+"C. y = \\\\sin x",
 "D. y = x^2"
 ],
 "correct": 2,
-"explain": "Hàm số y = \\sin x là hàm số lẻ vì \\sin(-x) = -\\sin x với mọi x \\in \\mathbb{R}."
+"explain": "Hàm số y = \\\\sin x là hàm số lẻ vì \\\\sin(-x) = -\\\\sin x với mọi x \\\\in \\\\mathbb{R}."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Hàm số y = \\sin x là hàm số tuần hoàn với chu kì cơ sở bằng bao nhiêu?",
+"q": "Hàm số y = \\\\sin x là hàm số tuần hoàn với chu kì cơ sở bằng bao nhiêu?",
 "choices": [
-"A. \\pi",
-"B. 2\\pi",
-"C. \\frac{\\pi}{2}",
-"D. 4\\pi"
+"A. \\\\pi",
+"B. 2\\\\pi",
+"C. \\\\frac{\\\\pi}{2}",
+"D. 4\\\\pi"
 ],
 "correct": 1,
-"explain": "Hàm số y = \\sin x tuần hoàn với chu kì cơ sở là T = 2\\pi."
+"explain": "Hàm số y = \\\\sin x tuần hoàn với chu kì cơ sở là T = 2\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Hàm số y = \\tan x là hàm số tuần hoàn với chu kì cơ sở bằng bao nhiêu?",
+"q": "Hàm số y = \\\\tan x là hàm số tuần hoàn với chu kì cơ sở bằng bao nhiêu?",
 "choices": [
-"A. 2\\pi",
-"B. \\frac{\\pi}{2}",
-"C. \\pi",
-"D. 3\\pi"
+"A. 2\\\\pi",
+"B. \\\\frac{\\\\pi}{2}",
+"C. \\\\pi",
+"D. 3\\\\pi"
 ],
 "correct": 2,
-"explain": "Hàm số y = \\tan x tuần hoàn với chu kì cơ sở là T = \\pi."
+"explain": "Hàm số y = \\\\tan x tuần hoàn với chu kì cơ sở là T = \\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Đồ thị của hàm số y = \\cos x nhận yếu tố nào dưới đây làm trục đối xứng?",
+"q": "Đồ thị của hàm số y = \\\\cos x nhận yếu tố nào dưới đây làm trục đối xứng?",
 "choices": [
 "A. Trục hoành",
 "B. Trục tung",
@@ -3528,74 +3528,74 @@
 "D. Đường thẳng y = x"
 ],
 "correct": 1,
-"explain": "Vì y = \\cos x là hàm số chẵn nên đồ thị của nó nhận trục tung (Oy) làm trục đối xứng."
+"explain": "Vì y = \\\\cos x là hàm số chẵn nên đồ thị của nó nhận trục tung (Oy) làm trục đối xứng."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Tìm tập xác định D của hàm số y = \\frac{1}{\\sin x}.",
+"q": "Tìm tập xác định D của hàm số y = \\\\frac{1}{\\\\sin x}.",
 "choices": [
-"A. D = \\mathbb{R} \\setminus \\{k\\pi, k \\in \\mathbb{Z}\\}",
-"B. D = \\mathbb{R} \\setminus \\{\\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\}",
-"C. D = \\mathbb{R}",
+"A. D = \\\\mathbb{R} \\\\setminus \\\\{k\\\\pi, k \\\\in \\\\mathbb{Z}\\\\}",
+"B. D = \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}\\\\}",
+"C. D = \\\\mathbb{R}",
 "D. D = [-1; 1]"
 ],
 "correct": 0,
-"explain": "Hàm số xác định khi mẫu số khác 0, tức là \\sin x \\neq 0 \\Leftrightarrow x \\neq k\\pi (k \\in \\mathbb{Z})."
+"explain": "Hàm số xác định khi mẫu số khác 0, tức là \\\\sin x \\\\neq 0 \\\\Leftrightarrow x \\\\neq k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Tìm tập xác định D của hàm số y = \\tan(x - \\frac{\\pi}{4}).",
+"q": "Tìm tập xác định D của hàm số y = \\\\tan(x - \\\\frac{\\\\pi}{4}).",
 "choices": [
-"A. D = \\mathbb{R} \\setminus \\{\\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}\\}",
-"B. D = \\mathbb{R} \\setminus \\{\\frac{3\\pi}{4} + k\\pi, k \\in \\mathbb{Z}\\}",
-"C. D = \\mathbb{R} \\setminus \\{\\frac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}\\}",
-"D. D = \\mathbb{R}"
+"A. D = \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}\\\\}",
+"B. D = \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{3\\\\pi}{4} + k\\\\pi, k \\\\in \\\\mathbb{Z}\\\\}",
+"C. D = \\\\mathbb{R} \\\\setminus \\\\{\\\\frac{\\\\pi}{4} + k\\\\pi, k \\\\in \\\\mathbb{Z}\\\\}",
+"D. D = \\\\mathbb{R}"
 ],
 "correct": 1,
-"explain": "Hàm số xác định khi \\cos(x - \\frac{\\pi}{4}) \\neq 0 \\Leftrightarrow x - \\frac{\\pi}{4} \\neq \\frac{\\pi}{2} + k\\pi \\Leftrightarrow x \\neq \\frac{3\\pi}{4} + k\\pi (k \\in \\mathbb{Z})."
+"explain": "Hàm số xác định khi \\\\cos(x - \\\\frac{\\\\pi}{4}) \\\\neq 0 \\\\Leftrightarrow x - \\\\frac{\\\\pi}{4} \\\\neq \\\\frac{\\\\pi}{2} + k\\\\pi \\\\Leftrightarrow x \\\\neq \\\\frac{3\\\\pi}{4} + k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Tìm tập giá trị T của hàm số y = 3\\sin x - 2.",
+"q": "Tìm tập giá trị T của hàm số y = 3\\\\sin x - 2.",
 "choices": [
 "A. T = [-1; 1]",
 "B. T = [-5; 1]",
 "C. T = [-3; 3]",
-"D. T = \\mathbb{R}"
+"D. T = \\\\mathbb{R}"
 ],
 "correct": 1,
-"explain": "Ta có -1 \\le \\sin x \\le 1 \\Leftrightarrow -3 \\le 3\\sin x \\le 3 \\Leftrightarrow -5 \\le 3\\sin x - 2 \\le 1. Vậy T = [-5; 1]."
+"explain": "Ta có -1 \\\\le \\\\sin x \\\\le 1 \\\\Leftrightarrow -3 \\\\le 3\\\\sin x \\\\le 3 \\\\Leftrightarrow -5 \\\\le 3\\\\sin x - 2 \\\\le 1. Vậy T = [-5; 1]."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Hàm số y = \\cos 2x tuần hoàn với chu kì cơ sở là bao nhiêu?",
+"q": "Hàm số y = \\\\cos 2x tuần hoàn với chu kì cơ sở là bao nhiêu?",
 "choices": [
-"A. 2\\pi",
-"B. \\frac{\\pi}{2}",
-"C. \\pi",
-"D. 4\\pi"
+"A. 2\\\\pi",
+"B. \\\\frac{\\\\pi}{2}",
+"C. \\\\pi",
+"D. 4\\\\pi"
 ],
 "correct": 2,
-"explain": "Hàm số y = \\cos(ax+b) tuần hoàn với chu kì T = \\frac{2\\pi}{|a|}. Do đó chu kì của hàm số y = \\cos 2x là T = \\frac{2\\pi}{2} = \\pi."
+"explain": "Hàm số y = \\\\cos(ax+b) tuần hoàn với chu kì T = \\\\frac{2\\\\pi}{|a|}. Do đó chu kì của hàm số y = \\\\cos 2x là T = \\\\frac{2\\\\pi}{2} = \\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Xét tính chẵn lẻ của hàm số y = f(x) = \\sin x \\cdot \\cos x.",
+"q": "Xét tính chẵn lẻ của hàm số y = f(x) = \\\\sin x \\\\cdot \\\\cos x.",
 "choices": [
 "A. Hàm số chẵn",
 "B. Hàm số lẻ",
@@ -3603,29 +3603,29 @@
 "D. Vừa chẵn vừa lẻ"
 ],
 "correct": 1,
-"explain": "Tập xác định D = \\mathbb{R}. Ta có f(-x) = \\sin(-x)\\cos(-x) = (\\sin x)\\cos x = -f(x). Vậy đây là hàm số lẻ."
+"explain": "Tập xác định D = \\\\mathbb{R}. Ta có f(-x) = \\\\sin(-x)\\\\cos(-x) = (\\\\sin x)\\\\cos x = -f(x). Vậy đây là hàm số lẻ."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Tập giá trị T của hàm số y = \\cos^2 x là:",
+"q": "Tập giá trị T của hàm số y = \\\\cos^2 x là:",
 "choices": [
 "A. T = [-1; 1]",
 "B. T = [0; 1]",
 "C. T = (0; 1)",
-"D. T = \\mathbb{R}"
+"D. T = \\\\mathbb{R}"
 ],
 "correct": 1,
-"explain": "Vì -1 \\le \\cos x \\le 1 nên bình phương hai vế ta được 0 \\le \\cos^2 x \\le 1. Vậy T = [0; 1]."
+"explain": "Vì -1 \\\\le \\\\cos x \\\\le 1 nên bình phương hai vế ta được 0 \\\\le \\\\cos^2 x \\\\le 1. Vậy T = [0; 1]."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Hàm số y = x \\cdot \\sin x là hàm số chẵn hay lẻ?",
+"q": "Hàm số y = x \\\\cdot \\\\sin x là hàm số chẵn hay lẻ?",
 "choices": [
 "A. Hàm số lẻ",
 "B. Hàm số chẵn",
@@ -3633,29 +3633,29 @@
 "D. Vừa chẵn vừa lẻ"
 ],
 "correct": 1,
-"explain": "Đặt f(x) = x \\sin x. Tập xác định D = \\mathbb{R}. Ta có f(-x) = (-x)\\sin(-x) = (-x)(-\\sin x) = x \\sin x = f(x). Vậy đây là hàm số chẵn."
+"explain": "Đặt f(x) = x \\\\sin x. Tập xác định D = \\\\mathbb{R}. Ta có f(-x) = (-x)\\\\sin(-x) = (-x)(-\\\\sin x) = x \\\\sin x = f(x). Vậy đây là hàm số chẵn."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Hàm số y = \\tan 3x có chu kì tuần hoàn là:",
+"q": "Hàm số y = \\\\tan 3x có chu kì tuần hoàn là:",
 "choices": [
-"A. \\pi",
-"B. 3\\pi",
-"C. \\frac{\\pi}{3}",
-"D. 2\\pi"
+"A. \\\\pi",
+"B. 3\\\\pi",
+"C. \\\\frac{\\\\pi}{3}",
+"D. 2\\\\pi"
 ],
 "correct": 2,
-"explain": "Hàm số y = \\tan(ax+b) tuần hoàn với chu kì T = \\frac{\\pi}{|a|}. Vậy chu kì là T = \\frac{\\pi}{3}."
+"explain": "Hàm số y = \\\\tan(ax+b) tuần hoàn với chu kì T = \\\\frac{\\\\pi}{|a|}. Vậy chu kì là T = \\\\frac{\\\\pi}{3}."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giá trị lớn nhất của hàm số y = 2 - \\cos x bằng bao nhiêu?",
+"q": "Giá trị lớn nhất của hàm số y = 2 - \\\\cos x bằng bao nhiêu?",
 "choices": [
 "A. 1",
 "B. 2",
@@ -3663,14 +3663,14 @@
 "D. 0"
 ],
 "correct": 2,
-"explain": "Ta có -1 \\le \\cos x \\le 1 \\Rightarrow -1 \\le -\\cos x \\le 1 \\Rightarrow 1 \\le 2 - \\cos x \\le 3. GTLN bằng 3."
+"explain": "Ta có -1 \\\\le \\\\cos x \\\\le 1 \\\\Rightarrow -1 \\\\le -\\\\cos x \\\\le 1 \\\\Rightarrow 1 \\\\le 2 - \\\\cos x \\\\le 3. GTLN bằng 3."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Số giao điểm của đồ thị hàm số y = \\sin x và trục hoành trên đoạn [0; 2\\pi] là bao nhiêu?",
+"q": "Số giao điểm của đồ thị hàm số y = \\\\sin x và trục hoành trên đoạn [0; 2\\\\pi] là bao nhiêu?",
 "choices": [
 "A. 1",
 "B. 2",
@@ -3678,284 +3678,284 @@
 "D. 4"
 ],
 "correct": 2,
-"explain": "Phương trình hoành độ giao điểm: \\sin x = 0 \\Leftrightarrow x = k\\pi. Trên đoạn [0; 2\\pi] có các nghiệm x = 0, x = \\pi, x = 2\\pi. Vậy có 3 giao điểm."
+"explain": "Phương trình hoành độ giao điểm: \\\\sin x = 0 \\\\Leftrightarrow x = k\\\\pi. Trên đoạn [0; 2\\\\pi] có các nghiệm x = 0, x = \\\\pi, x = 2\\\\pi. Vậy có 3 giao điểm."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Công thức nghiệm của phương trình \\sin x = \\sin \\alpha là:",
+"q": "Công thức nghiệm của phương trình \\\\sin x = \\\\sin \\\\alpha là:",
 "choices": [
-"A. x = \\alpha + k2\\pi, k \\in \\mathbb{Z}",
-"B. x = \\alpha + k\\pi, k \\in \\mathbb{Z}",
-"C. x = \\alpha + k2\\pi \\text{ hoặc } x = \\pi - \\alpha + k2\\pi, k \\in \\mathbb{Z}",
-"D. x = \\pm \\alpha + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\alpha + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\alpha + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\alpha + k2\\\\pi \\\\text{ hoặc } x = \\\\pi - \\\\alpha + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\pm \\\\alpha + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 2,
-"explain": "Theo lý thuyết, phương trình \\sin x = \\sin \\alpha có các họ nghiệm là x = \\alpha + k2\\pi và x = \\pi - \\alpha + k2\\pi (k \\in \\mathbb{Z})."
+"explain": "Theo lý thuyết, phương trình \\\\sin x = \\\\sin \\\\alpha có các họ nghiệm là x = \\\\alpha + k2\\\\pi và x = \\\\pi - \\\\alpha + k2\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Công thức nghiệm của phương trình \\cos x = \\cos \\alpha là:",
+"q": "Công thức nghiệm của phương trình \\\\cos x = \\\\cos \\\\alpha là:",
 "choices": [
-"A. x = \\alpha + k2\\pi \\text{ hoặc } x = \\pi - \\alpha + k2\\pi, k \\in \\mathbb{Z}",
-"B. x = \\pm \\alpha + k2\\pi, k \\in \\mathbb{Z}",
-"C. x = \\alpha + k\\pi, k \\in \\mathbb{Z}",
-"D. x = \\pm \\alpha + k\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\alpha + k2\\\\pi \\\\text{ hoặc } x = \\\\pi - \\\\alpha + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\pm \\\\alpha + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\alpha + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\pm \\\\alpha + k\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 1,
-"explain": "Theo lý thuyết, phương trình \\cos x = \\cos \\alpha có các họ nghiệm là x = \\alpha + k2\\pi và x = -\\alpha + k2\\pi (k \\in \\mathbb{Z})."
+"explain": "Theo lý thuyết, phương trình \\\\cos x = \\\\cos \\\\alpha có các họ nghiệm là x = \\\\alpha + k2\\\\pi và x = -\\\\alpha + k2\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Công thức nghiệm của phương trình \\tan x = \\tan \\alpha là:",
+"q": "Công thức nghiệm của phương trình \\\\tan x = \\\\tan \\\\alpha là:",
 "choices": [
-"A. x = \\alpha + k2\\pi, k \\in \\mathbb{Z}",
-"B. x = \\pm \\alpha + k\\pi, k \\in \\mathbb{Z}",
-"C. x = \\alpha + k\\pi, k \\in \\mathbb{Z}",
-"D. x = \\pi - \\alpha + k\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\alpha + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\pm \\\\alpha + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\alpha + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\pi - \\\\alpha + k\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 2,
-"explain": "Theo lý thuyết, phương trình \\tan x = \\tan \\alpha có họ nghiệm duy nhất là x = \\alpha + k\\pi (k \\in \\mathbb{Z})."
+"explain": "Theo lý thuyết, phương trình \\\\tan x = \\\\tan \\\\alpha có họ nghiệm duy nhất là x = \\\\alpha + k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Điều kiện của tham số m để phương trình \\cos x = m có nghiệm là:",
+"q": "Điều kiện của tham số m để phương trình \\\\cos x = m có nghiệm là:",
 "choices": [
-"A. m \\in \\mathbb{R}",
+"A. m \\\\in \\\\mathbb{R}",
 "B. m > 0",
-"C. -1 \\le m \\le 1",
-"D. m \\neq 0"
+"C. -1 \\\\le m \\\\le 1",
+"D. m \\\\neq 0"
 ],
 "correct": 2,
-"explain": "Tập giá trị của hàm số y = \\cos x là [-1; 1], do đó phương trình \\cos x = m có nghiệm khi và chỉ khi -1 \\le m \\le 1."
+"explain": "Tập giá trị của hàm số y = \\\\cos x là [-1; 1], do đó phương trình \\\\cos x = m có nghiệm khi và chỉ khi -1 \\\\le m \\\\le 1."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Nghiệm của phương trình \\sin x = 0 là:",
+"q": "Nghiệm của phương trình \\\\sin x = 0 là:",
 "choices": [
-"A. x = k\\pi, k \\in \\mathbb{Z}",
-"B. x = \\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}",
-"C. x = k2\\pi, k \\in \\mathbb{Z}",
-"D. x = \\pi + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\pi + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 0,
-"explain": "Các điểm trên đường tròn lượng giác có tung độ bằng 0 tương ứng với các góc x = k\\pi."
+"explain": "Các điểm trên đường tròn lượng giác có tung độ bằng 0 tương ứng với các góc x = k\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Nghiệm của phương trình \\cos x = 1 là:",
+"q": "Nghiệm của phương trình \\\\cos x = 1 là:",
 "choices": [
-"A. x = k\\pi, k \\in \\mathbb{Z}",
-"B. x = \\frac{\\pi}{2} + k2\\pi, k \\in \\mathbb{Z}",
-"C. x = k2\\pi, k \\in \\mathbb{Z}",
-"D. x = \\pi + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\frac{\\\\pi}{2} + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\pi + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 2,
-"explain": "Điểm trên đường tròn lượng giác có hoành độ bằng 1 là điểm A(1; 0), tương ứng với các góc x = k2\\pi."
+"explain": "Điểm trên đường tròn lượng giác có hoành độ bằng 1 là điểm A(1; 0), tương ứng với các góc x = k2\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Nghiệm của phương trình \\cos x = 0 là:",
+"q": "Nghiệm của phương trình \\\\cos x = 0 là:",
 "choices": [
-"A. x = k\\pi, k \\in \\mathbb{Z}",
-"B. x = \\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}",
-"C. x = k2\\pi, k \\in \\mathbb{Z}",
-"D. x = \\frac{\\pi}{2} + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\frac{\\\\pi}{2} + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 1,
-"explain": "Các điểm trên đường tròn lượng giác có hoành độ bằng 0 tương ứng với các góc x = \\frac{\\pi}{2} + k\\pi."
+"explain": "Các điểm trên đường tròn lượng giác có hoành độ bằng 0 tương ứng với các góc x = \\\\frac{\\\\pi}{2} + k\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Nghiệm của phương trình \\sin x = 1 là:",
+"q": "Nghiệm của phương trình \\\\sin x = 1 là:",
 "choices": [
-"A. x = \\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}",
-"B. x = \\frac{\\pi}{2} + k2\\pi, k \\in \\mathbb{Z}",
-"C. x = k2\\pi, k \\in \\mathbb{Z}",
-"D. x = -\\frac{\\pi}{2} + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\frac{\\\\pi}{2} + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = -\\\\frac{\\\\pi}{2} + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 1,
-"explain": "Điểm trên đường tròn lượng giác có tung độ bằng 1 tương ứng với góc x = \\frac{\\pi}{2} + k2\\pi."
+"explain": "Điểm trên đường tròn lượng giác có tung độ bằng 1 tương ứng với góc x = \\\\frac{\\\\pi}{2} + k2\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Nghiệm của phương trình \\tan x = 1 là:",
+"q": "Nghiệm của phương trình \\\\tan x = 1 là:",
 "choices": [
-"A. x = \\frac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}",
-"B. x = \\frac{\\pi}{4} + k2\\pi, k \\in \\mathbb{Z}",
-"C. x = -\\frac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}",
-"D. x = k\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\frac{\\\\pi}{4} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\frac{\\\\pi}{4} + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = -\\\\frac{\\\\pi}{4} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = k\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 0,
-"explain": "Ta có \\tan x = 1 \\Leftrightarrow \\tan x = \\tan\\frac{\\pi}{4} \\Leftrightarrow x = \\frac{\\pi}{4} + k\\pi."
+"explain": "Ta có \\\\tan x = 1 \\\\Leftrightarrow \\\\tan x = \\\\tan\\\\frac{\\\\pi}{4} \\\\Leftrightarrow x = \\\\frac{\\\\pi}{4} + k\\\\pi."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 1,
-"q": "Điều kiện của tham số m để phương trình \\sin x = m vô nghiệm là:",
+"q": "Điều kiện của tham số m để phương trình \\\\sin x = m vô nghiệm là:",
 "choices": [
-"A. m \\in [-1; 1]",
-"B. m > 1 \\text{ hoặc } m < -1",
+"A. m \\\\in [-1; 1]",
+"B. m > 1 \\\\text{ hoặc } m < -1",
 "C. m > 0",
 "D. m < 0"
 ],
 "correct": 1,
-"explain": "Do tập giá trị của hàm số y = \\sin x là [-1; 1] nên phương trình vô nghiệm khi m \\notin [-1; 1], tức là m > 1 hoặc m < -1."
+"explain": "Do tập giá trị của hàm số y = \\\\sin x là [-1; 1] nên phương trình vô nghiệm khi m \\\\notin [-1; 1], tức là m > 1 hoặc m < -1."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Tìm các nghiệm của phương trình \\sin x = \\frac{1}{2}.",
+"q": "Tìm các nghiệm của phương trình \\\\sin x = \\\\frac{1}{2}.",
 "choices": [
-"A. x = \\frac{\\pi}{6} + k2\\pi, k \\in \\mathbb{Z}",
-"B. x = \\pm\\frac{\\pi}{6} + k2\\pi, k \\in \\mathbb{Z}",
-"C. x = \\frac{\\pi}{6} + k2\\pi \\text{ hoặc } x = \\frac{5\\pi}{6} + k2\\pi, k \\in \\mathbb{Z}",
-"D. x = \\frac{\\pi}{3} + k2\\pi \\text{ hoặc } x = \\frac{2\\pi}{3} + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\frac{\\\\pi}{6} + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\pm\\\\frac{\\\\pi}{6} + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\frac{\\\\pi}{6} + k2\\\\pi \\\\text{ hoặc } x = \\\\frac{5\\\\pi}{6} + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\frac{\\\\pi}{3} + k2\\\\pi \\\\text{ hoặc } x = \\\\frac{2\\\\pi}{3} + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 2,
-"explain": "Ta có \\sin x = \\sin\\frac{\\pi}{6} \\Leftrightarrow x = \\frac{\\pi}{6} + k2\\pi hoặc x = \\pi - \\frac{\\pi}{6} + k2\\pi = \\frac{5\\pi}{6} + k2\\pi (k \\in \\mathbb{Z})."
+"explain": "Ta có \\\\sin x = \\\\sin\\\\frac{\\\\pi}{6} \\\\Leftrightarrow x = \\\\frac{\\\\pi}{6} + k2\\\\pi hoặc x = \\\\pi - \\\\frac{\\\\pi}{6} + k2\\\\pi = \\\\frac{5\\\\pi}{6} + k2\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\cos 2x = -\\frac{\\sqrt{2}}{2}.",
+"q": "Giải phương trình \\\\cos 2x = -\\\\frac{\\\\sqrt{2}}{2}.",
 "choices": [
-"A. x = \\pm\\frac{3\\pi}{8} + k\\pi, k \\in \\mathbb{Z}",
-"B. x = \\pm\\frac{3\\pi}{4} + k2\\pi, k \\in \\mathbb{Z}",
-"C. x = \\pm\\frac{\\pi}{8} + k\\pi, k \\in \\mathbb{Z}",
-"D. x = \\pm\\frac{3\\pi}{8} + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\pm\\\\frac{3\\\\pi}{8} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\pm\\\\frac{3\\\\pi}{4} + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\pm\\\\frac{\\\\pi}{8} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\pm\\\\frac{3\\\\pi}{8} + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 0,
-"explain": "\\cos 2x = \\cos\\frac{3\\pi}{4} \\Leftrightarrow 2x = \\pm\\frac{3\\pi}{4} + k2\\pi \\Leftrightarrow x = \\pm\\frac{3\\pi}{8} + k\\pi (k \\in \\mathbb{Z})."
+"explain": "\\\\cos 2x = \\\\cos\\\\frac{3\\\\pi}{4} \\\\Leftrightarrow 2x = \\\\pm\\\\frac{3\\\\pi}{4} + k2\\\\pi \\\\Leftrightarrow x = \\\\pm\\\\frac{3\\\\pi}{8} + k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\tan(x - \\frac{\\pi}{3}) = \\sqrt{3}.",
+"q": "Giải phương trình \\\\tan(x - \\\\frac{\\\\pi}{3}) = \\\\sqrt{3}.",
 "choices": [
-"A. x = \\frac{\\pi}{3} + k\\pi, k \\in \\mathbb{Z}",
-"B. x = \\frac{2\\pi}{3} + k\\pi, k \\in \\mathbb{Z}",
-"C. x = \\frac{\\pi}{6} + k\\pi, k \\in \\mathbb{Z}",
-"D. x = \\frac{2\\pi}{3} + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\frac{\\\\pi}{3} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\frac{2\\\\pi}{3} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\frac{\\\\pi}{6} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\frac{2\\\\pi}{3} + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 1,
-"explain": "Ta có \\tan(x - \\frac{\\pi}{3}) = \\tan\\frac{\\pi}{3} \\Leftrightarrow x - \\frac{\\pi}{3} = \\frac{\\pi}{3} + k\\pi \\Leftrightarrow x = \\frac{2\\pi}{3} + k\\pi (k \\in \\mathbb{Z})."
+"explain": "Ta có \\\\tan(x - \\\\frac{\\\\pi}{3}) = \\\\tan\\\\frac{\\\\pi}{3} \\\\Leftrightarrow x - \\\\frac{\\\\pi}{3} = \\\\frac{\\\\pi}{3} + k\\\\pi \\\\Leftrightarrow x = \\\\frac{2\\\\pi}{3} + k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Tìm các nghiệm của phương trình \\sqrt{3}\\cot x + 1 = 0.",
+"q": "Tìm các nghiệm của phương trình \\\\sqrt{3}\\\\cot x + 1 = 0.",
 "choices": [
-"A. x = -\\frac{\\pi}{6} + k\\pi, k \\in \\mathbb{Z}",
-"B. x = -\\frac{\\pi}{3} + k\\pi, k \\in \\mathbb{Z}",
-"C. x = \\frac{\\pi}{6} + k\\pi, k \\in \\mathbb{Z}",
-"D. x = \\frac{2\\pi}{3} + k\\pi, k \\in \\mathbb{Z}"
+"A. x = -\\\\frac{\\\\pi}{6} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = -\\\\frac{\\\\pi}{3} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\frac{\\\\pi}{6} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\frac{2\\\\pi}{3} + k\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 1,
-"explain": "Phương trình tương đương \\cot x = -\\frac{1}{\\sqrt{3}} = \\cot(-\\frac{\\pi}{3}) \\Leftrightarrow x = -\\frac{\\pi}{3} + k\\pi (k \\in \\mathbb{Z})."
+"explain": "Phương trình tương đương \\\\cot x = -\\\\frac{1}{\\\\sqrt{3}} = \\\\cot(-\\\\frac{\\\\pi}{3}) \\\\Leftrightarrow x = -\\\\frac{\\\\pi}{3} + k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\sin x = \\cos x.",
+"q": "Giải phương trình \\\\sin x = \\\\cos x.",
 "choices": [
-"A. x = \\frac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}",
-"B. x = \\frac{\\pi}{4} + k2\\pi, k \\in \\mathbb{Z}",
-"C. x = -\\frac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}",
-"D. x = \\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\frac{\\\\pi}{4} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\frac{\\\\pi}{4} + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = -\\\\frac{\\\\pi}{4} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 0,
-"explain": "Chia hai vế cho \\cos x (với \\cos x \\neq 0), ta được \\tan x = 1 \\Leftrightarrow x = \\frac{\\pi}{4} + k\\pi (k \\in \\mathbb{Z})."
+"explain": "Chia hai vế cho \\\\cos x (với \\\\cos x \\\\neq 0), ta được \\\\tan x = 1 \\\\Leftrightarrow x = \\\\frac{\\\\pi}{4} + k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\sin 2x = 1.",
+"q": "Giải phương trình \\\\sin 2x = 1.",
 "choices": [
-"A. x = \\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}",
-"B. x = \\frac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}",
-"C. x = \\frac{\\pi}{4} + k2\\pi, k \\in \\mathbb{Z}",
-"D. x = \\pi + k\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\frac{\\\\pi}{4} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\frac{\\\\pi}{4} + k2\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\pi + k\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 1,
-"explain": "\\sin 2x = 1 \\Leftrightarrow 2x = \\frac{\\pi}{2} + k2\\pi \\Leftrightarrow x = \\frac{\\pi}{4} + k\\pi (k \\in \\mathbb{Z})."
+"explain": "\\\\sin 2x = 1 \\\\Leftrightarrow 2x = \\\\frac{\\\\pi}{2} + k2\\\\pi \\\\Leftrightarrow x = \\\\frac{\\\\pi}{4} + k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Nghiệm của phương trình \\cos(x + \\frac{\\pi}{6}) = 0 là:",
+"q": "Nghiệm của phương trình \\\\cos(x + \\\\frac{\\\\pi}{6}) = 0 là:",
 "choices": [
-"A. x = \\frac{\\pi}{3} + k\\pi, k \\in \\mathbb{Z}",
-"B. x = -\\frac{\\pi}{6} + k\\pi, k \\in \\mathbb{Z}",
-"C. x = \\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}",
-"D. x = \\frac{\\pi}{3} + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\frac{\\\\pi}{3} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = -\\\\frac{\\\\pi}{6} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\frac{\\\\pi}{3} + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 0,
-"explain": "\\cos(x + \\frac{\\pi}{6}) = 0 \\Leftrightarrow x + \\frac{\\pi}{6} = \\frac{\\pi}{2} + k\\pi \\Leftrightarrow x = \\frac{\\pi}{3} + k\\pi (k \\in \\mathbb{Z})."
+"explain": "\\\\cos(x + \\\\frac{\\\\pi}{6}) = 0 \\\\Leftrightarrow x + \\\\frac{\\\\pi}{6} = \\\\frac{\\\\pi}{2} + k\\\\pi \\\\Leftrightarrow x = \\\\frac{\\\\pi}{3} + k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Nghiệm của phương trình \\cot 2x = \\cot \\frac{\\pi}{5} là:",
+"q": "Nghiệm của phương trình \\\\cot 2x = \\\\cot \\\\frac{\\\\pi}{5} là:",
 "choices": [
-"A. x = \\frac{\\pi}{5} + k\\pi, k \\in \\mathbb{Z}",
-"B. x = \\frac{\\pi}{10} + k\\pi, k \\in \\mathbb{Z}",
-"C. x = \\frac{\\pi}{10} + \\frac{k\\pi}{2}, k \\in \\mathbb{Z}",
-"D. x = \\frac{\\pi}{5} + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\frac{\\\\pi}{5} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = \\\\frac{\\\\pi}{10} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\frac{\\\\pi}{10} + \\\\frac{k\\\\pi}{2}, k \\\\in \\\\mathbb{Z}",
+"D. x = \\\\frac{\\\\pi}{5} + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 2,
-"explain": "\\cot 2x = \\cot\\frac{\\pi}{5} \\Leftrightarrow 2x = \\frac{\\pi}{5} + k\\pi \\Leftrightarrow x = \\frac{\\pi}{10} + \\frac{k\\pi}{2} (k \\in \\mathbb{Z})."
+"explain": "\\\\cot 2x = \\\\cot\\\\frac{\\\\pi}{5} \\\\Leftrightarrow 2x = \\\\frac{\\\\pi}{5} + k\\\\pi \\\\Leftrightarrow x = \\\\frac{\\\\pi}{10} + \\\\frac{k\\\\pi}{2} (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Số nghiệm của phương trình \\cos x = 1 trên đoạn [0; 4\\pi] là bao nhiêu?",
+"q": "Số nghiệm của phương trình \\\\cos x = 1 trên đoạn [0; 4\\\\pi] là bao nhiêu?",
 "choices": [
 "A. 1",
 "B. 2",
@@ -3963,22 +3963,22 @@
 "D. 4"
 ],
 "correct": 2,
-"explain": "\\cos x = 1 \\Leftrightarrow x = k2\\pi. Vì x \\in [0; 4\\pi] nên k \\in \\{0; 1; 2\\}, tương ứng các nghiệm x \\in \\{0; 2\\pi; 4\\pi\\}. Tổng cộng có 3 nghiệm."
+"explain": "\\\\cos x = 1 \\\\Leftrightarrow x = k2\\\\pi. Vì x \\\\in [0; 4\\\\pi] nên k \\\\in \\\\{0; 1; 2\\\\}, tương ứng các nghiệm x \\\\in \\\\{0; 2\\\\pi; 4\\\\pi\\\\}. Tổng cộng có 3 nghiệm."
 },
 {
 "grade": "11",
 "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
 "type": "TN",
 "level": 2,
-"q": "Giải phương trình \\sin x + \\cos x = 0.",
+"q": "Giải phương trình \\\\sin x + \\\\cos x = 0.",
 "choices": [
-"A. x = \\frac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}",
-"B. x = -\\frac{\\pi}{4} + k\\pi, k \\in \\mathbb{Z}",
-"C. x = \\frac{\\pi}{2} + k\\pi, k \\in \\mathbb{Z}",
-"D. x = -\\frac{\\pi}{4} + k2\\pi, k \\in \\mathbb{Z}"
+"A. x = \\\\frac{\\\\pi}{4} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"B. x = -\\\\frac{\\\\pi}{4} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"C. x = \\\\frac{\\\\pi}{2} + k\\\\pi, k \\\\in \\\\mathbb{Z}",
+"D. x = -\\\\frac{\\\\pi}{4} + k2\\\\pi, k \\\\in \\\\mathbb{Z}"
 ],
 "correct": 1,
-"explain": "Ta có \\sin x + \\cos x = 0 \\Leftrightarrow \\sin x = -\\cos x \\Leftrightarrow \\tan x = -1 \\Leftrightarrow x = -\\frac{\\pi}{4} + k\\pi (k \\in \\mathbb{Z})."
+"explain": "Ta có \\\\sin x + \\\\cos x = 0 \\\\Leftrightarrow \\\\sin x = -\\\\cos x \\\\Leftrightarrow \\\\tan x = -1 \\\\Leftrightarrow x = -\\\\frac{\\\\pi}{4} + k\\\\pi (k \\\\in \\\\mathbb{Z})."
 },
 {
 "grade": "11",
@@ -4401,19 +4401,19 @@
 "explain": "Áp dụng công thức: \\tan(a+b) = \\frac{\\tan a + \\tan b}{1 - \\tan a \\tan b} = \\frac{2 + 3}{1 - 2 \\cdot 3} = \\frac{5}{-5} = -1."
 },
 {
-  "grade": "11",
-  "chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
-  "type": "TN",
-  "level": 2,
-  "q": "Giá trị của biểu thức $P = \\sin \\frac{\\pi}{12} \\cos \\frac{\\pi}{12}$ là:",
-  "choices": [
-    "A. $\\frac{\\sqrt{3}}{4}$",
-    "B. $\\frac{1}{2}$",
-    "C. $\\frac{\\sqrt{2}}{4}$",
-    "D. $\\frac{1}{4}$"
-  ],
-  "correct": 3,
-  "explain": "Ta có $\\sin x \\cos x = \\frac{1}{2}\\sin 2x$. Nên $P = \\frac{1}{2} \\sin \\left( \\frac{\\pi}{6} \\right) = \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4}$."
+"grade": "11",
+"chapter": "Chương 1. Hàm số lượng giác và phương trình lượng giác",
+"type": "TN",
+"level": 2,
+"q": "Giá trị của biểu thức P = \\sin \\frac{\\pi}{12} \\cos \\frac{\\pi}{12} là:",
+"choices": [
+"A. \\frac{\\sqrt{3}}{4}",
+"B. \\frac{1}{2}",
+"C. \\frac{\\sqrt{2}}{4}",
+"D. \\frac{1}{4}"
+],
+"correct": 3,
+"explain": "Ta có \\sin x \\cos x = \\frac{1}{2}\\sin 2x. Nên P = \\frac{1}{2} \\sin(\\frac{\\pi}{6}) = \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4}."
 },
 {
 "grade": "11",
