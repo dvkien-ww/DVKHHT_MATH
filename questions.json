@@ -1,6 +1,1233 @@
 [
   {
     "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Gọi $k$ là hệ số góc của tiếp tuyến của đồ thị hàm số $y = x^3 - 3x^2 + 2$ tại điểm có hoành độ $x_0 = 1$. Tính giá trị của $k$.",
+    "correct": "-3",
+    "explain": "Ta có đạo hàm $y' = 3x^2 - 6x$. Hệ số góc của tiếp tuyến tại điểm có hoành độ $x_0 = 1$ là $k = y'(1) = 3(1)^2 - 6(1) = -3$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một chất điểm chuyển động có phương trình $s(t) = t^3 - 3t^2 + 9t$, trong đó $t$ tính bằng giây và $s$ tính bằng mét. Tính vận tốc tức thời của chất điểm tại thời điểm $t = 2\\text{ s}$.",
+    "correct": "9",
+    "explain": "Phương trình vận tốc là $v(t) = s'(t) = 3t^2 - 6t + 9$. Vận tốc tức thời tại thời điểm $t = 2$ là $v(2) = 3(2)^2 - 6(2) + 9 = 12 - 12 + 9 = 9\\text{ m/s}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Phương trình tiếp tuyến của đồ thị hàm số $y = \\frac{2x+1}{x-1}$ tại điểm có hoành độ $x_0 = 2$ có dạng $y = ax + b$. Tính tổng $a + b$.",
+    "correct": "8",
+    "explain": "Ta có $y' = \\frac{-3}{(x-1)^2}$. Tung độ tiếp điểm: $y_0 = y(2) = 5$. Hệ số góc: $a = y'(2) = -3$. Phương trình tiếp tuyến: $y = -3(x - 2) + 5 = -3x + 11$. Suy ra $a = -3, b = 11$. Vậy $a + b = 8$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Sử dụng định nghĩa đạo hàm, tính đạo hàm của hàm số $f(x) = \\sqrt{x+3}$ tại điểm $x_0 = 1$ (nhập kết quả dưới dạng số thập phân).",
+    "correct": "0.25",
+    "explain": "Ta có $f'(1) = \\lim_{x \\to 1} \\frac{\\sqrt{x+3} - 2}{x - 1} = \\lim_{x \\to 1} \\frac{x - 1}{(x - 1)(\\sqrt{x+3} + 2)} = \\lim_{x \\to 1} \\frac{1}{\\sqrt{x+3} + 2} = \\frac{1}{4} = 0.25$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Có bao nhiêu tiếp tuyến của đồ thị hàm số $y = x^3 - 3x + 2$ đi qua điểm $A(2; 4)$?",
+    "correct": "2",
+    "explain": "Gọi tiếp điểm là $M(x_0; y_0)$. Phương trình tiếp tuyến có dạng $y = (3x_0^2 - 3)(x - x_0) + x_0^3 - 3x_0 + 2$. Vì tiếp tuyến đi qua $A(2; 4)$ nên: $4 = (3x_0^2 - 3)(2 - x_0) + x_0^3 - 3x_0 + 2 \\Leftrightarrow 4 = -2x_0^3 + 6x_0^2 - 3x_0 + 6 + 3x_0 - x_0^3 - 3x_0 + x_0^3 + 2$ rút gọn được $2x_0^3 - 6x_0^2 + 8 = 0 \\Leftrightarrow 2(x_0 + 1)(x_0 - 2)^2 = 0$. Suy ra $x_0 = -1$ và $x_0 = 2$. Có 2 giá trị $x_0$, tương ứng 2 tiếp tuyến."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Một chất điểm chuyển động theo phương trình $s(t) = -t^3 + 6t^2 + 2t$, trong đó $t$ tính bằng giây và $s$ tính bằng mét. Trong khoảng thời gian chuyển động, vận tốc lớn nhất mà chất điểm đạt được là bao nhiêu m/s?",
+    "correct": "14",
+    "explain": "Phương trình vận tốc: $v(t) = s'(t) = -3t^2 + 12t + 2$. Vận tốc là một hàm bậc 2 có đồ thị là parabol quay bề lõm xuống dưới. Nó đạt giá trị lớn nhất tại đỉnh $t = -\\frac{12}{2(-3)} = 2$. Vận tốc lớn nhất là $v(2) = -3(4) + 12(2) + 2 = 14 \\text{ m/s}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Đồ thị hàm số $y = x^3 - 3x^2 + 1$ có các tiếp tuyến vuông góc với đường thẳng $d: x - 9y + 1 = 0$. Các tiếp tuyến này tiếp xúc với đồ thị tại các điểm $A(x_1; y_1)$ và $B(x_2; y_2)$. Tính tổng tung độ $y_1 + y_2$.",
+    "correct": "-2",
+    "explain": "Đường thẳng $d$ có hệ số góc $k_d = \\frac{1}{9}$. Tiếp tuyến vuông góc với $d$ nên có hệ số góc $k = -9$. Giải phương trình $y' = -9 \\Rightarrow 3x^2 - 6x = 9 \\Rightarrow x^2 - 2x - 3 = 0$. Ta được $x_1 = -1$ và $x_2 = 3$. Tung độ tương ứng: $y_1 = (-1)^3 - 3(-1)^2 + 1 = -3$ và $y_2 = 3^3 - 3(3)^2 + 1 = 1$. Tổng $y_1 + y_2 = -3 + 1 = -2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Tiếp tuyến của đồ thị hàm số $y = \\frac{1}{x}$ tại điểm có hoành độ $x_0 = 2$ cắt hai trục tọa độ $Ox$ và $Oy$ lần lượt tại $A$ và $B$. Tính diện tích tam giác $OAB$.",
+    "correct": "2",
+    "explain": "Đạo hàm $y' = -\\frac{1}{x^2}$. $y'(2) = -\\frac{1}{4}$. Tung độ tiếp điểm $y_0 = \\frac{1}{2}$. Phương trình tiếp tuyến: $y = -\\frac{1}{4}(x - 2) + \\frac{1}{2} = -\\frac{1}{4}x + 1$. Giao điểm với $Ox$ ($y=0$) là $A(4; 0)$. Giao điểm với $Oy$ ($x=0$) là $B(0; 1)$. Tam giác $OAB$ vuông tại $O$, có diện tích $S = \\frac{1}{2} OA \\cdot OB = \\frac{1}{2} \\cdot 4 \\cdot 1 = 2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Biết đồ thị parabol $y = ax^2 + bx + c$ tiếp xúc với đường thẳng $y = x$ tại điểm có hoành độ $x = 1$ và đi qua điểm $M(-1; 0)$. Tính giá trị của biểu thức $a^2 + b^2 + c^2$ (nhập kết quả dưới dạng số thập phân).",
+    "correct": "0.375",
+    "explain": "Parabol tiếp xúc với $y = x$ tại $x=1$ nên nó đi qua điểm $(1; 1)$ và có đạo hàm tại $x=1$ bằng $1$. Ta có hệ: (1) Đi qua $(1; 1) \\Rightarrow a + b + c = 1$. (2) Đạo hàm $y' = 2ax + b \\Rightarrow y'(1) = 2a + b = 1$. (3) Đi qua $(-1; 0) \\Rightarrow a - b + c = 0$. Từ (1) và (3) trừ vế theo vế $\\Rightarrow 2b = 1 \\Rightarrow b = 0.5$. Thay vào (2) $\\Rightarrow 2a + 0.5 = 1 \\Rightarrow a = 0.25$. Thay vào (1) $\\Rightarrow 0.25 + 0.5 + c = 1 \\Rightarrow c = 0.25$. Biểu thức $a^2 + b^2 + c^2 = (1/4)^2 + (1/2)^2 + (1/4)^2 = 1/16 + 1/4 + 1/16 = 3/8 = 0.375$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Cho hàm số $y = f(x)$ có đạo hàm tại $x = 2$ và thỏa mãn $\\lim_{x \\to 2} \\frac{f(x) - 5}{x - 2} = 3$. Tính giới hạn $\\lim_{x \\to 2} \\frac{f(x)^2 - 25}{x^2 - 4}$.",
+    "correct": "7.5",
+    "explain": "Từ giả thiết, ta suy ra $f'(2) = 3$ và vì $f(x)$ liên tục tại 2 (do có đạo hàm) nên $f(2) = 5$. Ta biến đổi giới hạn cần tính: $\\lim_{x \\to 2} \\frac{f(x)^2 - 25}{x^2 - 4} = \\lim_{x \\to 2} \\frac{(f(x) - 5)(f(x) + 5)}{(x - 2)(x + 2)} = \\lim_{x \\to 2} \\left( \\frac{f(x) - 5}{x - 2} \\cdot \\frac{f(x) + 5}{x + 2} \\right)$. Áp dụng các giới hạn đã biết: $3 \\cdot \\frac{f(2) + 5}{2 + 2} = 3 \\cdot \\frac{5 + 5}{4} = \\frac{30}{4} = 7.5$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Hai chất điểm A và B chuyển động trên một trục tọa độ $Ox$ với phương trình chuyển động lần lượt là $x_A(t) = t^3 - 3t^2 + 5t$ và $x_B(t) = t^2 + t$ ($t > 0$). Hỏi trong suốt quá trình chuyển động, có bao nhiêu lần hai chất điểm này đạt cùng một vận tốc?",
+    "correct": "2",
+    "explain": "Phương trình vận tốc: $v_A(t) = x_A'(t) = 3t^2 - 6t + 5$ và $v_B(t) = x_B'(t) = 2t + 1$. Để hai vật cùng vận tốc, ta giải phương trình $v_A(t) = v_B(t) \\Rightarrow 3t^2 - 6t + 5 = 2t + 1 \\Rightarrow 3t^2 - 8t + 4 = 0$. Phương trình bậc hai này có $\\Delta' = 16 - 12 = 4 > 0$, suy ra có 2 nghiệm phân biệt là $t = 2$ và $t = 2/3$. Cả 2 nghiệm đều $> 0$. Vậy có 2 lần."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Một đường thẳng $d$ đi qua điểm $P(0; -4)$ và là tiếp tuyến của đồ thị hàm số $y = x^3 - 3x^2$ tại điểm $N(x_0; y_0)$. Tìm $x_0$.",
+    "correct": "2",
+    "explain": "Phương trình tiếp tuyến tại $N(x_0; y_0)$ là: $y = (3x_0^2 - 6x_0)(x - x_0) + x_0^3 - 3x_0^2$. Vì tiếp tuyến đi qua $P(0; -4)$ nên thay $x=0, y=-4$ vào phương trình: $-4 = (3x_0^2 - 6x_0)(-x_0) + x_0^3 - 3x_0^2 = -3x_0^3 + 6x_0^2 + x_0^3 - 3x_0^2 = -2x_0^3 + 3x_0^2$. Ta được phương trình $2x_0^3 - 3x_0^2 - 4 = 0$. Nhẩm nghiệm $x_0 = 2$ ta thấy $2(8) - 3(4) - 4 = 16 - 12 - 4 = 0$. Phương trình chỉ có nghiệm duy nhất $x_0 = 2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hàm số $y = x^2 \\ln x$. Gọi $k$ là giá trị của đạo hàm hàm số tại điểm $x = e$. Tính giá trị của biểu thức $\\frac{k}{e}$.",
+    "correct": "3",
+    "explain": "Sử dụng quy tắc đạo hàm của một tích: $y' = (x^2)' \\ln x + x^2 (\\ln x)' = 2x \\ln x + x^2 \\cdot \\frac{1}{x} = 2x \\ln x + x$. Tại $x = e$, ta có $y'(e) = 2e \\ln e + e = 2e(1) + e = 3e$. Do đó, $k = 3e$. Giá trị biểu thức $\\frac{k}{e} = 3$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hàm số $y = \\frac{e^x}{x}$. Tính giá trị của đạo hàm $y'$ tại điểm $x = 1$.",
+    "correct": "0",
+    "explain": "Sử dụng quy tắc đạo hàm của một thương: $y' = \\frac{(e^x)' \\cdot x - e^x \\cdot (x)'}{x^2} = \\frac{x e^x - e^x}{x^2} = \\frac{e^x(x - 1)}{x^2}$. Thay $x = 1$ vào ta được $y'(1) = \\frac{e^1(1 - 1)}{1^2} = 0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hàm số $y = \\sin^2(3x)$. Tính giá trị của đạo hàm $y'$ tại điểm $x = \\frac{\\pi}{12}$.",
+    "correct": "3",
+    "explain": "Sử dụng quy tắc hàm hợp: $y' = 2\\sin(3x) \\cdot (\\sin(3x))' = 2\\sin(3x) \\cdot 3\\cos(3x) = 3(2\\sin(3x)\\cos(3x)) = 3\\sin(6x)$. Tại $x = \\frac{\\pi}{12}$, ta có $y'(\\frac{\\pi}{12}) = 3\\sin(6 \\cdot \\frac{\\pi}{12}) = 3\\sin(\\frac{\\pi}{2}) = 3 \\cdot 1 = 3$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hàm số $f(x) = \\sqrt{x^2 + 3}$. Tính giá trị của biểu thức $4 \\cdot f'(1)$.",
+    "correct": "2",
+    "explain": "Đạo hàm: $f'(x) = \\frac{(x^2+3)'}{2\\sqrt{x^2+3}} = \\frac{2x}{2\\sqrt{x^2+3}} = \\frac{x}{\\sqrt{x^2+3}}$. Tính $f'(1) = \\frac{1}{\\sqrt{1+3}} = \\frac{1}{2}$. Do đó $4 \\cdot f'(1) = 4 \\cdot \\frac{1}{2} = 2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $y = x e^{-\\frac{x^2}{2}}$. Tính tổng các nghiệm của phương trình $y' = 0$.",
+    "correct": "0",
+    "explain": "Đạo hàm theo quy tắc tích và hàm hợp: $y' = 1 \\cdot e^{-\\frac{x^2}{2}} + x \\cdot e^{-\\frac{x^2}{2}} \\cdot \\left(-\\frac{x^2}{2}\\right)' = e^{-\\frac{x^2}{2}} + x \\cdot e^{-\\frac{x^2}{2}} \\cdot (-x) = e^{-\\frac{x^2}{2}} (1 - x^2)$. Phương trình $y' = 0 \\Leftrightarrow 1 - x^2 = 0$ (vì $e^{-\\frac{x^2}{2}} > 0$). Suy ra $x = 1$ hoặc $x = -1$. Tổng các nghiệm bằng $0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $f(x) = \\frac{1}{3}x^3 - (m-1)x^2 + (m^2-3m+2)x$. Tìm tổng tất cả các số nguyên $m$ thuộc đoạn $[-5; 5]$ để $f'(x) \\ge 0$ với mọi $x \\in \\mathbb{R}$.",
+    "correct": "-14",
+    "explain": "Đạo hàm $f'(x) = x^2 - 2(m-1)x + (m^2-3m+2)$. Để $f'(x) \\ge 0$ với mọi $x$, ta phải có $\\Delta' \\le 0$. $\\Delta' = (m-1)^2 - (m^2-3m+2) = m^2 - 2m + 1 - m^2 + 3m - 2 = m - 1$. Điều kiện $m - 1 \\le 0 \\Leftrightarrow m \\le 1$. Các số nguyên $m \\in [-5; 5]$ thỏa mãn là: $-5, -4, -3, -2, -1, 0, 1$. Tổng của chúng là $(-5) + (-4) + (-3) + (-2) + (-1) + 0 + 1 = -14$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $f(x) = \\ln(x + \\sqrt{x^2+1})$. Tính giá trị của biểu thức $3 \\cdot f'(2\\sqrt{2})$.",
+    "correct": "1",
+    "explain": "Đạo hàm: $f'(x) = \\frac{(x + \\sqrt{x^2+1})'}{x + \\sqrt{x^2+1}} = \\frac{1 + \\frac{x}{\\sqrt{x^2+1}}}{x + \\sqrt{x^2+1}} = \\frac{\\frac{\\sqrt{x^2+1} + x}{\\sqrt{x^2+1}}}{x + \\sqrt{x^2+1}} = \\frac{1}{\\sqrt{x^2+1}}$. Tại $x = 2\\sqrt{2}$, $f'(2\\sqrt{2}) = \\frac{1}{\\sqrt{(2\\sqrt{2})^2 + 1}} = \\frac{1}{\\sqrt{8+1}} = \\frac{1}{3}$. Vậy $3 \\cdot f'(2\\sqrt{2}) = 1$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $y = \\cos^4 x + \\sin^4 x$. Tính giá trị của đạo hàm $y'$ tại điểm $x = \\frac{\\pi}{8}$.",
+    "correct": "-1",
+    "explain": "Biến đổi hàm số: $y = (\\sin^2 x + \\cos^2 x)^2 - 2\\sin^2 x \\cos^2 x = 1 - \\frac{1}{2}(2\\sin x \\cos x)^2 = 1 - \\frac{1}{2}\\sin^2(2x)$. Sử dụng hạ bậc: $y = 1 - \\frac{1}{4}(1 - \\cos(4x)) = \\frac{3}{4} + \\frac{1}{4}\\cos(4x)$. Đạo hàm: $y' = \\frac{1}{4}(-4\\sin(4x)) = -\\sin(4x)$. Tại $x = \\frac{\\pi}{8}$, ta có $y'(\\frac{\\pi}{8}) = -\\sin(4 \\cdot \\frac{\\pi}{8}) = -\\sin(\\frac{\\pi}{2}) = -1$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Cho hàm số $f(x) = \\frac{x^2+x-1}{x-1}$. Gọi $g(x) = f'(x)$. Tính giá trị của $g(2)$.",
+    "correct": "0",
+    "explain": "Để tính nhanh, ta chia tử cho mẫu: $f(x) = \\frac{x(x-1) + 2x - 1}{x-1} = x + \\frac{2(x-1) + 1}{x-1} = x + 2 + \\frac{1}{x-1}$. Đạo hàm $f'(x) = 1 - \\frac{1}{(x-1)^2}$. Suy ra $g(x) = 1 - \\frac{1}{(x-1)^2}$. Giá trị $g(2) = 1 - \\frac{1}{(2-1)^2} = 1 - 1 = 0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Cho hàm số $f(x) = (x-1)(x-2)(x-3)\\dots(x-10)$. Tính giá trị của biểu thức $\\frac{f'(1)}{8!}$.",
+    "correct": "-9",
+    "explain": "Áp dụng quy tắc đạo hàm của tích nhiều nhân tử, $f'(x)$ sẽ là tổng của 10 số hạng, mỗi số hạng mất đi 1 nhân tử. Khi thay $x = 1$, tất cả các số hạng chứa nhân tử $(x-1)$ đều bằng 0. Số hạng duy nhất khác 0 là số hạng đã bỏ đi $(x-1)$. Vậy $f'(1) = (1-2)(1-3)(1-4)\\dots(1-10) = (-1)(-2)(-3)\\dots(-9) = -9!$. Vậy $\\frac{f'(1)}{8!} = \\frac{-9!}{8!} = -9$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Cho hàm số $f(x) = |x^2 - 4x + 3|$. Gọi $A$ là đạo hàm bên phải của hàm số tại $x = 1$, $B$ là đạo hàm bên trái của hàm số tại $x = 1$. Tính tổng $A + B$.",
+    "correct": "0",
+    "explain": "Ta có $x^2 - 4x + 3 = (x-1)(x-3)$. Khi $x \\to 1^+$, ta xét trong khoảng $(1; 3)$ thì biểu thức mang dấu âm, nên $f(x) = -x^2 + 4x - 3$. Đạo hàm bên phải là $f'(1^+) = -2(1) + 4 = 2 \\Rightarrow A = 2$. Khi $x \\to 1^-$, biểu thức mang dấu dương, $f(x) = x^2 - 4x + 3$. Đạo hàm bên trái $f'(1^-) = 2(1) - 4 = -2 \\Rightarrow B = -2$. Tổng $A + B = 2 + (-2) = 0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Giả sử hàm số $y = f(x)$ có đạo hàm trên $\\mathbb{R}$ và thỏa mãn hệ thức $f(x) + x f(-x) = x^3 + 2x$ với mọi $x$. Tính giá trị của $f'(1)$ (nhập kết quả số thập phân).",
+    "correct": "3.5",
+    "explain": "Đạo hàm hai vế theo $x$: $f'(x) + f(-x) - x f'(-x) = 3x^2 + 2$. Thế $x = 1$ ta được: $f'(1) + f(-1) - f'(-1) = 5$ (1). Thế $x = -1$ ta được: $f'(-1) + f(1) + f'(1) = 5$ (2). Cần tìm $f(1), f(-1)$. Từ biểu thức gốc: thế $x=1 \\Rightarrow f(1) + f(-1) = 3$. Thế $x=-1 \\Rightarrow f(-1) - f(1) = -3$. Cộng 2 PT: $2f(-1) = 0 \\Rightarrow f(-1) = 0 \\Rightarrow f(1) = 3$. Thay $f(-1), f(1)$ vào (1), (2): $f'(1) - f'(-1) = 5$ và $f'(-1) + 3 + f'(1) = 5 \\Rightarrow f'(1) + f'(-1) = 2$. Cộng hai PT đạo hàm ta có $2 f'(1) = 7 \\Rightarrow f'(1) = 3.5$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hàm số $y = x^4 - 2x^3 + x$. Tính đạo hàm cấp hai của hàm số tại điểm $x = 1$.",
+    "correct": "0",
+    "explain": "Đạo hàm cấp một: $y' = 4x^3 - 6x^2 + 1$. Đạo hàm cấp hai: $y'' = 12x^2 - 12x$. Thay $x=1$ vào ta có $y''(1) = 12(1)^2 - 12(1) = 0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hàm số $y = e^{2x} + \\ln x$. Tính giá trị của biểu thức $y''(1) - 4e^2$.",
+    "correct": "-1",
+    "explain": "Đạo hàm cấp một: $y' = 2e^{2x} + \\frac{1}{x}$. Đạo hàm cấp hai: $y'' = 4e^{2x} - \\frac{1}{x^2}$. Tại $x=1$, ta có $y''(1) = 4e^2 - 1$. Do đó biểu thức $y''(1) - 4e^2 = 4e^2 - 1 - 4e^2 = -1$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Một chất điểm chuyển động theo phương trình $s(t) = t^3 - 6t^2 + 10t$ ($t$ tính bằng giây, $s$ tính bằng mét). Tính gia tốc của chất điểm tại thời điểm $t = 3\\text{ s}$.",
+    "correct": "6",
+    "explain": "Vận tốc là đạo hàm bậc nhất: $v(t) = s'(t) = 3t^2 - 12t + 10$. Gia tốc là đạo hàm bậc hai: $a(t) = v'(t) = s''(t) = 6t - 12$. Tại $t=3$, ta có $a(3) = 6(3) - 12 = 6 \\text{ m/s}^2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 3,
+    "q": "Cho hàm số $y = \\sin(3x)$. Tính giá trị của biểu thức $\\frac{y''(\\frac{\\pi}{6})}{y(\\frac{\\pi}{6})}$.",
+    "correct": "-9",
+    "explain": "Đạo hàm cấp một: $y' = 3\\cos(3x)$. Đạo hàm cấp hai: $y'' = -9\\sin(3x) = -9y$. Do đó tỉ số $\\frac{y''(x)}{y(x)} = -9$ với mọi $x$ làm mẫu số khác 0. Tại $x=\\frac{\\pi}{6}$, mẫu bằng $\\sin(\\frac{\\pi}{2}) = 1 \\neq 0$. Vậy tỉ số bằng $-9$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $f(x) = x e^{-x}$. Tìm nghiệm $x$ của phương trình $f''(x) = 0$.",
+    "correct": "2",
+    "explain": "Đạo hàm bậc nhất: $f'(x) = 1 \\cdot e^{-x} + x e^{-x} (-1) = e^{-x}(1 - x)$. Đạo hàm bậc hai: $f''(x) = -e^{-x}(1 - x) + e^{-x}(-1) = e^{-x}(x - 1 - 1) = e^{-x}(x - 2)$. Phương trình $f''(x) = 0 \\Leftrightarrow e^{-x}(x - 2) = 0 \\Leftrightarrow x = 2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $y = \\frac{x+1}{x-2}$. Đạo hàm cấp hai của hàm số có dạng $y'' = \\frac{C}{(x-2)^3}$. Tìm hằng số $C$.",
+    "correct": "6",
+    "explain": "Ta biến đổi hàm số: $y = 1 + \\frac{3}{x-2}$. Đạo hàm cấp một: $y' = -3(x-2)^{-2}$. Đạo hàm cấp hai: $y'' = 6(x-2)^{-3} = \\frac{6}{(x-2)^3}$. Do đó, hằng số $C = 6$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $y = \\cos^2 x$. Biết rằng biểu thức $y'' + 4y$ luôn bằng một hằng số $C$ với mọi $x$. Tìm giá trị của $C$.",
+    "correct": "2",
+    "explain": "Hạ bậc hàm số: $y = \\frac{1 + \\cos(2x)}{2} = 0.5 + 0.5\\cos(2x)$. Đạo hàm cấp một: $y' = -\\sin(2x)$. Đạo hàm cấp hai: $y'' = -2\\cos(2x)$. Ta xét biểu thức: $y'' + 4y = -2\\cos(2x) + 4(0.5 + 0.5\\cos(2x)) = -2\\cos(2x) + 2 + 2\\cos(2x) = 2$. Vậy $C = 2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 4,
+    "q": "Cho hàm số $y = \\ln(x + \\sqrt{x^2+1})$. Tính giá trị của biểu thức $(x^2+1)y'' + xy'$.",
+    "correct": "0",
+    "explain": "Ta đã biết $y' = \\frac{1}{\\sqrt{x^2+1}} = (x^2+1)^{-1/2}$. Tính đạo hàm cấp hai: $y'' = -\\frac{1}{2}(x^2+1)^{-3/2} \\cdot 2x = -x(x^2+1)^{-3/2} = -\\frac{x}{(x^2+1)\\sqrt{x^2+1}}$. Khi đó: $(x^2+1)y'' = -\\frac{x}{\\sqrt{x^2+1}} = -x y'$. Do đó $(x^2+1)y'' + x y' = 0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Cho hàm số $f(x) = (ax+b)\\ln x$. Biết $f'(1) = 2$ và $f''(1) = -1$. Tính giá trị của biểu thức $a^2 + b^2$ (nhập dưới dạng số thập phân).",
+    "correct": "2.5",
+    "explain": "Đạo hàm cấp một: $f'(x) = a\\ln x + \\frac{ax+b}{x} = a\\ln x + a + \\frac{b}{x}$. Tại $x=1$: $f'(1) = a(0) + a + b = 2 \\Rightarrow a + b = 2$. Đạo hàm cấp hai: $f''(x) = \\frac{a}{x} - \\frac{b}{x^2}$. Tại $x=1$: $f''(1) = a - b = -1$. Ta có hệ PT: $a+b=2$ và $a-b=-1$. Giải ra $a=0.5, b=1.5$. Biểu thức $a^2+b^2 = (0.5)^2 + (1.5)^2 = 0.25 + 2.25 = 2.5$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Một chất điểm chuyển động theo phương trình $s(t) = \\frac{1}{4}t^4 - t^3 + t^2 + 5t$. Trong khoảng thời gian $t \\in [0; 5]$, gia tốc nhỏ nhất của chất điểm bằng bao nhiêu?",
+    "correct": "-1",
+    "explain": "Vận tốc $v(t) = s'(t) = t^3 - 3t^2 + 2t + 5$. Gia tốc $a(t) = v'(t) = 3t^2 - 6t + 2$. Gia tốc là hàm số bậc hai bề lõm hướng lên, đạt giá trị nhỏ nhất tại $t = -\\frac{-6}{2 \\cdot 3} = 1$. Vì $1 \\in [0; 5]$ nên gia tốc nhỏ nhất là $a(1) = 3(1)^2 - 6(1) + 2 = -1$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Cho hàm số $y = e^x \\sin x$. Tính giá trị của biểu thức $y'' - 2y' + 2y$.",
+    "correct": "0",
+    "explain": "Đạo hàm cấp một: $y' = e^x \\sin x + e^x \\cos x = e^x(\\sin x + \\cos x)$. Đạo hàm cấp hai: $y'' = e^x(\\sin x + \\cos x) + e^x(\\cos x - \\sin x) = 2e^x \\cos x$. Ta thay vào biểu thức: $y'' - 2y' + 2y = 2e^x \\cos x - 2e^x(\\sin x + \\cos x) + 2e^x \\sin x = 2e^x \\cos x - 2e^x \\sin x - 2e^x \\cos x + 2e^x \\sin x = 0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TLN",
+    "level": 5,
+    "q": "ĐÁNH ĐỐ: Biết $P(x)$ là một đa thức bậc 3 thỏa mãn $P(0) = 1$, $P'(0) = 2$, $P''(0) = 6$ và $P'''(0) = 24$. Tính giá trị của $P(1)$.",
+    "correct": "10",
+    "explain": "Giả sử đa thức $P(x) = ax^3 + bx^2 + cx + d$. Ta có $P(0) = d = 1$. $P'(x) = 3ax^2 + 2bx + c \\Rightarrow P'(0) = c = 2$. $P''(x) = 6ax + 2b \\Rightarrow P''(0) = 2b = 6 \\Rightarrow b = 3$. $P'''(x) = 6a \\Rightarrow P'''(0) = 6a = 24 \\Rightarrow a = 4$. (Đây là ứng dụng định lý Maclaurin $P(x) = P(0) + P'(0)x + \\frac{P''(0)}{2!}x^2 + \\frac{P'''(0)}{3!}x^3$). Đa thức là $P(x) = 4x^3 + 3x^2 + 2x + 1$. Tại $x=1$, $P(1) = 4 + 3 + 2 + 1 = 10$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Khảo sát định nghĩa và ý nghĩa hình học của đạo hàm. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số $y = f(x)$ tại điểm $x_0$ được tính bằng $\\lim_{x \\to x_0} \\frac{f(x) - f(x_0)}{x - x_0}$ (nếu giới hạn này tồn tại hữu hạn).",
+      "b": "Nếu hàm số $y = f(x)$ có đạo hàm tại điểm $x_0$ thì hàm số đó liên tục tại $x_0$.",
+      "c": "Hệ số góc của tiếp tuyến của đồ thị hàm số $y = f(x)$ tại điểm $M(x_0; y_0)$ là $k = f'(x_0)$.",
+      "d": "Hàm số $y = |x|$ có đạo hàm tại $x_0 = 0$ và $y'(0) = 0$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Theo định nghĩa đạo hàm. Đúng. b) Định lí mối liên hệ giữa đạo hàm và tính liên tục. Đúng. c) Ý nghĩa hình học của đạo hàm. Đúng. d) Hàm số $y = |x|$ không có đạo hàm tại $x = 0$ do giới hạn hai bên khác nhau (bên phải bằng 1, bên trái bằng -1). Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Cho hàm số $y = x^2 - 4x + 3$ có đồ thị $(C)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số tại điểm $x = 1$ bằng $-2$.",
+      "b": "Phương trình tiếp tuyến của đồ thị $(C)$ tại giao điểm của $(C)$ với trục tung là $y = -4x + 3$.",
+      "c": "Đồ thị $(C)$ có đúng một tiếp tuyến song song với trục hoành.",
+      "d": "Tồn tại đúng hai tiếp tuyến của đồ thị $(C)$ đi qua điểm $A(2; -1)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) $y' = 2x - 4 \\Rightarrow y'(1) = -2$. Đúng. b) Giao với $Oy$ là $M(0; 3)$, $y'(0) = -4$. Tiếp tuyến $y = -4(x-0) + 3 = -4x + 3$. Đúng. c) Tiếp tuyến song song trục hoành có $y' = 0 \\Leftrightarrow x = 2$. Tại điểm $(2; -1)$ chỉ có duy nhất 1 tiếp tuyến là $y = -1$. Đúng. d) Gọi tiếp điểm là $(x_0; y_0)$. Tiếp tuyến: $y = (2x_0 - 4)(x - x_0) + x_0^2 - 4x_0 + 3$. Đi qua $A(2; -1) \\Rightarrow -1 = (2x_0 - 4)(2 - x_0) + x_0^2 - 4x_0 + 3 \\Leftrightarrow x_0^2 - 4x_0 + 4 = 0 \\Leftrightarrow x_0 = 2$. Chỉ có duy nhất 1 tiếp tuyến đi qua $A$. Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Một vật rơi tự do có phương trình chuyển động $s(t) = \\frac{1}{2}gt^2$, với gia tốc rơi tự do $g \\approx 9,8 \\text{ m/s}^2$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Phương trình vận tốc của vật theo thời gian $t$ là $v(t) = 9,8t$.",
+      "b": "Vận tốc của vật tại thời điểm $t = 2 \\text{ s}$ là $19,6 \\text{ m/s}$.",
+      "c": "Vật đạt vận tốc $29,4 \\text{ m/s}$ tại thời điểm $t = 3 \\text{ s}$.",
+      "d": "Quãng đường vật rơi được tính từ thời điểm $t = 0$ đến khi vật đạt vận tốc $39,2 \\text{ m/s}$ là $39,2 \\text{ m}."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) $v(t) = s'(t) = gt = 9,8t$. Đúng. b) $v(2) = 9,8 \\cdot 2 = 19,6 \\text{ m/s}$. Đúng. c) $9,8t = 29,4 \\Rightarrow t = 3 \\text{ s}$. Đúng. d) Đạt vận tốc $39,2 \\text{ m/s}$ khi $t = 4 \\text{ s}$. Quãng đường tương ứng là $s(4) = 0,5 \\cdot 9,8 \\cdot 4^2 = 78,4 \\text{ m}$. Phát biểu $39,2 \\text{ m}$ là Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Cho hàm số $y = \\frac{2x+1}{x-1}$ có đồ thị $(C)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số trên các khoảng xác định là $y' = \\frac{-3}{(x-1)^2}$.",
+      "b": "Hệ số góc của tiếp tuyến của $(C)$ tại điểm có hoành độ $x = 2$ bằng $-3$.",
+      "c": "Tiếp tuyến của đồ thị $(C)$ tại điểm có hoành độ $x = 2$ song song với đường thẳng $d: y = -3x + 1$.",
+      "d": "Có đúng một tiếp tuyến của đồ thị $(C)$ vuông góc với đường thẳng $\\Delta: x - 3y + 2 = 0$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Sử dụng quy tắc tính đạo hàm phân thức bậc nhất. Đúng. b) $y'(2) = \\frac{-3}{1} = -3$. Đúng. c) Tiếp điểm là $M(2; 5)$. Phương trình tiếp tuyến là $y = -3(x-2) + 5 = -3x + 11$. Đường thẳng này song song với $y = -3x+1$. Đúng. d) Đường thẳng $\\Delta$ có hệ số góc $\\frac{1}{3}$, nên tiếp tuyến vuông góc với $\\Delta$ phải có hệ số góc bằng $-3$. Giải $y' = -3 \\Leftrightarrow \\frac{-3}{(x-1)^2} = -3 \\Leftrightarrow (x-1)^2 = 1 \\Leftrightarrow x=2$ hoặc $x=0$. Có hai tiếp tuyến thỏa mãn. Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Khảo sát các quy tắc tính đạo hàm của hàm số. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của một tổng $(u + v)' = u' + v'$.",
+      "b": "Đạo hàm của một tích $(uv)' = u'v + uv'$.",
+      "c": "Đạo hàm của một thương $\\left(\\frac{u}{v}\\right)' = \\frac{u'v + uv'}{v^2}$ với $v \\neq 0$.",
+      "d": "Công thức đạo hàm của hàm hợp $y = f(u(x))$ là $y_x' = y_u' \\cdot u_x'$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) Đúng. b) Đúng. c) Công thức đạo hàm của thương bị sai dấu ở tử số. Công thức đúng phải là $\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$. Sai. d) Theo quy tắc hàm hợp. Đúng."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = x^2 \\ln x$ xác định trên $(0; +\\infty)$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số $y = \\ln x$ là $y' = \\frac{1}{x}$.",
+      "b": "Đạo hàm của hàm số đã cho là $f'(x) = 2x \\ln x + x$.",
+      "c": "Giá trị của $f'(1)$ bằng $1$.",
+      "d": "Phương trình $f'(x) = 0$ có đúng một nghiệm thuộc khoảng $(0; +\\infty)$, và nghiệm đó lớn hơn $1$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Công thức cơ bản. Đúng. b) Dùng đạo hàm một tích: $f'(x) = (x^2)'\\ln x + x^2(\\ln x)' = 2x \\ln x + x^2 \\cdot \\frac{1}{x} = 2x \\ln x + x$. Đúng. c) $f'(1) = 2(1)\\ln 1 + 1 = 1$. Đúng. d) $f'(x) = x(2\\ln x + 1) = 0 \\Rightarrow \\ln x = -\\frac{1}{2} \\Rightarrow x = e^{-1/2} = \\frac{1}{\\sqrt{e}}$. Nghiệm này nhỏ hơn 1. Phát biểu Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Khảo sát đạo hàm của các hàm số lượng giác. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm của hàm số $y = \\sin x$ là $y' = \\cos x$.",
+      "b": "Đạo hàm của hàm số $y = \\cos x$ là $y' = \\sin x$.",
+      "c": "Đạo hàm của hàm số $y = \\tan 2x$ là $y' = \\frac{2}{\\cos^2 2x}$.",
+      "d": "Phương trình $y' = 0$ đối với hàm số $y = \\sin x - x$ có vô số nghiệm thực."
+    },
+    "correct": {
+      "a": true,
+      "b": false,
+      "c": true,
+      "d": true
+    },
+    "explain": "a) Theo bảng đạo hàm. Đúng. b) $(\\cos x)' = -\\sin x$. Sai dấu. c) Sử dụng đạo hàm hàm hợp $(\\tan u)' = \\frac{u'}{\\cos^2 u}$. Đúng. d) $y' = \\cos x - 1 = 0 \\Leftrightarrow \\cos x = 1 \\Leftrightarrow x = k2\\pi$ ($k \\in \\mathbb{Z}$). Có vô số nghiệm. Đúng."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Cho hàm số $y = (x^2 - 2x + 2)e^x$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Hàm số $y = e^x$ có đạo hàm là chính nó.",
+      "b": "Đạo hàm của hàm số đã cho là $y' = (x^2 - 2x + 2)' e^x + (x^2 - 2x + 2)(e^x)'$.",
+      "c": "Rút gọn đạo hàm ta được $y' = x^2 e^x$.",
+      "d": "Bất phương trình $y' > 0$ nghiệm đúng với mọi số thực $x$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) $(e^x)' = e^x$. Đúng. b) Theo quy tắc đạo hàm của một tích. Đúng. c) $y' = (2x-2)e^x + (x^2-2x+2)e^x = x^2 e^x$. Đúng. d) $y' = x^2 e^x > 0 \\Leftrightarrow x \\neq 0$. Bất phương trình không đúng với $x = 0$. Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Xét định nghĩa và các quy tắc của đạo hàm cấp hai. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm cấp hai của hàm số $y = f(x)$ là đạo hàm của hàm số $y = f'(x)$, kí hiệu là $f''(x)$.",
+      "b": "Nếu $s(t)$ là phương trình chuyển động của vật thì gia tốc tức thời $a(t) = s''(t)$.",
+      "c": "Đạo hàm cấp hai của hàm số $y = ax + b$ (với $a \\neq 0$) là một hằng số khác $0$.",
+      "d": "Đạo hàm cấp hai của hàm số $y = e^{2x}$ là $y'' = 4e^{2x}$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) Theo định nghĩa đạo hàm cấp hai. Đúng. b) Ý nghĩa cơ học của đạo hàm cấp 2. Đúng. c) $y' = a \\Rightarrow y'' = 0$. Hằng số này bằng 0 chứ không phải khác 0. Sai. d) $y' = 2e^{2x} \\Rightarrow y'' = 4e^{2x}$. Đúng."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Một chất điểm chuyển động theo phương trình $s(t) = t^3 - 3t^2 + 5t + 2$ (trong đó $t$ tính bằng giây, $s$ tính bằng mét). Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Vận tốc tức thời của chất điểm tại thời điểm $t$ là $v(t) = 3t^2 - 6t + 5$.",
+      "b": "Gia tốc tức thời của chất điểm tại thời điểm $t$ là $a(t) = 6t - 6$.",
+      "c": "Tại thời điểm $t = 2 \\text{ s}$, gia tốc của chất điểm bằng $0 \\text{ m/s}^2$.",
+      "d": "Vận tốc của chất điểm đạt giá trị nhỏ nhất tại thời điểm gia tốc của nó triệt tiêu (bằng 0)."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": false,
+      "d": true
+    },
+    "explain": "a) $v(t) = s'(t) = 3t^2-6t+5$. Đúng. b) $a(t) = v'(t) = s''(t) = 6t-6$. Đúng. c) Tại $t=2$, gia tốc $a(2) = 12-6 = 6 \\text{ m/s}^2 \\neq 0$. Sai. d) $v(t) = 3(t-1)^2 + 2$ đạt giá trị nhỏ nhất khi $t=1$. Mà gia tốc $a(1) = 6(1)-6 = 0$. Đúng."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Cho hàm số $y = x e^x$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm cấp một của hàm số là $y' = (x+1)e^x$.",
+      "b": "Đạo hàm cấp hai của hàm số là $y'' = (x+2)e^x$.",
+      "c": "Hàm số đã cho thỏa mãn hệ thức $y'' - 2y' + y = 0$.",
+      "d": "Bất phương trình $y'' > 0$ có tập nghiệm là $(-1; +\\infty)$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) $y' = 1 \\cdot e^x + x e^x = (x+1)e^x$. Đúng. b) $y'' = 1 \\cdot e^x + (x+1)e^x = (x+2)e^x$. Đúng. c) $y'' - 2y' + y = (x+2)e^x - 2(x+1)e^x + x e^x = (x+2-2x-2+x)e^x = 0$. Đúng. d) $y'' > 0 \\Leftrightarrow x+2 > 0 \\Leftrightarrow x > -2$. Tập nghiệm là $(-2; +\\infty)$. Phát biểu Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "DS",
+    "q": "Cho hàm số $f(x) = \\sin 2x$. Xét tính đúng sai của các mệnh đề sau:",
+    "items": {
+      "a": "Đạo hàm cấp một của hàm số là $f'(x) = 2\\cos 2x$.",
+      "b": "Đạo hàm cấp hai của hàm số là $f''(x) = -4\\sin 2x$.",
+      "c": "Hàm số đã cho thỏa mãn hệ thức $f''(x) + 4f(x) = 0$ với mọi $x$.",
+      "d": "Giá trị của biểu thức $f''\\left(\\frac{\\pi}{4}\\right)$ bằng $4$."
+    },
+    "correct": {
+      "a": true,
+      "b": true,
+      "c": true,
+      "d": false
+    },
+    "explain": "a) Tính theo công thức đạo hàm hàm hợp. Đúng. b) Lấy đạo hàm tiếp từ câu a. Đúng. c) $f''(x) + 4f(x) = -4\\sin 2x + 4\\sin 2x = 0$. Đúng. d) $f''\\left(\\frac{\\pi}{4}\\right) = -4\\sin\\left(2 \\cdot \\frac{\\pi}{4}\\right) = -4\\sin\\left(\\frac{\\pi}{2}\\right) = -4$. Giá trị bằng $4$ là Sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Định nghĩa đạo hàm của hàm số $y=f(x)$ tại điểm $x_0$ bằng giới hạn nào sau đây?",
+    "choices": [
+      "A. $\\lim_{x \\to x_0} \\frac{f(x) - f(x_0)}{x - x_0}$",
+      "B. $\\lim_{x \\to x_0} \\frac{f(x) + f(x_0)}{x - x_0}$",
+      "C. $\\lim_{x \\to x_0} \\frac{f(x) - f(x_0)}{x}$",
+      "D. $\\lim_{\\Delta x \\to 0} \\frac{f(x_0 + \\Delta x) + f(x_0)}{\\Delta x}$"
+    ],
+    "correct": 0,
+    "explain": "Theo định nghĩa, đạo hàm của hàm số $f(x)$ tại điểm $x_0$ là giới hạn (nếu có) của tỉ số $\\frac{f(x) - f(x_0)}{x - x_0}$ khi $x$ dần đến $x_0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Vận tốc tức thời $v(t_0)$ của một vật chuyển động có phương trình $s=s(t)$ tại thời điểm $t_0$ được tính bằng công thức nào?",
+    "choices": [
+      "A. $v(t_0) = s(t_0)$",
+      "B. $v(t_0) = s'(t_0)$",
+      "C. $v(t_0) = s''(t_0)$",
+      "D. $v(t_0) = \\frac{s(t_0)}{t_0}$"
+    ],
+    "correct": 1,
+    "explain": "Ý nghĩa cơ học của đạo hàm: Vận tốc tức thời của vật chuyển động $s(t)$ tại thời điểm $t_0$ là đạo hàm bậc nhất của $s(t)$ tại $t_0$, kí hiệu $v(t_0) = s'(t_0)$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Hệ số góc $k$ của tiếp tuyến của đồ thị hàm số $y = f(x)$ tại điểm $M(x_0; y_0)$ là:",
+    "choices": [
+      "A. $k = f'(x_0)$",
+      "B. $k = f(x_0)$",
+      "C. $k = -f'(x_0)$",
+      "D. $k = \\frac{1}{f'(x_0)}$"
+    ],
+    "correct": 0,
+    "explain": "Ý nghĩa hình học của đạo hàm: Hệ số góc của tiếp tuyến của đồ thị hàm số $y=f(x)$ tại điểm có hoành độ $x_0$ chính là đạo hàm của hàm số tại điểm đó, $k = f'(x_0)$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Phương trình tiếp tuyến của đồ thị hàm số $y=f(x)$ tại điểm $M_0(x_0; y_0)$ có dạng là:",
+    "choices": [
+      "A. $y = f'(x_0)(x - x_0) - y_0$",
+      "B. $y = f'(x_0)(x + x_0) + y_0$",
+      "C. $y = f'(x_0)(x - x_0) + y_0$",
+      "D. $y = f(x_0)(x - x_0) + f'(x_0)$"
+    ],
+    "correct": 2,
+    "explain": "Phương trình tiếp tuyến của đồ thị hàm số $y=f(x)$ tại tiếp điểm $M_0(x_0; y_0)$ là $y = f'(x_0)(x - x_0) + y_0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Nếu hàm số $y=f(x)$ có đạo hàm tại $x_0$ thì khẳng định nào sau đây là ĐÚNG?",
+    "choices": [
+      "A. Hàm số gián đoạn tại $x_0$.",
+      "B. Hàm số liên tục tại $x_0$.",
+      "C. Hàm số không xác định tại $x_0$.",
+      "D. Đồ thị hàm số không có tiếp tuyến tại điểm có hoành độ $x_0$."
+    ],
+    "correct": 1,
+    "explain": "Định lí về mối liên hệ giữa đạo hàm và tính liên tục: Nếu hàm số có đạo hàm tại $x_0$ thì nó phải liên tục tại điểm $x_0$ đó."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đạo hàm của hàm số hằng $y = c$ ($c$ là hằng số) bằng bao nhiêu?",
+    "choices": [
+      "A. $c$",
+      "B. $1$",
+      "C. $0$",
+      "D. $x$"
+    ],
+    "correct": 2,
+    "explain": "Đạo hàm của một hằng số luôn bằng 0, tức là $(c)' = 0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đạo hàm của hàm số $y = x$ bằng bao nhiêu?",
+    "choices": [
+      "A. $x$",
+      "B. $1$",
+      "C. $0$",
+      "D. $-1$"
+    ],
+    "correct": 1,
+    "explain": "Áp dụng định nghĩa hoặc quy tắc, ta có $(x)' = 1$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Bằng định nghĩa, tính đạo hàm của hàm số $y = x^2 - x$ tại điểm $x_0 = 1$.",
+    "choices": [
+      "A. $0$",
+      "B. $1$",
+      "C. $2$",
+      "D. $-1$"
+    ],
+    "correct": 1,
+    "explain": "Ta có $y(1) = 1^2 - 1 = 0$. Giới hạn $\\lim_{x \\to 1} \\frac{x^2 - x - 0}{x - 1} = \\lim_{x \\to 1} \\frac{x(x - 1)}{x - 1} = \\lim_{x \\to 1} x = 1$. Vậy $y'(1) = 1$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Một vật rơi tự do có phương trình chuyển động $s(t) = \\frac{1}{2} gt^2$ với $g=9,8 \\text{ m/s}^2$. Vận tốc tức thời của vật tại thời điểm $t = 2\\text{ s}$ là:",
+    "choices": [
+      "A. $9,8 \\text{ m/s}$",
+      "B. $19,6 \\text{ m/s}$",
+      "C. $4,9 \\text{ m/s}$",
+      "D. $10 \\text{ m/s}$"
+    ],
+    "correct": 1,
+    "explain": "Vận tốc tức thời $v(t) = s'(t) = g \\cdot t = 9,8 \\cdot t$. Tại $t = 2$, vận tốc là $v(2) = 9,8 \\cdot 2 = 19,6 \\text{ m/s}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm hệ số góc $k$ của tiếp tuyến của đồ thị hàm số $y = x^3 + 1$ tại điểm có hoành độ $x_0 = -1$.",
+    "choices": [
+      "A. $3$",
+      "B. $-3$",
+      "C. $0$",
+      "D. $1$"
+    ],
+    "correct": 0,
+    "explain": "Ta có đạo hàm $y' = 3x^2$. Hệ số góc tiếp tuyến là $k = y'(-1) = 3(-1)^2 = 3$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Tiếp tuyến của parabol $y = -x^2 + 4x$ tại điểm có hoành độ $x_0 = 1$ có phương trình là:",
+    "choices": [
+      "A. $y = 2x + 1$",
+      "B. $y = 2x - 1$",
+      "C. $y = -2x + 5$",
+      "D. $y = 2x + 3$"
+    ],
+    "correct": 0,
+    "explain": "Tung độ tiếp điểm $y_0 = -1^2 + 4(1) = 3$. Đạo hàm $y' = -2x + 4$. Hệ số góc $k = y'(1) = 2$. Phương trình tiếp tuyến: $y = 2(x - 1) + 3 = 2x + 1$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Biết đồ thị hàm số $y = f(x)$ có tiếp tuyến tại điểm $M(1; 2)$ vuông góc với đường thẳng $d: y = -\\frac{1}{3}x + 5$. Giá trị của $f'(1)$ bằng:",
+    "choices": [
+      "A. $-\\frac{1}{3}$",
+      "B. $3$",
+      "C. $-3$",
+      "D. $\\frac{1}{3}$"
+    ],
+    "correct": 1,
+    "explain": "Hệ số góc của tiếp tuyến là $k = f'(1)$. Vì tiếp tuyến vuông góc với đường thẳng $d$ nên $k \\cdot \\left(-\\frac{1}{3}\\right) = -1 \\Rightarrow k = 3$. Do đó $f'(1) = 3$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Một quả bóng được phóng thẳng đứng lên trên với phương trình chiều cao là $h(t) = 19,6t - 4,9t^2$ (m). Quả bóng đạt chiều cao cực đại tại thời điểm nào?",
+    "choices": [
+      "A. $t = 1\\text{ s}$",
+      "B. $t = 2\\text{ s}$",
+      "C. $t = 3\\text{ s}$",
+      "D. $t = 4\\text{ s}$"
+    ],
+    "correct": 1,
+    "explain": "Quả bóng đạt chiều cao cực đại khi vận tốc tức thời bằng 0. Ta có $v(t) = h'(t) = 19,6 - 9,8t = 0 \\Rightarrow t = 2\\text{ s}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Điểm nào sau đây thuộc đồ thị hàm số $y = x^2 - 2x + 3$ mà tại đó tiếp tuyến song song với trục hoành?",
+    "choices": [
+      "A. $(1; 2)$",
+      "B. $(2; 3)$",
+      "C. $(0; 3)$",
+      "D. $(1; 0)$"
+    ],
+    "correct": 0,
+    "explain": "Tiếp tuyến song song với trục hoành có hệ số góc $k = 0$. Ta có $y' = 2x - 2 = 0 \\Rightarrow x = 1$. Thay $x = 1$ vào hàm số được $y = 2$. Điểm cần tìm là $(1; 2)$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính đạo hàm của hàm số $y = \\frac{1}{x}$ tại điểm $x_0 = 2$.",
+    "choices": [
+      "A. $-\\frac{1}{2}$",
+      "B. $\\frac{1}{4}$",
+      "C. $-\\frac{1}{4}$",
+      "D. $\\frac{1}{2}$"
+    ],
+    "correct": 2,
+    "explain": "Ta có $y' = -\\frac{1}{x^2}$. Thay $x_0 = 2$ vào ta được $y'(2) = -\\frac{1}{2^2} = -\\frac{1}{4}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Quy tắc tính đạo hàm của một tích hai hàm số $u=u(x)$ và $v=v(x)$ là:",
+    "choices": [
+      "A. $(uv)' = u'v'$",
+      "B. $(uv)' = u'v + uv'$",
+      "C. $(uv)' = u'v - uv'$",
+      "D. $(uv)' = \\frac{u'v + uv'}{v^2}$"
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm của một tích được tính theo công thức $(uv)' = u'v + uv'$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Công thức đạo hàm của hàm số lượng giác nào sau đây ĐÚNG?",
+    "choices": [
+      "A. $(\\sin x)' = \\cos x$",
+      "B. $(\\cos x)' = \\sin x$",
+      "C. $(\\tan x)' = -\\frac{1}{\\cos^2 x}$",
+      "D. $(\\cot x)' = \\frac{1}{\\sin^2 x}$"
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm của $\\sin x$ là $\\cos x$. Các công thức khác bị sai dấu."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đạo hàm của hàm số $y = e^x$ là:",
+    "choices": [
+      "A. $y' = x e^{x-1}$",
+      "B. $y' = \\frac{e^x}{x}$",
+      "C. $y' = e^x \\ln x$",
+      "D. $y' = e^x$"
+    ],
+    "correct": 3,
+    "explain": "Hàm số mũ tự nhiên $y=e^x$ có đạo hàm bằng chính nó, tức là $(e^x)' = e^x$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đạo hàm của hàm số $y = \\ln x$ trên khoảng $(0; +\\infty)$ là:",
+    "choices": [
+      "A. $y' = \\frac{1}{x}$",
+      "B. $y' = \\frac{1}{x \\ln x}$",
+      "C. $y' = e^x$",
+      "D. $y' = -\\frac{1}{x}$"
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm của hàm logarit tự nhiên $y = \\ln x$ là $y' = \\frac{1}{x}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Cho hàm số $y = u^n$ với $u = u(x)$ là hàm số có đạo hàm. Công thức đạo hàm hàm hợp là:",
+    "choices": [
+      "A. $y' = n u^{n-1}$",
+      "B. $y' = n u^{n-1} \\cdot u'$",
+      "C. $y' = u^{n-1} \\cdot u'$",
+      "D. $y' = n u' \\cdot x^{n-1}$"
+    ],
+    "correct": 1,
+    "explain": "Theo quy tắc đạo hàm của hàm hợp, $(u^n)' = n \\cdot u^{n-1} \\cdot u'$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Công thức nào sau đây SAI? (với $a>0, a \\neq 1$)",
+    "choices": [
+      "A. $(a^x)' = a^x \\ln a$",
+      "B. $(\\log_a x)' = \\frac{1}{x \\ln a}$",
+      "C. $(\\sqrt{x})' = \\frac{1}{2\\sqrt{x}}$ (với $x>0$)",
+      "D. $(\\frac{1}{x})' = \\frac{1}{x^2}$ (với $x \\neq 0$)"
+    ],
+    "correct": 3,
+    "explain": "Công thức D sai vì đạo hàm của $y = \\frac{1}{x}$ là $y' = -\\frac{1}{x^2}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đạo hàm của hàm số $y = u + v$ (với $u, v$ là các hàm số có đạo hàm) là:",
+    "choices": [
+      "A. $y' = u' \\cdot v'$",
+      "B. $y' = u' - v'$",
+      "C. $y' = u' + v'$",
+      "D. $y' = u'v + uv'$"
+    ],
+    "correct": 2,
+    "explain": "Đạo hàm của một tổng bằng tổng các đạo hàm: $(u+v)' = u' + v'$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Đạo hàm của hàm số $y = 3x^4 - 5x^2 + 2x - 1$ là:",
+    "choices": [
+      "A. $y' = 12x^3 - 10x + 2$",
+      "B. $y' = 12x^3 - 10x^2 + 2$",
+      "C. $y' = 4x^3 - 2x + 2$",
+      "D. $y' = 12x^3 - 5x + 2$"
+    ],
+    "correct": 0,
+    "explain": "Sử dụng quy tắc đạo hàm của tổng hiệu và hàm số lũy thừa: $y' = 3(4x^3) - 5(2x) + 2(1) - 0 = 12x^3 - 10x + 2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Đạo hàm của hàm số $y = \\frac{2x+1}{x-3}$ là:",
+    "choices": [
+      "A. $y' = \\frac{7}{(x-3)^2}$",
+      "B. $y' = \\frac{-7}{(x-3)^2}$",
+      "C. $y' = \\frac{-5}{(x-3)^2}$",
+      "D. $y' = \\frac{2}{(x-3)^2}$"
+    ],
+    "correct": 1,
+    "explain": "Sử dụng quy tắc tính đạo hàm của hàm số phân thức bậc nhất: $y' = \\frac{2(-3) - 1(1)}{(x-3)^2} = \\frac{-7}{(x-3)^2}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính đạo hàm của hàm số $y = (x^2 - 2x + 3)^5$.",
+    "choices": [
+      "A. $y' = 5(x^2 - 2x + 3)^4$",
+      "B. $y' = 10(x - 1)(x^2 - 2x + 3)^4$",
+      "C. $y' = 5(2x - 2)(x^2 - 2x + 3)^5$",
+      "D. $y' = (2x - 2)(x^2 - 2x + 3)^4$"
+    ],
+    "correct": 1,
+    "explain": "Áp dụng công thức hàm hợp: $y' = 5(x^2 - 2x + 3)^4 \\cdot (x^2 - 2x + 3)' = 5(x^2 - 2x + 3)^4 \\cdot (2x - 2) = 10(x - 1)(x^2 - 2x + 3)^4$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Đạo hàm của hàm số $y = x \\sin x$ là:",
+    "choices": [
+      "A. $y' = \\sin x - x \\cos x$",
+      "B. $y' = \\cos x$",
+      "C. $y' = \\sin x + x \\cos x$",
+      "D. $y' = 1 + \\cos x$"
+    ],
+    "correct": 2,
+    "explain": "Sử dụng quy tắc đạo hàm của một tích: $y' = (x)'\\sin x + x(\\sin x)' = 1\\cdot \\sin x + x \\cos x = \\sin x + x \\cos x$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính đạo hàm của hàm số $y = e^{3x+1}$.",
+    "choices": [
+      "A. $y' = e^{3x+1}$",
+      "B. $y' = 3e^{3x+1}$",
+      "C. $y' = (3x+1)e^{3x}$",
+      "D. $y' = 3x e^{3x+1}$"
+    ],
+    "correct": 1,
+    "explain": "Theo quy tắc hàm hợp: $y' = (3x+1)' e^{3x+1} = 3e^{3x+1}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Đạo hàm của hàm số $y = \\ln(x^2 + 1)$ là:",
+    "choices": [
+      "A. $y' = \\frac{1}{x^2+1}$",
+      "B. $y' = \\frac{2x}{x^2+1}$",
+      "C. $y' = \\frac{x}{x^2+1}$",
+      "D. $y' = \\frac{2x}{(x^2+1)^2}$"
+    ],
+    "correct": 1,
+    "explain": "Theo công thức đạo hàm hàm hợp của logarit: $y' = \\frac{(x^2+1)'}{x^2+1} = \\frac{2x}{x^2+1}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm nghiệm của phương trình $y' = 0$ với hàm số $y = x^3 - 3x^2 + 1$.",
+    "choices": [
+      "A. $x = 0$ hoặc $x = 2$",
+      "B. $x = 0$ hoặc $x = 1$",
+      "C. $x = -1$ hoặc $x = 2$",
+      "D. $x = 1$ hoặc $x = -2$"
+    ],
+    "correct": 0,
+    "explain": "Ta có $y' = 3x^2 - 6x$. Giải phương trình $3x^2 - 6x = 0 \\Leftrightarrow 3x(x - 2) = 0 \\Leftrightarrow x = 0$ hoặc $x = 2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Đạo hàm của hàm số $y = \\sqrt{4x^2 + 1}$ là:",
+    "choices": [
+      "A. $y' = \\frac{4x}{\\sqrt{4x^2+1}}$",
+      "B. $y' = \\frac{8x}{\\sqrt{4x^2+1}}$",
+      "C. $y' = \\frac{1}{2\\sqrt{4x^2+1}}$",
+      "D. $y' = \\frac{2x}{\\sqrt{4x^2+1}}$"
+    ],
+    "correct": 0,
+    "explain": "Áp dụng công thức $(\\sqrt{u})' = \\frac{u'}{2\\sqrt{u}}$. Ta có $y' = \\frac{(4x^2+1)'}{2\\sqrt{4x^2+1}} = \\frac{8x}{2\\sqrt{4x^2+1}} = \\frac{4x}{\\sqrt{4x^2+1}}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đạo hàm cấp hai của hàm số $y = f(x)$ là:",
+    "choices": [
+      "A. Đạo hàm của hàm số $y = f'(x)$",
+      "B. Bình phương của $f'(x)$",
+      "C. Đạo hàm của hàm số $y = f(x)^2$",
+      "D. Giới hạn của hàm số $f'(x)$"
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm cấp hai của hàm số được định nghĩa là đạo hàm của đạo hàm cấp một, kí hiệu $y'' = (y')'$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Nếu $s(t)$ là phương trình chuyển động của một vật, thì gia tốc tức thời $a(t)$ của vật tại thời điểm $t$ được tính bằng:",
+    "choices": [
+      "A. $a(t) = s'(t)$",
+      "B. $a(t) = s(t)$",
+      "C. $a(t) = s''(t)$",
+      "D. $a(t) = \\frac{s'(t)}{t}$"
+    ],
+    "correct": 2,
+    "explain": "Gia tốc tức thời là đạo hàm của vận tốc theo thời gian, do đó nó bằng đạo hàm cấp hai của phương trình chuyển động: $a(t) = v'(t) = s''(t)$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đạo hàm cấp hai của hàm số $y = x^3 - 2x^2$ là:",
+    "choices": [
+      "A. $y'' = 3x^2 - 4x$",
+      "B. $y'' = 6x - 4$",
+      "C. $y'' = 6x$",
+      "D. $y'' = 3x^2 - 4$"
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm cấp một: $y' = 3x^2 - 4x$. Đạo hàm cấp hai: $y'' = (3x^2 - 4x)' = 6x - 4$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đạo hàm cấp hai của hàm số $y = \\sin x$ là:",
+    "choices": [
+      "A. $y'' = \\cos x$",
+      "B. $y'' = -\\sin x$",
+      "C. $y'' = \\sin x$",
+      "D. $y'' = -\\cos x$"
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm cấp một $y' = \\cos x$. Đạo hàm cấp hai $y'' = (\\cos x)' = -\\sin x$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đạo hàm cấp hai của hàm số $y = e^x$ là:",
+    "choices": [
+      "A. $y'' = x e^{x-1}$",
+      "B. $y'' = e^x$",
+      "C. $y'' = e^{2x}$",
+      "D. $y'' = 2e^x$"
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm cấp một $y' = e^x$. Đạo hàm cấp hai $y'' = (e^x)' = e^x$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Khẳng định nào sau đây SAI khi nói về hàm số $y = ax + b$ (với $a \\neq 0$)?",
+    "choices": [
+      "A. Hàm số có đạo hàm cấp một bằng $a$.",
+      "B. Hàm số có đạo hàm cấp hai bằng $0$.",
+      "C. Hàm số có đạo hàm cấp hai bằng $a$.",
+      "D. Tiếp tuyến của đồ thị hàm số có hệ số góc không đổi."
+    ],
+    "correct": 2,
+    "explain": "Vì $y' = a$ (hằng số) nên $y'' = (a)' = 0$. Khẳng định C sai."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 1,
+    "q": "Đạo hàm cấp hai của hàm số $y = \\ln x$ (với $x>0$) là:",
+    "choices": [
+      "A. $y'' = \\frac{1}{x^2}$",
+      "B. $y'' = -\\frac{1}{x^2}$",
+      "C. $y'' = \\frac{1}{x}$",
+      "D. $y'' = -\\frac{1}{x}$"
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm cấp một $y' = \\frac{1}{x} = x^{-1}$. Đạo hàm cấp hai $y'' = -1 \\cdot x^{-2} = -\\frac{1}{x^2}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính đạo hàm cấp hai của hàm số $y = \\cos 2x$ tại điểm $x = \\frac{\\pi}{6}$.",
+    "choices": [
+      "A. $-2$",
+      "B. $2$",
+      "C. $-4$",
+      "D. $4$"
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm cấp một $y' = -2\\sin 2x$. Đạo hàm cấp hai $y'' = -4\\cos 2x$. Thay $x = \\frac{\\pi}{6}$, ta được $y''(\\frac{\\pi}{6}) = -4\\cos(\\frac{\\pi}{3}) = -4 \\cdot \\frac{1}{2} = -2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Một chất điểm chuyển động với phương trình $s(t) = t^3 - 6t^2 + 9t$ (m). Tính gia tốc của chất điểm tại thời điểm $t = 3\\text{ s}$.",
+    "choices": [
+      "A. $6 \\text{ m/s}^2$",
+      "B. $12 \\text{ m/s}^2$",
+      "C. $0 \\text{ m/s}^2$",
+      "D. $18 \\text{ m/s}^2$"
+    ],
+    "correct": 0,
+    "explain": "Vận tốc $v(t) = s'(t) = 3t^2 - 12t + 9$. Gia tốc $a(t) = v'(t) = 6t - 12$. Tại $t = 3$, $a(3) = 6(3) - 12 = 6 \\text{ m/s}^2$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm nghiệm của phương trình $y'' = 0$ đối với hàm số $y = x^3 - 3x^2 + x + 1$.",
+    "choices": [
+      "A. $x = 0$",
+      "B. $x = 1$",
+      "C. $x = 2$",
+      "D. $x = -1$"
+    ],
+    "correct": 1,
+    "explain": "Ta có $y' = 3x^2 - 6x + 1$ và $y'' = 6x - 6$. Phương trình $y'' = 0 \\Leftrightarrow 6x - 6 = 0 \\Leftrightarrow x = 1$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Tính đạo hàm cấp hai của hàm số $y = \\frac{x}{x+1}$.",
+    "choices": [
+      "A. $y'' = \\frac{-2}{(x+1)^3}$",
+      "B. $y'' = \\frac{2}{(x+1)^3}$",
+      "C. $y'' = \\frac{1}{(x+1)^2}$",
+      "D. $y'' = \\frac{-1}{(x+1)^2}$"
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm cấp một $y' = \\frac{1(x+1) - 1(x)}{(x+1)^2} = \\frac{1}{(x+1)^2} = (x+1)^{-2}$. Đạo hàm cấp hai $y'' = -2(x+1)^{-3} = \\frac{-2}{(x+1)^3}$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Đạo hàm cấp hai của hàm số $y = x e^x$ là biểu thức nào sau đây?",
+    "choices": [
+      "A. $y'' = (x+1)e^x$",
+      "B. $y'' = (x+2)e^x$",
+      "C. $y'' = e^x + x e^x$",
+      "D. $y'' = 2x e^x$"
+    ],
+    "correct": 1,
+    "explain": "Đạo hàm cấp một $y' = e^x + x e^x = e^x(x+1)$. Đạo hàm cấp hai $y'' = e^x(x+1) + e^x(1) = e^x(x+2)$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $f(x) = \\sin^2 x$. Tính $f''\\left(\\frac{\\pi}{4}\\right)$.",
+    "choices": [
+      "A. $0$",
+      "B. $1$",
+      "C. $2$",
+      "D. $-2$"
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm cấp một $f'(x) = 2\\sin x \\cos x = \\sin 2x$. Đạo hàm cấp hai $f''(x) = 2\\cos 2x$. Thay $x = \\frac{\\pi}{4}$, ta được $f''(\\frac{\\pi}{4}) = 2\\cos(\\frac{\\pi}{2}) = 0$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Tìm đạo hàm cấp hai của hàm số $y = \\ln(2x+1)$ tại điểm $x=0$.",
+    "choices": [
+      "A. $-4$",
+      "B. $4$",
+      "C. $-2$",
+      "D. $2$"
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm cấp một $y' = \\frac{2}{2x+1}$. Đạo hàm cấp hai $y'' = -\\frac{2 \\cdot 2}{(2x+1)^2} = -\\frac{4}{(2x+1)^2}$. Tại $x=0$, $y''(0) = -4$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 9. Đạo hàm",
+    "type": "TN",
+    "level": 2,
+    "q": "Cho hàm số $y = e^{-2x}$. Đẳng thức nào sau đây ĐÚNG?",
+    "choices": [
+      "A. $y'' + 2y' = 0$",
+      "B. $y'' + y' = 0$",
+      "C. $y'' - 2y' = 0$",
+      "D. $y'' + y = 0$"
+    ],
+    "correct": 0,
+    "explain": "Đạo hàm cấp một $y' = -2e^{-2x}$. Đạo hàm cấp hai $y'' = 4e^{-2x}$. Ta thấy $y'' + 2y' = 4e^{-2x} + 2(-2e^{-2x}) = 0$. Khẳng định A đúng."
+  },
+  {
+    "grade": "11",
     "chapter": "Chương 8. Các quy tắc tính xác suất",
     "type": "TLN",
     "level": 3,
