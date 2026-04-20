@@ -33,16 +33,18 @@
         .choice-item.selected { background: #e8f0fe; border-color: var(--primary); font-weight: bold; }
         .ds-row { padding: 10px 0; border-bottom: 1px dotted #eee; }
         .ds-flex { display: flex; justify-content: space-between; align-items: center; }
-        .btn-ds { width: 45px; height: 35px; border: 1px solid #ddd; background: white; border-radius: 4px; font-weight: bold; cursor: pointer; }
+        .btn-ds { width: 45px; height: 35px; border: 1px solid #ddd; background: white; border-radius: 6px; font-weight: bold; }
         .btn-ds.active-d { background: var(--success); color: white; border-color: var(--success); }
         .btn-ds.active-s { background: var(--danger); color: white; border-color: var(--danger); }
         
-        /* Bảng Review */
-        .review-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem; }
-        .review-table th, .review-table td { border: 1px solid #dee2e6; padding: 12px; text-align: left; vertical-align: middle; }
+        /* Bảng Review Đúng/Sai Full Nội Dung */
+        .review-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem; table-layout: fixed; }
+        .review-table th, .review-table td { border: 1px solid #dee2e6; padding: 12px; text-align: left; vertical-align: middle; word-wrap: break-word; }
         .review-table th { background: #f8f9fa; }
-        .col-center { text-align: center !important; width: 80px; }
-        .col-status { text-align: center !important; width: 60px; }
+        .col-content { width: 65%; }
+        .col-choice { width: 12%; text-align: center !important; }
+        .col-status { width: 11%; text-align: center !important; }
+        
         .explain-box { background: #fffde7; padding: 15px; border-radius: 8px; margin-top: 15px; font-style: italic; white-space: pre-wrap; border-left: 5px solid var(--warning); line-height: 1.6; }
         .history-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.85rem; }
         .history-table th, .history-table td { padding: 8px; border: 1px solid #eee; text-align: left; }
@@ -142,7 +144,7 @@
     function saveAuth() {
         const name = document.getElementById('user-name').value;
         const cls = document.getElementById('user-class').value;
-        if(!name || !cls) return alert("Vui lòng nhập đủ thông tin.");
+        if(!name || !cls) return alert("Vui lòng nhập đủ tên và lớp.");
         localStorage.setItem('dvk_user', JSON.stringify({name, class: cls}));
         loadAuth();
     }
@@ -234,7 +236,6 @@
                 compareHtml = `<div style="margin:10px 0; background:#f1f3f4; padding:10px; border-radius:8px;"><b>Bạn chọn:</b> ${u!==undefined?q.choices[u]:"Chưa chọn"} | <b>Đáp án:</b> <span style="color:var(--success)">${q.choices[q.correct]}</span></div>`;
             } else if (q.type === 'DS') {
                 let cCount = 0, rows = '';
-                // HÀM TÁCH NỘI DUNG Ý PHỤ: Tìm các dòng bắt đầu bằng a), b), c), d)
                 const lines = q.q.split('\n');
                 const labels = ['a)', 'b)', 'c)', 'd)'];
                 
@@ -243,24 +244,24 @@
                     let uv = u ? u[char] : undefined, cv = q.correct[char];
                     let match = (uv === cv); if(match) cCount++;
                     
-                    // Lấy chính xác dòng văn bản chứa ý phụ từ dữ liệu q
-                    let lineContent = lines.find(l => l.trim().toLowerCase().startsWith(label)) || label + " ...";
+                    // Lấy toàn bộ văn bản của ý phụ
+                    let lineContent = lines.find(l => l.trim().toLowerCase().startsWith(label)) || (label + " ...");
 
                     rows += `<tr>
-                        <td>${lineContent}</td>
-                        <td class="col-center" style="color:${uv===cv?'#333':'var(--danger)'}">${uv===undefined?'_':(uv?'Đ':'S')}</td>
-                        <td class="col-center" style="color:var(--success)"><b>${cv?'Đ':'S'}</b></td>
-                        <td class="col-status">${match?'<b style="color:var(--success)">✓</b>':'<b style="color:var(--danger)">✗</b>'}</td>
+                        <td class="col-content">${lineContent}</td>
+                        <td class="col-choice" style="color:${uv===cv?'#333':'var(--danger)'}"><b>${uv===undefined?'_':(uv?'Đ':'S')}</b></td>
+                        <td class="col-choice" style="color:var(--success)"><b>${cv?'Đ':'S'}</b></td>
+                        <td class="col-status">${match?'<span style="color:var(--success)">✓</span>':'<span style="color:var(--danger)">✗</span>'}</td>
                     </tr>`;
                 });
                 if(cCount === 4) { score += 1; isCorrect = true; } else if(cCount === 3) score += 0.5; else if(cCount === 2) score += 0.25; else if(cCount === 1) score += 0.1;
-                compareHtml = `<table class="review-table"><tr><th>Nội dung các ý</th><th class="col-center">Bạn</th><th class="col-center">Đáp</th><th class="col-status">KQ</th></tr>${rows}</table>`;
+                compareHtml = `<table class="review-table"><tr><th>Nội dung các ý</th><th class="col-choice">Bạn</th><th class="col-choice">Đáp</th><th class="col-status">KQ</th></tr>${rows}</table>`;
             } else if (q.type === 'TLN') {
                 isCorrect = (u && u.trim().replace(',','.') === q.correct.toString()); if(isCorrect) score += 1;
-                compareHtml = `<div style="margin:10px 0; background:#f1f3f4; padding:10px; border-radius:8px;"><b>Đáp số của bạn:</b> ${u||"Trống"} | <b>Đáp án đúng:</b> <b style="color:var(--success)">${q.correct}</b></div>`;
+                compareHtml = `<div style="margin:10px 0; background:#f1f3f4; padding:10px; border-radius:8px;"><b>Đáp số:</b> ${u||"Trống"} | <b>Đáp án đúng:</b> <b style="color:var(--success)">${q.correct}</b></div>`;
             }
 
-            // Phần hiển thị q-text trong review sẽ chỉ lấy phần dẫn (trước ý a)
+            // Phần hiển thị q-text trong review (lấy phần dẫn)
             let stem = q.q.split('\na)')[0].split('\nA)')[0];
             reviewHtml += `<div class="card">
                 <div style="color:${isCorrect?'var(--success)':'var(--danger)'}; margin-bottom:10px;"><b>Câu ${idx+1}: ${isCorrect?'ĐÚNG':'SAI'}</b> (Mức ${q.level})</div>
