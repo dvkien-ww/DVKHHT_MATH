@@ -1,7 +1,7 @@
 [
   {
     "grade": "12",
-    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "chapter": "Chương1: Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
     "content": "### 1. Tính đơn điệu và Cực trị\\n- **Đơn điệu:** Hàm số $y = f(x)$ đồng biến trên $K$ nếu $f'(x) > 0, \\\\\\\\forall x \\\\\\\\in K$. Nghịch biến nếu $f'(x) < 0$. (Lưu ý: $f'(x)$ có thể bằng $0$ tại một số hữu hạn điểm trên $K$).\\n- **Cực trị:** Hàm số đạt cực đại tại $x_0$ nếu $f'(x)$ đổi dấu từ $+$ sang $-$ qua $x_0$; đạt cực tiểu nếu $f'(x)$ đổi dấu từ $-$ sang $+$.\\n- *Lưu ý:* Nếu $f'(x)$ không đổi dấu khi qua $x_0$ thì $x_0$ không phải là điểm cực trị.\\n\\n### 2. Giá trị lớn nhất (GTLN) và nhỏ nhất (GTNN)\\n- **Kí hiệu:** $M = \\\\\\\\max_D f(x)$ và $m = \\\\\\\\min_D f(x)$.\\n- **Cách tìm GTLN, GTNN trên đoạn $[a; b]$:**\\n  1. Tính đạo hàm $f'(x)$, tìm các điểm $x_i \\\\\\\\in (a; b)$ mà tại đó $f'(x) = 0$ hoặc không tồn tại.\\n  2. Tính các giá trị $f(a), f(b), f(x_i)$.\\n  3. Số lớn nhất (hoặc nhỏ nhất) chính là $M$ (hoặc $m$)."
   }
 ]
