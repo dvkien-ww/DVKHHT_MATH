@@ -1,0 +1,12 @@
+[
+  {
+    "grade": "10",
+    "chapter": "Chương 1. Mệnh đề và tập hợp",
+    "content": "### 1. Mệnh đề\n- Mệnh đề là một khẳng định đúng hoặc một khẳng định sai.\n- Một khẳng định không thể vừa đúng vừa sai.\n### 2. Tập hợp\n- Tập hợp con: $A \subset B \Leftrightarrow \forall x \in A \Rightarrow x \in B$."
+  },
+  {
+    "grade": "11",
+    "chapter": "Chương 7. Quan hệ vuông góc trong không gian",
+    "content": "### 1. Đường thẳng vuông góc với mặt phẳng\n$d \perp (P)$ nếu $d$ vuông góc với mọi đường thẳng nằm trong $(P)$."
+  }
+]
