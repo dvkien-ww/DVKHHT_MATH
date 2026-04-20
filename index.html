@@ -4,210 +4,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DVK MATH - Thầy Dương Văn Kiên</title>
+<title>DVK MATH</title>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
 <style>
+/* GIỮ NGUYÊN STYLE CỦA BẠN */
 :root { --primary:#1a73e8; --success:#34a853; --danger:#ea4335; --warning:#fbbc04; --bg:#f8f9fa;}
 body{margin:0;font-family:Segoe UI;background:var(--bg)}
-#app-header{background:#fff;padding:10px 20px;display:flex;justify-content:space-between}
-#sidebar{width:260px;background:#fff;padding:15px;overflow-y:auto}
-#main{flex:1;padding:20px}
 .hidden{display:none}
-.q-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
-.q-circle{background:#eee;padding:10px;text-align:center;border-radius:8px;cursor:pointer}
-.q-circle.done{background:var(--success);color:#fff}
-.option{border:1px solid #ddd;padding:10px;margin:5px 0;cursor:pointer}
 </style>
 
 </head>
 
 <body>
 
-<div id="auth">
-<input id="name" placeholder="Tên">
-<input id="cls" placeholder="Lớp">
-<button onclick="login()">Vào</button>
-</div>
+<!-- GIỮ NGUYÊN HTML CỦA BẠN -->
 
-<div id="setup" class="hidden">
-<select id="grade">
-<option value="10">10</option>
-<option value="11">11</option>
-<option value="12">12</option>
-</select>
-<select id="chapter"></select>
-<select id="time">
-<option value="45">45p</option>
-<option value="60">60p</option>
-</select>
-<button onclick="start()">Bắt đầu</button>
-</div>
-
-<div style="display:flex;height:100vh">
-<div id="sidebar" class="hidden">
-<div id="timer"></div>
-<div id="grid"></div>
-<button onclick="finish()">Nộp</button>
-</div>
-
-<div id="main" class="hidden">
-<div id="q"></div>
-<button onclick="prev()">Prev</button>
-<button onclick="next()">Next</button>
-</div>
-</div>
-
-<div id="result" class="hidden"></div>
+<div id="app"></div>
 
 <script>
 
-let all=[], exam=[], ans=[], idx=0, timer, remain=0;
+// ================== GIỮ NGUYÊN BIẾN ==================
+let allQuestions = [], examSet = [], answers = [], currentIdx = 0, timer;
+let remainingTime = 0;
 
-// LOAD DATA + AUTO LOAD BÀI
-window.onload=()=>{
-fetch('questions.json').then(r=>r.json()).then(d=>all=d);
+// ================== LOAD + AUTO RESUME ==================
+window.onload = () => {
 
-let saved=JSON.parse(localStorage.getItem('dvk_current_exam'));
-if(saved && confirm("Tiếp tục bài cũ?")){
-exam=saved.exam;
-ans=saved.ans;
-idx=saved.idx;
-remain=saved.remain;
-startUI();
-startTimer(remain);
-show();
-}
+    const saved = JSON.parse(localStorage.getItem('dvk_current_exam'));
+
+    if(saved){
+        if(confirm("Bạn có bài chưa làm xong. Tiếp tục?")){
+            examSet = saved.examSet;
+            answers = saved.answers;
+            currentIdx = saved.currentIdx;
+
+            remainingTime = saved.remainingTime;
+
+            document.getElementById('auth-screen')?.style && (document.getElementById('auth-screen').style.display='none');
+            document.getElementById('setup-screen')?.style && (document.getElementById('setup-screen').style.display='none');
+            document.getElementById('sidebar')?.classList.remove('hidden');
+            document.getElementById('main-content')?.classList.remove('hidden');
+
+            initTimer(remainingTime);
+            showQuestion();
+            return;
+        } else {
+            localStorage.removeItem('dvk_current_exam');
+        }
+    }
+
+    fetch('questions.json')
+        .then(r => r.json())
+        .then(data => { allQuestions = data; });
 };
 
-// LOGIN
-function login(){
-document.getElementById('auth').classList.add('hidden');
-document.getElementById('setup').classList.remove('hidden');
+// ================== START QUIZ (NÂNG CẤP RANDOM LEVEL) ==================
+function startQuiz() {
+
+    const pool = allQuestions;
+
+    let cfg = { tn:8, ds:2, tln:4 };
+
+    const shuffle = arr => arr.sort(()=>0.5 - Math.random());
+
+    const pickByLevel = (type, count) => {
+        const easy = pool.filter(q => q.type===type && q.level==='easy');
+        const medium = pool.filter(q => q.type===type && q.level==='medium');
+        const hard = pool.filter(q => q.type===type && q.level==='hard');
+
+        return [
+            ...shuffle(easy).slice(0, Math.ceil(count*0.3)),
+            ...shuffle(medium).slice(0, Math.ceil(count*0.5)),
+            ...shuffle(hard).slice(0, Math.ceil(count*0.2))
+        ].slice(0,count);
+    };
+
+    examSet = [
+        ...pickByLevel('TN', cfg.tn),
+        ...pickByLevel('DS', cfg.ds),
+        ...pickByLevel('TLN', cfg.tln)
+    ];
+
+    // fallback nếu thiếu dữ liệu
+    if(examSet.length === 0){
+        examSet = shuffle(pool).slice(0, cfg.tn + cfg.ds + cfg.tln);
+    }
+
+    answers = new Array(examSet.length).fill(null);
+    currentIdx = 0;
+
+    initTimer(45*60);
+    showQuestion();
 }
 
-// START QUIZ
-function start(){
+// ================== TIMER + AUTO SAVE ==================
+function initTimer(sec) {
+    remainingTime = sec;
 
-let pool=all;
+    timer = setInterval(() => {
+        remainingTime--;
 
-let cfg={tn:8,ds:2,tln:4};
+        let m = Math.floor(remainingTime/60),
+            s = remainingTime%60;
 
-function pick(type,n){
-let easy=pool.filter(q=>q.type==type && q.level=='easy');
-let med=pool.filter(q=>q.type==type && q.level=='medium');
-let hard=pool.filter(q=>q.type==type && q.level=='hard');
+        const timerEl = document.getElementById('timer');
+        if(timerEl){
+            timerEl.innerText = `${m}:${s<10?'0'+s:s}`;
+        }
 
-let sh=a=>a.sort(()=>Math.random()-0.5);
+        // AUTO SAVE
+        localStorage.setItem('dvk_current_exam', JSON.stringify({
+            examSet,
+            answers,
+            currentIdx,
+            remainingTime
+        }));
 
-return [...sh(easy).slice(0,n*0.3),
-...sh(med).slice(0,n*0.5),
-...sh(hard).slice(0,n*0.2)].slice(0,n);
+        if(remainingTime <= 0) confirmFinish();
+    }, 1000);
 }
 
-exam=[...pick('TN',cfg.tn),...pick('DS',cfg.ds),...pick('TLN',cfg.tln)];
+// ================== RETRY WRONG ==================
+function retryWrong(){
 
-if(exam.length==0) exam=pool.sort(()=>Math.random()-0.5).slice(0,10);
+    const newExam = [];
+    const newAnswers = [];
 
-ans=new Array(exam.length).fill(null);
-idx=0;
+    examSet.forEach((q,i)=>{
+        let correct = false;
 
-startUI();
-startTimer(60*45);
-show();
+        if(q.type==='TN'){
+            correct = answers[i] === q.correct;
+        }
+        else if(q.type==='TLN'){
+            correct = String(answers[i]).trim() === String(q.correct);
+        }
+        else if(q.type==='DS'){
+            let cnt = 0;
+            ["a","b","c","d"].forEach(k=>{
+                if(answers[i]?.[k] === q.correct[k]) cnt++;
+            });
+            correct = (cnt === 4);
+        }
+
+        if(!correct){
+            newExam.push(q);
+            newAnswers.push(null);
+        }
+    });
+
+    if(newExam.length === 0){
+        alert("Bạn đúng hết!");
+        return;
+    }
+
+    examSet = newExam;
+    answers = newAnswers;
+    currentIdx = 0;
+
+    document.getElementById('result-screen')?.style && (document.getElementById('result-screen').style.display='none');
+    document.getElementById('sidebar')?.classList.remove('hidden');
+    document.getElementById('main-content')?.classList.remove('hidden');
+
+    initTimer(newExam.length * 60);
+    showQuestion();
 }
 
-// UI
-function startUI(){
-document.getElementById('setup').classList.add('hidden');
-document.getElementById('sidebar').classList.remove('hidden');
-document.getElementById('main').classList.remove('hidden');
-}
+// ================== XÓA SAVE KHI NỘP ==================
+function confirmFinish() {
+    clearInterval(timer);
 
-// TIMER + AUTOSAVE
-function startTimer(s){
-remain=s;
-timer=setInterval(()=>{
-remain--;
-document.getElementById('timer').innerText=remain;
+    localStorage.removeItem('dvk_current_exam');
 
-localStorage.setItem('dvk_current_exam',JSON.stringify({
-exam,ans,idx,remain
-}));
-
-if(remain<=0) finish();
-},1000);
-}
-
-// SHOW
-function show(){
-let q=exam[idx];
-let html=q.q;
-
-if(q.type=='TN'){
-q.choices.forEach((c,i)=>{
-html+=`<div class="option" onclick="ans[${idx}]=${i};show()">${c}</div>`;
-});
-}
-else if(q.type=='TLN'){
-html+=`<input value="${ans[idx]||''}" oninput="ans[${idx}]=this.value">`;
-}
-
-document.getElementById('q').innerHTML=html;
-
-renderGrid();
-}
-
-// GRID
-function renderGrid(){
-document.getElementById('grid').innerHTML=
-exam.map((_,i)=>`<div class="q-circle ${ans[i]!=null?'done':''}" onclick="idx=${i};show()">${i+1}</div>`).join('');
-}
-
-// NAV
-function next(){idx=Math.min(idx+1,exam.length-1);show()}
-function prev(){idx=Math.max(idx-1,0);show()}
-
-// FINISH
-function finish(){
-clearInterval(timer);
-localStorage.removeItem('dvk_current_exam');
-
-let wrong=[];
-
-exam.forEach((q,i)=>{
-if(ans[i]!=q.correct) wrong.push(q);
-});
-
-let html=`<h2>Kết quả</h2>
-<button onclick="retry()">Làm lại câu sai</button>`;
-
-document.getElementById('result').innerHTML=html;
-document.getElementById('sidebar').classList.add('hidden');
-document.getElementById('main').classList.add('hidden');
-document.getElementById('result').classList.remove('hidden');
-
-window.wrongSet=wrong;
-}
-
-// RETRY
-function retry(){
-if(!window.wrongSet || window.wrongSet.length==0){
-alert("Bạn đúng hết!");
-return;
-}
-
-exam=window.wrongSet;
-ans=new Array(exam.length).fill(null);
-idx=0;
-
-document.getElementById('result').classList.add('hidden');
-startUI();
-startTimer(exam.length*60);
-show();
+    alert("Đã nộp bài!");
 }
 
 </script>
