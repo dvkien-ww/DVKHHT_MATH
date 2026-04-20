@@ -28,21 +28,26 @@
         .input-field { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
         #timer-box { font-weight: bold; color: var(--danger); font-size: 1.1rem; }
         
-        /* Checkbox list cho đa chương */
         .chapter-selection { border: 1px solid #eee; border-radius: 8px; padding: 10px; max-height: 200px; overflow-y: auto; margin-bottom: 10px; }
         .chapter-item { display: flex; align-items: center; gap: 10px; padding: 5px 0; font-size: 13px; border-bottom: 1px solid #f9f9f9; }
-        .chapter-item input { cursor: pointer; }
-
+        
         .choice-item { margin: 8px 0; padding: 12px; border: 1px solid #eee; border-radius: 8px; cursor: pointer; transition: 0.2s; }
-        .choice-item:hover { background: #f1f3f4; }
-        .choice-item.selected { background: #e8f0fe; border-color: var(--primary); color: var(--primary); font-weight: bold; }
-        .ds-row { padding: 12px 0; border-bottom: 1px dotted #eee; }
+        .choice-item.selected { background: #e8f0fe; border-color: var(--primary); font-weight: bold; }
+        
+        .ds-row { padding: 8px 0; border-bottom: 1px dotted #eee; }
         .ds-flex { display: flex; justify-content: space-between; align-items: center; margin-top: 5px; }
         .ds-btns { display: flex; gap: 8px; }
         .btn-ds { width: 45px; height: 35px; border: 1px solid #ddd; background: white; border-radius: 6px; font-weight: bold; cursor: pointer; }
         .btn-ds.active-d { background: var(--success); color: white; border-color: var(--success); }
         .btn-ds.active-s { background: var(--danger); color: white; border-color: var(--danger); }
-        .explain-box { background: #fffde7; padding: 15px; border-radius: 8px; margin-top: 15px; font-style: italic; white-space: pre-wrap; border-left: 5px solid var(--warning); line-height: 1.6; }
+        
+        /* Review Styles */
+        .res-tag { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; margin-bottom: 10px; }
+        .res-tag.correct { background: #e6fffa; color: var(--success); }
+        .res-tag.wrong { background: #fff5f5; color: var(--danger); }
+        .ans-compare { margin: 10px 0; padding: 12px; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; }
+        .explain-box { background: #fffde7; padding: 15px; border-radius: 8px; margin-top: 10px; font-style: italic; white-space: pre-wrap; border-left: 5px solid var(--warning); }
+        .review-ds-line { font-size: 0.9rem; margin: 4px 0; display: flex; justify-content: space-between; }
     </style>
 </head>
 <body>
@@ -64,59 +69,46 @@
                 <option value="11">Khối 11</option>
                 <option value="12">Khối 12</option>
             </select>
-            <input type="text" id="user-class" class="input-field" placeholder="Lớp (Ví dụ: 12A1)">
+            <input type="text" id="user-class" class="input-field" placeholder="Lớp">
             <button onclick="login()" class="btn btn-primary">Vào hệ thống</button>
         </div>
 
         <div id="setup-screen" style="display:none">
             <h3>Thiết lập bài làm</h3>
-            
-            <label><b>1. Chọn chương muốn ôn:</b></label>
-            <div id="chapter-checkbox-list" class="chapter-selection">
-                <p style="color:gray; font-size:12px">Hãy chọn khối lớp trước...</p>
-            </div>
-
+            <label><b>1. Chọn chương:</b></label>
+            <div id="chapter-checkbox-list" class="chapter-selection"></div>
             <label><b>2. Hình thức đề:</b></label>
             <select id="exam-type" class="input-field">
                 <option value="mock">Đề Tổng hợp 90 Phút (16TN-8DS-6TLN)</option>
                 <option value="quick">Ôn tập nhanh (20 câu ngẫu nhiên)</option>
             </select>
-
-            <label><b>3. Chế độ mức độ (TLN):</b></label>
+            <label><b>3. Chế độ TLN:</b></label>
             <select id="exam-mode" class="input-field">
                 <option value="standard">Chế độ Chuẩn (M3-M4-M5)</option>
                 <option value="easy">Chế độ Nhẹ (M3-M4)</option>
             </select>
-
             <button onclick="startExam()" class="btn btn-primary">Bắt đầu làm bài</button>
             <hr>
-            <button onclick="startWrongReview()" id="btn-wrong-review" class="btn btn-warning" style="display:none;">
-                Luyện câu sai (<span id="wrong-count">0</span>)
-            </button>
+            <button onclick="startWrongReview()" id="btn-wrong-review" class="btn btn-warning" style="display:none;">Luyện câu sai (<span id="wrong-count">0</span>)</button>
         </div>
     </aside>
 
     <main id="main-content">
         <div id="welcome-msg" class="card">
-            <h2>Hệ thống ôn tập DVK MATH</h2>
-            <p>Vui lòng thực hiện các bước ở cột bên trái:</p>
-            <ol>
-                <li>Nhập tên và chọn <b>Khối lớp</b>.</li>
-                <li>Tích chọn <b>một hoặc nhiều chương</b> bạn muốn ôn tập.</li>
-                <li>Hệ thống sẽ tự động bốc câu hỏi theo tỷ lệ phân hóa từ các chương bạn đã chọn.</li>
-            </ol>
+            <h2>Chào mừng đến với DVK MATH</h2>
+            <p>Vui lòng đăng nhập và chọn chương để bắt đầu ôn tập.</p>
         </div>
 
         <div id="question-area" style="display:none">
             <div id="question-list"></div>
-            <button onclick="submitExam()" class="btn btn-primary" style="font-size:1.2rem; margin: 30px 0; height: 60px;">Nộp bài</button>
+            <button onclick="submitExam()" class="btn btn-primary" style="height: 60px; font-size: 1.2rem;">Nộp bài</button>
         </div>
 
         <div id="result-screen" style="display:none">
             <div class="card" style="text-align:center">
                 <h2>Kết quả bài làm</h2>
-                <div id="res-info" style="font-weight:bold; margin-bottom:10px;"></div>
-                <div style="font-size: 3rem; color: var(--primary); font-weight: bold; margin: 10px 0;" id="final-score">0 / 0</div>
+                <div id="res-info"></div>
+                <div style="font-size: 3rem; color: var(--primary); font-weight: bold;" id="final-score">0 / 0</div>
                 <button onclick="location.reload()" class="btn btn-outline">Làm đề khác</button>
             </div>
             <div id="review-area"></div>
@@ -128,7 +120,7 @@
     let allQuestions = [];
     let examSet = [];
     let userAnswers = {};
-    let currentUser = { name: '', grade: '', class: '' };
+    let currentUser = {};
     let timerInterval;
     let timeLeft = 0;
 
@@ -137,31 +129,22 @@
             const res = await fetch('questions.json');
             allQuestions = await res.json();
             checkWrongCount();
-        } catch (e) { alert("Lỗi: Không tải được dữ liệu câu hỏi. Hãy đảm bảo file questions.json nằm cùng thư mục."); }
+        } catch (e) { alert("Không tải được dữ liệu câu hỏi."); }
     };
 
     function loadChaptersByGrade() {
         const grade = document.getElementById('user-grade-select').value;
-        const listDiv = document.getElementById('chapter-checkbox-list');
-        if(!grade) {
-            listDiv.innerHTML = '<p style="color:gray; font-size:12px">Hãy chọn khối lớp trước...</p>';
-            return;
-        }
-        
         const chapters = [...new Set(allQuestions.filter(q => q.grade === grade).map(q => q.chapter))];
-        listDiv.innerHTML = chapters.map(c => `
-            <div class="chapter-item">
-                <input type="checkbox" name="chapters" value="${c}" id="ch-${chapters.indexOf(c)}">
-                <label for="ch-${chapters.indexOf(c)}">${c}</label>
-            </div>
+        document.getElementById('chapter-checkbox-list').innerHTML = chapters.map(c => `
+            <div class="chapter-item"><input type="checkbox" name="chapters" value="${c}"> <label>${c}</label></div>
         `).join('');
     }
 
     function checkWrongCount() {
-        const wrongIds = JSON.parse(localStorage.getItem('dvk_wrong_ids') || '[]');
-        if(wrongIds.length > 0) {
+        const ids = JSON.parse(localStorage.getItem('dvk_wrong_ids') || '[]');
+        if(ids.length > 0) {
             document.getElementById('btn-wrong-review').style.display = 'block';
-            document.getElementById('wrong-count').innerText = wrongIds.length;
+            document.getElementById('wrong-count').innerText = ids.length;
         }
     }
 
@@ -169,63 +152,46 @@
         const name = document.getElementById('user-name').value;
         const grade = document.getElementById('user-grade-select').value;
         const cls = document.getElementById('user-class').value;
-        if(!name || !grade || !cls) return alert("Vui lòng nhập đầy đủ thông tin.");
-        
+        if(!name || !grade || !cls) return alert("Vui lòng nhập đủ thông tin.");
         currentUser = { name, grade, class: cls };
         document.getElementById('login-form').style.display = 'none';
         document.getElementById('setup-screen').style.display = 'block';
         document.getElementById('user-display').innerText = `HS: ${name} - Khối ${grade} (${cls})`;
     }
 
-    function getRandom(arr, n) {
-        return [...arr].sort(() => 0.5 - Math.random()).slice(0, n);
-    }
+    function getRandom(arr, n) { return [...arr].sort(() => 0.5 - Math.random()).slice(0, n); }
 
     function startExam() {
-        const selectedChapters = Array.from(document.querySelectorAll('input[name="chapters"]:checked')).map(cb => cb.value);
-        if(selectedChapters.length === 0) return alert("Vui lòng chọn ít nhất một chương để ôn tập.");
-
+        const selChaps = Array.from(document.querySelectorAll('input[name="chapters"]:checked')).map(cb => cb.value);
+        if(selChaps.length === 0) return alert("Vui lòng chọn ít nhất một chương.");
+        
+        let pool = allQuestions.filter(q => q.grade === currentUser.grade && selChaps.includes(q.chapter));
         const type = document.getElementById('exam-type').value;
         const mode = document.getElementById('exam-mode').value;
-        
-        // Chỉ lấy câu hỏi từ các chương đã chọn
-        let pool = allQuestions.filter(q => q.grade === currentUser.grade && selectedChapters.includes(q.chapter));
-        
+
         if (type === 'mock') {
-            // Đề tổng hợp 90 phút: 16 TN - 8 DS - 6 TLN
-            const tn_m1 = getRandom(pool.filter(q => q.type === 'TN' && q.level === 1), 8);
-            const tn_m2 = getRandom(pool.filter(q => q.type === 'TN' && q.level === 2), 8);
-            const ds_all = getRandom(pool.filter(q => q.type === 'DS'), 8);
+            const tln_p = pool.filter(q => q.type === 'TLN');
+            const tln_list = (mode === 'standard') ? 
+                [...getRandom(tln_p.filter(q => q.level === 3), 2), ...getRandom(tln_p.filter(q => q.level === 4), 2), ...getRandom(tln_p.filter(q => q.level === 5), 2)] :
+                [...getRandom(tln_p.filter(q => q.level === 3), 3), ...getRandom(tln_p.filter(q => q.level === 4), 3)];
             
-            let tln_list = [];
-            const tln_pool = pool.filter(q => q.type === 'TLN');
-            if(mode === 'standard') {
-                tln_list = [
-                    ...getRandom(tln_pool.filter(q => q.level === 3), 2),
-                    ...getRandom(tln_pool.filter(q => q.level === 4), 2),
-                    ...getRandom(tln_pool.filter(q => q.level === 5), 2)
-                ];
-            } else {
-                tln_list = [
-                    ...getRandom(tln_pool.filter(q => q.level === 3), 3),
-                    ...getRandom(tln_pool.filter(q => q.level === 4), 3)
-                ];
-            }
-            examSet = [...tn_m1, ...tn_m2, ...ds_all, ...tln_list];
+            examSet = [
+                ...getRandom(pool.filter(q => q.type === 'TN' && q.level === 1), 8),
+                ...getRandom(pool.filter(q => q.type === 'TN' && q.level === 2), 8),
+                ...getRandom(pool.filter(q => q.type === 'DS'), 8),
+                ...tln_list
+            ];
             timeLeft = 90 * 60;
         } else {
-            // Ôn tập nhanh: lấy 20 câu ngẫu nhiên từ các chương đã chọn
             examSet = getRandom(pool, 20);
             timeLeft = 45 * 60;
         }
-
-        if(examSet.length < 5) return alert("Dữ liệu câu hỏi của các chương này quá ít, không đủ tạo đề.");
         renderExam();
     }
 
     function startWrongReview() {
-        const wrongIds = JSON.parse(localStorage.getItem('dvk_wrong_ids') || '[]');
-        examSet = allQuestions.filter((q, index) => wrongIds.includes(index.toString()));
+        const ids = JSON.parse(localStorage.getItem('dvk_wrong_ids') || '[]');
+        examSet = allQuestions.filter((q, i) => ids.includes(i.toString()));
         timeLeft = 60 * 60;
         renderExam();
     }
@@ -235,48 +201,35 @@
         document.getElementById('welcome-msg').style.display = 'none';
         document.getElementById('question-area').style.display = 'block';
         document.getElementById('timer-box').style.display = 'block';
-        
         const listDiv = document.getElementById('question-list');
-        listDiv.innerHTML = '';
-        userAnswers = {};
+        listDiv.innerHTML = ''; userAnswers = {};
 
         examSet.forEach((q, index) => {
             const qDiv = document.createElement('div');
             qDiv.className = 'card';
-            let html = `<div style="font-size:1.1rem; line-height:1.5;"><b>Câu ${index + 1}:</b> ${q.q}</div><br>`;
-            
+            let html = `<div><b>Câu ${index + 1}:</b> ${q.q}</div><br>`;
             if (q.type === 'TN') {
-                q.choices.forEach((c, i) => {
-                    html += `<div class="choice-item" onclick="pickTN(${index}, ${i}, this)">${c}</div>`;
-                });
+                q.choices.forEach((c, i) => html += `<div class="choice-item" onclick="pickTN(${index},${i},this)">${c}</div>`);
             } else if (q.type === 'DS') {
                 userAnswers[index] = {};
-                ['a', 'b', 'c', 'd'].forEach(l => {
-                    html += `
-                    <div class="ds-row">
-                        <div class="ds-flex">
-                            <span><b>${l.toUpperCase()}.</b> (Ý lựa chọn)</span>
-                            <div class="ds-btns">
-                                <button class="btn-ds" onclick="pickDS(${index},'${l}',true,this)">Đ</button>
-                                <button class="btn-ds" onclick="pickDS(${index},'${l}',false,this)">S</button>
-                            </div>
-                        </div>
-                    </div>`;
-                });
+                ['a','b','c','d'].forEach(l => html += `
+                    <div class="ds-row"><div class="ds-flex"><span><b>${l.toUpperCase()}.</b> (Ý ${l.toUpperCase()})</span>
+                    <div class="ds-btns">
+                        <button class="btn-ds" onclick="pickDS(${index},'${l}',true,this)">Đ</button>
+                        <button class="btn-ds" onclick="pickDS(${index},'${l}',false,this)">S</button>
+                    </div></div></div>`);
             } else if (q.type === 'TLN') {
-                html += `<input type="text" class="input-field" style="max-width:300px; border:2px solid #ddd;" placeholder="Nhập đáp số..." oninput="userAnswers[${index}]=this.value">`;
+                html += `<input type="text" class="input-field" style="max-width:200px" placeholder="Đáp số..." oninput="userAnswers[${index}]=this.value">`;
             }
-            qDiv.innerHTML = html;
-            listDiv.appendChild(qDiv);
+            qDiv.innerHTML = html; listDiv.appendChild(qDiv);
         });
-
         startTimer();
         window.scrollTo(0, 0);
         if(window.renderMathInElement) renderMathInElement(document.body, {delimiters:[{left:"$",right:"$",display:false}]});
     }
 
-    function pickTN(qIdx, choiceIdx, el) {
-        userAnswers[qIdx] = choiceIdx;
+    function pickTN(qIdx, cIdx, el) {
+        userAnswers[qIdx] = cIdx;
         el.parentElement.querySelectorAll('.choice-item').forEach(c => c.classList.remove('selected'));
         el.classList.add('selected');
     }
@@ -291,34 +244,42 @@
         clearInterval(timerInterval);
         timerInterval = setInterval(() => {
             timeLeft--;
-            let m = Math.floor(timeLeft / 60), s = timeLeft % 60;
+            let m = Math.floor(timeLeft/60), s = timeLeft%60;
             document.getElementById('timer').innerText = `${m}:${s<10?'0':''}${s}`;
-            if(timeLeft <= 0) submitExam();
+            if(timeLeft<=0) submitExam();
         }, 1000);
     }
 
     function submitExam() {
-        if(!confirm("Bạn có chắc chắn muốn nộp bài?")) return;
+        if(!confirm("Bạn muốn nộp bài?")) return;
         clearInterval(timerInterval);
-        let score = 0, totalScore = examSet.length;
-        let reviewHtml = '', wrongIds = JSON.parse(localStorage.getItem('dvk_wrong_ids') || '[]');
+        let score = 0, total = examSet.length, reviewHtml = '', wrongIds = JSON.parse(localStorage.getItem('dvk_wrong_ids') || '[]');
 
         examSet.forEach((q, index) => {
-            let isCorrect = false;
-            let u = userAnswers[index];
-            let qID = allQuestions.indexOf(q).toString();
+            let isCorrect = false, u = userAnswers[index], qID = allQuestions.indexOf(q).toString();
+            let uStr = '', cStr = '';
 
             if (q.type === 'TN') {
-                if(u === q.correct) { score += 1; isCorrect = true; }
+                isCorrect = (u === q.correct);
+                if(isCorrect) score += 1;
+                uStr = u !== undefined ? q.choices[u] : "Chưa chọn";
+                cStr = q.choices[q.correct];
             } else if (q.type === 'DS') {
                 let cCount = 0;
-                ['a','b','c','d'].forEach(l => { if(u && u[l] === q.correct[l]) cCount++; });
-                if(cCount === 1) score += 0.1;
-                else if(cCount === 2) score += 0.25;
-                else if(cCount === 3) score += 0.5;
-                else if(cCount === 4) { score += 1; isCorrect = true; }
+                let dsDetails = '';
+                ['a','b','c','d'].forEach(l => {
+                    let userVal = u ? u[l] : undefined;
+                    let correctVal = q.correct[l];
+                    if(userVal === correctVal) cCount++;
+                    dsDetails += `<div class="review-ds-line"><span>Ý ${l.toUpperCase()}:</span> <span>Bạn: <b>${userVal===undefined?'_':(userVal?'Đ':'S')}</b> | Đáp án: <b style="color:var(--success)">${correctVal?'Đ':'S'}</b></span></div>`;
+                });
+                if(cCount === 1) score += 0.1; else if(cCount === 2) score += 0.25; else if(cCount === 3) score += 0.5; else if(cCount === 4) { score += 1; isCorrect = true; }
+                uStr = dsDetails;
             } else if (q.type === 'TLN') {
-                if(u && u.trim().replace(',','.') === q.correct.toString()) { score += 1; isCorrect = true; }
+                isCorrect = (u && u.trim().replace(',','.') === q.correct.toString());
+                if(isCorrect) score += 1;
+                uStr = u || "Trống";
+                cStr = q.correct;
             }
 
             if(!isCorrect) { if(!wrongIds.includes(qID)) wrongIds.push(qID); }
@@ -326,11 +287,13 @@
 
             reviewHtml += `
                 <div class="card">
-                    <div style="color:${isCorrect?'var(--success)':'var(--danger)'}; font-size:1.1rem;">
-                        <b>Câu ${index+1} [${q.type} - Mức ${q.level}]: ${isCorrect?'ĐÚNG':'SAI'}</b>
+                    <span class="res-tag ${isCorrect?'correct':'wrong'}">${isCorrect?'ĐÚNG':'SAI'} - Mức ${q.level}</span>
+                    <div style="margin-bottom:10px">${q.q}</div>
+                    <div class="ans-compare" style="background:#f8f9fa; border: 1px solid #eee;">
+                        ${q.type === 'DS' ? uStr : `<div><b>Bạn chọn:</b> <span style="color:${isCorrect?'var(--success)':'var(--danger)'}">${uStr}</span></div>
+                                                    <div><b>Đáp án đúng:</b> <span style="color:var(--success)">${cStr}</span></div>`}
                     </div>
-                    <p>${q.q}</p>
-                    <div class="explain-box"><b>Lời giải chi tiết:</b><br>${q.explain}</div>
+                    <div class="explain-box"><b>Lời giải:</b><br>${q.explain}</div>
                 </div>`;
         });
 
@@ -338,8 +301,8 @@
         document.getElementById('question-area').style.display = 'none';
         document.getElementById('timer-box').style.display = 'none';
         document.getElementById('result-screen').style.display = 'block';
-        document.getElementById('final-score').innerText = `${score.toFixed(2)} / ${totalScore}`;
-        document.getElementById('res-info').innerText = `${currentUser.name} - Khối ${currentUser.grade} - Lớp ${currentUser.class}`;
+        document.getElementById('final-score').innerText = `${score.toFixed(2)} / ${total}`;
+        document.getElementById('res-info').innerText = `${currentUser.name} - Lớp ${currentUser.class}`;
         document.getElementById('review-area').innerHTML = reviewHtml;
         window.scrollTo(0, 0);
         if(window.renderMathInElement) renderMathInElement(document.getElementById('review-area'), {delimiters:[{left:"$",right:"$",display:false}]});
