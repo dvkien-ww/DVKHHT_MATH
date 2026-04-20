@@ -1,175 +1,216 @@
 <!DOCTYPE html>
+
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DVK MATH - Thầy Dương Văn Kiên</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-    <style>
-        :root { --primary: #1a73e8; --success: #34a853; --danger: #ea4335; --warning: #fbbc04; --bg: #f8f9fa; }
-        * { box-sizing: border-box; }
-        html, body { height: 100dvh; margin: 0; padding: 0; overflow: hidden; font-family: 'Segoe UI', sans-serif; background: var(--bg); }
-        body { display: flex; flex-direction: column; }
-        #app-header { background: white; padding: 10px 20px; border-bottom: 1px solid #dadce0; display: flex; justify-content: space-between; align-items: center; z-index: 4000; flex-shrink: 0; }
-        #app-header h1 { margin: 0; color: var(--primary); font-size: 18px; font-weight: 800; }
-        #auth-screen { position: fixed; inset: 0; background: var(--bg); z-index: 5000; display: flex; align-items: center; justify-content: center; padding: 20px; }
-        .auth-card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); width: 100%; max-width: 380px; text-align: center; }
-        #main-container { flex: 1; display: flex; overflow: hidden; position: relative; }
-        #setup-screen { position: absolute; inset: 0; background: white; z-index: 2000; display: none; flex-direction: column; align-items: center; overflow-y: auto; padding: 20px; }
-        #sidebar { width: 280px; background: white; border-right: 1px solid #dadce0; padding: 20px; display: flex; flex-direction: column; flex-shrink: 0; overflow-y: auto; }
-        #main-content { flex: 1; padding: 25px; overflow-y: auto; background: var(--bg); }
-        .q-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-bottom: 20px; }
-        .q-circle { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; background: #f1f3f4; border-radius: 10px; cursor: pointer; font-weight: 600; font-size: 13px; }
-        .q-circle.active { border: 2px solid var(--primary); color: var(--primary); background: #e8f0fe; }
-        .q-circle.done { background: var(--success); color: white; }
-        .question-paper { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); min-height: 350px; }
-        #result-screen, #theory-screen { display: none; position: absolute; inset: 0; width: 100%; height: 100%; overflow-y: auto; background: var(--bg); padding: 25px; z-index: 4500; }
-        .theory-card, .result-card { max-width: 800px; margin: 0 auto; background: white; border-radius: 20px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .res-box { padding: 12px; border-radius: 8px; border: 1px solid #eee; font-size: 14px; margin-top: 10px; line-height: 1.6; }
-        .btn { padding: 12px 20px; border-radius: 12px; border: none; font-weight: 600; cursor: pointer; }
-        .btn-primary { background: var(--primary); color: white; }
-        .btn-finish { background: var(--danger); color: white; width: 100%; margin-top: auto; }
-        .input-style { width: 100%; padding: 12px; border: 2px solid #eee; border-radius: 10px; margin-bottom: 15px; }
-        .hidden { display: none !important; }
-        @media (max-width: 768px) {
-            #main-container { flex-direction: column; overflow-y: auto; }
-            #sidebar { width: 100%; order: 2; border: none; border-top: 1px solid #ddd; padding: 15px; }
-            #main-content { width: 100%; order: 1; padding: 15px; flex: none; }
-            .q-grid { grid-template-columns: repeat(6, 1fr); }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DVK MATH - Thầy Dương Văn Kiên</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+<style>
+:root { --primary:#1a73e8; --success:#34a853; --danger:#ea4335; --warning:#fbbc04; --bg:#f8f9fa;}
+body{margin:0;font-family:Segoe UI;background:var(--bg)}
+#app-header{background:#fff;padding:10px 20px;display:flex;justify-content:space-between}
+#sidebar{width:260px;background:#fff;padding:15px;overflow-y:auto}
+#main{flex:1;padding:20px}
+.hidden{display:none}
+.q-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.q-circle{background:#eee;padding:10px;text-align:center;border-radius:8px;cursor:pointer}
+.q-circle.done{background:var(--success);color:#fff}
+.option{border:1px solid #ddd;padding:10px;margin:5px 0;cursor:pointer}
+</style>
+
 </head>
+
 <body>
-<header id="app-header">
-    <div><h1>DVK MATH</h1><p style="margin:0;font-size:10px;color:#666;font-weight:bold">THẦY DƯƠNG VĂN KIÊN</p></div>
-    <div id="header-user" style="font-size: 11px; text-align: right;"></div>
-</header>
-<div id="auth-screen">
-    <div class="auth-card">
-        <h2 style="color:var(--primary)">DVK MATH</h2>
-        <input type="text" id="user-name" class="input-style" placeholder="Họ và tên">
-        <input type="text" id="user-class" class="input-style" placeholder="Lớp">
-        <button class="btn btn-primary" style="width:100%" onclick="handleAuth()">VÀO ÔN TẬP</button>
-    </div>
+
+<div id="auth">
+<input id="name" placeholder="Tên">
+<input id="cls" placeholder="Lớp">
+<button onclick="login()">Vào</button>
 </div>
-<div id="main-container">
-    <div id="setup-screen">
-        <h2 id="hello-name">Chào học sinh!</h2>
-        <div style="width:100%;max-width:350px;text-align:center;display:flex;flex-direction:column">
-            <select id="grade-sel" class="input-style" onchange="updateChapters()"><option value="">-- Khối --</option><option value="10">Lớp 10</option><option value="11">Lớp 11</option><option value="12">Lớp 12</option></select>
-            <select id="chapter-sel" class="input-style"><option value="">-- Chương --</option></select>
-            <select id="time-sel" class="input-style"><option value="45">45 Phút</option><option value="60">60 Phút</option><option value="90">90 Phút</option></select>
-            <button class="btn btn-primary" onclick="startQuiz()">LÀM BÀI</button>
-            <button class="btn btn-primary" style="background:var(--warning);color:black;margin-top:10px" onclick="showTheory()">ÔN LÝ THUYẾT</button>
-            <div style="margin-top:20px;font-size:12px;color:#666">Hỗ trợ: <b>09786237631 (Zalo)</b></div>
-        </div>
-    </div>
-    <div id="theory-screen">
-        <div class="theory-card">
-            <h2 id="theory-title" style="color:var(--primary);text-align:center"></h2>
-            <div id="theory-content" style="line-height:1.8;margin:20px 0;white-space:pre-wrap"></div>
-            <center><button class="btn btn-primary" onclick="closeTheory()">QUAY LẠI</button></center>
-        </div>
-    </div>
-    <div id="sidebar" class="hidden">
-        <div id="timer" style="font-size:24px;font-weight:800;color:var(--danger);text-align:center;margin-bottom:15px">00:00</div>
-        <div class="q-grid" id="q-grid"></div>
-        <button class="btn btn-finish" onclick="confirmFinish()">NỘP BÀI</button>
-    </div>
-    <div id="main-content" class="hidden">
-        <div class="question-paper" id="paper"></div>
-        <div style="display:flex;justify-content:space-between;margin-top:20px;padding-bottom:20px">
-            <button class="btn" style="background:#e0e0e0" onclick="move(-1)">Trước</button>
-            <button class="btn btn-primary" onclick="move(1)">Sau</button>
-        </div>
-    </div>
-    <div id="result-screen">
-        <div class="result-card">
-            <div style="text-align:center;margin-bottom:25px">
-                <h2 style="color:var(--primary);margin:0">KẾT QUẢ</h2>
-                <div id="final-score" style="font-size:45px;font-weight:900;margin:5px 0">0.0</div>
-                <p id="res-info" style="color:#666"></p>
-                <button class="btn btn-primary" onclick="location.reload()">LÀM ĐỀ MỚI</button>
-            </div>
-            <div id="result-details"></div>
-        </div>
-    </div>
+
+<div id="setup" class="hidden">
+<select id="grade">
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<select id="chapter"></select>
+<select id="time">
+<option value="45">45p</option>
+<option value="60">60p</option>
+</select>
+<button onclick="start()">Bắt đầu</button>
 </div>
+
+<div style="display:flex;height:100vh">
+<div id="sidebar" class="hidden">
+<div id="timer"></div>
+<div id="grid"></div>
+<button onclick="finish()">Nộp</button>
+</div>
+
+<div id="main" class="hidden">
+<div id="q"></div>
+<button onclick="prev()">Prev</button>
+<button onclick="next()">Next</button>
+</div>
+</div>
+
+<div id="result" class="hidden"></div>
+
 <script>
-    let allQ = [], allT = [], examSet = [], answers = [], currentIdx = 0, timer;
-    const labels = ["A", "B", "C", "D"];
-    let currentUser = JSON.parse(localStorage.getItem('dvk_user'));
 
-    window.onload = () => { if(currentUser) { document.getElementById('auth-screen').style.display='none'; showSetup(); } 
-        Promise.all([fetch('questions.json').then(r=>r.json()), fetch('theory.json').then(r=>r.json()).catch(()=>[])])
-        .then(([q, t]) => { allQ = q; allT = t; }); };
+let all=[], exam=[], ans=[], idx=0, timer, remain=0;
 
-    function handleAuth() { const n = document.getElementById('user-name').value, c = document.getElementById('user-class').value; if(!n || !c) return alert("Thiếu thông tin!"); currentUser = { name: n, class: c }; localStorage.setItem('dvk_user', JSON.stringify(currentUser)); document.getElementById('auth-screen').style.display = 'none'; showSetup(); }
-    function showSetup() { document.getElementById('setup-screen').style.display = 'flex'; document.getElementById('hello-name').innerText = "Chào " + currentUser.name; document.getElementById('header-user').innerHTML = `<b>${currentUser.name}</b><br>${currentUser.class}`; }
-    function updateChapters() { const g = document.getElementById('grade-sel').value, s = document.getElementById('chapter-sel'); s.innerHTML = '<option value="">-- Chương --</option>'; [...new Set(allQ.filter(q=>q.grade==g).map(q=>q.chapter))].forEach(c => { if(c) s.innerHTML += `<option value="${c}">${c}</option>`; }); }
+// LOAD DATA + AUTO LOAD BÀI
+window.onload=()=>{
+fetch('questions.json').then(r=>r.json()).then(d=>all=d);
 
-    function showTheory() { 
-        const g = document.getElementById('grade-sel').value, c = document.getElementById('chapter-sel').value; 
-        if(!c) return alert("Chọn chương!"); 
-        const t = allT.find(x=>x.grade==g && x.chapter==c), d = document.getElementById('theory-content'); 
-        document.getElementById('theory-title').innerText = c; 
-        if (t) {
-            // Bộ lọc fix dính chữ LaTeX tự động
-            let content = t.content.replace(/forall/g, '\\forall ').replace(/in K/g, '\\in K').replace(/in\(/g, '\\in (').replace(/max_D/g, '\\max_D ').replace(/\\\\n/g, '\n');
-            d.innerHTML = content;
-        } else { d.innerHTML = "Đang cập nhật nội dung..."; }
-        document.getElementById('theory-screen').style.display = 'block'; 
-        if(window.renderMathInElement) renderMathInElement(d, { delimiters: [{left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false}] }); 
-    }
-    
-    function closeTheory() { document.getElementById('theory-screen').style.display = 'none'; }
+let saved=JSON.parse(localStorage.getItem('dvk_current_exam'));
+if(saved && confirm("Tiếp tục bài cũ?")){
+exam=saved.exam;
+ans=saved.ans;
+idx=saved.idx;
+remain=saved.remain;
+startUI();
+startTimer(remain);
+show();
+}
+};
 
-    function startQuiz() {
-        const c = document.getElementById('chapter-sel').value, g = document.getElementById('grade-sel').value, m = parseInt(document.getElementById('time-sel').value); 
-        if(!c) return alert("Chọn chương!"); 
-        const p = allQ.filter(q=>q.grade==g && q.chapter==c), s = (x)=>x.sort(()=>0.5-Math.random());
-        let cfg = (m==45) ? {tn:8, ds:2, tln:4} : (m==60) ? {tn:12, ds:4, tln:6} : {tn:16, ds:8, tln:6};
-        examSet = [...s(p.filter(q=>q.type=='TN')).slice(0,cfg.tn), ...s(p.filter(q=>q.type=='DS')).slice(0,cfg.ds), ...s(p.filter(q=>q.type=='TLN')).slice(0,cfg.tln)];
-        if(!examSet.length) return alert("Thiếu dữ liệu!");
-        answers = new Array(examSet.length).fill(null); document.getElementById('setup-screen').style.display='none'; document.getElementById('sidebar').classList.remove('hidden'); document.getElementById('main-content').classList.remove('hidden'); initTimer(m*60); showQuestion();
-    }
+// LOGIN
+function login(){
+document.getElementById('auth').classList.add('hidden');
+document.getElementById('setup').classList.remove('hidden');
+}
 
-    function showQuestion() {
-        const q = examSet[currentIdx], p = document.getElementById('paper'); 
-        let h = `<div style="font-size:1.1rem;margin-bottom:20px"><b>Câu ${currentIdx+1} (${q.type}):</b> ${q.q}</div>`;
-        if(q.type=='TN') h += q.choices.map((c,i)=>`<div class="option-item" onclick="saveTN(${i})"><input type="radio" ${answers[currentIdx]===i?'checked':''}> ${c}</div>`).join('');
-        else if(q.type=='DS') h += `<table>` + Object.keys(q.items).map(k=>`<tr><td style="padding:10px 0;"><b>${k}.</b> ${q.items[k]}</td><td align="right"><button class="btn" onclick="saveDS('${k}',true)" style="background:${answers[currentIdx]?.[k]===true?'var(--success)':'#eee'};color:${answers[currentIdx]?.[k]===true?'white':'black'}">Đ</button><button class="btn" onclick="saveDS('${k}',false)" style="background:${answers[currentIdx]?.[k]===false?'var(--danger)':'#eee'};color:${answers[currentIdx]?.[k]===false?'white':'black'}">S</button></td></tr>`).join('') + `</table>`;
-        else h += `<input type="text" class="input-style" placeholder="Nhập đáp án..." value="${answers[currentIdx]||''}" oninput="saveTLN(this.value)">`;
-        p.innerHTML = h; renderSidebar(); if(window.renderMathInElement) renderMathInElement(p, {delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}]});
-    }
+// START QUIZ
+function start(){
 
-    function saveTN(i){answers[currentIdx]=i;showQuestion();}
-    function saveDS(k,v){if(!answers[currentIdx])answers[currentIdx]={};answers[currentIdx][k]=v;showQuestion();}
-    function saveTLN(v){answers[currentIdx]=v;renderSidebar();}
-    function move(s){currentIdx=Math.max(0,Math.min(examSet.length-1,currentIdx+s));showQuestion();window.scrollTo(0,0);}
-    function renderSidebar(){document.getElementById('q-grid').innerHTML=examSet.map((_,i)=>`<div class="q-circle ${i===currentIdx?'active':''} ${answers[i]!==null?'done':''}" onclick="currentIdx=${i};showQuestion()">${i+1}</div>`).join('');}
-    function initTimer(s){timer=setInterval(()=>{s--;let mm=Math.floor(s/60),ss=s%60;document.getElementById('timer').innerText=`${mm}:${ss<10?'0'+ss:ss}`;if(s<=0)confirmFinish();},1000);}
+let pool=all;
 
-    function confirmFinish() { 
-        if(!confirm("Nộp bài?"))return; clearInterval(timer); 
-        let sc=0, tot=0; const d=document.getElementById('result-details'); d.innerHTML="";
-        examSet.forEach((q,i)=>{
-            let qs=0, mq=(q.type=='TN')?0.25:(q.type=='DS')?1:0.5;
-            if(q.type=='TN' && answers[i]===q.correct) qs=0.25; else if(q.type=='TLN' && String(answers[i]).trim()===String(q.correct)) qs=0.5;
-            else if(q.type=='DS'){let c=0;["a","b","c","d"].forEach(k=>{if(answers[i]?.[k]===q.correct[k])c++;});qs=(c==4)?1:(c==3)?0.5:(c==2)?0.25:0;}
-            sc+=qs; tot+=mq;
-            // Tinh túy Đúng/Sai: Hiển thị nội dung từng ý kèm màu sắc
-            let ua = q.type=='DS'?Object.keys(q.items).map(k=>{let u=answers[i]?.[k],col=(u===q.correct[k])?'green':'red';return `<b>${k}.</b> ${q.items[k]} <b style="color:${col}">(${(u===true?'Đ':u===false?'S':'_')})</b>`}).join('<br>'):(answers[i]!==null?(q.type=='TN'?labels[answers[i]]:answers[i]):'Trống');
-            d.innerHTML += `<div class="res-item"><b>Câu ${i+1}:</b> ${q.q}<div class="res-box" style="background:#f8f9fa"><b>Học sinh chọn:</b><br>${ua}</div><div class="res-box" style="background:#e6fffa"><b>Đáp án đúng:</b> ${q.type=='DS'?Object.entries(q.correct).map(([k,v])=>`${k}:${v?'Đ':'S'}`).join(', '):(q.type=='TN'?labels[q.correct]:q.correct)}</div><div class="res-box" style="background:#fff9db"><b>Giải thích:</b> ${q.explain.replace(/\\n/g,'\n')}</div></div>`;
-        });
-        document.getElementById('sidebar').classList.add('hidden');
-        document.getElementById('main-content').classList.add('hidden');
-        document.getElementById('result-screen').style.display='block';
-        document.getElementById('final-score').innerText = sc.toFixed(2) + " / " + tot.toFixed(2);
-        if(window.renderMathInElement) renderMathInElement(d, {delimiters:[{left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}]});
-    }
+let cfg={tn:8,ds:2,tln:4};
+
+function pick(type,n){
+let easy=pool.filter(q=>q.type==type && q.level=='easy');
+let med=pool.filter(q=>q.type==type && q.level=='medium');
+let hard=pool.filter(q=>q.type==type && q.level=='hard');
+
+let sh=a=>a.sort(()=>Math.random()-0.5);
+
+return [...sh(easy).slice(0,n*0.3),
+...sh(med).slice(0,n*0.5),
+...sh(hard).slice(0,n*0.2)].slice(0,n);
+}
+
+exam=[...pick('TN',cfg.tn),...pick('DS',cfg.ds),...pick('TLN',cfg.tln)];
+
+if(exam.length==0) exam=pool.sort(()=>Math.random()-0.5).slice(0,10);
+
+ans=new Array(exam.length).fill(null);
+idx=0;
+
+startUI();
+startTimer(60*45);
+show();
+}
+
+// UI
+function startUI(){
+document.getElementById('setup').classList.add('hidden');
+document.getElementById('sidebar').classList.remove('hidden');
+document.getElementById('main').classList.remove('hidden');
+}
+
+// TIMER + AUTOSAVE
+function startTimer(s){
+remain=s;
+timer=setInterval(()=>{
+remain--;
+document.getElementById('timer').innerText=remain;
+
+localStorage.setItem('dvk_current_exam',JSON.stringify({
+exam,ans,idx,remain
+}));
+
+if(remain<=0) finish();
+},1000);
+}
+
+// SHOW
+function show(){
+let q=exam[idx];
+let html=q.q;
+
+if(q.type=='TN'){
+q.choices.forEach((c,i)=>{
+html+=`<div class="option" onclick="ans[${idx}]=${i};show()">${c}</div>`;
+});
+}
+else if(q.type=='TLN'){
+html+=`<input value="${ans[idx]||''}" oninput="ans[${idx}]=this.value">`;
+}
+
+document.getElementById('q').innerHTML=html;
+
+renderGrid();
+}
+
+// GRID
+function renderGrid(){
+document.getElementById('grid').innerHTML=
+exam.map((_,i)=>`<div class="q-circle ${ans[i]!=null?'done':''}" onclick="idx=${i};show()">${i+1}</div>`).join('');
+}
+
+// NAV
+function next(){idx=Math.min(idx+1,exam.length-1);show()}
+function prev(){idx=Math.max(idx-1,0);show()}
+
+// FINISH
+function finish(){
+clearInterval(timer);
+localStorage.removeItem('dvk_current_exam');
+
+let wrong=[];
+
+exam.forEach((q,i)=>{
+if(ans[i]!=q.correct) wrong.push(q);
+});
+
+let html=`<h2>Kết quả</h2>
+<button onclick="retry()">Làm lại câu sai</button>`;
+
+document.getElementById('result').innerHTML=html;
+document.getElementById('sidebar').classList.add('hidden');
+document.getElementById('main').classList.add('hidden');
+document.getElementById('result').classList.remove('hidden');
+
+window.wrongSet=wrong;
+}
+
+// RETRY
+function retry(){
+if(!window.wrongSet || window.wrongSet.length==0){
+alert("Bạn đúng hết!");
+return;
+}
+
+exam=window.wrongSet;
+ans=new Array(exam.length).fill(null);
+idx=0;
+
+document.getElementById('result').classList.add('hidden');
+startUI();
+startTimer(exam.length*60);
+show();
+}
+
 </script>
+
 </body>
 </html>
