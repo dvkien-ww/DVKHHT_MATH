@@ -1,189 +1,255 @@
-<!DOCTYPE html>
-
-<html lang="vi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DVK MATH</title>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-
-<style>
-/* GIỮ NGUYÊN STYLE CỦA BẠN */
-:root { --primary:#1a73e8; --success:#34a853; --danger:#ea4335; --warning:#fbbc04; --bg:#f8f9fa;}
-body{margin:0;font-family:Segoe UI;background:var(--bg)}
-.hidden{display:none}
-</style>
-
-</head>
-
-<body>
-
-<!-- GIỮ NGUYÊN HTML CỦA BẠN -->
-
-<div id="app"></div>
+<!-- CHỈ HIỂN THỊ PHẦN SCRIPT ĐÃ ĐƯỢC SỬA - HTML/CSS GIỮ NGUYÊN -->
 
 <script>
+    let allQuestions = [], examSet = [], answers = [], currentIdx = 0, timer;
+    let remainingTime = 0; // ✅ thêm
+    const labels = ["A", "B", "C", "D"];
+    let currentUser = JSON.parse(localStorage.getItem('dvk_user'));
 
-// ================== GIỮ NGUYÊN BIẾN ==================
-let allQuestions = [], examSet = [], answers = [], currentIdx = 0, timer;
-let remainingTime = 0;
+    // ================= AUTO RESUME =================
+    window.onload = () => {
+        const saved = JSON.parse(localStorage.getItem('dvk_current_exam'));
 
-// ================== LOAD + AUTO RESUME ==================
-window.onload = () => {
+        if(saved){
+            if(confirm("Bạn có bài chưa làm xong. Tiếp tục?")){
+                examSet = saved.examSet;
+                answers = saved.answers;
+                currentIdx = saved.currentIdx;
 
-    const saved = JSON.parse(localStorage.getItem('dvk_current_exam'));
+                document.getElementById('auth-screen').style.display='none';
+                document.getElementById('setup-screen').style.display='none';
+                document.getElementById('sidebar').classList.remove('hidden');
+                document.getElementById('main-content').classList.remove('hidden');
 
-    if(saved){
-        if(confirm("Bạn có bài chưa làm xong. Tiếp tục?")){
-            examSet = saved.examSet;
-            answers = saved.answers;
-            currentIdx = saved.currentIdx;
-
-            remainingTime = saved.remainingTime;
-
-            document.getElementById('auth-screen')?.style && (document.getElementById('auth-screen').style.display='none');
-            document.getElementById('setup-screen')?.style && (document.getElementById('setup-screen').style.display='none');
-            document.getElementById('sidebar')?.classList.remove('hidden');
-            document.getElementById('main-content')?.classList.remove('hidden');
-
-            initTimer(remainingTime);
-            showQuestion();
-            return;
-        } else {
-            localStorage.removeItem('dvk_current_exam');
+                initTimer(saved.remainingTime);
+                showQuestion();
+                return;
+            } else {
+                localStorage.removeItem('dvk_current_exam');
+            }
         }
-    }
 
-    fetch('questions.json')
-        .then(r => r.json())
-        .then(data => { allQuestions = data; });
-};
+        if(currentUser) { 
+            document.getElementById('auth-screen').style.display='none'; 
+            showSetup(); 
+        }
 
-// ================== START QUIZ (NÂNG CẤP RANDOM LEVEL) ==================
-function startQuiz() {
-
-    const pool = allQuestions;
-
-    let cfg = { tn:8, ds:2, tln:4 };
-
-    const shuffle = arr => arr.sort(()=>0.5 - Math.random());
-
-    const pickByLevel = (type, count) => {
-        const easy = pool.filter(q => q.type===type && q.level==='easy');
-        const medium = pool.filter(q => q.type===type && q.level==='medium');
-        const hard = pool.filter(q => q.type===type && q.level==='hard');
-
-        return [
-            ...shuffle(easy).slice(0, Math.ceil(count*0.3)),
-            ...shuffle(medium).slice(0, Math.ceil(count*0.5)),
-            ...shuffle(hard).slice(0, Math.ceil(count*0.2))
-        ].slice(0,count);
+        fetch('questions.json')
+            .then(r => r.json())
+            .then(data => { allQuestions = data; });
     };
 
-    examSet = [
-        ...pickByLevel('TN', cfg.tn),
-        ...pickByLevel('DS', cfg.ds),
-        ...pickByLevel('TLN', cfg.tln)
-    ];
-
-    // fallback nếu thiếu dữ liệu
-    if(examSet.length === 0){
-        examSet = shuffle(pool).slice(0, cfg.tn + cfg.ds + cfg.tln);
+    function handleAuth() { 
+        const name = document.getElementById('user-name').value; 
+        const cls = document.getElementById('user-class').value; 
+        if(!name || !cls) return alert("Vui lòng điền đủ thông tin!"); 
+        currentUser = { name, class: cls }; 
+        localStorage.setItem('dvk_user', JSON.stringify(currentUser)); 
+        document.getElementById('auth-screen').style.display = 'none'; 
+        showSetup(); 
     }
 
-    answers = new Array(examSet.length).fill(null);
-    currentIdx = 0;
-
-    initTimer(45*60);
-    showQuestion();
-}
-
-// ================== TIMER + AUTO SAVE ==================
-function initTimer(sec) {
-    remainingTime = sec;
-
-    timer = setInterval(() => {
-        remainingTime--;
-
-        let m = Math.floor(remainingTime/60),
-            s = remainingTime%60;
-
-        const timerEl = document.getElementById('timer');
-        if(timerEl){
-            timerEl.innerText = `${m}:${s<10?'0'+s:s}`;
-        }
-
-        // AUTO SAVE
-        localStorage.setItem('dvk_current_exam', JSON.stringify({
-            examSet,
-            answers,
-            currentIdx,
-            remainingTime
-        }));
-
-        if(remainingTime <= 0) confirmFinish();
-    }, 1000);
-}
-
-// ================== RETRY WRONG ==================
-function retryWrong(){
-
-    const newExam = [];
-    const newAnswers = [];
-
-    examSet.forEach((q,i)=>{
-        let correct = false;
-
-        if(q.type==='TN'){
-            correct = answers[i] === q.correct;
-        }
-        else if(q.type==='TLN'){
-            correct = String(answers[i]).trim() === String(q.correct);
-        }
-        else if(q.type==='DS'){
-            let cnt = 0;
-            ["a","b","c","d"].forEach(k=>{
-                if(answers[i]?.[k] === q.correct[k]) cnt++;
-            });
-            correct = (cnt === 4);
-        }
-
-        if(!correct){
-            newExam.push(q);
-            newAnswers.push(null);
-        }
-    });
-
-    if(newExam.length === 0){
-        alert("Bạn đúng hết!");
-        return;
+    function showSetup() { 
+        document.getElementById('setup-screen').style.display = 'flex'; 
+        document.getElementById('hello-name').innerText = currentUser.name; 
+        document.getElementById('header-user').innerHTML = `<b>${currentUser.name}</b><br>${currentUser.class}`; 
+        renderHistory(); 
     }
 
-    examSet = newExam;
-    answers = newAnswers;
-    currentIdx = 0;
+    function renderHistory() { 
+        const history = JSON.parse(localStorage.getItem('dvk_history') || '[]'); 
+        const body = document.getElementById('history-body'); 
+        body.innerHTML = history.length ? '' : '<tr><td style="text-align:center; padding:10px; color:#999;">Trống</td></tr>'; 
+        history.reverse().slice(0,5).forEach(h => { 
+            body.innerHTML += `<tr style="border-bottom:1px solid #f1f1f1;">
+            <td style="padding:10px 0;">${h.chapter}</td>
+            <td align="right"><b>${h.score}</b></td>
+            <td align="right" style="color:#888; font-size:11px;">${h.date}</td></tr>`; 
+        }); 
+    }
 
-    document.getElementById('result-screen')?.style && (document.getElementById('result-screen').style.display='none');
-    document.getElementById('sidebar')?.classList.remove('hidden');
-    document.getElementById('main-content')?.classList.remove('hidden');
+    function updateChapters() { 
+        const grade = document.getElementById('grade-sel').value; 
+        const sel = document.getElementById('chapter-sel'); 
+        sel.innerHTML = '<option value="">-- Chọn Chương --</option>'; 
+        const chapters = [...new Set(allQuestions.filter(q => q.grade == grade).map(q => q.chapter))]; 
+        chapters.forEach(c => { if(c) sel.innerHTML += `<option value="${c}">${c}</option>`; }); 
+    }
 
-    initTimer(newExam.length * 60);
-    showQuestion();
-}
+    // ================= RANDOM LEVEL =================
+    function startQuiz() {
+        const chapter = document.getElementById('chapter-sel').value;
+        const grade = document.getElementById('grade-sel').value;
+        const selectedMinutes = parseInt(document.getElementById('time-sel').value);
+        if(!chapter) return alert("Chọn chương!");
 
-// ================== XÓA SAVE KHI NỘP ==================
-function confirmFinish() {
-    clearInterval(timer);
+        const pool = allQuestions.filter(q => q.grade == grade && q.chapter == chapter);
 
-    localStorage.removeItem('dvk_current_exam');
+        let cfg;
+        if(selectedMinutes == 45) cfg = { tn: 8, ds: 2, tln: 4 };
+        else if(selectedMinutes == 60) cfg = { tn: 12, ds: 4, tln: 6 };
+        else cfg = { tn: 16, ds: 8, tln: 6 };
 
-    alert("Đã nộp bài!");
-}
+        const shuffle = arr => arr.sort(()=>0.5 - Math.random());
 
+        const pickByLevel = (type, count) => {
+            const easy = pool.filter(q => q.type===type && q.level==='easy');
+            const medium = pool.filter(q => q.type===type && q.level==='medium');
+            const hard = pool.filter(q => q.type===type && q.level==='hard');
+
+            return [
+                ...shuffle(easy).slice(0, Math.ceil(count*0.3)),
+                ...shuffle(medium).slice(0, Math.ceil(count*0.5)),
+                ...shuffle(hard).slice(0, Math.ceil(count*0.2))
+            ].slice(0,count);
+        };
+
+        examSet = [
+            ...pickByLevel('TN', cfg.tn),
+            ...pickByLevel('DS', cfg.ds),
+            ...pickByLevel('TLN', cfg.tln)
+        ];
+
+        if(examSet.length === 0){
+            examSet = shuffle(pool).slice(0, cfg.tn + cfg.ds + cfg.tln);
+        }
+
+        answers = new Array(examSet.length).fill(null);
+
+        document.getElementById('setup-screen').style.display = 'none';
+        document.getElementById('sidebar').classList.remove('hidden');
+        document.getElementById('main-content').classList.remove('hidden');
+
+        initTimer(selectedMinutes * 60);
+        showQuestion();
+    }
+
+    // ================= AUTO SAVE =================
+    function initTimer(sec) {
+        remainingTime = sec;
+
+        timer = setInterval(() => {
+            remainingTime--;
+
+            let m = Math.floor(remainingTime/60),
+                s = remainingTime%60;
+
+            document.getElementById('timer').innerText = `${m}:${s<10?'0'+s:s}`;
+
+            localStorage.setItem('dvk_current_exam', JSON.stringify({
+                examSet,
+                answers,
+                currentIdx,
+                remainingTime
+            }));
+
+            if(remainingTime <= 0) confirmFinish();
+        }, 1000);
+    }
+
+    function showQuestion() {
+        const q = examSet[currentIdx], paper = document.getElementById('paper');
+        let html = `<div style="font-size:1.1rem; margin-bottom:20px;"><b>Câu ${currentIdx + 1} (${q.type === 'TN' ? 'Trắc nghiệm' : q.type === 'DS' ? 'Đúng/Sai' : 'Trả lời ngắn'}):</b> ${q.q}</div>`;
+
+        if(q.type === 'TN') {
+            html += q.choices.map((c, i) => `<div class="option-item" onclick="saveTN(${i})">
+            <input type="radio" ${answers[currentIdx]===i?'checked':''}> ${c}</div>`).join('');
+        } 
+        else if(q.type === 'DS') {
+            html += `<table style="width:100%;">` + Object.keys(q.items).map(k => `
+            <tr><td style="padding:10px 0;"><b>${k}.</b> ${q.items[k]}</td>
+            <td align="right">
+            <button class="btn" onclick="saveDS('${k}',true)" style="background:${answers[currentIdx]?.[k]===true?'var(--success)':'#eee'}">Đ</button>
+            <button class="btn" onclick="saveDS('${k}',false)" style="background:${answers[currentIdx]?.[k]===false?'var(--danger)':'#eee'}">S</button>
+            </td></tr>`).join('') + `</table>`;
+        } 
+        else {
+            html += `<input type="text" class="input-style" value="${answers[currentIdx]||''}" oninput="saveTLN(this.value)">`;
+        }
+
+        paper.innerHTML = html;
+        renderSidebar();
+
+        if(window.renderMathInElement)
+            renderMathInElement(paper);
+    }
+
+    function saveTN(i) { answers[currentIdx] = i; showQuestion(); }
+    function saveDS(k, v) { if(!answers[currentIdx]) answers[currentIdx]={}; answers[currentIdx][k]=v; showQuestion(); }
+    function saveTLN(v) { answers[currentIdx] = v; renderSidebar(); }
+    function move(s) { currentIdx = Math.max(0, Math.min(examSet.length - 1, currentIdx + s)); showQuestion(); }
+
+    function renderSidebar() {
+        document.getElementById('q-grid').innerHTML =
+        examSet.map((_, i) => `<div class="q-circle ${i===currentIdx?'active':''} ${answers[i]!==null?'done':''}"
+        onclick="currentIdx=${i};showQuestion()">${i+1}</div>`).join('');
+    }
+
+    // ================= RETRY =================
+    function retryWrong(){
+        const newExam = [];
+        examSet.forEach((q,i)=>{
+            let ok = false;
+            if(q.type==='TN') ok = answers[i]===q.correct;
+            else if(q.type==='TLN') ok = String(answers[i]).trim()===String(q.correct);
+            else{
+                let cnt=0;
+                ["a","b","c","d"].forEach(k=>{ if(answers[i]?.[k]===q.correct[k]) cnt++; });
+                ok = (cnt===4);
+            }
+            if(!ok) newExam.push(q);
+        });
+
+        if(newExam.length===0) return alert("Bạn đúng hết!");
+
+        examSet = newExam;
+        answers = new Array(examSet.length).fill(null);
+        currentIdx = 0;
+
+        document.getElementById('result-screen').style.display='none';
+        document.getElementById('sidebar').classList.remove('hidden');
+        document.getElementById('main-content').classList.remove('hidden');
+
+        initTimer(newExam.length*60);
+        showQuestion();
+    }
+
+    // ================= FINISH =================
+    function confirmFinish() {
+        if(!confirm("Bạn muốn nộp bài?")) return;
+
+        clearInterval(timer);
+        localStorage.removeItem('dvk_current_exam'); // xoá save
+
+        let score = 0, totalScore = 0;
+        const container = document.getElementById('result-details');
+        container.innerHTML = "";
+
+        examSet.forEach((q, i) => {
+            let qScore = 0, maxQ = (q.type==='TN')?0.25 : (q.type==='DS')?1.0 : 0.5;
+
+            if(q.type==='TN' && answers[i]===q.correct) qScore = 0.25;
+            else if(q.type==='TLN' && String(answers[i]).trim()===String(q.correct)) qScore = 0.5;
+            else if(q.type==='DS') {
+                let cnt = 0;
+                ["a","b","c","d"].forEach(k => {
+                    if(answers[i]?.[k]===q.correct[k]) cnt++;
+                });
+                qScore = (cnt===4)?1:(cnt===3)?0.5:(cnt===2)?0.25:0;
+            }
+
+            score += qScore;
+            totalScore += maxQ;
+        });
+
+        document.getElementById('sidebar').classList.add('hidden');
+        document.getElementById('main-content').classList.add('hidden');
+        document.getElementById('result-screen').style.display='block';
+
+        document.getElementById('final-score').innerText =
+            score.toFixed(2) + " / " + totalScore.toFixed(2);
+
+        document.getElementById('res-info').innerText =
+            `${currentUser.name} - Lớp ${currentUser.class}`;
+    }
 </script>
-
-</body>
-</html>
