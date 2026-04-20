@@ -138,18 +138,45 @@
             if(c) s.innerHTML += `<option value="${c}">${c}</option>`;
         });
     }
+function showTheory() { 
+    const g = document.getElementById('grade-sel').value, c = document.getElementById('chapter-sel').value; 
+    if(!c) return alert("Vui lòng chọn khối và chương!"); 
+    const t = allT.find(x=>x.grade==g && x.chapter==c), d = document.getElementById('theory-content'); 
+    document.getElementById('theory-title').innerText = c; 
+    
+    if (t) {
+        // Bước 1: Xử lý các từ khóa LaTeX bị thiếu dấu gạch chéo
+        let raw = t.content
+            .replace(/forall/g, '\\forall ')
+            .replace(/in K/g, '\\in K')
+            .replace(/in\(/g, '\\in (')
+            .replace(/max_D/g, '\\max_D ')
+            .replace(/min_D/g, '\\min_D ')
+            .replace(/lim/g, '\\lim ')
+            .replace(/rightarrow/g, '\\rightarrow ')
+            .replace(/infty/g, '\\infty ');
 
-    function showTheory() {
-        const g = document.getElementById('grade-sel').value, c = document.getElementById('chapter-sel').value;
-        if(!c) return alert("Vui lòng chọn chương!");
-        const t = allT.find(x=>x.grade==g && x.chapter==c), d = document.getElementById('theory-content');
-        document.getElementById('theory-title').innerText = c;
-        if (t) {
-            d.innerHTML = t.content.replace(/forall/g, '\\forall ').replace(/in K/g, '\\in K').replace(/max_D/g, '\\max_D ').replace(/\\\\n/g, '\n');
-        } else { d.innerHTML = "Đang cập nhật..."; }
-        document.getElementById('theory-screen').style.display = 'block';
-        if(window.renderMathInElement) renderMathInElement(d, { delimiters: [{left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false}] });
+        // Bước 2: Xử lý ngắt dòng - Biến các loại ký hiệu \n thành thẻ <br> thực tế
+        let formatted = raw.replace(/\\n/g, '<br>').replace(/\n/g, '<br>');
+        
+        d.innerHTML = formatted;
+    } else { 
+        d.innerHTML = "Nội dung lý thuyết đang được thầy cập nhật..."; 
     }
+    
+    document.getElementById('theory-screen').style.display = 'block'; 
+    
+    // Bước 3: Kích hoạt KaTeX để vẽ công thức
+    if(window.renderMathInElement) {
+        renderMathInElement(d, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ],
+            throwOnError: false
+        });
+    }
+}
 
     function closeTheory() { document.getElementById('theory-screen').style.display = 'none'; }
 
