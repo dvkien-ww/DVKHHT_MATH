@@ -145,8 +145,8 @@ function showTheory() {
     document.getElementById('theory-title').innerText = c; 
     
     if (t) {
-        // Bước 1: Xử lý các từ khóa LaTeX bị thiếu dấu gạch chéo
-        let raw = t.content
+        // 1. Khôi phục các lệnh toán học bị mất dấu gạch chéo
+        let cleanText = t.content
             .replace(/forall/g, '\\forall ')
             .replace(/in K/g, '\\in K')
             .replace(/in\(/g, '\\in (')
@@ -156,17 +156,15 @@ function showTheory() {
             .replace(/rightarrow/g, '\\rightarrow ')
             .replace(/infty/g, '\\infty ');
 
-        // Bước 2: Xử lý ngắt dòng - Biến các loại ký hiệu \n thành thẻ <br> thực tế
-        let formatted = raw.replace(/\\n/g, '<br>').replace(/\n/g, '<br>');
-        
-        d.innerHTML = formatted;
+        // 2. Xử lý xuống dòng: Thay thế \n bằng thẻ <br> để không làm gãy công thức LaTeX
+        d.innerHTML = cleanText.replace(/\\n/g, '<br>').replace(/\n/g, '<br>');
     } else { 
         d.innerHTML = "Nội dung lý thuyết đang được thầy cập nhật..."; 
     }
     
     document.getElementById('theory-screen').style.display = 'block'; 
     
-    // Bước 3: Kích hoạt KaTeX để vẽ công thức
+    // 3. Kích hoạt KaTeX render chính xác cho nội dung lý thuyết
     if(window.renderMathInElement) {
         renderMathInElement(d, {
             delimiters: [
@@ -177,7 +175,6 @@ function showTheory() {
         });
     }
 }
-
     function closeTheory() { document.getElementById('theory-screen').style.display = 'none'; }
 
     function startQuiz() {
