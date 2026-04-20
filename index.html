@@ -23,7 +23,6 @@
         .auth-card { background: white; padding: 40px; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); width: 100%; max-width: 400px; text-align: center; }
 
         #main-container { flex: 1; display: flex; overflow: hidden; position: relative; flex-direction: row; }
-
         #setup-screen { position: absolute; inset: 0; background: white; z-index: 2000; display: none; flex-direction: column; align-items: center; overflow-y: auto; padding: 30px 20px; }
         .dashboard-section { width: 100%; max-width: 650px; background: #fff; border: 1px solid #e0e0e0; border-radius: 16px; padding: 20px; margin-bottom: 25px; }
         
@@ -141,7 +140,16 @@
         const grade = document.getElementById('grade-sel').value;
         if(!chapter) return alert("Chọn chương!");
         const pool = allQuestions.filter(q => q.grade == grade && q.chapter == chapter);
-        examSet = pool.sort(() => 0.5 - Math.random()).slice(0, 15);
+        if(pool.length < 5) return alert("Dữ liệu chương này đang cập nhật!");
+
+        // THỨ TỰ CHUẨN: TN -> DS -> TLN
+        const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
+        examSet = [
+            ...shuffle(pool.filter(q => q.type === 'TN')).slice(0, 8),
+            ...shuffle(pool.filter(q => q.type === 'DS')).slice(0, 4),
+            ...shuffle(pool.filter(q => q.type === 'TLN')).slice(0, 3)
+        ];
+
         answers = new Array(examSet.length).fill(null);
         document.getElementById('setup-screen').style.display = 'none';
         document.getElementById('sidebar').classList.remove('hidden');
@@ -152,7 +160,7 @@
 
     function showQuestion() {
         const q = examSet[currentIdx], paper = document.getElementById('paper');
-        let html = `<div style="font-size:1.1rem; margin-bottom:20px;"><b>Câu ${currentIdx + 1} (${q.type}):</b> ${q.q}</div>`;
+        let html = `<div style="font-size:1.1rem; margin-bottom:20px;"><b>Câu ${currentIdx + 1} (${q.type === 'TN' ? 'Trắc nghiệm' : q.type === 'DS' ? 'Đúng/Sai' : 'Trả lời ngắn'}):</b> ${q.q}</div>`;
         if(q.type === 'TN') {
             html += q.choices.map((c, i) => `<div class="option-item" onclick="saveTN(${i})"><input type="radio" ${answers[currentIdx]===i?'checked':''}> ${c}</div>`).join('');
         } else if(q.type === 'DS') {
@@ -214,6 +222,9 @@
         document.getElementById('result-screen').style.display='block';
         document.getElementById('final-score').innerText = score.toFixed(2);
         document.getElementById('res-info').innerText = `${currentUser.name} - Lớp ${currentUser.class}`;
+        const history = JSON.parse(localStorage.getItem('dvk_history') || '[]');
+        history.push({ chapter: examSet[0].chapter, score: score.toFixed(2), date: new Date().toLocaleDateString() });
+        localStorage.setItem('dvk_history', JSON.stringify(history));
         if(window.renderMathInElement) renderMathInElement(container, { delimiters: [{left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false}] });
     }
 </script>
