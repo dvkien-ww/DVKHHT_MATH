@@ -1,12 +1,7 @@
 [
   {
-    "grade": "10",
-    "chapter": "Chương 1. Mệnh đề và tập hợp",
-    "content": "### 1. Mệnh đề\n- Mệnh đề là một khẳng định đúng hoặc một khẳng định sai.\n- Một khẳng định không thể vừa đúng vừa sai.\n### 2. Tập hợp\n- Tập hợp con: $A \subset B \Leftrightarrow \forall x \in A \Rightarrow x \in B$."
-  },
-  {
-    "grade": "11",
-    "chapter": "Chương 7. Quan hệ vuông góc trong không gian",
-    "content": "### 1. Đường thẳng vuông góc với mặt phẳng\n$d \perp (P)$ nếu $d$ vuông góc với mọi đường thẳng nằm trong $(P)$."
+    "grade": "12",
+    "chapter": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+    "content": "### 1. Tính đơn điệu và Cực trị\n- **Đơn điệu:** Hàm số $y = f(x)$ đồng biến trên $K$ nếu $f'(x) > 0, \\\\forall x \\\\in K$. Nghịch biến nếu $f'(x) < 0$. (Lưu ý: $f'(x)$ có thể bằng $0$ tại một số hữu hạn điểm trên $K$).\n- **Cực trị:** Hàm số đạt cực đại tại $x_0$ nếu $f'(x)$ đổi dấu từ $+$ sang $-$ qua $x_0$; đạt cực tiểu nếu $f'(x)$ đổi dấu từ $-$ sang $+$.\n- *Lưu ý dễ sai:* Nếu $f'(x)$ không đổi dấu khi qua $x_0$ (ngay cả khi $f'(x_0) = 0$ hoặc đạo hàm không tồn tại) thì $x_0$ không phải là điểm cực trị.\n\n### 2. Giá trị lớn nhất (GTLN) và nhỏ nhất (GTNN)\n- **Kí hiệu:** $M = \\\\max_{D} f(x)$ và $m = \\\\min_{D} f(x)$.\n- **Cách tìm GTLN, GTNN trên đoạn $[a; b]$:**\n  1. Tính đạo hàm $f'(x)$, tìm các điểm $x_i \\\\in (a; b)$ mà tại đó $f'(x) = 0$ hoặc không tồn tại.\n  2. Tính các giá trị $f(a), f(b), f(x_i)$.\n  3. Số lớn nhất (hoặc nhỏ nhất) trong các giá trị này chính là $M$ (hoặc $m$).\n\n### 3. Đường tiệm cận\n- **Tiệm cận ngang:** Đường thẳng $y = y_0$ là tiệm cận ngang nếu $\\\\lim_{x \\\\to +\\\\infty} f(x) = y_0$ hoặc $\\\\lim_{x \\\\to -\\\\infty} f(x) = y_0$.\n- **Tiệm cận đứng:** Đường thẳng $x = x_0$ là tiệm cận đứng nếu ít nhất một trong các giới hạn $\\\\lim_{x \\\\to x_0^+} f(x)$ hoặc $\\\\lim_{x \\\\to x_0^-} f(x)$ bằng $+\\\\infty$ hoặc $-\\\\infty$.\n- **Tiệm cận xiên:** Đường thẳng $y = ax + b$ ($a \\\\neq 0$) là tiệm cận xiên nếu $\\\\lim_{x \\\\to \\\\pm\\\\infty} [f(x) - (ax + b)] = 0$. Tìm các hệ số bằng công thức: $a = \\\\lim_{x \\\\to \\\\infty} \\\\frac{f(x)}{x}$ và $b = \\\\lim_{x \\\\to \\\\infty} [f(x) - ax]$.\n\n### 4. Khảo sát và Vẽ đồ thị hàm số\n- **Sơ đồ chung:** Tập xác định $\\\\to$ Khảo sát sự biến thiên (Tính $y'$, tìm cực trị, tiệm cận, lập bảng biến thiên) $\\\\to$ Vẽ đồ thị (Tìm điểm giao với các trục toạ độ, xác định tính đối xứng).\n- *Lưu ý dễ sai:* Đồ thị hàm phân thức $y = \\\\frac{ax+b}{cx+d}$ luôn nhận điểm giao của hai đường tiệm cận làm tâm đối xứng."
   }
 ]
