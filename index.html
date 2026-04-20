@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>DVK MATH - Hệ Thống Ôn Tập Toàn Diện</title>
+    <title>DVK MATH - Hệ Thống Ôn Tập Phân Hóa</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -17,7 +17,7 @@
         #app-header { background: white; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 100; }
         .logo { font-weight: bold; font-size: 1.2rem; color: var(--primary); }
         #main-container { display: flex; flex: 1; overflow: hidden; position: relative; }
-        #sidebar { width: 300px; background: white; border-right: 1px solid #ddd; overflow-y: auto; padding: 15px; transition: 0.3s; }
+        #sidebar { width: 320px; background: white; border-right: 1px solid #ddd; overflow-y: auto; padding: 15px; transition: 0.3s; }
         #sidebar.hidden { transform: translateX(-100%); position: absolute; }
         #main-content { flex: 1; overflow-y: auto; padding: 20px; position: relative; }
         .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 20px; }
@@ -26,31 +26,39 @@
         .btn-outline { border: 1px solid #ddd; background: white; width: auto; }
         .btn-warning { background: var(--warning); color: #333; }
         .input-field { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
-        #timer-box { font-weight: bold; color: var(--danger); }
-        .choice-item { margin: 8px 0; padding: 12px; border: 1px solid #eee; border-radius: 8px; cursor: pointer; }
-        .choice-item.selected { background: #e8f0fe; border-color: var(--primary); }
-        .ds-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px dotted #eee; font-size: 14px; }
-        .ds-btns { display: flex; gap: 5px; }
-        .btn-ds { width: 40px; height: 35px; border: 1px solid #ddd; background: white; border-radius: 4px; }
-        .btn-ds.active-d { background: var(--success); color: white; }
-        .btn-ds.active-s { background: var(--danger); color: white; }
-        .explain-box { background: #fffde7; padding: 15px; border-radius: 8px; margin-top: 10px; font-style: italic; white-space: pre-wrap; border-left: 4px solid var(--warning); }
+        #timer-box { font-weight: bold; color: var(--danger); font-size: 1.1rem; }
+        
+        /* Checkbox list cho đa chương */
+        .chapter-selection { border: 1px solid #eee; border-radius: 8px; padding: 10px; max-height: 200px; overflow-y: auto; margin-bottom: 10px; }
+        .chapter-item { display: flex; align-items: center; gap: 10px; padding: 5px 0; font-size: 13px; border-bottom: 1px solid #f9f9f9; }
+        .chapter-item input { cursor: pointer; }
+
+        .choice-item { margin: 8px 0; padding: 12px; border: 1px solid #eee; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+        .choice-item:hover { background: #f1f3f4; }
+        .choice-item.selected { background: #e8f0fe; border-color: var(--primary); color: var(--primary); font-weight: bold; }
+        .ds-row { padding: 12px 0; border-bottom: 1px dotted #eee; }
+        .ds-flex { display: flex; justify-content: space-between; align-items: center; margin-top: 5px; }
+        .ds-btns { display: flex; gap: 8px; }
+        .btn-ds { width: 45px; height: 35px; border: 1px solid #ddd; background: white; border-radius: 6px; font-weight: bold; cursor: pointer; }
+        .btn-ds.active-d { background: var(--success); color: white; border-color: var(--success); }
+        .btn-ds.active-s { background: var(--danger); color: white; border-color: var(--danger); }
+        .explain-box { background: #fffde7; padding: 15px; border-radius: 8px; margin-top: 15px; font-style: italic; white-space: pre-wrap; border-left: 5px solid var(--warning); line-height: 1.6; }
     </style>
 </head>
 <body>
 
 <header id="app-header">
     <div class="logo">DVK MATH</div>
-    <div id="user-display" style="font-size:0.9rem"></div>
+    <div id="user-display" style="font-size:0.9rem; font-weight: 500;"></div>
     <div id="timer-box" style="display:none">⏳ <span id="timer">90:00</span></div>
 </header>
 
 <div id="main-container">
     <aside id="sidebar">
         <div id="login-form">
-            <h3>Thông tin học sinh</h3>
-            <input type="text" id="user-name" class="input-field" placeholder="Họ và tên">
-            <select id="user-grade-select" class="input-field">
+            <h3>Đăng nhập</h3>
+            <input type="text" id="user-name" class="input-field" placeholder="Họ và tên học sinh">
+            <select id="user-grade-select" class="input-field" onchange="loadChaptersByGrade()">
                 <option value="">-- Chọn Khối lớp --</option>
                 <option value="10">Khối 10</option>
                 <option value="11">Khối 11</option>
@@ -61,19 +69,20 @@
         </div>
 
         <div id="setup-screen" style="display:none">
-            <h3>Thiết lập đề thi</h3>
-            <label><b>Hình thức:</b></label>
-            <select id="exam-type" class="input-field" onchange="updateSetupUI()">
-                <option value="mock">Đề Tổng hợp 90 Phút (Đa chương)</option>
-                <option value="chapter">Ôn tập theo Chương</option>
-            </select>
-
-            <div id="chapter-box" style="display:none">
-                <label><b>Chọn chương:</b></label>
-                <select id="chapter-list" class="input-field"></select>
+            <h3>Thiết lập bài làm</h3>
+            
+            <label><b>1. Chọn chương muốn ôn:</b></label>
+            <div id="chapter-checkbox-list" class="chapter-selection">
+                <p style="color:gray; font-size:12px">Hãy chọn khối lớp trước...</p>
             </div>
 
-            <label><b>Chế độ mức độ (TLN):</b></label>
+            <label><b>2. Hình thức đề:</b></label>
+            <select id="exam-type" class="input-field">
+                <option value="mock">Đề Tổng hợp 90 Phút (16TN-8DS-6TLN)</option>
+                <option value="quick">Ôn tập nhanh (20 câu ngẫu nhiên)</option>
+            </select>
+
+            <label><b>3. Chế độ mức độ (TLN):</b></label>
             <select id="exam-mode" class="input-field">
                 <option value="standard">Chế độ Chuẩn (M3-M4-M5)</option>
                 <option value="easy">Chế độ Nhẹ (M3-M4)</option>
@@ -90,20 +99,24 @@
     <main id="main-content">
         <div id="welcome-msg" class="card">
             <h2>Hệ thống ôn tập DVK MATH</h2>
-            <p>Vui lòng nhập thông tin và chọn khối lớp để bắt đầu.</p>
-            <p><i>Lưu ý: Đề tổng hợp 90 phút sẽ lấy ngẫu nhiên câu hỏi từ tất cả các chương của khối lớp bạn đã chọn.</i></p>
+            <p>Vui lòng thực hiện các bước ở cột bên trái:</p>
+            <ol>
+                <li>Nhập tên và chọn <b>Khối lớp</b>.</li>
+                <li>Tích chọn <b>một hoặc nhiều chương</b> bạn muốn ôn tập.</li>
+                <li>Hệ thống sẽ tự động bốc câu hỏi theo tỷ lệ phân hóa từ các chương bạn đã chọn.</li>
+            </ol>
         </div>
 
         <div id="question-area" style="display:none">
             <div id="question-list"></div>
-            <button onclick="submitExam()" class="btn btn-primary" style="font-size:1.2rem; margin: 30px 0;">Nộp bài</button>
+            <button onclick="submitExam()" class="btn btn-primary" style="font-size:1.2rem; margin: 30px 0; height: 60px;">Nộp bài</button>
         </div>
 
         <div id="result-screen" style="display:none">
             <div class="card" style="text-align:center">
                 <h2>Kết quả bài làm</h2>
-                <div id="res-info" style="font-weight:bold"></div>
-                <div style="font-size: 2.5rem; color: var(--primary); margin: 15px 0;" id="final-score">0 / 0</div>
+                <div id="res-info" style="font-weight:bold; margin-bottom:10px;"></div>
+                <div style="font-size: 3rem; color: var(--primary); font-weight: bold; margin: 10px 0;" id="final-score">0 / 0</div>
                 <button onclick="location.reload()" class="btn btn-outline">Làm đề khác</button>
             </div>
             <div id="review-area"></div>
@@ -124,8 +137,25 @@
             const res = await fetch('questions.json');
             allQuestions = await res.json();
             checkWrongCount();
-        } catch (e) { alert("Lỗi: Không tải được dữ liệu câu hỏi."); }
+        } catch (e) { alert("Lỗi: Không tải được dữ liệu câu hỏi. Hãy đảm bảo file questions.json nằm cùng thư mục."); }
     };
+
+    function loadChaptersByGrade() {
+        const grade = document.getElementById('user-grade-select').value;
+        const listDiv = document.getElementById('chapter-checkbox-list');
+        if(!grade) {
+            listDiv.innerHTML = '<p style="color:gray; font-size:12px">Hãy chọn khối lớp trước...</p>';
+            return;
+        }
+        
+        const chapters = [...new Set(allQuestions.filter(q => q.grade === grade).map(q => q.chapter))];
+        listDiv.innerHTML = chapters.map(c => `
+            <div class="chapter-item">
+                <input type="checkbox" name="chapters" value="${c}" id="ch-${chapters.indexOf(c)}">
+                <label for="ch-${chapters.indexOf(c)}">${c}</label>
+            </div>
+        `).join('');
+    }
 
     function checkWrongCount() {
         const wrongIds = JSON.parse(localStorage.getItem('dvk_wrong_ids') || '[]');
@@ -144,17 +174,7 @@
         currentUser = { name, grade, class: cls };
         document.getElementById('login-form').style.display = 'none';
         document.getElementById('setup-screen').style.display = 'block';
-        document.getElementById('user-display').innerText = `Học sinh: ${name} - Khối ${grade} (${cls})`;
-        
-        // Lọc chương theo khối lớp
-        const chapters = [...new Set(allQuestions.filter(q => q.grade === grade).map(q => q.chapter))];
-        const select = document.getElementById('chapter-list');
-        select.innerHTML = chapters.map(c => `<option value="${c}">${c}</option>`).join('');
-    }
-
-    function updateSetupUI() {
-        const type = document.getElementById('exam-type').value;
-        document.getElementById('chapter-box').style.display = (type === 'chapter') ? 'block' : 'none';
+        document.getElementById('user-display').innerText = `HS: ${name} - Khối ${grade} (${cls})`;
     }
 
     function getRandom(arr, n) {
@@ -162,12 +182,14 @@
     }
 
     function startExam() {
+        const selectedChapters = Array.from(document.querySelectorAll('input[name="chapters"]:checked')).map(cb => cb.value);
+        if(selectedChapters.length === 0) return alert("Vui lòng chọn ít nhất một chương để ôn tập.");
+
         const type = document.getElementById('exam-type').value;
         const mode = document.getElementById('exam-mode').value;
-        const chapter = document.getElementById('chapter-list').value;
         
-        // Lọc pool câu hỏi theo khối lớp đã chọn
-        let pool = allQuestions.filter(q => q.grade === currentUser.grade);
+        // Chỉ lấy câu hỏi từ các chương đã chọn
+        let pool = allQuestions.filter(q => q.grade === currentUser.grade && selectedChapters.includes(q.chapter));
         
         if (type === 'mock') {
             // Đề tổng hợp 90 phút: 16 TN - 8 DS - 6 TLN
@@ -192,12 +214,12 @@
             examSet = [...tn_m1, ...tn_m2, ...ds_all, ...tln_list];
             timeLeft = 90 * 60;
         } else {
-            // Theo chương: lấy 20 câu ngẫu nhiên trong chương đó
-            examSet = getRandom(pool.filter(q => q.chapter === chapter), 20);
+            // Ôn tập nhanh: lấy 20 câu ngẫu nhiên từ các chương đã chọn
+            examSet = getRandom(pool, 20);
             timeLeft = 45 * 60;
         }
 
-        if(examSet.length === 0) return alert("Không tìm thấy đủ câu hỏi cho lựa chọn này.");
+        if(examSet.length < 5) return alert("Dữ liệu câu hỏi của các chương này quá ít, không đủ tạo đề.");
         renderExam();
     }
 
@@ -221,7 +243,7 @@
         examSet.forEach((q, index) => {
             const qDiv = document.createElement('div');
             qDiv.className = 'card';
-            let html = `<div><b>Câu ${index + 1}:</b> ${q.q}</div><br>`;
+            let html = `<div style="font-size:1.1rem; line-height:1.5;"><b>Câu ${index + 1}:</b> ${q.q}</div><br>`;
             
             if (q.type === 'TN') {
                 q.choices.forEach((c, i) => {
@@ -232,21 +254,24 @@
                 ['a', 'b', 'c', 'd'].forEach(l => {
                     html += `
                     <div class="ds-row">
-                        <span>${l.toUpperCase()}. (Lựa chọn ${l.toUpperCase()})</span>
-                        <div class="ds-btns">
-                            <button class="btn-ds" onclick="pickDS(${index},'${l}',true,this)">Đ</button>
-                            <button class="btn-ds" onclick="pickDS(${index},'${l}',false,this)">S</button>
+                        <div class="ds-flex">
+                            <span><b>${l.toUpperCase()}.</b> (Ý lựa chọn)</span>
+                            <div class="ds-btns">
+                                <button class="btn-ds" onclick="pickDS(${index},'${l}',true,this)">Đ</button>
+                                <button class="btn-ds" onclick="pickDS(${index},'${l}',false,this)">S</button>
+                            </div>
                         </div>
                     </div>`;
                 });
             } else if (q.type === 'TLN') {
-                html += `<input type="text" class="input-field" placeholder="Đáp số..." oninput="userAnswers[${index}]=this.value">`;
+                html += `<input type="text" class="input-field" style="max-width:300px; border:2px solid #ddd;" placeholder="Nhập đáp số..." oninput="userAnswers[${index}]=this.value">`;
             }
             qDiv.innerHTML = html;
             listDiv.appendChild(qDiv);
         });
 
         startTimer();
+        window.scrollTo(0, 0);
         if(window.renderMathInElement) renderMathInElement(document.body, {delimiters:[{left:"$",right:"$",display:false}]});
     }
 
@@ -273,6 +298,7 @@
     }
 
     function submitExam() {
+        if(!confirm("Bạn có chắc chắn muốn nộp bài?")) return;
         clearInterval(timerInterval);
         let score = 0, totalScore = examSet.length;
         let reviewHtml = '', wrongIds = JSON.parse(localStorage.getItem('dvk_wrong_ids') || '[]');
@@ -300,7 +326,9 @@
 
             reviewHtml += `
                 <div class="card">
-                    <div style="color:${isCorrect?'var(--success)':'var(--danger)'}"><b>Câu ${index+1} [Mức ${q.level}]: ${isCorrect?'ĐÚNG':'SAI'}</b></div>
+                    <div style="color:${isCorrect?'var(--success)':'var(--danger)'}; font-size:1.1rem;">
+                        <b>Câu ${index+1} [${q.type} - Mức ${q.level}]: ${isCorrect?'ĐÚNG':'SAI'}</b>
+                    </div>
                     <p>${q.q}</p>
                     <div class="explain-box"><b>Lời giải chi tiết:</b><br>${q.explain}</div>
                 </div>`;
@@ -313,6 +341,7 @@
         document.getElementById('final-score').innerText = `${score.toFixed(2)} / ${totalScore}`;
         document.getElementById('res-info').innerText = `${currentUser.name} - Khối ${currentUser.grade} - Lớp ${currentUser.class}`;
         document.getElementById('review-area').innerHTML = reviewHtml;
+        window.scrollTo(0, 0);
         if(window.renderMathInElement) renderMathInElement(document.getElementById('review-area'), {delimiters:[{left:"$",right:"$",display:false}]});
     }
 </script>
