@@ -90,7 +90,11 @@
         <div style="width: 100%; max-width: 400px; text-align: center;">
             <select id="grade-sel" class="input-style" onchange="updateChapters()"><option value="">-- Chọn Khối --</option><option value="10">Lớp 10</option><option value="11">Lớp 11</option><option value="12">Lớp 12</option></select>
             <select id="chapter-sel" class="input-style"><option value="">-- Chọn Chương --</option></select>
-            <select id="time-sel" class="input-style"><option value="45">45 Phút</option><option value="60">60 Phút</option><option value="90">90 Phút</option></select>
+            <select id="time-sel" class="input-style">
+                <option value="45">Thời gian: 45 Phút</option>
+                <option value="60">Thời gian: 60 Phút</option>
+                <option value="90">Thời gian: 90 Phút</option>
+            </select>
             <button class="btn btn-primary" style="width: 100%; padding: 15px;" onclick="startQuiz()">BẮT ĐẦU</button>
             <div class="contact-info">Phản hồi qua Mail: <b>kiensupham@gmail.com</b> hoặc Zalo: <b>09786237631</b></div>
         </div>
@@ -138,23 +142,30 @@
     function startQuiz() {
         const chapter = document.getElementById('chapter-sel').value;
         const grade = document.getElementById('grade-sel').value;
+        const selectedMinutes = parseInt(document.getElementById('time-sel').value);
         if(!chapter) return alert("Chọn chương!");
         const pool = allQuestions.filter(q => q.grade == grade && q.chapter == chapter);
-        if(pool.length < 5) return alert("Dữ liệu chương này đang cập nhật!");
+        
+        // CẤU HÌNH SỐ CÂU THEO YÊU CẦU MỚI NHẤT
+        let cfg;
+        if(selectedMinutes == 45) cfg = { tn: 8, ds: 2, tln: 4 };
+        else if(selectedMinutes == 60) cfg = { tn: 12, ds: 4, tln: 6 };
+        else cfg = { tn: 16, ds: 8, tln: 6 };
 
-        // THỨ TỰ CHUẨN: TN -> DS -> TLN
         const shuffle = (arr) => arr.sort(() => 0.5 - Math.random());
         examSet = [
-            ...shuffle(pool.filter(q => q.type === 'TN')).slice(0, 8),
-            ...shuffle(pool.filter(q => q.type === 'DS')).slice(0, 4),
-            ...shuffle(pool.filter(q => q.type === 'TLN')).slice(0, 3)
+            ...shuffle(pool.filter(q => q.type === 'TN')).slice(0, cfg.tn),
+            ...shuffle(pool.filter(q => q.type === 'DS')).slice(0, cfg.ds),
+            ...shuffle(pool.filter(q => q.type === 'TLN')).slice(0, cfg.tln)
         ];
+
+        if(examSet.length === 0) return alert("Dữ liệu chương này đang cập nhật!");
 
         answers = new Array(examSet.length).fill(null);
         document.getElementById('setup-screen').style.display = 'none';
         document.getElementById('sidebar').classList.remove('hidden');
         document.getElementById('main-content').classList.remove('hidden');
-        initTimer(parseInt(document.getElementById('time-sel').value) * 60);
+        initTimer(selectedMinutes * 60);
         showQuestion();
     }
 
@@ -186,41 +197,34 @@
     function confirmFinish() {
         if(!confirm("Bạn muốn nộp bài?")) return;
         clearInterval(timer);
-        let score = 0; const container = document.getElementById('result-details'); container.innerHTML = "";
+        let score = 0, totalScore = 0; const container = document.getElementById('result-details'); container.innerHTML = "";
         examSet.forEach((q, i) => {
-            let qScore = 0;
+            let qScore = 0, maxQ = (q.type==='TN')?0.25 : (q.type==='DS')?1.0 : 0.5;
             if(q.type==='TN' && answers[i]===q.correct) qScore = 0.25;
             else if(q.type==='TLN' && String(answers[i]).trim()===String(q.correct)) qScore = 0.5;
             else if(q.type==='DS') { let cnt = 0; ["a","b","c","d"].forEach(k => { if(answers[i]?.[k]===q.correct[k]) cnt++; }); qScore = (cnt===4)?1:(cnt===3)?0.5:(cnt===2)?0.25:0; }
-            score += qScore;
+            score += qScore; totalScore += maxQ;
             
-            let userAnsStr = "";
-            if(q.type === 'DS') {
-                userAnsStr = Object.keys(q.items).map(k => {
-                    let u = answers[i]?.[k];
-                    let display = (u === true) ? "Đ" : (u === false ? "S" : "_");
-                    let color = (u === q.correct[k]) ? "green" : "red";
-                    return `<b>${k}:</b> ${q.items[k]} <b style="color:${color}">(${display})</b>`;
-                }).join('<br>');
-            } else {
-                userAnsStr = (answers[i] !== null) ? (q.type === 'TN' ? labels[answers[i]] : answers[i]) : "Trống";
-            }
+            let userAnsStr = q.type === 'DS' ? Object.keys(q.items).map(k => {
+                let u = answers[i]?.[k];
+                let display = (u === true) ? "Đ" : (u === false ? "S" : "_");
+                let color = (u === q.correct[k]) ? "green" : "red";
+                return `<b>${k}:</b> ${q.items[k]} <b style="color:${color}">(${display})</b>`;
+            }).join('<br>') : (q.type==='TN'?(labels[answers[i]]||'Trống'):(answers[i]||'Trống'));
             
-            let correctStr = q.type === 'DS' ? Object.entries(q.correct).map(([k,v])=>`${k}:${v?'Đ':'S'}`).join(', ') : (q.type==='TN'?labels[q.correct]:q.correct);
-
             container.innerHTML += `
                 <div class="res-item">
                     <div style="display:flex; justify-content:space-between; margin-bottom:10px;"><b>Câu ${i+1} (${q.type})</b> <b style="color:${qScore>0?'green':'red'}">${qScore.toFixed(2)}đ</b></div>
                     <div style="margin-bottom:10px">${q.q}</div>
                     <div class="res-box" style="background:#f8f9fa"><b>Bạn chọn:</b><br>${userAnsStr}</div>
-                    <div class="res-box" style="background:#e6fffa; border-color:#b2f5ea"><b>Đáp án đúng:</b> ${correctStr}</div>
+                    <div class="res-box" style="background:#e6fffa; border-color:#b2f5ea"><b>Đáp án đúng:</b> ${q.type==='DS'?Object.entries(q.correct).map(([k,v])=>`${k}:${v?'Đ':'S'}`).join(', '):(q.type==='TN'?labels[q.correct]:q.correct)}</div>
                     <div class="explain-box"><b>Giải thích:</b> ${q.explain.replace(/\\n/g, '\n')}</div>
                 </div>`;
         });
         document.getElementById('sidebar').classList.add('hidden');
         document.getElementById('main-content').classList.add('hidden');
         document.getElementById('result-screen').style.display='block';
-        document.getElementById('final-score').innerText = score.toFixed(2);
+        document.getElementById('final-score').innerText = score.toFixed(2) + " / " + totalScore.toFixed(2);
         document.getElementById('res-info').innerText = `${currentUser.name} - Lớp ${currentUser.class}`;
         const history = JSON.parse(localStorage.getItem('dvk_history') || '[]');
         history.push({ chapter: examSet[0].chapter, score: score.toFixed(2), date: new Date().toLocaleDateString() });
