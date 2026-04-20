@@ -28,25 +28,22 @@
         .chapter-selection { border: 1px solid #eee; border-radius: 8px; padding: 10px; max-height: 200px; overflow-y: auto; margin-bottom: 10px; background: #fff; }
         .chapter-item { display: flex; align-items: center; gap: 10px; padding: 8px 0; font-size: 13px; border-bottom: 1px solid #f0f0f0; }
         
-        /* Giao diện làm bài */
         .q-text { white-space: pre-wrap; line-height: 1.6; font-size: 1.05rem; margin-bottom: 15px; }
         .choice-item { margin: 8px 0; padding: 12px; border: 1px solid #eee; border-radius: 8px; cursor: pointer; }
         .choice-item.selected { background: #e8f0fe; border-color: var(--primary); font-weight: bold; }
         .ds-row { padding: 10px 0; border-bottom: 1px dotted #eee; }
         .ds-flex { display: flex; justify-content: space-between; align-items: center; }
-        .btn-ds { width: 45px; height: 35px; border: 1px solid #ddd; background: white; border-radius: 6px; font-weight: bold; cursor: pointer; }
+        .btn-ds { width: 45px; height: 35px; border: 1px solid #ddd; background: white; border-radius: 4px; font-weight: bold; cursor: pointer; }
         .btn-ds.active-d { background: var(--success); color: white; border-color: var(--success); }
         .btn-ds.active-s { background: var(--danger); color: white; border-color: var(--danger); }
         
-        /* Giao diện Bảng Review (Kiểu mới) */
-        .review-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem; background: #fff; }
+        /* Bảng Review */
+        .review-table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.95rem; }
         .review-table th, .review-table td { border: 1px solid #dee2e6; padding: 12px; text-align: left; vertical-align: middle; }
-        .review-table th { background: #f8f9fa; font-weight: bold; }
+        .review-table th { background: #f8f9fa; }
         .col-center { text-align: center !important; width: 80px; }
         .col-status { text-align: center !important; width: 60px; }
         .explain-box { background: #fffde7; padding: 15px; border-radius: 8px; margin-top: 15px; font-style: italic; white-space: pre-wrap; border-left: 5px solid var(--warning); line-height: 1.6; }
-        
-        /* Lịch sử */
         .history-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.85rem; }
         .history-table th, .history-table td { padding: 8px; border: 1px solid #eee; text-align: left; }
     </style>
@@ -145,7 +142,7 @@
     function saveAuth() {
         const name = document.getElementById('user-name').value;
         const cls = document.getElementById('user-class').value;
-        if(!name || !cls) return alert("Vui lòng nhập đủ tên và lớp.");
+        if(!name || !cls) return alert("Vui lòng nhập đủ thông tin.");
         localStorage.setItem('dvk_user', JSON.stringify({name, class: cls}));
         loadAuth();
     }
@@ -161,30 +158,20 @@
     }
 
     function clearAuth() { localStorage.removeItem('dvk_user'); location.reload(); }
-
-    function goToStep2() {
-        currentUser.grade = document.getElementById('user-grade-select').value;
-        if(!currentUser.grade) return alert("Chọn khối lớp.");
-        document.getElementById('step-1').style.display = 'none';
-        document.getElementById('step-2').style.display = 'block';
-    }
-
+    function goToStep2() { currentUser.grade = document.getElementById('user-grade-select').value; if(!currentUser.grade) return alert("Chọn khối lớp."); document.getElementById('step-1').style.display = 'none'; document.getElementById('step-2').style.display = 'block'; }
     function backToStep1() { document.getElementById('step-2').style.display = 'none'; document.getElementById('step-1').style.display = 'block'; }
-
     function goToStep3() {
         const chaps = [...new Set(allQuestions.filter(q => q.grade === currentUser.grade).map(q => q.chapter))];
         document.getElementById('chapter-checkbox-list').innerHTML = chaps.map(c => `<div class="chapter-item"><input type="checkbox" name="chapters" value="${c}"> <label>${c}</label></div>`).join('');
-        document.getElementById('step-2').style.display = 'none';
-        document.getElementById('step-3').style.display = 'block';
+        document.getElementById('step-2').style.display = 'none'; document.getElementById('step-3').style.display = 'block';
     }
-
     function backToStep2() { document.getElementById('step-3').style.display = 'none'; document.getElementById('step-2').style.display = 'block'; }
 
     function getRandom(arr, n) { return [...arr].sort(() => 0.5 - Math.random()).slice(0, n); }
 
     function startExam() {
         const selChaps = Array.from(document.querySelectorAll('input[name="chapters"]:checked')).map(cb => cb.value);
-        if(selChaps.length === 0) return alert("Chọn chương ôn.");
+        if(selChaps.length === 0) return alert("Vui lòng chọn chương.");
         
         const timeMin = parseInt(document.getElementById('exam-time-select').value);
         const mode = document.getElementById('exam-mode').value;
@@ -202,8 +189,7 @@
                 [...getRandom(pool.filter(q => q.type === 'TLN' && q.level === 3), Math.ceil(conf.tln/2)),
                  ...getRandom(pool.filter(q => q.type === 'TLN' && q.level === 4), Math.floor(conf.tln/2))])
         ];
-        timeLeft = timeMin * 60;
-        renderExam();
+        timeLeft = timeMin * 60; renderExam();
     }
 
     function renderExam() {
@@ -216,7 +202,6 @@
 
         examSet.forEach((q, idx) => {
             const qDiv = document.createElement('div'); qDiv.className = 'card';
-            // Lúc làm bài hiển thị toàn bộ nội dung trong trường q
             let html = `<div class="q-text"><b>Câu ${idx + 1}:</b> ${q.q}</div>`;
             if (q.type === 'TN') {
                 q.choices.forEach((c, i) => html += `<div class="choice-item" onclick="pickTN(${idx},${i},this)">${c}</div>`);
@@ -224,12 +209,11 @@
                 userAnswers[idx] = {};
                 ['a','b','c','d'].forEach(l => html += `<div class="ds-row"><div class="ds-flex"><span><b>${l.toUpperCase()}.</b></span><div class="ds-btns"><button class="btn-ds" onclick="pickDS(${idx},'${l}',true,this)">Đ</button><button class="btn-ds" onclick="pickDS(${idx},'${l}',false,this)">S</button></div></div></div>`);
             } else if (q.type === 'TLN') {
-                html += `<input type="text" class="input-field" style="max-width:200px" oninput="userAnswers[${idx}]=this.value" placeholder="Nhập đáp số...">`;
+                html += `<input type="text" class="input-field" style="max-width:250px" oninput="userAnswers[${idx}]=this.value" placeholder="Nhập đáp số...">`;
             }
             qDiv.innerHTML = html; listDiv.appendChild(qDiv);
         });
-        startTimer();
-        window.scrollTo(0, 0);
+        startTimer(); window.scrollTo(0, 0);
         if(window.renderMathInElement) renderMathInElement(document.body, {delimiters:[{left:"$",right:"$",display:false}]});
     }
 
@@ -243,26 +227,25 @@
         let score = 0, reviewHtml = '';
 
         examSet.forEach((q, idx) => {
-            let isCorrect = false, u = userAnswers[idx];
-            let compareHtml = '';
+            let isCorrect = false, u = userAnswers[idx], compareHtml = '';
 
             if (q.type === 'TN') {
                 isCorrect = (u === q.correct); if(isCorrect) score += 1;
-                compareHtml = `<div class="ans-compare" style="margin-top:10px; background:#f8f9fa; padding:10px; border-radius:8px;"><b>Bạn chọn:</b> ${u!==undefined?q.choices[u]:"Chưa chọn"} <br> <b>Đáp án đúng:</b> <span style="color:var(--success)">${q.choices[q.correct]}</span></div>`;
+                compareHtml = `<div style="margin:10px 0; background:#f1f3f4; padding:10px; border-radius:8px;"><b>Bạn chọn:</b> ${u!==undefined?q.choices[u]:"Chưa chọn"} | <b>Đáp án:</b> <span style="color:var(--success)">${q.choices[q.correct]}</span></div>`;
             } else if (q.type === 'DS') {
-                let cCount = 0;
-                let rows = '';
-                // Logic tách ý từ nội dung q
-                const qLines = q.q.split('\n');
+                let cCount = 0, rows = '';
+                // HÀM TÁCH NỘI DUNG Ý PHỤ: Tìm các dòng bắt đầu bằng a), b), c), d)
+                const lines = q.q.split('\n');
                 const labels = ['a)', 'b)', 'c)', 'd)'];
                 
-                ['a','b','c','d'].forEach((l, i) => {
-                    let uv = u ? u[l] : undefined, cv = q.correct[l];
+                labels.forEach((label, i) => {
+                    const char = ['a','b','c','d'][i];
+                    let uv = u ? u[char] : undefined, cv = q.correct[char];
                     let match = (uv === cv); if(match) cCount++;
                     
-                    // Tìm dòng chứa nội dung ý phụ (ví dụ: a) Nội dung...)
-                    let lineContent = qLines.find(line => line.trim().startsWith(labels[i])) || labels[i] + " (Nội dung ý " + l.toUpperCase() + ")";
-                    
+                    // Lấy chính xác dòng văn bản chứa ý phụ từ dữ liệu q
+                    let lineContent = lines.find(l => l.trim().toLowerCase().startsWith(label)) || label + " ...";
+
                     rows += `<tr>
                         <td>${lineContent}</td>
                         <td class="col-center" style="color:${uv===cv?'#333':'var(--danger)'}">${uv===undefined?'_':(uv?'Đ':'S')}</td>
@@ -271,20 +254,17 @@
                     </tr>`;
                 });
                 if(cCount === 4) { score += 1; isCorrect = true; } else if(cCount === 3) score += 0.5; else if(cCount === 2) score += 0.25; else if(cCount === 1) score += 0.1;
-                
-                compareHtml = `
-                <table class="review-table">
-                    <tr><th>Nội dung các ý</th><th class="col-center">Bạn</th><th class="col-center">Đáp</th><th class="col-status">KQ</th></tr>
-                    ${rows}
-                </table>`;
+                compareHtml = `<table class="review-table"><tr><th>Nội dung các ý</th><th class="col-center">Bạn</th><th class="col-center">Đáp</th><th class="col-status">KQ</th></tr>${rows}</table>`;
             } else if (q.type === 'TLN') {
                 isCorrect = (u && u.trim().replace(',','.') === q.correct.toString()); if(isCorrect) score += 1;
-                compareHtml = `<div class="ans-compare" style="margin-top:10px; background:#f8f9fa; padding:10px; border-radius:8px;"><b>Đáp số của bạn:</b> ${u||"Trống"} <br> <b>Đáp án đúng:</b> <b style="color:var(--success)">${q.correct}</b></div>`;
+                compareHtml = `<div style="margin:10px 0; background:#f1f3f4; padding:10px; border-radius:8px;"><b>Đáp số của bạn:</b> ${u||"Trống"} | <b>Đáp án đúng:</b> <b style="color:var(--success)">${q.correct}</b></div>`;
             }
 
+            // Phần hiển thị q-text trong review sẽ chỉ lấy phần dẫn (trước ý a)
+            let stem = q.q.split('\na)')[0].split('\nA)')[0];
             reviewHtml += `<div class="card">
                 <div style="color:${isCorrect?'var(--success)':'var(--danger)'}; margin-bottom:10px;"><b>Câu ${idx+1}: ${isCorrect?'ĐÚNG':'SAI'}</b> (Mức ${q.level})</div>
-                <div class="q-text">${q.q.split('\na)')[0]}</div>
+                <div class="q-text">${stem}</div>
                 ${compareHtml}
                 <div class="explain-box"><b>Giải chi tiết:</b><br>${q.explain}</div>
             </div>`;
@@ -293,15 +273,13 @@
         const history = JSON.parse(localStorage.getItem('dvk_history') || '[]');
         history.unshift({ date: new Date().toLocaleString('vi-VN'), score: `${score.toFixed(2)}/${examSet.length}` });
         localStorage.setItem('dvk_history', JSON.stringify(history.slice(0, 10)));
-
         document.getElementById('question-area').style.display = 'none';
         document.getElementById('timer-box').style.display = 'none';
         document.getElementById('result-screen').style.display = 'block';
         document.getElementById('final-score').innerText = `${score.toFixed(2)} / ${examSet.length}`;
         document.getElementById('res-info').innerText = `${currentUser.name} - Lớp ${currentUser.class}`;
         document.getElementById('review-area').innerHTML = reviewHtml;
-        window.scrollTo(0, 0);
-        if(window.renderMathInElement) renderMathInElement(document.getElementById('review-area'), {delimiters:[{left:"$",right:"$",display:false}]});
+        window.scrollTo(0, 0); if(window.renderMathInElement) renderMathInElement(document.getElementById('review-area'), {delimiters:[{left:"$",right:"$",display:false}]});
     }
 
     function renderHistory() {
